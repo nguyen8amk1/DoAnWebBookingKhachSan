@@ -1,0 +1,5 @@
+Rules: 
+    unfinished features got printed out on the console with format: 
+        "TODO: <feature name>\n
+        Input:\n<input>\n
+        haven't implemented yet" 

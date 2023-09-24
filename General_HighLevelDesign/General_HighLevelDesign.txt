@@ -1,0 +1,48 @@
+1. Define requirements from the user's perspective 
+User's requirements:  
+    Search for places givens 
+        + City 
+        + Date:
+            + came 
+            + leave
+        + Members count: 
+            + adults
+            + childrens
+
+        sub_features: 
+            Places filter 
+            Show on map 
+
+    Upload places 
+    Change web language
+    Login/Register - Logout  
+
+    -> Technical requirements:  
+        + ....
+
+2. Reduce the features to data definition
+Chosen feature: 
+    Search for places
+        search information:
+            + City 
+            + Date:
+                + came 
+                + leave
+            + Members count: 
+                + adults
+                + childrens
+    -> JSON: 
+    searchInfo = {
+        city: 
+        date: {
+            came: 
+            leave: 
+        },
+        membersCount: {
+            adults: 
+            childrens: 
+        }
+    }
+
+3. Defines endpoints (API)
+	GET: searchForPlaces(seachInfo): HTTP(S)
