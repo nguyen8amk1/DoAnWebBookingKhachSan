@@ -13,6 +13,9 @@ User's requirements:
             Places filter 
             Show on map 
 
+    View the place (Xem cho trong): 
+        
+
     Upload places 
     Change web language
     Login/Register - Logout  
