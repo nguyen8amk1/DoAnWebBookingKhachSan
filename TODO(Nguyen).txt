@@ -3,12 +3,17 @@ TODAY:
     Setup folder structure (2h) []
     
 TODO: 
-    Understand Sequelize (2h) []
-    Setup folder structure (2h) []
-    Init Development Rules (1h) []
-    Setup Development Environment Specs (2h) []
-        -> Database Software
-            -> Connection port 
-        -> Node version
+    Init project: 
+        Understand Sequelize (2h) []
+        Setup folder structure (2h) []
+        Init Development Rules (1h) []
+        Setup Development Environment Specs (2h) []
+            -> Database Software
+                -> Connection port 
+            -> Node version
+
+        (Optional) Wrap the development environment in Docker
+        
+    Scraping data (4h) []
 
 DONE:  
