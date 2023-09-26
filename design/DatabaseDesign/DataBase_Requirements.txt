@@ -1,3 +1,38 @@
 Requirements: 
-    TODO: ....   
+    Users Requirements: 
+        Search for places givens 
+            + City 
+            + Date:
+                + came 
+                + leave
+            + Members count: 
+                + adults
+                + childrens
+
+            sub_features: 
+                Places filter 
+                Show on map 
+
+        -> Entities:
+            Reviews (optional):
+            Rooms: 
+                Status: {freed, occupied}
+                Occupation Start: 
+                Occupation End: 
+                Volume of human: 
+                    adults
+                    childrens
+                Prices
+
+            Places: 
+                Review:  
+                Score:  
+                Address: 
+                Images: 
+                Mo ta: 
+
+                ref Rooms
+            City: 
+                + rel Places
+
     -> ERD
