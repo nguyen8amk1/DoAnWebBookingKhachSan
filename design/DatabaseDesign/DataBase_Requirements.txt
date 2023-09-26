@@ -24,15 +24,16 @@ Requirements:
                     childrens
                 Prices
 
-            Places: 
+            Hotel: 
                 Review:  
                 Score:  
                 Address: 
                 Images: 
-                Mo ta: 
+                Description: 
 
                 ref Rooms
+                
             City: 
-                + rel Places
+                + rel Hotel
 
     -> ERD
