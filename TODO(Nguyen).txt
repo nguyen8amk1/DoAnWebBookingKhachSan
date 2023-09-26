@@ -1,0 +1,14 @@
+TODAY: 
+    Understand Sequelize (2h) [] @Current 
+    Setup folder structure (2h) []
+    
+TODO: 
+    Understand Sequelize (2h) []
+    Setup folder structure (2h) []
+    Init Development Rules (1h) []
+    Setup Development Environment Specs (2h) []
+        -> Database Software
+            -> Connection port 
+        -> Node version
+
+DONE:  
