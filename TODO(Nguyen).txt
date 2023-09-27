@@ -1,14 +1,13 @@
 TODAY: 
-    Learn how Sequence Diagram works (1h) [] @Current 
-    Connect front-end and back-end with a simple message: (2h) @Next
+    Reinit the database to make it works (1h) [] @Current 
+    Connect front-end and back-end with a simple message: (2h) [] @Next
         “Hello Backend” from React front-end
         “Hello React” from Express back-end
 
-    Understand Sequelize (2h) [] 
-    Setup folder structure (2h) []
-    -> Init Development Rules (1h) []
-
 TODO: 
+    Wrap the development environment in Docker (4h) [] 
+    Learn how Sequence Diagram works (1h) [] 
+    Understand Sequelize (2h) [] 
 
     <insert a Sequence Diagram for clearer> (2h)
     -> How the API flow gonna works: 
@@ -33,3 +32,5 @@ TODO:
     Scraping data (4h) []
 
 DONE:  
+    Setup folder structure (2h) [X]
+    -> Init Development Rules (1h) [X] 
