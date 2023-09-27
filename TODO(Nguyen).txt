@@ -1,5 +1,7 @@
 TODAY: 
     Reinit the database to make it works (1h) [] @Current 
+        -> change the password to 'doanweb'
+        -> create new 'datphongkhachsan' database 
     Connect front-end and back-end with a simple message: (2h) [] @Next
         “Hello Backend” from React front-end
         “Hello React” from Express back-end
