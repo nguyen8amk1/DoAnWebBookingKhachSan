@@ -32,10 +32,10 @@ Prerequisites Information:
                 -> contains business logic code (The 'Model' is MVC)
 
             -> How the API flow gonna works: 
-                1. User call to route 
+                1. React Client call to route 
                 2. route call controller 
                 3. controller calls 'model'(the data part) and 'service'(the logic part) -> get the result back 
-                4. controller return the result back to the view  
+                4. controller return the result back to the React Client 
 
                 <insert a Sequence Diagram for clearer>  
 
