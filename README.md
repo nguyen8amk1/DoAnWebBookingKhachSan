@@ -15,8 +15,11 @@ Prerequisites Information:
                     + sequelize 
 
             + models: 
+                contains sequelize's models
             + migrations:
+                contains sequelize's migrations (Database version control)
             + seeders: 
+                contains sample data for database
 
             + route:
                 -> contains the API url to different services of the backend (The step before 'Controller')
