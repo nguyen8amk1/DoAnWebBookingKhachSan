@@ -9,7 +9,7 @@ Prerequisites Information:
 
     Meaning & Usage of files and folders: 
     **Folders: 
-        *server/src:
+        *server/src: (Nghia/Nguyen)
             + config: 
                 -> contains config infos of: 
                     + sequelize 
@@ -33,7 +33,7 @@ Prerequisites Information:
 
                 <insert a Sequence Diagram for clearer>  
 
-        *client: 
+        *client: (Lap/Nghia/Nguyen)
             + src:
             + public: 
                 contains resources files (ex: images, sound files, ...)
