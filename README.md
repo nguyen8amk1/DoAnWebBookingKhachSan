@@ -55,7 +55,6 @@ Prerequisites Information:
                 "port": "3307",
                 "host": "localhost",
                 "dialect": "mysql"
-            -> This 
 
         + .env  
             -> contains 
