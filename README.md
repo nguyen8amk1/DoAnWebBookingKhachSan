@@ -5,7 +5,10 @@ Prerequisites Information:
             -> Learn how to use multiple version right here: 
                 https://www.youtube.com/watch?v=ccjKHLyo4lM&t=6s&pp=ygUYaG9pZGFuaXQgZHVuZyBuaGlldSBub2Rl
 
-        Database: Mysql 
+        Database: Mysql
+        Css: Sass
+        Server: Express 
+        Client: ReactJS  
 
     Meaning & Usage of files and folders: 
     **Folders: 
@@ -63,6 +66,10 @@ Prerequisites Information:
                     + 'production'
 
         -> The file connectDB.js will use both of the configs in these 2 files to setup the database for the project 
+
+        server/models/index.js: 
+            -> Don't touch it for now :v
+
 
 Development Rules: 
     naming structure: 
