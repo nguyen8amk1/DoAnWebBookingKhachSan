@@ -27,7 +27,7 @@ const scrape = async () => {
         'accept-language': 'en-US,en;q=0.9,en;q=0.8'
     });
 
-    const url = 'https://www.booking.com/index.vi.html';
+    const url = 'https://www.booking.com/searchresults.vi.html?ss=Vu%CC%83ng+Ta%CC%80u%2C+Vi%C3%AA%CC%A3t+Nam&efdco=1&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=index&dest_id=-3733750&dest_type=city&checkin=2023-10-16&checkout=2023-10-19&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure';
     await page.goto(url, { timeout: 60000, waitUntil: 'domcontentloaded' });
 
     // "https://www.booking.com/searchresults.vi.html?

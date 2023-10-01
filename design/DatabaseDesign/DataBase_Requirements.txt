@@ -25,6 +25,7 @@ Requirements:
                 Prices
 
             Hotel: 
+                Name: 
                 Review:  
                 Score:  
                 Address: 
