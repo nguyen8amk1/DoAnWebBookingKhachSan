@@ -1,14 +1,5 @@
 TODAY: 
-    Wrap the development environment in Docker (4h) @Current 
-        -> learn how Docker works 
-            -> Can use bind mount to mount the source code to local dev environment 
-        
-
-    Init the database to make it works (1h) [] 
-        -> change the password to 'doanweb'
-        -> create new 'datphongkhachsan' database 
-
-    Connect front-end and back-end with a simple message: (2h) [] @Next
+    Connect front-end and back-end with a simple message: (2h) [] @Current 
         “Hello Backend” from React front-end
         “Hello React” from Express back-end
 
@@ -39,5 +30,10 @@ TODO:
     Scraping data (4h) []
 
 DONE:  
+    Wrap the development environment in Docker (4h) @Later
+        -> learn how Docker works 
+            -> Can use bind mount to mount the source code to local dev environment 
+
+    Init the database to make it works (1h) [X] 
     Setup folder structure (2h) [X]
     -> Init Development Rules (1h) [X] 
