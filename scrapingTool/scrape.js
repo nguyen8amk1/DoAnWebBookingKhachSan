@@ -3,6 +3,8 @@ const fs = require('fs');
 // Add stealth plugin and use defaults 
 const pluginStealth = require('puppeteer-extra-plugin-stealth');
 
+
+
 // Use stealth 
 puppeteer.use(pluginStealth());
 
@@ -27,34 +29,188 @@ const scrape = async () => {
         'accept-language': 'en-US,en;q=0.9,en;q=0.8'
     });
 
-    const url = 'https://www.booking.com/searchresults.vi.html?ss=Vu%CC%83ng+Ta%CC%80u%2C+Vi%C3%AA%CC%A3t+Nam&efdco=1&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=index&dest_id=-3733750&dest_type=city&checkin=2023-10-16&checkout=2023-10-19&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure';
-    await page.goto(url, { timeout: 60000, waitUntil: 'domcontentloaded' });
+    const urls = [
+        {
+            city: "vungtau",
+            link: 'https://www.booking.com/searchresults.vi.html?ss=Vu%CC%83ng+Ta%CC%80u%2C+Vi%C3%AA%CC%A3t+Nam&efdco=1&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=index&dest_id=-3733750&dest_type=city&checkin=2023-10-16&checkout=2023-10-19&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure'
+        },
+        {
+            city: 'dalat',
+            link: 'https://www.booking.com/searchresults.vi.html?ss=%C4%90%C3%A0+L%E1%BA%A1t%2C+Vi%C3%AA%CC%A3t+Nam&ssne=Vu%CC%83ng+Ta%CC%80u&ssne_untouched=Vu%CC%83ng+Ta%CC%80u&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuALb4eOoBsACAdICJGRkM2VkNWFiLTk3YWItNDQ1NS1hYmFkLTFiZTU1NTcwNTE3N9gCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=searchresults&dest_id=-3712045&dest_type=city&checkin=2023-10-16&checkout=2023-10-19&group_adults=2&no_rooms=1&group_children=0'
+        },
 
-    // "https://www.booking.com/searchresults.vi.html?
-    //  ss=Vu%CC%83ng+Ta%CC%80u%2C+Vi%C3%AA%CC%A3t+Nam&ssne=Vu%CC%83ng+Ta%CC%80u&ssne_untouched=Vu%CC%83ng+Ta%CC%80u&efdco=1&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuALNssOoBsACAdICJGExMGRlNmFlLWIyYjEtNDhlNC1iZjNlLTFmMTMwODAxMGNjM9gCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=index&dest_id=-3733750&dest_type=city&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+        {
+            city: 'hanoi',
+            link: 'https://www.booking.com/searchresults.vi.html?ss=Ha%CC%80+N%C3%B4%CC%A3i%2C+Vi%C3%AA%CC%A3t+Nam&ssne=%C4%90%C3%A0+L%E1%BA%A1t&ssne_untouched=%C4%90%C3%A0+L%E1%BA%A1t&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuALb4eOoBsACAdICJGRkM2VkNWFiLTk3YWItNDQ1NS1hYmFkLTFiZTU1NTcwNTE3N9gCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=searchresults&dest_id=-3714993&dest_type=city&checkin=2023-10-16&checkout=2023-10-19&group_adults=2&no_rooms=1&group_children=0'
+        },
+
+        { city: 'hcm', link: 'https://www.booking.com/searchresults.vi.html?ss=TP.+H%C3%B4%CC%80+Chi%CC%81+Minh%2C+Vi%C3%AA%CC%A3t+Nam&ssne=%C4%90%C3%A0+N%E1%BA%B5ng&ssne_untouched=%C4%90%C3%A0+N%E1%BA%B5ng&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuALb4eOoBsACAdICJGRkM2VkNWFiLTk3YWItNDQ1NS1hYmFkLTFiZTU1NTcwNTE3N9gCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=searchresults&dest_id=-3730078&dest_type=city&checkin=2023-10-16&checkout=2023-10-19&group_adults=2&no_rooms=1&group_children=0' },
+        { city: 'danang', link: 'https://www.booking.com/searchresults.vi.html?ss=%C4%90%C3%A0+N%E1%BA%B5ng%2C+Vi%C3%AA%CC%A3t+Nam&ssne=Ha%CC%80+N%C3%B4%CC%A3i&ssne_untouched=Ha%CC%80+N%C3%B4%CC%A3i&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuALb4eOoBsACAdICJGRkM2VkNWFiLTk3YWItNDQ1NS1hYmFkLTFiZTU1NTcwNTE3N9gCBeACAQ&aid=304142&lang=vi&sb=1&src_elem=sb&src=searchresults&dest_id=-3712125&dest_type=city&checkin=2023-10-16&checkout=2023-10-19&group_adults=2&no_rooms=1&group_children=0' }
+    ]
 
 
-    // Sample data
-    // Endpoint to retrieve data
-    // const uploadSelector = "#gb > div.gb_id.gb_cd.gb_od.gb_nd > div.gb_hd.gb_rd.gb_nd.gb_we.gb_Je.gb_Oe > div.gb_9d.gb_7d > div > div > div:nth-child(1) > div > div:nth-child(1) > div > div.HCIe8c > span > div.VfPpkd-dgl2Hf-ppHlrf-sM5MNb > button > div.VfPpkd-RLmnJb";
-    // const computerSelector = "#ucc-0 > ul > li.amqM1.VfPpkd-StrnGf-rymPhb-ibnC6b";
-    // const translateSelector = "#ucc-5 > span.VfPpkd-rOvkhd-jPmIDe-dgl2Hf";
-    // await page.locator(uploadSelector).click();
-    // await page.locator(computerSelector).wait();
+    const getHotelsInUrl = async (place) => {
+        const url = place.link;
+        await page.goto(url, { timeout: 60000, waitUntil: 'domcontentloaded' });
+        let hotels = [];
 
-    // const [fileChooser] = await Promise.all([
-    //     page.waitForFileChooser(),
-    //     page.click(computerSelector)
-    //     // some button that triggers file selection
-    // ]);
-    // await fileChooser.accept(['./images/captcha.png']);
-    // console.log("done");
-    // await page.locator(translateSelector).click();
-    // const textResultSelector = "#yDmH0d > c-wiz > div > div.a4wa9e > div > div > div > div.b57KQc > c-wiz > div > div > div > div.UJ8EBe > div.F0mDWe > div > div > div.TCimBb > div > div > div";
-    // await page.locator(textResultSelector).wait();
-    // let element = await page.$(textResultSelector)
-    // let value = await page.evaluate(el => el.textContent, element)
-    // console.log(value);
+        // What to take: 
+        // Hotel: 
+        // Name: class .f6431b446c .a23c043802
+        // Images: c90a25d457 img 
+        // Score:  class .a3b8729ab1 .d86cee9b25            
+
+        // Address: 
+        // Description: 
+        // Review:  
+
+        //div.aaee4e7cd3.e7a57abb1e > div > div:nth-child(1) > div > h3 > a
+
+        const links = await page.$$eval('div.aaee4e7cd3.e7a57abb1e > div > div:nth-child(1) > div > h3 > a', links => links.map(img => img.getAttribute('href')));
+        // console.log(links, links.length);
+
+        // await page.goto(links[0], { timeout: 60000, waitUntil: 'domcontentloaded' });
+        // let hotel = {};
+
+        // console.log(hotel);
+
+        for (let l = 0; l < links.length; l++) {
+            const link = links[l];
+            // console.log(link);
+            await page.goto(link, { timeout: 60000, waitUntil: 'domcontentloaded' });
+            let hotel = {};
+            hotel.link = link;
+            // hotel.name = await page.locator('#hp_hotel_name > div > h2').evaluate(el => el.textContent);
+            // console.log(hotel);
+
+            try {
+                const nameHandle = await page.waitForSelector('#hp_hotel_name > div > h2');
+                hotel.name = await nameHandle.evaluate(el => el.textContent);
+            } catch(e) {
+                console.log("Can't found name");
+                hotel.name = null;
+                // continue;
+            }
+
+            try {
+                const scoreHandle = await page.waitForSelector('#js--hp-gallery-scorecard > a > div > div > div > div.a3b8729ab1.d86cee9b25');
+                hotel.score = await scoreHandle.evaluate(el => el.textContent);
+            } catch(e) {
+                console.log("Can't found score");
+                hotel.score = null;
+                // continue;
+            }
+
+            try {
+                let bo3images = [];
+                for (let i = 3; i <= 5; i++) {
+                    const imageHandle = await page.waitForSelector(`#hotel_main_content > div > div > div.clearfix.bh-photo-grid.fix-score-hover-opacity > div:nth-child(${i}) > a > img`);
+                    const imageSrc = await imageHandle.evaluate(el => el.getAttribute("src"));;
+                    bo3images.push(imageSrc);
+                }
+                hotel.mainImages = bo3images;
+            } catch(e) {
+                console.log("Can't found image");
+                hotel.mainImages = bo3images;
+                // continue;
+            }
+
+            // let smallImages = [];
+            // for(let i = 1; i <=6 ; i++) {
+            //     const imageHandle = await page.waitForSelector(`#hotel_main_content > div > div > div.clearfix.bh-photo-grid.bh-photo-grid--space-down.fix-score-hover-opacity > div.bh-photo-grid-thumbs-wrapper > div > div:nth-child(${i}) > a`);
+            //     const imageSrc = await imageHandle.evaluate(el => el.getAttribute("style"));;
+            //     smallImages.push(imageSrc);
+            // }
+
+
+            try {
+                const addressHandle = await page.waitForSelector('#showMap2 > span.hp_address_subtitle.js-hp_address_subtitle.jq_tooltip');
+                hotel.address = await addressHandle.evaluate(el => el.textContent);
+            } catch(e) {
+                console.log("Can't found address");
+                hotel.address = null;
+                // continue;
+            }
+
+            console.log(hotel);
+            hotels.push(hotel);
+        }
+        return hotels;
+    }
+
+    // console.log(urls[0]);
+    let data = [];
+    // let hotels = await getHotelsInUrl(urls[1]);
+    for(let i = 0; i < urls.length; i++) {
+        let hotels = await getHotelsInUrl(urls[i]);
+        let places = {
+            city: urls[i].city,
+            hotels: hotels
+        }
+        data.push(places);
+    }
+    // let hotels;
+
+    // const data = JSON.stringify(hotels);
+    fs.writeFile("./scrapedData/data.json", JSON.stringify(data), function (err) {
+        if (err) throw err;
+        console.log('complete');
+    }
+    );
+
+    // let nameHandles = await page.$$('div.f6431b446c.a23c043802');
+    // let names = [];
+    // for(let i = 0; i < nameHandles.length; i++) {
+    //     const name = (nameHandles[i]);
+    //     const content = await name.evaluate(el => el.textContent);
+    //     names.push(content);
+
+    //     // TODO: Get address @Current 
+    //         // Click the name 
+    //         // get the #showMap2 > span.hp_address_subtitle.js-hp_address_subtitle.jq_tooltip address 
+    //         // push into the addresses 
+    //         // backed out 
+    //     await name.click();
+    //     page.waitForTimeout(3000);
+    //     await page.goBack();
+    //     break;
+    //     // // Get the data you want here and push it into the data array
+
+    //     // console.log(content);
+    // }
+
+    // const images = await page.$$eval('div.f9d4f2568d > div > a > img', imgs => imgs.map(img => img.getAttribute('src')));
+    // // console.log(images);
+
+    // let scoreHandles = await page.$$('div.a3b8729ab1.d86cee9b25');
+    // let scores = [];
+    // for(let i = 0; i < scoreHandles.length; i++) {
+    //     const score = (scoreHandles[i]);
+    //     const content = await score.evaluate(el => el.textContent);
+    //     scores.push(content);
+    //     // console.log(content);
+    // }
+
+    // let addresses = [];
+
+
+    // // Tong hop Data
+    // for(let i = 0; i < scores.length; i++) {
+    //     const name = names[i];
+    //     const image = images[i];
+    //     const score = scores[i];
+
+    //     const hotel = {
+    //         name: name,
+    //         image: image,
+    //         score: score
+    //     }
+
+    //     hotels.push(hotel);
+    // }
+
+    console.log(hotels);
+
 };
 
 scrape();
