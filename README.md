@@ -5,6 +5,9 @@ Prerequisites Information:
             -> Learn how to use multiple version right here: 
                 https://www.youtube.com/watch?v=ccjKHLyo4lM&t=6s&pp=ygUYaG9pZGFuaXQgZHVuZyBuaGlldSBub2Rl
 
+        Map API: 
+            Mapbox: https://docs.mapbox.com/help/getting-started/ 
+
         Database: Sqlite3 (development), Mysql (production)
         Css: Sass
         Server: Express 
