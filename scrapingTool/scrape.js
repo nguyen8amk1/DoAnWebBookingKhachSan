@@ -59,10 +59,10 @@ const scrape = async () => {
         // Name: class .f6431b446c .a23c043802
         // Images: c90a25d457 img 
         // Score:  class .a3b8729ab1 .d86cee9b25            
+        // Address: co roi 
 
-        // Address: 
-        // Description: 
-        // Review:  
+        // Description: #property_description_content > div > p
+        // Review: #reviewFloater > div.reviews-carousel-container > div > div.reviews-carousel-scroll > div:nth-child(1) > p > span 
 
         //div.aaee4e7cd3.e7a57abb1e > div > div:nth-child(1) > div > h3 > a
 
@@ -80,8 +80,6 @@ const scrape = async () => {
             await page.goto(link, { timeout: 60000, waitUntil: 'domcontentloaded' });
             let hotel = {};
             hotel.link = link;
-            // hotel.name = await page.locator('#hp_hotel_name > div > h2').evaluate(el => el.textContent);
-            // console.log(hotel);
 
             try {
                 const nameHandle = await page.waitForSelector('#hp_hotel_name > div > h2');
@@ -132,6 +130,24 @@ const scrape = async () => {
                 // continue;
             }
 
+            // Description: #property_description_content > div > p
+            try {
+                const descriptionHandle = await page.waitForSelector('#property_description_content > div > p');
+                hotel.description = await descriptionHandle.evaluate(el => el.textContent);
+            } catch(e) {
+                console.log("Can't found address");
+                hotel.description = null;
+            }
+
+            // Review: #reviewFloater > div.reviews-carousel-container > div > div.reviews-carousel-scroll > div:nth-child(1) > p > span 
+            try {
+                const reviewHandle = await page.waitForSelector('#reviewFloater > div.reviews-carousel-container > div > div.reviews-carousel-scroll > div:nth-child(1) > p > span');
+                hotel.review = await reviewHandle.evaluate(el => el.textContent);
+            } catch(e) {
+                console.log("Can't found address");
+                hotel.review = null;
+            }
+
             console.log(hotel);
             hotels.push(hotel);
         }
@@ -157,57 +173,6 @@ const scrape = async () => {
         console.log('complete');
     }
     );
-
-    // let nameHandles = await page.$$('div.f6431b446c.a23c043802');
-    // let names = [];
-    // for(let i = 0; i < nameHandles.length; i++) {
-    //     const name = (nameHandles[i]);
-    //     const content = await name.evaluate(el => el.textContent);
-    //     names.push(content);
-
-    //     // TODO: Get address @Current 
-    //         // Click the name 
-    //         // get the #showMap2 > span.hp_address_subtitle.js-hp_address_subtitle.jq_tooltip address 
-    //         // push into the addresses 
-    //         // backed out 
-    //     await name.click();
-    //     page.waitForTimeout(3000);
-    //     await page.goBack();
-    //     break;
-    //     // // Get the data you want here and push it into the data array
-
-    //     // console.log(content);
-    // }
-
-    // const images = await page.$$eval('div.f9d4f2568d > div > a > img', imgs => imgs.map(img => img.getAttribute('src')));
-    // // console.log(images);
-
-    // let scoreHandles = await page.$$('div.a3b8729ab1.d86cee9b25');
-    // let scores = [];
-    // for(let i = 0; i < scoreHandles.length; i++) {
-    //     const score = (scoreHandles[i]);
-    //     const content = await score.evaluate(el => el.textContent);
-    //     scores.push(content);
-    //     // console.log(content);
-    // }
-
-    // let addresses = [];
-
-
-    // // Tong hop Data
-    // for(let i = 0; i < scores.length; i++) {
-    //     const name = names[i];
-    //     const image = images[i];
-    //     const score = scores[i];
-
-    //     const hotel = {
-    //         name: name,
-    //         image: image,
-    //         score: score
-    //     }
-
-    //     hotels.push(hotel);
-    // }
 
     console.log(hotels);
 
