@@ -1,0 +1,332 @@
+[
+    {
+        "city": "vungtau",
+        "hotels": [
+            {
+                "link": "https://www.booking.com/hotel/vn/an-khanh-thanh-pho-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=388936804_356300291_2_0_0&highlighted_blocks=388936804_356300291_2_0_0&matching_block_id=388936804_356300291_2_0_0&sr_pri_blocks=388936804_356300291_2_0_0__47481000&from=searchresults#hotelTmpl",
+                "name": "CAMY Hotel Vung Tau",
+                "score": "9,0",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/233307794.jpg?k=d3f34d7b98a5f833f680ce5f739bca784e7e3daf1b693850bbab824830de2f30&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/221262584.jpg?k=17b294f54490602f90337732452e3fc472e756142990b033d36f547f35ee1844&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/221838376.jpg?k=b05c3abcf96e099d336bf1a63b6e692ed65fe72558a95c4236ccd38e9cb1e331&o=&hp=1"
+                ],
+                "address": "\n236 Phan Chu Trinh, Vũng Tàu, Việt Nam\n",
+                "description": "CAMY Hotel Vung Tau cung cấp chỗ nghỉ 2 sao tại thành phố Vũng Tàu, cách Bãi Sau 500 m và Bãi Trước 2 km. Khách sạn 2 sao này có phòng nghỉ gắn máy điều hòa với phòng tắm riêng và WiFi miễn phí. Chỗ nghỉ cung cấp dịch vụ lễ tân 24 giờ, dịch vụ tiền sảnh và phòng giữ hành ly cho khách.\n\nMỗi phòng nghỉ tại CAMY Hotel Vung Tau đều được trang bị bàn làm việc, TV màn hình phẳng và tủ để quần áo. Một số phòng có tầm nhìn ra thành phố. \n\nChỗ nghỉ nằm cách Bãi Dứa 2 km và Mũi Nghinh Phong 1,7 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 6 km từ CAMY Hotel Vung Tau.",
+                "review": "Khách sạn tọa lạc ở con đường yên tĩnh, nhiều món ăn, gần với nhiều địa điểm tham quan vui chơi. Gần biển.\nDịch vụ rất tốt, lễ tân rất nhiệt tình, dễ thương, phòng ốc sạch, thoáng, phân …"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/bich-phung-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=198918606_233846329_0_0_0&highlighted_blocks=198918606_233846329_0_0_0&matching_block_id=198918606_233846329_0_0_0&sr_pri_blocks=198918606_233846329_0_0_0__44100000&from=searchresults#hotelTmpl",
+                "name": "Star Hotel",
+                "score": "7,4",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/187838120.jpg?k=ea5be75170ec8aa258709d850d0973d9b32146981627b1c33fb095b391e10e4c&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/187839862.jpg?k=3e105979aac7b7f48869039fb8ef02e4d98b862e91f0f40fe36453d967090042&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/239192995.jpg?k=ba3867405d86534406d4fc94edf5b79dcaec3085879e3cbb6aa8d37ecadf79a7&o=&hp=1"
+                ],
+                "address": "\n38 La Van Cau, Thang Tam, Vũng Tàu, Việt Nam\n",
+                "description": "Nằm trong bán kính chỉ 5 phút đi bộ từ Bãi Sau ở thành phố Vũng Tàu, Star Hotel cung cấp Wi-Fi miễn phí và chỗ đỗ xe riêng miễn phí.\n\nMỗi phòng nghỉ tại khách sạn này đều có máy điều hòa, kênh truyền hình cáp và phòng tắm riêng với vòi sen.\n\nKhách sạn có bếp chung.\n\nỞ khu vực xung quanh có rất nhiều nhà hàng và quán ăn địa phương. Khách sạn cũng cung cấp dịch vụ cho thuê xe máy và xe hơi. Star Hotel cách Tượng Chúa Ki-tô Vũng Tàu 1,4 km và Ngọn hải đăng Vũng Tàu 1,4 km. Sân bay gần nhất là sân bay quốc tế Tân Sơn Nhất, cách đó 72 km.",
+                "review": null
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/diamon.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1053390401_377530264_2_0_0&highlighted_blocks=1053390401_377530264_2_0_0&matching_block_id=1053390401_377530264_2_0_0&sr_pri_blocks=1053390401_377530264_2_0_0__85500000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Diamond Hotel",
+                "score": "8,6",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/481272812.jpg?k=960886bd69442b9c9c4a8dbbef1132dd5a8f4c5b2dad6c1fd9cb36f5e3789b14&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/481272909.jpg?k=8956ce33e169b52ba8100d7714d7eb77108cd59c1c34afc09f3717f4d6d8b524&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/481272916.jpg?k=ecedab63032b538b5dd67c05afacd833577e6536c6c072c688d9c32e77ab7142&o=&hp=1"
+                ],
+                "address": "\n55 Phan Văn Trị, Vũng Tàu, Việt Nam\n",
+                "description": "Set in Vung Tau, within 400 metres of Back Beach and 2.5 km of Front Beach, Diamond Hotel provides accommodation with a private beach area and as well as free private parking for guests who drive. The property is located 2.7 km from Pineapple Beach, 2.3 km from Nghinh Phong Cape and 4.2 km from White Villa. The accommodation offers a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.\n\nAt the hotel, all rooms are equipped with a wardrobe, a flat-screen TV, a private bathroom, bed linen and towels. Diamond Hotel features certain units with city views, and each room comes with a kettle.\n\nHo May Culture and Ecotourism Park is 4.4 km from the accommodation, while Christ of Vung Tau is 5.3 km away. The nearest airport is Vung Tau Airport, 5 km from Diamond Hotel.",
+                "review": "tốt đẹp hết về mọi thứ,... mình có bé poodle sợ ko đc lưu trú nhưng hotel hỗ trợ rất nhiệt tình. mỗi lần đi ra vào hotel bé đều tự đi cùng mình chứ ko ẳm hotel cũng rất vui vẻ nhiệt …"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/the-song-vung-tau-condotel-apartment-luxury-the-song.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1082143101_380803439_4_0_0&highlighted_blocks=1082143101_380803439_4_0_0&matching_block_id=1082143101_380803439_4_0_0&sr_pri_blocks=1082143101_380803439_4_0_0__157950000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "The Song Vung Tau Condotel - Apartment Luxury The Song",
+                "score": "10",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/495222231.jpg?k=bd1d0ff5c48e93346937650a1cc770fbbd98660959aac6ccbbb5bdfca1597170&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/495222265.jpg?k=af6eac776a47df3a8bc2fa58906d79c338bcd819fc310c10eece130f861a6f99&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/495222271.jpg?k=78faee99f976f9f21c5e9524b8a2a5c6aa72bc3e4299fb5dc8f6398e980d1440&o=&hp=1"
+                ],
+                "address": "\n28 Đường Thi Sách, Vũng Tàu, Việt Nam\n",
+                "description": "Set less than 1 km from Back Beach, The Song Vung Tau Condotel - Apartment Luxury The Song offers a private beach area, a rooftop pool and air-conditioned accommodation with a balcony and free WiFi. Private parking is available on site.\n\nThe apartment provides guests with a terrace, sea views, a seating area, a flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with walk-in shower and slippers. A fridge, a stovetop and kitchenware are also featured, as well as a kettle.\n\nThe Song Vung Tau Condotel - Apartment Luxury The Song offers a children's playground.\n\nA water park and a kids pool are available at the accommodation, while guests can also relax in the garden.\n\nHo May Culture and Ecotourism Park is 3.7 km from The Song Vung Tau Condotel - Apartment Luxury The Song, while White Villa is 4.1 km away. The nearest airport is Vung Tau Airport, 3 km from the apartment.",
+                "review": "\nmọi thứ đều rất tốt, chủ nhà dễ thương , nhiệt tình, căn hộ sạch sẽ.\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/plus-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1028011202_375546323_2_0_0&highlighted_blocks=1028011202_375546323_2_0_0&matching_block_id=1028011202_375546323_2_0_0&sr_pri_blocks=1028011202_375546323_2_0_0__120000000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "PLUS VUNG TAU HOTEL",
+                "score": "9,3",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/470306056.jpg?k=b161a4afffee8161bc6241faacbcd5e0bd3b6c96bffd34f494ff1e00226224af&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/470027045.jpg?k=99b0ed967a12d81a0c9a01e5885624a528923e4159fdebeba9b0c7819105e5bc&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/470306634.jpg?k=0fbbdd7d7c0a869056136dbf7900ea9715c91d7f66f93f95b901163f89c5aa44&o=&hp=1"
+                ],
+                "address": "\n28 Phó Đức Chính, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 300 m, PLUS VUNG TAU HOTEL cung cấp chỗ nghỉ với sảnh khách chung, chỗ đỗ xe riêng miễn phí và sân hiên. Khách sạn 3 sao này có dịch vụ phòng, lễ tân 24 giờ và WiFi miễn phí. Chỗ nghỉ có máy ATM, dịch vụ tiền sảnh và dịch vụ thu đổi ngoại tệ cho khách.\n\nPhòng nghỉ tại khách sạn có máy điều hòa, TV truyền hình vệ tinh màn hình phẳng, tủ lạnh, ấm đun nước, vòi xịt/chậu rửa vệ sinh, đồ vệ sinh cá nhân miễn phí và bàn làm việc. Các phòng được trang bị ga trải giường và khăn tắm.\n\nBãi Trước nằm cách PLUS VUNG TAU HOTEL 2,4 km trong khi Bãi Dứa cách đó 2,6 km. Sân bay gần nhất là sân bay Vũng Tàu, cách chỗ nghỉ 5 km.",
+                "review": "Với giá tiền này mà book được phòng khách sạn này rất hời luôn nha. Các anh chị nhân viên nhiệt tình và dễ thương. Phòng sạch sẽ, hiện đại và ấm cúng, khá đẹp và mới, đầy đủ tiện …"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/hoai-thu-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1009803405_373679831_2_0_0&highlighted_blocks=1009803405_373679831_2_0_0&matching_block_id=1009803405_373679831_2_0_0&sr_pri_blocks=1009803405_373679831_2_0_0__58800000&from=searchresults#hotelTmpl",
+                "name": "Hoài Thu Hotel Vũng Tàu",
+                "score": "8,1",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/492053837.jpg?k=e9471c0b081f30bd7ca39aaf32673122adbffc607e388f43f9907ff339f0d3b9&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/486385871.jpg?k=9b3c7f2055f6c07f0cb753d4235175e3db38a015a22818772854e14960f66764&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/486385820.jpg?k=ce21f7ab2e907639aa543075dcafe2d4366688f4f7c8596c2a575018138bd87f&o=&hp=1"
+                ],
+                "address": "\n45/16B Thùy Vân, phường 2, thành phố Vũng Tàu, Bà Rịa - Vũng Tàu, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 200 m và Bãi Dứa 1,8 km, Hoài Thu Hotel Vũng Tàu cung cấp chỗ nghỉ có sân hiên và WiFi miễn phí cũng như chỗ đỗ xe riêng miễn phí cho khách lái xe. Khách sạn 3 sao này có lễ tân 24 giờ. Khách sạn cung cấp các phòng gia đình.\n\nBãi Trước nằm trong bán kính 2,5 km từ khách sạn trong khi Mũi Nghinh Phong cách đó 1,6 km. Sân bay gần nhất là sân bay Vũng Tàu, cách Hoài Thu Hotel Vũng Tàu 6 km.",
+                "review": "\nPhòng sạch sẽ, nhân viên rất dễ thương. Gần biển nên rất tiện ạ\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/the-song-vung-tau-condotel-5-sao-apartment-5-star-luxury-the-song.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1074357701_379989153_2_0_0&highlighted_blocks=1074357701_379989153_2_0_0&matching_block_id=1074357701_379989153_2_0_0&sr_pri_blocks=1074357701_379989153_2_0_0__178200000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "The Song Vung Tau Condotel 5 sao - Apartment 5 Star Luxury The Song",
+                "score": "9,7",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/492210678.jpg?k=1ec15065709de3a328ca09f2877ad5951bbf82726a4b520560762e9268115e3b&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/491922213.jpg?k=f4198d25febc100eedb92701a57165263d23b3fbbea7872ffc78c3375ef9ec72&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/491922211.jpg?k=099ee75be320e8dfa13a68bc804d5097a4b303052239a506302a6245da3f445b&o=&hp=1"
+                ],
+                "address": "\n28 Đường Thi Sách, Vũng Tàu, Việt Nam\n",
+                "description": "Nằm cách Bãi Sau chưa đến 1 km, The Song Vung Tau Condotel 5 sao - Apartment 5 Star Luxury The Song cung cấp chỗ nghỉ gắn máy điều hòa có ban công và WiFi miễn phí. Tại đây có tiện nghi thể thao dưới nước và hồ bơi trên sân thượng. Chỗ nghỉ này cung cấp chỗ đỗ xe riêng ngay trong khuôn viên.\n\nCăn hộ có sân hiên, tầm nhìn ra biển, khu vực ghế ngồi, TV màn hình phẳng, khu vực bếp đầy đủ tiện nghi với lò vi sóng và tủ lạnh cũng như phòng tắm riêng đi kèm buồng tắm đứng cùng dép đi trong phòng. Chỗ nghỉ còn được trang bị bếp nấu ăn, đồ bếp và ấm đun nước.\n\nKhu vực chăm sóc sức khỏe tại The Song Vung Tau Condotel 5 sao - Apartment 5 Star Luxury The Song bao gồm phòng tập thể dục và phòng xông hơi ướt.\n\nChỗ nghỉ có công viên nước và hồ bơi trẻ em và du khách cũng có thể thư giãn trong khu vườn.\n\nThe Song Vung Tau Condotel 5 sao - Apartment 5 Star Luxury The Song nằm cách Công viên Văn hóa và Du lịch sinh thái Hồ Mây 3,7 km và Bạch Dinh 4,1 km. Sân bay gần nhất là sân bay Vũng Tàu, cách căn hộ 3 km.",
+                "review": "\nbãi biển đẹp, hồ bơi căn hộ cũng tuyệt vời, phòng ốc sạch sẽ\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/thuy-trang-vung-tau2.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=8&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1010880301_373782552_2_0_0&highlighted_blocks=1010880301_373782552_2_0_0&matching_block_id=1010880301_373782552_2_0_0&sr_pri_blocks=1010880301_373782552_2_0_0__56700000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Thùy Trang Hotel",
+                "score": "7,5",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/462162579.jpg?k=d4ce80edfdf8d6ec72ee231bff768c04e77b8d4fce01e26a4d9f14a85c869ea8&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/462163236.jpg?k=b04a786b3ffc37202f56b502a10cec1ea05debd052875341819311c2b1fa5024&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/462162800.jpg?k=dc0146dcc0e267501c00fb760d23b3bb2b9dbfbc27b027d99efb58c7c0bf20eb&o=&hp=1"
+                ],
+                "address": "\n31 Phó Đức Chính Phường Thắng Tam, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 300 m và Bãi Trước 2,4 km, Thùy Trang Hotel có chỗ nghỉ với sảnh khách chung cũng như chỗ đỗ xe riêng miễn phí cho khách lái xe. Khách sạn 1 sao này cung cấp dịch vụ phòng, dịch vụ lễ tân 24 giờ, dịch vụ đưa đón sân bay và dịch vụ cho thuê xe đạp.\n\nPhòng nghỉ tại Thùy Trang Hotel có máy điều hòa, tủ để quần áo, TV màn hình phẳng, phòng tắm riêng, ga trải giường, khăn tắm và sân hiên nhìn ra thành phố. Một số phòng được bố trí ban công. Tất cả các phòng đều được trang bị ấm đun nước và tủ lạnh.\n\nBãi Dứa nằm trong bán kính 2,6 km từ chỗ nghỉ trong khi Mũi Nghinh Phong cách đó 2,2 km. Sân bay gần nhất là sân bay Vũng Tàu, cách Thùy Trang Hotel 5 km.",
+                "review": "\nNhận viên nhiệt tình và thân thiện vui vẻ tạo điều kiện hết lòng cho khách hàng\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/can-ho-condotel-5-sao-du-lich-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=9&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=972214201_369641724_2_0_0&highlighted_blocks=972214201_369641724_2_0_0&matching_block_id=972214201_369641724_2_0_0&sr_pri_blocks=972214201_369641724_2_0_0__300000000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Căn hộ Condotel 5 sao The Song Du lịch Vũng Tàu - Apartment 5 Star Luxury The Song Vung Tau",
+                "score": "8,7",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/452291276.jpg?k=941d1f943049707ba3c99bffe92a4a3e56c080f89196c8bd9949ddddc79e56a9&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/452291295.jpg?k=d5ebf62c668b7c3c5be74d9436d7d3d2d53fe2edf53073be5c896f97c9c00e48&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/436278396.jpg?k=02544ddc41edba43db1ebae10710727436aa20bd53596be3085054f20b17feaa&o=&hp=1"
+                ],
+                "address": "\n26 Đường Thi Sách 16, Vũng Tàu, Việt Nam\n",
+                "description": "Nằm cách Bãi Sau 600 m, Căn hộ Condotel 5 sao The Song Du lịch Vũng Tàu - Apartment 5 Star Luxury The Song Vung Tau có khu vực bãi biển riêng, hồ bơi vô cực cũng như chỗ nghỉ gắn máy điều hòa với ban công và WiFi miễn phí.\n\nMỗi căn tại đây đều có sân hiên, khu vực bếp đầy đủ tiện nghi với lò vi sóng, khu vực ghế ngồi, TV màn hình phẳng, máy giặt cũng như phòng tắm riêng đi kèm buồng tắm đứng và dép đi trong phòng. Các căn còn được trang bị tủ lạnh, bếp nấu ăn, đồ bếp và ấm đun nước.\n\nCăn hộ có sân chơi cho trẻ em.\n\nCăn hộ Condotel 5 sao The Song Du lịch Vũng Tàu - Apartment 5 Star Luxury The Song Vung Tau có công viên nước và hồ bơi trẻ em trong khi du khách cũng có thể thư giãn trong vườn.\n\nKhu du lịch sinh thái và văn hóa Hồ Mây nằm cách chỗ nghỉ 3,9 km trong khi Mũi Nghinh Phong cách đó 4,2 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 3 km từ Căn hộ Condotel 5 sao The Song Du lịch Vũng Tàu - Apartment 5 Star Luxury The Song Vung Tau.",
+                "review": "\ncăn hộ gần biển có đầy đủ tiện nghi và còn mới nên sạch sẽ\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/hotle-hoai-anh-thanh-pho-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=10&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=442560104_132368790_2_0_0&highlighted_blocks=442560104_132368790_2_0_0&matching_block_id=442560104_132368790_2_0_0&sr_pri_blocks=442560104_132368790_2_0_0__67500000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Hotel Hoai Anh",
+                "score": "8,6",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/174557443.jpg?k=9aba4d6b4624d1a1e04d23aee472b1ca1700222849d240fc404071c76e4e78d7&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/174557455.jpg?k=6b28946c9ecbdbb9b3beb42a41275cc398528e95ae872c86feb56fd635bf8689&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/175576456.jpg?k=4e699a3f42a47a73de22fe82943518fff0a02b6ff65c92fa42ee5aae5ecbee8d&o=&hp=1"
+                ],
+                "address": "\n81/26F Thuy Van, ward 2, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 300 m, Hotel Hoai Anh có chỗ nghỉ với sảnh khách chung, chỗ đỗ xe riêng miễn phí và sân hiên. Khách sạn 1 sao này cung cấp dịch vụ phòng, dịch vụ tiền sảnh, dịch vụ lễ tân 24 giờ, dịch vụ đưa đón sân bay, bếp chung và WiFi miễn phí.\n\nPhòng nghỉ tại Hotel Hoai Anh được bố trí máy điều hòa, khu vực ghế ngồi, TV truyền hình vệ tinh màn hình phẳng, khu bếp, khu vực ăn uống, ấm đun nước và phòng tắm riêng với đồ vệ sinh cá nhân miễn phí, vòi xịt/chậu rửa vệ sinh cùng vòi sen. Một số phòng có ban công trong khi các phòng còn lại nhìn ra thành phố. Mỗi phòng đều được trang bị ga trải giường và khăn tắm.\n\nCác điểm tham quan nổi tiếng gần chỗ nghỉ bao gồm Mũi Nghinh Phong, Tượng Chúa Kitô Vua và Công viên Thỏ Trắng. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 6 km từ Hotel Hoai Anh.",
+                "review": "\nCô chủ dễ thương,có đi nhầm khách sạn hên cô chủ nhắn tin\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/can-ho-nghi-duong-the-song-vung-tau-36-tang.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=11&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1022004203_374694566_0_0_0&highlighted_blocks=1022004203_374694566_0_0_0&matching_block_id=1022004203_374694566_0_0_0&sr_pri_blocks=1022004203_374694566_0_0_0__197916700&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "The Sóng Vũng Tàu - Ocean Pool",
+                "score": "9,1",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/485298643.jpg?k=6121b2a7a61b2d0d56b1f87c643f818ffeba30368afe48ddccfed72f7565f99e&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/485298647.jpg?k=98c250ff61b344efa23ee0a6f3e6bb8db4355bc7fc4efe7332ac2bd8bd6361fb&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/485298641.jpg?k=a306794f9b6fc568e7d6f24c7ca34c7a03391bfe72647b6921e5c70088b1666c&o=&hp=1"
+                ],
+                "address": "\n28 Đường Thi Sách, Vũng Tàu, Việt Nam\n",
+                "description": "Nằm cách Bãi Sau chưa đến 1 km, Căn Hộ Nghỉ Dưỡng The Sóng Vũng Tàu - Ocean Pool có khu vực bãi biển riêng, tiện nghi thể thao dưới nước cũng như chỗ nghỉ gắn máy điều hòa với sân hiên và WiFi miễn phí. Chỗ nghỉ này cung cấp chỗ đỗ xe riêng ngay trong khuôn viên.\n\nCác căn tại đây có sàn lát gạch, khu vực bếp đầy đủ tiện nghi với lò vi sóng, khu vực ăn uống, TV màn hình phẳng với dịch vụ truyền trực tuyến cũng như phòng tắm riêng với buồng tắm đứng và dép đi trong phòng. Một số căn được bố trí ban công và/hoặc sân trong nhìn ra biển.\n\nKhách nghỉ tại căn hộ có thể sử dụng phòng xông hơi khô, phòng tập thể dục và phòng xông hơi ướt.\n\nCăn Hộ Nghỉ Dưỡng The Sóng Vũng Tàu - Ocean Pool có công viên nước và hồ bơi trẻ em trong khi du khách cũng có thể thư giãn trong vườn.\n\nChỗ nghỉ nằm cách Khu du lịch sinh thái và văn hóa Hồ Mây 3,7 km trong khi Bạch Dinh cách đó 4,1 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 3 km từ Căn Hộ Nghỉ Dưỡng The Sóng Vũng Tàu - Ocean Pool, và chỗ nghỉ cung cấp dịch vụ đưa đón sân bay với một khoản phụ phí.",
+                "review": "\nChỗ nghĩ sạch.. tiện nghi. Giá cả rất hợp lý… sạch sẽ thoáng mát. Lần sau nhất định sẽ ủng hộ.\nCảm ơn a chủ tốt tính nha\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/cen.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=12&hapos=12&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=604014101_278184347_2_0_0&highlighted_blocks=604014101_278184347_2_0_0&matching_block_id=604014101_278184347_2_0_0&sr_pri_blocks=604014101_278184347_2_0_0__104850000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Cen Hotel",
+                "score": "8,8",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/242666738.jpg?k=fb9c48ac61c230ef6d64b431a736c26418e26701b7c04db5dfb191a7fa542118&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/242666904.jpg?k=ddfea61ab5d135304f2abf982da442279c774f0e0e912809dbf86a8059dfb89e&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/242684038.jpg?k=50870d39129f02e57cb8ca8b8bb8e8bb0800f3667b32b6d37c1918faac29d6a9&o=&hp=1"
+                ],
+                "address": "\n74A Vo Thi Sau, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau chưa đầy 1 km, Cen Hotel cung cấp chỗ nghỉ với sảnh khách chung, chỗ đỗ xe riêng miễn phí và quầy bar. Khách sạn 2 sao này có dịch vụ tiền sảnh và bàn đặt tour. Chỗ nghỉ cung cấp dịch vụ lễ tân 24 giờ, dịch vụ đưa đón sân bay, dịch vụ phòng và WiFi miễn phí trong toàn bộ khuôn viên.\n\nMỗi phòng nghỉ tại Cen Hotel đều có máy điều hòa, bàn làm việc, phòng tắm riêng, TV màn hình phẳng, ga trải giường, khăn tắm và sân hiên nhìn ra quang cảnh thành phố. Một số phòng nhìn ra quang cảnh biển. Các phòng được bố trí ban công và tủ lạnh.\n\nKhu vực này nổi tiếng với các hoạt động đi bộ đường dài và đi xe đạp trong khi du khách có thể thuê xe đạp tại khách sạn 2 sao này.\n\nChỗ nghỉ nằm cách Bãi Trước 1,8 km và Bãi Dứa 2,7 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 5 km từ Cen Hotel.",
+                "review": "Phòng ốc sạch sẽ, đẹp, rất tiện nghi, trang trí rất đẹp, vị trí thuận lợi, dịch vụ tốt, ko gian thoáng mát, tận dụng ánh sáng rất tốt\nLần đầu ở tại Cen và lần đầu đặt qua booking mình …"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/annata.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=13&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=500350710_358389322_2_2_0&highlighted_blocks=500350710_358389322_2_2_0&matching_block_id=500350710_358389322_2_2_0&sr_pri_blocks=500350710_358389322_2_2_0__157950000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Annata Beach Hotel",
+                "score": "8,5",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/345769490.jpg?k=9b3d3b9d5f19331ee2298c7091ce02a200538423e11a96ded2a8f4e64c0fc808&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/492730634.jpg?k=981eb1a0e87e5ee74a15ae24831884ceda36650f817a3cea81f05c5edfc31ee6&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/345769524.jpg?k=518f3068da947c1f150c6b0a2cbca82f458a1fecfa08560317b183198dfa3a5d&o=&hp=1"
+                ],
+                "address": "\n165 Thuy Van, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 200 m, Annata Beach Hotel cung cấp chỗ nghỉ với khu vườn, chỗ đỗ xe riêng miễn phí, sảnh khách chung và sân hiên. Khách sạn 3 sao này có WiFi miễn phí, bếp chung và dịch vụ phòng. Chỗ nghỉ cung cấp dịch vụ lễ tân 24 giờ, dịch vụ tiền sảnh và tổ chức các tour du lịch cho khách.\n\nPhòng nghỉ tại Annata Beach Hotel được trang bị máy điều hòa, TV truyền hình cáp màn hình phẳng, tủ lạnh, ấm đun nước, vòi xịt/chậu rửa vệ sinh, đồ vệ sinh cá nhân miễn phí và bàn làm việc. Các phòng còn có tầm nhìn ra thành phố và phòng tắm riêng với vòi sen cùng máy sấy tóc. Mỗi phòng đều được bố trí ga trải giường và khăn tắm.\n\nKhách lưu trú tại chỗ nghỉ có thể thưởng thức bữa sáng kiểu Á.\n\nAnnata Beach Hotel nằm cách Mũi Nghinh Phong 3,6 km trong khi Khu du lịch sinh thái và văn hóa Hồ Mây cách đó 4,5 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 3 km từ khách sạn.",
+                "review": "\nTất cả tuyệt vời. Nhân viên từ lễ tân, phục vụ, bếp đều rất nhiệt tình, thân thiện\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/hai-duong-2-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=14&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=982375301_0_2_0_0&highlighted_blocks=982375301_0_2_0_0&matching_block_id=982375301_0_2_0_0&sr_pri_blocks=982375301_0_2_0_0__48999800&from=searchresults#hotelTmpl",
+                "name": "Hai Duong 2",
+                "score": "7,2",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/462813032.jpg?k=018999c9aa9990c7a087930c329e9a487aa06868d132796a6dd57044b02cbbd0&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/462814834.jpg?k=593eb8d48a13db0a3796da9df4777d7e2e72760e8637e7830ad13aeeb38a4c25&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/462815781.jpg?k=98e7b67941ad4d40b22c83ef2a1b7be524dd84031b4ebc2700cc393cfd65259d&o=&hp=1"
+                ],
+                "address": "\n23 Phan Văn Trị 23 Phan Văn Trị, Phường Thắng Tam, Tp Vũng Tàu, Vũng Tàu, Việt Nam\n",
+                "description": "Hai Duong 2 tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 300 m và Bãi Trước 2,4 km. Khách sạn 2 sao này cung cấp phòng nghỉ gắn máy điều hòa, WiFi miễn phí, dịch vụ phòng và dịch vụ lễ tân 24 giờ. Chỗ nghỉ này cấm hút thuốc.\n\nPhòng nghỉ tại Hai Duong 2 được trang bị TV truyền hình vệ tinh màn hình phẳng và phòng tắm riêng với vòi xịt/chậu rửa vệ sinh, đồ vệ sinh cá nhân miễn phí cùng dép. Mỗi phòng đều được trang bị ga trải giường và khăn tắm.\n\nBãi Dứa nằm cách chỗ nghỉ 2,6 km trong khi Mũi Nghinh Phong cách đó 2,2 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 5 km từ Hai Duong 2.",
+                "review": null
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/can-ho-the-song-vung-tau-vung-tau4.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=15&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=888638203_358807446_5_42_0&highlighted_blocks=888638203_358807446_5_42_0&matching_block_id=888638203_358807446_5_42_0&sr_pri_blocks=888638203_358807446_5_42_0__135000000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "The Song Vung Tau Apartment",
+                "score": "8,1",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/382768793.jpg?k=8726b7530500c9dc6d87842257ea4c576ef6f74bfd423c6c3fd1007dd959818c&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/482493258.jpg?k=cd2295387b37c3b6ab41fa3313dbf6a46b3239cf16ac93285c97d8c8cf9e32d0&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/388539034.jpg?k=ba3180bbe3b74fd9ea82d6313a1c62363f3fc5b228ad966645eca2d4ebd1076a&o=&hp=1"
+                ],
+                "address": "\n28 Đường Thi Sách, Vũng Tàu, Việt Nam\n",
+                "description": "Nằm cách Bãi Sau chưa đầy 1 km, The Song Vung Tau Apartment có tiện nghi thể thao dưới nước, hồ bơi trên sân thượng cũng như chỗ nghỉ gắn máy điều hòa với ban công và WiFi miễn phí. Trong khuôn viên chỗ nghỉ này có công viên nước và nhà hàng.\n\nCăn hộ có sân hiên, tầm nhìn ra sân trong, khu vực ghế ngồi và được trang bị TV truyền hình vệ tinh màn hình phẳng, khu vực bếp đầy đủ tiện nghi với tủ lạnh cùng bếp nấu ăn và phòng tắm riêng đi kèm buồng tắm đứng và máy sấy tóc. Mỗi căn đều được bố trí sân trong nhìn ra quang cảnh đường phố yên tĩnh.\n\nThe Song Vung Tau Apartment phục vụ bữa sáng à la carte hoặc bữa sáng kiểu Á.\n\nKhách lưu trú tại chỗ nghỉ được thoải mái sử dụng phòng xông hơi khô, bể sục và phòng tập thể dục.\n\nKhách nghỉ tại The Song Vung Tau Apartment có thể chơi bóng bàn ngay trong khuôn viên hoặc đi bộ đường dài trong khu vực xung quanh.\n\nKhu du lịch sinh thái và văn hóa Hồ Mây nằm cách căn hộ 3,8 km trong khi Bạch Dinh cách đó 4,1 km. Sân bay gần nhất là sân bay Vũng Tàu, cách The Song Vung Tau Apartment 3 km.",
+                "review": "\nPhòng sạch sẽ, nhân viên dễ thương. Trên cả sự mong đợi của mình\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/the-ruong-resort-vung-tau1.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=16&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1066242403_379132858_2_1_0&highlighted_blocks=1066242403_379132858_2_1_0&matching_block_id=1066242403_379132858_2_1_0&sr_pri_blocks=1066242403_379132858_2_1_0__227850000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "The Ruong Resort",
+                "score": "8,8",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/489140097.jpg?k=b0ce282b4954fb0da03855f1e45d15c259dbe0679a9532a346340f7cf05fcb6e&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/489373834.jpg?k=564014c28fe3bad2d981061acb24c57316b7e0c73c2251b1af1b5cb6d0ac0062&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/487297878.jpg?k=56b827d1ba1aa638d49436e2a34e3329da7c20b2ff094d87c0fbc03a0df71229&o=&hp=1"
+                ],
+                "address": "\nTổ 5, ấp Xóm Rẫy, xã Phước Thuận, Xuyen Moc, Vũng Tàu, Việt Nam\n",
+                "description": "Situated in Vung Tau, 50 km from Platform of Shakyamuni Buddha, The Ruong Resort features accommodation with an outdoor swimming pool, free private parking, a garden and a shared lounge. Among the facilities of this property are a restaurant, room service and a 24-hour front desk, along with free WiFi throughout the property. The resort has family rooms.\n\nAt the resort the rooms include air conditioning, a desk, a flat-screen TV, a private bathroom, bed linen, towels and a balcony with a garden view. All rooms will provide guests with a fridge.\n\nAn à la carte breakfast is available each morning at The Ruong Resort.\n\nLong Tan Cross is 21 km from the accommodation. The nearest airport is Vung Tau Airport, 45 km from The Ruong Resort.",
+                "review": "\nsạch sẽ, yên tĩnh, chủ cho thuê hỗ trợ tối đa và nhiệt tình vui vẻ\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/gold-thanh-pho-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=17&hapos=17&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=443882101_222041036_2_0_0&highlighted_blocks=443882101_222041036_2_0_0&matching_block_id=443882101_222041036_2_0_0&sr_pri_blocks=443882101_222041036_2_0_0__59400000&from=searchresults#hotelTmpl",
+                "name": "GOLD HOTEL",
+                "score": "8,5",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/423074280.jpg?k=525ffc784ac478a253d2c3f3a2d91e91da18693b8c5bd59c2c1042b762a16161&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/175024840.jpg?k=a079461c198c2bd7d929c1a68266e02b08b6948bf187a4f13551fedbe6e45d6c&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/175025305.jpg?k=5bcb4d9c998659e2d31aab79aacf33f52b821846f017a4e16a8f45560cbd18aa&o=&hp=1"
+                ],
+                "address": "\n81/26E Thùy Vân - Phường 2 - TP Vũng Tàu, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 300 m, GOLD HOTEL cung cấp chỗ nghỉ với sảnh khách chung, chỗ đỗ xe riêng miễn phí và sân hiên. Khách sạn này nằm trong bán kính khoảng 2,1 km từ Bãi Dứa và 2,3 km từ Bãi Trước. Chỗ nghỉ có WiFi miễn phí, bếp chung và dịch vụ phòng cho khách.\n\nTất cả phòng nghỉ tại khách sạn đều được trang bị máy điều hòa, TV truyền hình cáp màn hình phẳng, tủ lạnh, ấm đun nước, vòi xịt/chậu rửa vệ sinh, đồ vệ sinh cá nhân miễn phí và bàn làm việc. Các phòng được bố trí ga trải giường, khăn tắm và phòng tắm riêng với vòi sen. Một số phòng có ban công trong khi các phòng còn lại nhìn ra quang cảnh thành phố. \n\nLễ tân tại GOLD HOTEL có thể tư vấn về khu vực cho du khách.\n\nCác điểm tham quan nổi tiếng gần chỗ nghỉ bao gồm Mũi Nghinh Phong, Tượng Chúa Kitô Vua và Công viên Thỏ Trắng. Sân bay gần nhất là sân bay Vũng Tàu, cách GOLD HOTEL 6 km.",
+                "review": "\nChủ thân thiên\nChỗ ở sạch sẽ an toàn\nCó chỗ để ô tô thuận tiện\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/seasala-vt.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=18&hapos=18&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=893186301_359650814_2_0_0&highlighted_blocks=893186301_359650814_2_0_0&matching_block_id=893186301_359650814_2_0_0&sr_pri_blocks=893186301_359650814_2_0_0__63000000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "SeaSala Beach Hotel",
+                "score": "8,0",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/401789023.jpg?k=89863cf32b68eb50751eb62542e838197a42ea6872cddb30ad75c649e8040194&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/401789101.jpg?k=9c6d342d1c00ecde7f9337b3387d03ba66b98c1ea131b58d2d8e025cf68cb74f&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/401788933.jpg?k=fddb20f8f496cbb7fac5d7e1052de0086b1c854762d76170f10d351a7c840b30&o=&hp=1"
+                ],
+                "address": "\n19/1A Hồ Quý Ly, Vũng Tàu, Việt Nam\n",
+                "description": "Quay mặt ra biển ở thành phố Vũng Tàu, SeaSala VT Hotel cung cấp chỗ nghỉ 2 sao và có sảnh khách chung cũng như sân hiên. Khách sạn 2 sao này cung cấp dịch vụ phòng, dịch vụ lễ tân 24 giờ và WiFi miễn phí. Chỗ nghỉ cấm hút thuốc và nằm cách Bãi Sau 500 m.\n\nPhòng nghỉ tại khách sạn có máy điều hòa, TV truyền hình cáp màn hình phẳng, tủ lạnh, ấm đun nước, vòi xịt/chậu rửa vệ sinh, đồ vệ sinh cá nhân miễn phí và tủ để quần áo. Mỗi phòng đều được trang bị ga trải giường và khăn tắm.\n\nSeaSala VT Hotel nằm cách Bãi Trước 2,4 km và Bãi Dứa 2,8 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 5 km từ chỗ nghỉ.",
+                "review": "\nNhân viên nhiệt tình thân thiện, phòng ốc sạch sẽ, gần biển. Giá cả hợp lí. Sẽ quay lại vào lần tới khi xuống vũng tàu.\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/dewi.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=19&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=203285401_0_2_0_0&highlighted_blocks=203285401_0_2_0_0&matching_block_id=203285401_0_2_0_0&sr_pri_blocks=203285401_0_2_0_0__56072688&from=searchresults#hotelTmpl",
+                "name": "SeaSala Hotel",
+                "score": "7,7",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/103909494.jpg?k=8005e6367e0f0117d7c4db9ad7b8b02e4392223ed3ee50c88762b39255c9d7b4&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/103909121.jpg?k=1da97efde52370b374153135d99279325637e17cca13e7372e010bd769c51cd4&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/103909829.jpg?k=ff403ead19b20a53f4d1e81ee4604f0918ed96173da79edf2bcaaa429fd754ca&o=&hp=1"
+                ],
+                "address": "\n47 La Van Cau, Thang Tam Ward, Vũng Tàu, Việt Nam\n",
+                "description": "SeaSala Hotel cung cấp chỗ nghỉ tại thành phố Vũng Tàu, cách Bãi Sau 2 phút đi bộ.\n\nCác phòng nghỉ tại đây có TV và phòng tắm riêng với vòi sen, dép cùng đồ vệ sinh cá nhân miễn phí tạo sự thoải mái cho khách. SeaSala Hotel cung cấp Wi-Fi miễn phí trong toàn bộ khuôn viên.\n\nTại đây cũng có lễ tân hoạt động 24 giờ.\n\nKhách sạn cách Tượng Chúa Kitô Vua 1,4 km, trung tâm mua sắm Lam Sơn Square 2 km và sân bay quốc tế Tân Sơn Nhất 72 km.",
+                "review": "\nphòng sạch sẽ, tiện nghi và chu đáo, chị tiếp tân rất cute luôn\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/melody-homestay-vung-tau-vung-tau3.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=1069559002_379797754_3_0_0&highlighted_blocks=1069559002_379797754_3_0_0&matching_block_id=1069559002_379797754_3_0_0&sr_pri_blocks=1069559002_379797754_3_0_0__153000000&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Căn Hộ Melody Vũng Tàu - Anni Homestay",
+                "score": "10",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/489027208.jpg?k=324860d915ef18193e8333712a18e5fdd6e254a20c1da647807be0af06a8fe2f&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/488893291.jpg?k=e4d239a9dd4bc3b88982e3bc21878fed3d9c9c0e8dd1fb617fc714e7f7e8a815&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/488894004.jpg?k=8c097369d85068d73cd7d7186a3ca58ac397d24aab28a5cd77a962545f57cad5&o=&hp=1"
+                ],
+                "address": "\n149 Võ Thị Sáu, Vũng Tàu, Việt Nam\n",
+                "description": "Located less than 1 km from Back Beach, Căn Hộ Melody Vũng Tàu - Anni Homestay offers a bar, a shared lounge and air-conditioned accommodation with a balcony and free WiFi.\n\nThe apartment provides guests with a terrace, sea views, a seating area, cable flat-screen TV, a fully equipped kitchen with an oven and a microwave, and a private bathroom with walk-in shower and bathrobes. A fridge, a stovetop and kitchenware are also provided, as well as a coffee machine and a kettle.\n\nCăn Hộ Melody Vũng Tàu - Anni Homestay offers a children's playground.\n\nBoth a bicycle rental service and a car rental service are available at the accommodation.\n\nFront Beach is 1.7 km from Căn Hộ Melody Vũng Tàu - Anni Homestay, while Pineapple Beach is 2.7 km away. The nearest airport is Vung Tau Airport, 5 km from the apartment.",
+                "review": "\nGần trung tâm, đi tắm biển tiện gần, chủ nhà nhiệt tình, căn hộ đầy đủ tiện nghi...good\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/marine.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=21&hapos=21&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=452378609_0_2_0_0&highlighted_blocks=452378609_0_2_0_0&matching_block_id=452378609_0_2_0_0&sr_pri_blocks=452378609_0_2_0_0__42267189&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "Marine Hotel & Apartment",
+                "score": "8,7",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/342692011.jpg?k=9e86ab0f01c02b71a60fa4a73d32cfa0a3ee15871fc598e51c4e864d53c31970&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/210965491.jpg?k=d42a6b6b22077251da6e93ffce5c85f73a4dd0a1481121acc83b77134bfdda1f&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/219879828.jpg?k=8583eae37215e61c1f86c2ca3202407b6cad0e3f43cca1d084e67567e8dba240&o=&hp=1"
+                ],
+                "address": "\n9 Luong Van Can Street, Ward 2, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Trước 800 m và Bãi Dứa 1,1 km, Marine Hotel & Apartment cung cấp chỗ nghỉ với sảnh khách chung và WiFi miễn phí trong toàn bộ khuôn viên cũng như chỗ đỗ xe riêng miễn phí cho khách lái xe. Chỗ nghỉ này có các phòng gia đình và sân hiên. Nơi đây cung cấp dịch vụ lễ tân 24 giờ, dịch vụ phòng và phòng giữ hành lý cho khách.\n\nPhòng nghỉ tại đây được trang bị máy điều hòa, TV truyền hình cáp màn hình phẳng, tủ lạnh, ấm đun nước, vòi xịt/chậu rửa vệ sinh, dép và tủ để quần áo. Một số phòng còn có khu vực bếp ăn với lò vi sóng và bếp nấu.\n\nCác điểm tham quan nổi tiếng gần khách sạn bao gồm Bãi Sau, Tượng Chúa Kitô Vua và Bến tàu Cánh ngầm. Sân bay gần nhất là sân bay quốc tế Tân Sơn Nhất, nằm trong bán kính 109 km từ Marine Hotel & Apartment, và chỗ nghỉ cung cấp dịch vụ đưa đón sân bay với một khoản phụ phí.",
+                "review": "\nVới giá 278K mà được phòng giường đôi , phòng rộng rãi thoáng mát , đầy đủ tiện nghi ,  đặc biệt cực kì sạch sẽ , ga gối tinh tươm , rất ưng , lần sau sẽ quay lại\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/rio-apartment-thanh-pho-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=22&hapos=22&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=308670307_0_2_0_0&highlighted_blocks=308670307_0_2_0_0&matching_block_id=308670307_0_2_0_0&sr_pri_blocks=308670307_0_2_0_0__49048411&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "RIO Hotel and Apartment",
+                "score": "8,3",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/278946331.jpg?k=a13d17a106029e11c1add6ecaf481c2493ac033f11d9ea08f9536ad747cd99ec&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/242924503.jpg?k=fb7f8d10af57f7cab8b99f124da3db7dd9f0a7eacaa9fc0661170dd425140a15&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/254433591.jpg?k=8ca3f9c39a54ac6c333010d0e97b7f950ef8fa4e9638165e4245110307cb912a&o=&hp=1"
+                ],
+                "address": "\n39 Phan Huy Ích, Phường 2, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau chưa đến 1 km, RIO Hotel and Apartment cung cấp chỗ nghỉ với sảnh khách chung, chỗ đỗ xe riêng miễn phí, khu vườn và sân hiên. Khách sạn 2 sao này còn có dịch vụ phòng, máy ATM và WiFi miễn phí. Chỗ nghỉ có lễ tân 24 giờ, bếp chung và dịch vụ thu đổi ngoại tệ cho khách.\n\nMỗi phòng nghỉ tại RIO Hotel and Apartment đều được trang bị bàn làm việc, TV màn hình phẳng, phòng tắm riêng, ga trải giường và khăn tắm. Một số phòng có ban công. Các phòng được bố trí máy điều hòa và minibar.\n\nCác điểm tham quan nổi tiếng gần chỗ nghỉ bao gồm Bãi Trước, Bãi Dứa và Tượng Chúa Kitô Vua. Sân bay gần nhất là sân bay quốc tế Tân Sơn Nhất, nằm trong bán kính 109 km từ RIO Hotel and Apartment.",
+                "review": "\nNhân viên lịch sự, dễ chịu, ân cần, chu đáo.\nGiá phòng bình dân, tiện nghi đầy đủ, nước nóng lạnh.\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/ruby-vung-tau1.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=23&hapos=23&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=292151823_0_2_0_0&highlighted_blocks=292151823_0_2_0_0&matching_block_id=292151823_0_2_0_0&sr_pri_blocks=292151823_0_2_0_0__55853939&from_sustainable_property_sr=1&from=searchresults#hotelTmpl",
+                "name": "OYO 159 Ruby Hotel",
+                "score": "7,1",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344214633.jpg?k=0efeec17c828a62cea8a409817784de00c73f681aa14a7f47ec469713999e5b1&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/344214626.jpg?k=7b063d380c7defff19b4f1262bebc0caa5526c1b40ee8c1b0afce0b8c1c19f10&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/344215367.jpg?k=c6ed4ae0a293e2525f0a87f88f14098e50d6f3a01c6d0098e5d5ecfb620c04a1&o=&hp=1"
+                ],
+                "address": "\n53 La Van Cau, Thang Tam Ward, Phuong Thang Tam, 790000 Vũng Tàu, Việt Nam\n",
+                "description": "OYO 159 Ruby Hotel cung cấp chỗ nghỉ 2 sao tại thành phố Vũng Tàu, cách Bãi Sau 400 m và Bãi Trước 2,4 km. Khách sạn 2 sao này có sảnh khách chung và phòng nghỉ gắn máy điều hòa với WiFi miễn phí cùng phòng tắm riêng. Chỗ nghỉ cung cấp chỗ đỗ xe riêng miễn phí và dịch vụ đưa đón sân bay với một khoản phụ phí.\n\nPhòng nghỉ tại OYO 159 Ruby Hotel được trang bị bàn làm việc, TV màn hình phẳng và tủ để quần áo. Một số phòng nhìn ra thành phố. \n\nĐội ngũ nhân viên nói tiếng Anh và tiếng Việt tại lễ tân luôn sẵn sàng hỗ trợ khách suốt 24 giờ.\n\nChỗ nghỉ nằm cách Bãi Dứa 2,8 km và Mũi Nghinh Phong 2,4 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 5 km từ OYO 159 Ruby Hotel.",
+                "review": null
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/duc-trong-thanh-pho-vung-tau.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=24&hapos=24&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=725007401_310303462_2_0_0&highlighted_blocks=725007401_310303462_2_0_0&matching_block_id=725007401_310303462_2_0_0&sr_pri_blocks=725007401_310303462_2_0_0__54675000&from=searchresults#hotelTmpl",
+                "name": "Đức Trọng Hotel",
+                "score": "7,8",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/337385424.jpg?k=5695f8f87147fa025fa0518a04292df0bb7db8faa0694317959908a3a10af8d9&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/337383531.jpg?k=7431fe2490237db6bc44aa9d64ba53e46359ab4117d39d84e141e184471b504a&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/337385431.jpg?k=583308e2683232bda3289bf1830107de5638b94d559533796e587530591fc050&o=&hp=1"
+                ],
+                "address": "\n 81/26G Thùy Vân, phường 2, Tp.Vũng Tàu, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, cách Bãi Sau 300 m, Đức Trọng Hotel cung cấp chỗ nghỉ với sảnh khách chung, chỗ đỗ xe riêng miễn phí và sân hiên. Khách sạn nằm cách Bãi Dứa khoảng 2,1 km và Bãi Sau 2,3 km đồng thời cung cấp Wi-Fi miễn phí. Chỗ nghỉ có lễ tân 24 giờ, bếp chung và phòng giữ hành lý.\n\nPhòng nghỉ tại khách sạn được trang bị bàn làm việc. Phòng tắm riêng có vòi sen và đồ vệ sinh cá nhân miễn phí. Tất cả các phòng nghỉ tại Đức Trọng Hotel đều được trang bị TV màn hình phẳng và máy điều hòa, một số phòng còn đi kèm ban công. Tất cả các phòng đều đi kèm ga trải giường và khăn tắm.\n\nCác điểm tham quan nổi tiếng gần Đức Trọng Hotel bao gồm Mũi Nghinh Phong, Tượng Chúa Kitô Vua và Công viên Thỏ Trắng. Sân bay gần nhất là sân bay Vũng Tàu, cách khách sạn 6 km.",
+                "review": "\nChỗ nghỉ nằm gần biển, gần những điểm du lịch khác, nhiều đồ ăn thức uống\nChủ khách sạn vui vẻ dễ chịu, hỗ trợ khách nhiệt tình khi khách cần cũng cấp thêm 1 số dịch vụ khác\n"
+            },
+            {
+                "link": "https://www.booking.com/hotel/vn/minh-quan-vung-tau1234567.vi.html?label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKfjd-oBsACAdICJDNjNTI0OTY2LTRiOTItNDY3Ni1hZDY0LTA2YmJhMTdjN2Y4ZNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&checkin=2023-10-16&checkout=2023-10-19&dest_id=-3733750&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=25&sr_order=popularity&srpvid=11d94fb8828d00da&srepoch=1696159219&all_sr_blocks=831123508_351503924_2_0_0&highlighted_blocks=831123508_351503924_2_0_0&matching_block_id=831123508_351503924_2_0_0&sr_pri_blocks=831123508_351503924_2_0_0__78000000&from=searchresults#hotelTmpl",
+                "name": "Minh Quân hotel",
+                "score": "8,7",
+                "mainImages": [
+                    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/379959044.jpg?k=865af1fba279e506da7e788fc51b1e00d7fdbf3c42e8738d8fc7c1c39c688772&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/364640603.jpg?k=4b5b2c6320ef56d65153854bbe65536484ce1537019d850cff0f55ef2fc051e4&o=&hp=1",
+                    "https://cf.bstatic.com/xdata/images/hotel/max500/346578207.jpg?k=6275c24ff6c451c42486c9037205e154d05b9dd638cfc3463aa31bc273a8e1bb&o=&hp=1"
+                ],
+                "address": "\nA17 Đường Phan Huy Ích, Vũng Tàu, Việt Nam\n",
+                "description": "Tọa lạc tại thành phố Vũng Tàu, gần Bãi Sau và Bãi Trước, Minh Quân hotel cung cấp chỗ nghỉ với chỗ đỗ xe riêng miễn phí.\n\nCác điểm tham quan nổi tiếng gần nhà nghỉ B&B này bao gồm Bãi Dứa, Ngọn hải đăng Vũng Tàu và Tượng Chúa Kitô Vua. Sân bay gần nhất là sân bay quốc tế Tân Sơn Nhất, cách Minh Quân hotel 71 km.",
+                "review": "\nChị chủ rất là dễ thương, phòng như hình, sạch sẽ, khá gần các địa điểm vui chơi\n"
+            }
+        ]
+    }
+]

@@ -99,8 +99,8 @@ const scrape = async () => {
                 // continue;
             }
 
+            let bo3images = [];
             try {
-                let bo3images = [];
                 for (let i = 3; i <= 5; i++) {
                     const imageHandle = await page.waitForSelector(`#hotel_main_content > div > div > div.clearfix.bh-photo-grid.fix-score-hover-opacity > div:nth-child(${i}) > a > img`);
                     const imageSrc = await imageHandle.evaluate(el => el.getAttribute("src"));;
@@ -157,7 +157,7 @@ const scrape = async () => {
     // console.log(urls[0]);
     let data = [];
     // let hotels = await getHotelsInUrl(urls[1]);
-    for(let i = 0; i < urls.length; i++) {
+    for(let i = 0; i < urls.length - 1; i++) {
         let hotels = await getHotelsInUrl(urls[i]);
         let places = {
             city: urls[i].city,
@@ -173,9 +173,7 @@ const scrape = async () => {
         console.log('complete');
     }
     );
-
-    console.log(hotels);
-
+    // console.log(hotels);
 };
 
 scrape();
