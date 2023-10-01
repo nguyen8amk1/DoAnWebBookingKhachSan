@@ -1,12 +1,10 @@
 TODAY: 
-    Connect front-end and back-end with a simple message: (2h) [] @Current 
-        “Hello Backend” from React front-end
-        “Hello React” from Express back-end
+    Scraping data (4h) [] @Current 
 
 TODO: 
-    Wrap the development environment in Docker (4h) [] 
-    Learn how Sequence Diagram works (1h) [] 
-    Understand Sequelize (2h) [] 
+    Learn how Sequence Diagram works (1h) [] @Next
+    Wrap the development environment in Docker (4h) [] @Maybe
+    Understand Sequelize (2h) [] @Later 
 
     <insert a Sequence Diagram for clearer> (2h)
     -> How the API flow gonna works: 
@@ -26,10 +24,12 @@ TODO:
                 -> Connection port 
             -> Node version
 
-        
-    Scraping data (4h) []
 
 DONE:  
+    Connect front-end and back-end with a simple message: (2h) [X] 
+        “Hello Backend” from React front-end
+        “Hello React” from Express back-end
+
     Wrap the development environment in Docker (4h) @Later
         -> learn how Docker works 
             -> Can use bind mount to mount the source code to local dev environment 

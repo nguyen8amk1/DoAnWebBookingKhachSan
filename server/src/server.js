@@ -3,9 +3,12 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import connectDB from './config/connectDB.js';
 
+
 import 'dotenv/config.js';
 
 const app = express();
+const cors = require('cors')
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
