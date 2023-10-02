@@ -157,7 +157,7 @@ const scrape = async () => {
     // console.log(urls[0]);
     let data = [];
     // let hotels = await getHotelsInUrl(urls[1]);
-    for(let i = 0; i < urls.length - 1; i++) {
+    for(let i = 0; i < urls.length; i++) {
         let hotels = await getHotelsInUrl(urls[i]);
         let places = {
             city: urls[i].city,
