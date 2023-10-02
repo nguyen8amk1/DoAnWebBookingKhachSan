@@ -1,0 +1,18 @@
+services:
+  server:
+    build: ./server
+    container_name: server
+    command: npm start 
+    ports: 
+      - 8080:8080
+    volumes: 
+      - ./server:/server
+
+  # client: 
+  #   build: ./client
+  #   container_name: client
+    # command: npm start 
+  #   ports: 
+  #     - 3000:3000
+  #   volumes: 
+  #     - .:/client
