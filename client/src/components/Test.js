@@ -1,5 +1,5 @@
-import axios from 'axios';
 import React from 'react'
+import { getDitme, postDitme } from '../api/TestApi';
 
 class Test extends React.Component {
     state = {
@@ -10,15 +10,11 @@ class Test extends React.Component {
         // console.log(result);
 
     async componentDidMount() {
-        const response = await axios.get('http://127.0.0.1:8080/ditme');
-        console.log(response.data);
-        this.setState({ditme: response.data});
+        const ditme = await getDitme();
+        console.log(ditme);
+        this.setState({ditme: ditme});
 
-        await axios.post('http://127.0.0.1:8080/post-crud', {
-            message: "ditmeserver"
-        });
-
-
+        await postDitme("ditmeserver");
         console.log(this.state.ditme);
     }
 
