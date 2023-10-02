@@ -6,7 +6,7 @@ const config = require(__dirname + '/../config/config.json')[env];
 
 const sequelize = new Sequelize('test-db', 'user', 'pass', {
   dialect: 'sqlite',
-  host: '../sqliteTestDB/dev.sqlite'
+  host: './sqliteTestDB/dev.sqlite'
 })
 
 
