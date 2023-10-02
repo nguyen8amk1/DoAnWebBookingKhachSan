@@ -44,7 +44,10 @@ Prerequisites Information:
 
         *client: (Lap/Nghia/Nguyen)
             + src:
-            + public: 
+                + api (Nghia/Nguyen)
+                + components (Lap/Nghia/Nguyen)
+                + style (Lap)
+            + public: (Lap)
                 contains resources files (ex: images, sound files, ...)
 
 
