@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './style/App.scss';
-import Test from './components/Test';
-import MapComponentTest from './components/MapComponentTest';
+import Test from './components/TestAPICalls';
+import MapComponentTest from './components/TestMapComponent';
 
 function App() {
   return (
