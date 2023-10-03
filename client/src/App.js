@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './style/App.scss';
 import Test from './components/Test';
+import MapComponentTest from './components/MapComponentTest';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <Test/>
+          <MapComponentTest/>
         </p>
         <a
           className="App-link"
