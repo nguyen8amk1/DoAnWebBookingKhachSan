@@ -15,6 +15,9 @@ module.exports = {
                 primaryKey: true,
                 type: Sequelize.INTEGER
             },
+            prices: {
+                type: Sequelize.STRING
+            },
             status: {
                 type: Sequelize.STRING
             },

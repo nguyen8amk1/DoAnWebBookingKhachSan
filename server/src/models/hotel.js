@@ -11,6 +11,16 @@ module.exports = (sequelize, DataTypes) => {
          */
         static associate(models) {
             // define association here
+            // Hotel.BelongsTo(models.City, { foreignKey: 'cityID' })
+            Hotel.hasMany(models.Room, {
+                onDelete: 'CASCADE'
+            });
+            Hotel.belongsTo(models.City, {
+                foreignKey: {
+                    allowNull: false
+                },
+                onDelete: 'CASCADE',
+            })
         }
     }
     Hotel.init({
@@ -20,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
         images: DataTypes.STRING,
         score: DataTypes.STRING,
         review: DataTypes.STRING,
+        // cityID: DataTypes.INTEGER,
     }, {
         sequelize,
         modelName: 'Hotel',
