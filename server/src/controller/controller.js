@@ -17,8 +17,46 @@ const postCrud = async (req, res) => {
     // return res.render('crud.ejs');
 }
 
+const searchForPlaces = async (req, res) => {
+    // Return format: 
+        // Name  
+        // Price 
+        // Score 
+        // Images 
+
+    const testData = {
+        name: '',
+        price: '',
+        score: '',
+        images: ''
+    };
+
+    return res.send(testData);
+}
+
+const getHotelDetails = async (req, res) => {
+    // Return format: 
+        // Name  
+        // Price 
+        // Score 
+        // Images 
+
+    const testData = {
+        name: '',
+        price: '',
+        score: '',
+        images: [
+            "" 
+        ]
+    };
+
+    return res.send(testData);
+}
+
 export default {
     getHomePage: getHomePage,    
     getCrud: getCrud,
-    postCrud: postCrud
+    postCrud: postCrud, 
+    searchForPlaces: searchForPlaces,
+    getHotelDetails: getHotelDetails
 };
