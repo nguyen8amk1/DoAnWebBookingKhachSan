@@ -16,7 +16,7 @@ module.exports = {
                 type: Sequelize.INTEGER
             },
             status: {
-                type: Sequelize.BOOLEAN
+                type: Sequelize.STRING
             },
             adultCount: {
                 type: Sequelize.STRING
