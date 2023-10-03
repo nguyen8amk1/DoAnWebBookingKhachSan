@@ -1,31 +1,34 @@
 TODAY: 
-    Scraping data (4h) [] @Current 
-
+    API stub:     
+        Search for hotels (1h) [] @Current 
+        Return hotel details (1h) [] 
+    
 TODO: 
     Learn how Sequence Diagram works (1h) [] @Next
     Wrap the development environment in Docker (4h) [] @Maybe
-    Understand Sequelize (2h) [] @Later 
 
     <insert a Sequence Diagram for clearer> (2h)
-    -> How the API flow gonna works: 
-        1. User call to route 
-        2. route call controller 
-        3. controller calls 'model'(the data part) and 'service'(the logic part) -> get the result back 
-        4. controller return the result back to the view  
+        -> How the API flow gonna works: 
+            1. User call to route 
+            2. route call controller 
+            3. controller calls 'model'(the data part) and 'service'(the logic part) -> get the result back 
+            4. controller return the result back to the view  
 
-    Init project: 
-        Understand Sequelize (2h) []
-        Setup folder structure (2h) []
-        Init Development Rules (1h) []
-            -> Where to put things ? 
+        Init project: 
+            Understand Sequelize (2h) []
+            Setup folder structure (2h) []
+            Init Development Rules (1h) []
+                -> Where to put things ? 
 
-        Setup Development Environment Specs (2h) []
-            -> Database Software
-                -> Connection port 
-            -> Node version
+            Setup Development Environment Specs (2h) []
+                -> Database Software
+                    -> Connection port 
+                -> Node version
 
 
 DONE:  
+    Understand Sequelize (2h) [X] 
+    Scraping data (4h) [X] 
     Connect front-end and back-end with a simple message: (2h) [X] 
         “Hello Backend” from React front-end
         “Hello React” from Express back-end
