@@ -11,6 +11,8 @@ class MapComponentTest extends React.Component {
             zoom: 9
         }
         // mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
+
+        // Should change the accessToken .env variable 
         mapboxgl.accessToken = 'pk.eyJ1Ijoibmd1eWVuOGFtazEiLCJhIjoiY2ticjZmdmpjMHRtczJzczQ5cmRqdGo1MCJ9.8BqG_JgqnnXsIbmaCxMc2w';
         console.log(process.env.REACT_APP_API_KEY);
         this.mapContainer = React.createRef();
