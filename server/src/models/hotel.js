@@ -13,13 +13,10 @@ module.exports = (sequelize, DataTypes) => {
             // define association here
             // Hotel.BelongsTo(models.City, { foreignKey: 'cityID' })
             Hotel.hasMany(models.Room, {
-                onDelete: 'CASCADE'
+                foreignKey: 'hotelID'
             });
             Hotel.belongsTo(models.City, {
-                foreignKey: {
-                    allowNull: false
-                },
-                onDelete: 'CASCADE',
+                foreignKey: 'cityID'
             })
         }
     }

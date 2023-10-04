@@ -19,6 +19,7 @@ module.exports = {
             images: '123',
             score: '5',
             review: 'good',
+            cityID: 1,
             createdAt: new Date(),
             updatedAt: new Date()
         }]);

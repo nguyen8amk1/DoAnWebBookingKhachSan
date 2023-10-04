@@ -19,6 +19,7 @@ module.exports = {
             childrenCount: '4',
             occupationStar: '1/1/2000',
             occupationEnd: '6/1/2000',
+            hotelID: 1,
             createdAt: new Date(),
             updatedAt: new Date()
         }]);

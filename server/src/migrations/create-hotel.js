@@ -9,11 +9,18 @@ module.exports = {
             // images: DataTypes.STRING,
             // score: DataTypes.STRING,
             // review: DataTypes.STRING,
-            hotelID: {
+            id: {
                 allowNull: false,
                 autoIncrement: true,
                 primaryKey: true,
                 type: Sequelize.INTEGER
+            },
+            cityID: {
+                type: Sequelize.INTEGER,
+                references: {
+                    model: 'Cities',
+                    key: 'id'
+                }
             },
             name: {
                 type: Sequelize.STRING

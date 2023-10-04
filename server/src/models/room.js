@@ -12,10 +12,7 @@ module.exports = (sequelize, DataTypes) => {
         static associate(models) {
             // define association here
             Room.belongsTo(models.Hotel, {
-                foreignKey: {
-                    allowNull: false
-                },
-                onDelete: 'CASCADE',
+                foreignKey: 'hotelID'
             })
         }
     }

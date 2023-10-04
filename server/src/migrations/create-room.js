@@ -9,11 +9,18 @@ module.exports = {
             // childrenCount: DataTypes.STRING,
             // occupationStar: DataTypes.STRING,
             // occupationEnd: DataTypes.STRING,
-            roomID: {
+            id: {
                 allowNull: false,
                 autoIncrement: true,
                 primaryKey: true,
                 type: Sequelize.INTEGER
+            },
+            hotelID: {
+                type: Sequelize.INTEGER,
+                references: {
+                    model: 'Hotels',
+                    key: 'id'
+                }
             },
             prices: {
                 type: Sequelize.STRING
