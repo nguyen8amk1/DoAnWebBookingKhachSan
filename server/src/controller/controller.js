@@ -39,7 +39,7 @@ const searchForPlaces = async (req, res) => {
     // http://127.0.0.1:8080/searchforplaces?city="Vung Tau"&date_came="10/20/2023"&date_leave="10/21/2023"&members_count_adults=2&members_count_children=1
 
     console.log(req.query);
-    const queryStr = "SELECT Hotels.name, Cities.name FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id";
+    const queryStr = "SELECT Hotels.name, Hotels.address, Hotels.score, Hotels.images FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id";
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.SELECT});
 
     console.log(results);
