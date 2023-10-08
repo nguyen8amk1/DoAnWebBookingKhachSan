@@ -12,6 +12,7 @@ module.exports = {
          *   isBetaMember: false
          * }], {});
         */
+
         return queryInterface.bulkInsert('Cities', [{
             name: 'Seoul',
             createdAt: new Date(),

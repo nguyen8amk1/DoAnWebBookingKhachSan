@@ -4,6 +4,12 @@ TODAY:
         Return hotel details (1h) [] 
     
 TODO: 
+    Report final: 
+        + Overview System 
+        + Introduction 
+        + Features (Base + Advance)
+        + Results + Demo 
+
     Learn how Sequence Diagram works (1h) [] @Next
     Wrap the development environment in Docker (4h) [] @Maybe
 
