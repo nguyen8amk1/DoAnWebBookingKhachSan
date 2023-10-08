@@ -3,6 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
     async up(queryInterface, Sequelize) {
+        const { faker } = require('@faker-js/faker');
         /**
          * Add seed commands here.
          *
@@ -12,12 +13,15 @@ module.exports = {
          *   isBetaMember: false
          * }], {});
         */
-
-        return queryInterface.bulkInsert('Cities', [{
-            name: 'Seoul',
-            createdAt: new Date(),
-            updatedAt: new Date()
-        }]);
+        const cityData = [];
+        for (let i = 0; i < 25; i++) {
+            cityData.push({
+                name: faker.location.city(),
+                createdAt: new Date(),
+                updatedAt: new Date(),
+            });
+        }
+        return queryInterface.bulkInsert('Cities', cityData);
     },
 
     async down(queryInterface, Sequelize) {
