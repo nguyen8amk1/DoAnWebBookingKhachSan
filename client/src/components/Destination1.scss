@@ -1,0 +1,41 @@
+.ch,
+.h-ch-minh {
+  position: absolute;
+  top: 83.74%;
+  left: 23.13%;
+  font-weight: 500;
+
+  &.ch {
+    top: 93.6%;
+    left: 30%;
+    font-size: var(--font-size-2xs);
+    color: var(--paragraph);
+  }
+}
+
+.destination-child {
+  position: absolute;
+  height: 78.82%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 21.18%;
+  left: 0;
+  border-radius: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.destination {
+  position: absolute;
+  top: 55px;
+  left: 1px;
+  width: 160px;
+  height: 203px;
+  text-align: left;
+  font-size: var(--button-1-size);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}

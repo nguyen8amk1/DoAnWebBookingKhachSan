@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --button-1: "SF Pro Text";
+  --font-roboto: Roboto;
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --button-1-size: 16px;
+  --font-size-2xs: 11px;
+  --font-size-xs: 12px;
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --purple-1: #7571ff;
+  --neutral-5: #fff;
+  --background-2: #e8e9ed;
+  --neutral-2: #383a47;
+  --paragraph: #666;
+  --color-black: #000;
+  --primary-b: #222;
+  --primary-o: #fa7436;
+
+  /* Paddings */
+  --padding-sm: 14px;
+  --padding-5xl: 24px;
+
+  /* Border radiuses */
+  --br-xs: 12px;
+  --br-3xs: 10px;
+  --br-8xs: 5px;
+}

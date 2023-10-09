@@ -1,28 +1,60 @@
-import logo from './logo.svg';
-import './style/App.scss';
-import Test from './components/TestAPICalls';
-import MapComponentTest from './components/TestMapComponent';
+import { useEffect } from "react";
+import {
+  Routes,
+  Route,
+  useNavigationType,
+  useLocation,
+} from "react-router-dom";
+import Homepage from "./views/Homepage";
+import Test from "./components/TestAPICalls";
+import MapComponentTest from "./components/TestMapComponent";
 
 function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    <Test />
-                    <MapComponentTest />
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
-}
+  const action = useNavigationType();
+  const location = useLocation();
+  const pathname = location.pathname;
 
+  useEffect(() => {
+    if (action !== "POP") {
+      window.scrollTo(0, 0);
+    }
+  }, [action, pathname]);
+
+  useEffect(() => {
+    let title = "";
+    let metaDescription = "";
+
+    switch (pathname) {
+      case "/":
+        title = "";
+        metaDescription = "";
+        break;
+    }
+
+    if (title) {
+      document.title = title;
+    }
+
+    if (metaDescription) {
+      const metaDescriptionTag = document.querySelector(
+        'head > meta[name="description"]'
+      );
+      if (metaDescriptionTag) {
+        metaDescriptionTag.content = metaDescription;
+      }
+    }
+  }, [pathname]);
+
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+      <p>
+        <Test />
+        <MapComponentTest />
+      </p>
+    </>
+  );
+}
 export default App;

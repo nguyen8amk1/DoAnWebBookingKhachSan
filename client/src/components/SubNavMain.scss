@@ -1,0 +1,31 @@
+.home1,
+.iconuser-interfacelinearrow1 {
+  position: absolute;
+  top: calc(50% - 12px);
+}
+.home1 {
+  left: 0;
+  line-height: 24px;
+}
+.iconuser-interfacelinearrow1 {
+  left: calc(50% + 11px);
+  width: 24px;
+  height: 24px;
+}
+.sub-navxdefault {
+  position: absolute;
+  height: 75%;
+  width: calc(100% - 16px);
+  top: 12.5%;
+  right: 8px;
+  bottom: 12.5%;
+  left: 8px;
+}
+.sub-nav-main {
+  width: 86px;
+  height: 32px;
+  text-align: left;
+  font-size: var(--button-1-size);
+  color: var(--neutral-2);
+  font-family: var(--button-1);
+}
