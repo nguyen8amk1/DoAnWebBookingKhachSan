@@ -39,3 +39,12 @@
   left: 50%;
   transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
 }
+.top-destinations-in {
+  position: absolute;
+  top: calc(50% - 150px); /* Đẩy phần tử xuống 50px từ trên cùng */
+  left: 50%;
+  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+  font-weight: 500;
+  display: inline-block;
+  font-size: 1.8rem;
+}

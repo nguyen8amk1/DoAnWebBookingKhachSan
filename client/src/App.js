@@ -53,8 +53,8 @@ function App() {
       </Routes>
       <p>
         {/* <Destination__slider /> */}
-        <Test />
-        <MapComponentTest />
+        {/* <Test />
+        <MapComponentTest /> */}
       </p>
     </>
   );

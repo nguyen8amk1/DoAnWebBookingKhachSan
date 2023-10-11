@@ -32,6 +32,7 @@ const DestinationCard = () => {
       />
 
       <Destination__list name="Hà Nội" quantity="10.700 Chỗ ở" img="/HN.png" />
+      <div className="top-destinations-in">Top destinations in Vietnam</div>
       <div className="Destination-icon-decor">
         <img
           className="Destination-icon--red"
