@@ -10,6 +10,7 @@
   align-items: center;
   width: 100%;
   justify-content: center;
+  
 }
 
 .content__item {
@@ -20,13 +21,14 @@
 .content__item-date,
 .content__item-location,
 .content__item-guest {
-  margin-right: 40px; /* Đẩy cách nhau 30px */
+  margin-right: 60px; /* Đẩy cách nhau 30px */
 }
 
 .content__item-location--top {
   display: flex;
   align-items: center; /* Căn giữa theo chiều dọc */
   justify-content: center;
+  margin-bottom: 4px;
 
   > * {
     padding: 0 3px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
@@ -37,6 +39,7 @@
   display: flex;
   align-items: center; /* Căn giữa theo chiều dọc */
   justify-content: center;
+  margin-bottom: 4px;
 
   > * {
     padding: 0 3px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
@@ -47,10 +50,44 @@
   display: flex;
   align-items: center; /* Căn giữa theo chiều dọc */
   justify-content: center;
+  margin-bottom: 4px;
 
   > * {
     padding: 0 3px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
   }
+}
+
+.content__item-where {
+  font-size: 0.8rem;
+  color: var(--br-3xs);
+}
+
+.content__item-date--check {
+  font-size: 0.8rem;
+  color: var(--br-3xs);
+}
+
+.content__item-quantity {
+  font-size: 0.8rem;
+  color: var(--br-3xs);
+}
+
+.location {
+  font-size: 1rem;
+  color: var(--br-8xs);
+  font-weight: 600;
+}
+
+.date {
+  font-size: 1rem;
+  color: var(--br-8xs);
+  font-weight: 600;
+}
+
+.guest {
+  font-size: 1rem;
+  color: var(--br-8xs);
+  font-weight: 600;
 }
 
 .search-bar {
@@ -68,13 +105,16 @@
   height: 136.83px;
   text-align: left;
   font-size: var(--font-size-lg);
+  color: var(--neutral-2);
 }
 
 .explore-now {
   display: flex;
   align-items: center;
   line-height: 32px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--br-8xs);
 }
 
 .explore-btn {

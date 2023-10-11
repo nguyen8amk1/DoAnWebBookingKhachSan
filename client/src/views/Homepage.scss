@@ -3,35 +3,41 @@
   width: 100%;
   height: 100%;
 }
+
 .main-child {
   position: absolute;
   top: 0;
-  left: 112px;
+  left: 10%;
   width: 168px;
   height: 76px;
   object-fit: cover;
 }
+
 .button1,
 .sub-nav {
   position: absolute;
   display: flex;
   flex-direction: row;
 }
+
 .sub-nav {
   top: 15px;
-  width: 100%;
+  width: calc(100% - 60px);
   align-items: center;
   justify-content: center;
   gap: 30px;
+  line-height: 30px;
 }
+
 .button1 {
   top: 8px;
-  right: 160px;
+  right: 10%;
   overflow: hidden;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 20px;
 }
+
 .main-item {
   position: absolute;
   top: 97px;
@@ -40,6 +46,7 @@
   height: 600px;
   object-fit: cover;
 }
+
 
 .homepage {
   position: relative;
@@ -52,3 +59,4 @@
   color: var(--color-black);
   font-family: var(--font-roboto);
 }
+

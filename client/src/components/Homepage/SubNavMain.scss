@@ -1,16 +1,9 @@
-.home1,
-.iconuser-interfacelinearrow1 {
+.home1 {
   position: absolute;
   top: calc(50% - 12px);
-}
-.home1 {
   left: 0;
-  line-height: 24px;
-}
-.iconuser-interfacelinearrow1 {
-  left: calc(50% + 11px);
-  width: 24px;
-  height: 24px;
+  display: flex;
+  white-space: nowrap;
 }
 .sub-navxdefault {
   position: absolute;

@@ -1,14 +1,14 @@
 import SubNavMain from "../components/Homepage/SubNavMain";
-import Property1LargeProperty2P from "../components/Homepage/Property1LargeProperty2P";
 import Searchbar from "../components/Homepage/Searchbar";
 import DestinationCard from "../components/Homepage/DestinationCard";
 import "./Homepage.scss";
+import Header__button from "../components/Homepage/Header__button";
 
 const Homepage = () => {
   return (
     <div className="homepage">
       <div className="main">
-        <img className="main-child" alt="" src="/rectangle-1@2x.png" />
+        <img className="main-child" alt="" src="/logo__web.png" />
         <div className="sub-nav">
           <SubNavMain
             home="Lưu trú"
@@ -42,22 +42,22 @@ const Homepage = () => {
           />
         </div>
         <div className="button1">
-          <Property1LargeProperty2P
+          <Header__button
             buttonText="Log In"
-            property1LargeProperty2PBackgroundColor="unset"
-            property1LargeProperty2PBorder="1.5px solid var(--background-2)"
+            Header__buttonBackgroundColor="rgba(0,0,0,0.02)"
+            Header__button="1.5px solid var(--background-2)"
             buttonFontFamily="Roboto"
             buttonColor="#fa7436"
           />
-          <Property1LargeProperty2P
+          <Header__button
             buttonText="Sign Up"
-            property1LargeProperty2PBackgroundColor="#fa7436"
-            property1LargeProperty2PBorder="unset"
+            Header__buttonBackgroundColor="#fa7436"
+            Header__button="unset"
             buttonFontFamily="Roboto"
             buttonColor="#fff"
           />
         </div>
-        <img className="main-item" alt="" src="/rectangle-2@2x.png" />
+        <img className="main-item" alt="" src="/Homepage__img.png" />
       </div>
       <Searchbar />
       <DestinationCard />
