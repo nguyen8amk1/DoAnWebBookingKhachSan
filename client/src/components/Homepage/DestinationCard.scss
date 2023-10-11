@@ -1,0 +1,41 @@
+.Destination-icon--red {
+  position: absolute;
+  top: calc(50% + 300px); /* Đẩy phần tử xuống 50px từ trên cùng */
+  left: 50%;
+  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+  width: 1121px;
+  height: 37px;
+  overflow: hidden;
+}
+
+.Destination-icon--blue {
+  position: absolute;
+  top: calc(50% + 40px); /* Đẩy phần tử xuống 50px từ trên cùng */
+  left: 50%;
+  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+  width: 1121px;
+  height: 37px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.Destination {
+  text-align: center;
+  font-size: var(--button-1-size);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+  position: absolute;
+  top: calc(50% + 130px); /* Đẩy phần tử xuống 50px từ trên cùng */
+  left: 50%;
+  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+  display: flex;
+  align-items: center;
+}
+
+
+.Destination-icon-decor {
+  position: absolute;
+  top: calc(50% - 150px); /* Đẩy phần tử xuống 50px từ trên cùng */
+  left: 50%;
+  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+}

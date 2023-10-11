@@ -6,8 +6,9 @@ import {
   useLocation,
 } from "react-router-dom";
 import Homepage from "./views/Homepage";
-import Test from "./components/TestAPICalls";
-import MapComponentTest from "./components/TestMapComponent";
+import Test from "./components/Homepage/TestAPICalls";
+import MapComponentTest from "./components/Homepage/TestMapComponent";
+// import Destination__slider from "./components/Homepage/Specialty";
 
 function App() {
   const action = useNavigationType();
@@ -51,6 +52,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
       </Routes>
       <p>
+        {/* <Destination__slider /> */}
         <Test />
         <MapComponentTest />
       </p>

@@ -1,7 +1,7 @@
-import SubNavMain from "../components/SubNavMain";
-import Property1LargeProperty2P from "../components/Property1LargeProperty2P";
-import ExploreNowFormContainer from "../components/ExploreNowFormContainer";
-import DestinationCard from "../components/DestinationCard";
+import SubNavMain from "../components/Homepage/SubNavMain";
+import Property1LargeProperty2P from "../components/Homepage/Property1LargeProperty2P";
+import ExploreNowFormContainer from "../components/Homepage/ExploreNowFormContainer";
+import DestinationCard from "../components/Homepage/DestinationCard";
 import "./Homepage.scss";
 
 const Homepage = () => {
