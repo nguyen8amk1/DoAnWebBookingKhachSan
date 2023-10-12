@@ -1,7 +1,7 @@
 import SubNavMain from "../components/Homepage/SubNavMain";
 import Searchbar from "../components/Homepage/Searchbar";
 import DestinationCard from "../components/Homepage/DestinationCard";
-import "./Homepage.scss";
+import "../style/Homepage.scss";
 import Header__button from "../components/Homepage/Header__button";
 
 const Homepage = () => {
