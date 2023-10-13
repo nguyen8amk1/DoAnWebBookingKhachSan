@@ -42,7 +42,7 @@
   margin-bottom: 4px;
 
   > * {
-    padding: 0 3px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
+    padding: 0 23px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
   }
 }
 
@@ -128,4 +128,38 @@
   display: flex;
   justify-content: center; /* Căn giữa theo chiều ngang */
   align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.date {
+  position: absolute;
+  z-index: 3;
+}
+
+.guest__options {
+  position: absolute;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+.guest__options-item {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.guest__options-counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: black;
+}
+
+.guest__options-counter-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--blue-main);
 }
