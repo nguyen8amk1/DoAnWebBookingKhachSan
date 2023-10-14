@@ -114,7 +114,7 @@
   line-height: 32px;
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--br-8xs);
+  color: white;
 }
 
 .explore-btn {
@@ -148,6 +148,8 @@
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  font-size: 14px;
+  align-items: center;
 }
 
 .guest__options-counter {
@@ -162,4 +164,9 @@
   width: 30px;
   height: 30px;
   border: 1px solid var(--blue-main);
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
+

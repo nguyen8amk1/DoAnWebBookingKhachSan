@@ -18,9 +18,19 @@ const Searchbar = () => {
   const [openOptions, setOpenOptions] = useState(false);
   const [options, SetOptions] = useState({
     adult: 1,
-    children: 0,
+    children: 1,
     room: 1,
   });
+
+  const handleOption = (name, operation) => {
+    SetOptions((prev) => {
+      return {
+        ...prev,
+        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+      };
+    });
+  };
+
   return (
     <div className="search-bar">
       <div className="content">
@@ -34,16 +44,19 @@ const Searchbar = () => {
             <div className="content__item-where">Bạn muốn đi đâu?</div>
           </div>
 
-          <div
-            onClick={() => setOpenDate(!openDate)}
-            className="content__item-date"
-          >
-            <div className="content__item-date--top">
+          <div className="content__item-date">
+            <div
+              onClick={() => setOpenDate(!openDate)}
+              className="content__item-date--top"
+            >
               <img className="date-icon" alt="" src="/vector1.svg" />
               <div className="date">Date</div>
               <img className="inner-icon-1" alt="" src="/vector-4855.svg" />
             </div>
-            <div className="content__item-date--check">
+            <div
+              onClick={() => setOpenDate(!openDate)}
+              className="content__item-date--check"
+            >
               {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
                 date[0].endDate,
                 "MM/dd/yyyy"
@@ -61,40 +74,87 @@ const Searchbar = () => {
           </div>
 
           <div className="content__item-guest">
-            <div className="content__item-guest--top">
+            <div
+              className="content__item-guest--top"
+              onClick={() => setOpenOptions(!openOptions)}
+            >
               <img className="guest-icon" alt="" src="/vector2.svg" />
               <div className="guest">Guest</div>
               <img className="inner-icon-2" alt="" src="/vector-4855.svg" />
             </div>
-            <div className="content__item-quantity">
+            <div
+              onClick={() => setOpenOptions(!openOptions)}
+              className="content__item-quantity"
+            >
               {`${options.adult} Người lớn · ${options.children} Trẻ em · ${options.room} Phòng`}
+            </div>
+            {openOptions && (
               <div className="guest__options">
                 <div className="guest__options-item">
                   <span className="guest__options-text">Người lớn</span>
                   <div className="guest__options-counter">
-                    <button className="guest__options-counter-button">-</button>
-                    <span className="guest__options-counter-number">1</span>
-                    <button className="guest__options-counter-button">+</button>
+                    <button
+                      disabled={options.adult <= 1}
+                      className="guest__options-counter-button "
+                      onClick={() => handleOption("adult", "d")}
+                    >
+                      -
+                    </button>
+                    <span className="guest__options-counter-number">
+                      {options.adult}
+                    </span>
+                    <button
+                      className="guest__options-counter-button "
+                      onClick={() => handleOption("adult", "i")}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
                 <div className="guest__options-item">
                   <span className="guest__options-text">Trẻ em</span>
                   <div className="guest__options-counter">
-                    <button className="guest__options-counter-button">-</button>
-                    <span className="guest__options-counter-number">0</span>
-                    <button className="guest__options-counter-button">+</button>
+                    <button
+                      disabled={options.children <= 1}
+                      className="guest__options-counter-button "
+                      onClick={() => handleOption("children", "d")}
+                    >
+                      -
+                    </button>
+                    <span className="guest__options-counter-number">
+                      {options.children}
+                    </span>
+                    <button
+                      className="guest__options-counter-button "
+                      onClick={() => handleOption("children", "i")}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
                 <div className="guest__options-item">
                   <span className="guest__options-text">Phòng</span>
                   <div className="guest__options-counter">
-                    <button className="guest__options-counter-button">-</button>
-                    <span className="guest__options-counter-number">1</span>
-                    <button className="guest__options-counter-button">+</button>
+                    <button
+                      disabled={options.room <= 1}
+                      className="guest__options-counter-button "
+                      onClick={() => handleOption("room", "d")}
+                    >
+                      -
+                    </button>
+                    <span className="guest__options-counter-number">
+                      {options.room}
+                    </span>
+                    <button
+                      className="guest__options-counter-button "
+                      onClick={() => handleOption("room", "i")}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
 

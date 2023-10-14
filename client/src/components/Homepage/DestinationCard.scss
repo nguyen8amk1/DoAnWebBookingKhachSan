@@ -30,6 +30,7 @@
   transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 
@@ -47,4 +48,5 @@
   font-weight: 500;
   display: inline-block;
   font-size: 1.8rem;
+  z-index: 2;
 }
