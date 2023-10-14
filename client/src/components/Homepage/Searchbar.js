@@ -18,7 +18,7 @@ const Searchbar = () => {
   const [openOptions, setOpenOptions] = useState(false);
   const [options, SetOptions] = useState({
     adult: 1,
-    children: 1,
+    children: 0,
     room: 1,
   });
 
@@ -41,12 +41,24 @@ const Searchbar = () => {
               <div className="location">Location</div>
               <img className="inner-icon" alt="" src="/vector-4855.svg" />
             </div>
-            <div className="content__item-where">Bạn muốn đi đâu?</div>
+            <div className="content__item-where">
+              <nav class="justify-content-between">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Bạn muốn đi đâu?"
+                  aria-label="Bạn muốn đi đâu?"
+                ></input>
+              </nav>
+            </div>
           </div>
 
           <div className="content__item-date">
             <div
-              onClick={() => setOpenDate(!openDate)}
+              onClick={() => {
+                setOpenDate(!openDate);
+                setOpenOptions(false);
+              }}
               className="content__item-date--top"
             >
               <img className="date-icon" alt="" src="/vector1.svg" />
@@ -54,7 +66,10 @@ const Searchbar = () => {
               <img className="inner-icon-1" alt="" src="/vector-4855.svg" />
             </div>
             <div
-              onClick={() => setOpenDate(!openDate)}
+              onClick={() => {
+                setOpenDate(!openDate);
+                setOpenOptions(false);
+              }}
               className="content__item-date--check"
             >
               {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
@@ -76,14 +91,20 @@ const Searchbar = () => {
           <div className="content__item-guest">
             <div
               className="content__item-guest--top"
-              onClick={() => setOpenOptions(!openOptions)}
+              onClick={() => {
+                setOpenOptions(!openOptions);
+                setOpenDate(false);
+              }}
             >
-              <img className="guest-icon" alt="" src="/vector2.svg" />
+              <img className="guest-icon" alt="" src="/users.svg" />
               <div className="guest">Guest</div>
               <img className="inner-icon-2" alt="" src="/vector-4855.svg" />
             </div>
             <div
-              onClick={() => setOpenOptions(!openOptions)}
+              onClick={() => {
+                setOpenOptions(!openOptions);
+                setOpenDate(false);
+              }}
               className="content__item-quantity"
             >
               {`${options.adult} Người lớn · ${options.children} Trẻ em · ${options.room} Phòng`}
@@ -115,7 +136,7 @@ const Searchbar = () => {
                   <span className="guest__options-text">Trẻ em</span>
                   <div className="guest__options-counter">
                     <button
-                      disabled={options.children <= 1}
+                      disabled={options.children <= 0}
                       className="guest__options-counter-button "
                       onClick={() => handleOption("children", "d")}
                     >

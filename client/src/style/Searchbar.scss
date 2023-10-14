@@ -22,7 +22,7 @@
 .content__item-date,
 .content__item-location,
 .content__item-guest {
-  margin-right: 60px; /* Đẩy cách nhau 30px */
+  margin-right: 40px; /* Đẩy cách nhau 30px */
 }
 
 .content__item-location--top {
@@ -58,37 +58,39 @@
   }
 }
 
-.content__item-where {
-  font-size: 0.8rem;
-  color: var(--br-3xs);
-}
-
 .content__item-date--check {
-  font-size: 0.8rem;
-  color: var(--br-3xs);
+  font-size: 0.95rem;
+  color: var(--sub-text);
+  padding-top: 4.2px;
 }
 
 .content__item-quantity {
-  font-size: 0.8rem;
-  color: var(--br-3xs);
+  font-size: 0.95rem;
+  color: var(--sub-text);
+  padding-top: 4.2px;
 }
 
 .location {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--br-8xs);
   font-weight: 600;
 }
 
 .date {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--br-8xs);
   font-weight: 600;
 }
 
 .guest {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--br-8xs);
   font-weight: 600;
+}
+
+.guest-icon {
+  width: 30px;
+  height: auto;
 }
 
 .search-bar {
@@ -139,10 +141,14 @@
 .guest__options {
   position: absolute;
   background-color: white;
-  color: gray;
+  color: var(--neutral-2);
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 32px;
+  z-index: 1;
 }
 .guest__options-item {
   width: 200px;
@@ -159,15 +165,46 @@
   gap: 12px;
   font-size: 12px;
   color: black;
+  border: 1px solid var(--sub-color-border);
+  border-radius: var(--sub-color-border);
 }
 
 .guest__options-counter-button {
   width: 30px;
   height: 30px;
-  border: 1px solid var(--blue-main);
+  // border: 1px solid #ceb2a8;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
   &:disabled {
     cursor: not-allowed;
   }
+  &:hover {
+    color: var(--blue-main);
+    background-color: var(--hover-color);
+  }
 }
 
+.form-control {
+  display: block;
+  width: 80%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--sub-color-border);
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.navbar,
+.navbar-light,
+.justify-content-between {
+  padding: 4px 0 0 0;
+}
+
+.form-control.mr-sm-2 {
+  padding: 0 0 0 0;
+  margin: 0 auto;
+}
