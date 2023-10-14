@@ -1,5 +1,5 @@
 import Destination__list from "./Destination__list";
-import "./DestinationCard.scss";
+import "../../style/DestinationCard.scss";
 
 const DestinationCard = () => {
   return (

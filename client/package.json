@@ -15,7 +15,9 @@
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "date-fns": "^2.30.0",
+    "react-date-range": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

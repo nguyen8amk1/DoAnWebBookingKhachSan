@@ -6,6 +6,7 @@ import Header__button from "../components/Homepage/Header__button";
 
 const Homepage = () => {
   return (
+    <>
     <div className="homepage">
       <div className="main">
         <img className="main-child" alt="" src="/logo__web.png" />
@@ -62,6 +63,7 @@ const Homepage = () => {
       <Searchbar />
       <DestinationCard />
     </div>
+    </>
   );
 };
 

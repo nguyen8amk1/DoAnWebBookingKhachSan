@@ -1,4 +1,4 @@
-import "./Searchbar.scss";
+import "../../style/Searchbar.scss";
 import { DateRange } from "react-date-range";
 import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
