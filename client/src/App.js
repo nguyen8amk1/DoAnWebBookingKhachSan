@@ -49,15 +49,17 @@ function App() {
 
   return (
     <>
+    <switch>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/Searchpage" element={<Searchpage />} />
+        <Route exact path="/" Component={Homepage} />
+        <Route path="/Searchpage" Component={Searchpage} />
       </Routes>
       {/* <p> */}
       {/* <Destination__slider /> */}
       {/* <Test />
         <MapComponentTest /> */}
       {/* </p> */}
+    </switch>
     </>
   );
 }

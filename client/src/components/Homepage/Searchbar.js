@@ -4,6 +4,7 @@ import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
+import { Link } from "react-router-dom";
 
 const Searchbar = () => {
   const [openDate, setOpenDate] = useState(false);
@@ -179,9 +180,11 @@ const Searchbar = () => {
           </div>
         </div>
 
-        <div className="explore-btn">
-          <div className="explore-now">Explore Now</div>
-        </div>
+        <Link to = "/Searchpage">
+          <div className="explore-btn">
+            <div className="explore-now">Explore Now</div>
+          </div>
+        </Link>
       </div>
     </div>
   );

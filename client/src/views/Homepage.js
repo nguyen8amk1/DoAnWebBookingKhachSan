@@ -4,13 +4,16 @@ import DestinationCard from "../components/Homepage/DestinationCard";
 import "../style/Homepage.scss";
 import Header__button from "../components/Homepage/Header__button";
 import FooterPage from "../components/Footer/FooterPage";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
     <>
       <div className="homepage">
         <div className="main">
-          <img className="main-child" alt="" src="/logo__web.png" />
+          <Link to ="/" className="main-child" >
+            <img className="main-child" alt="" src="/logo__web.png" />
+          </Link>
           <div className="sub-nav">
             <SubNavMain
               home="Lưu trú"
