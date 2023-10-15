@@ -1,9 +1,28 @@
+// .search-bar {
+//   position: absolute;
+//   top: 1300px;
+//   left: 0;
+//   width: 867.03px;
+//   z-index: 9999;
+// }
+
 .search-bar {
   position: absolute;
-  top: 1300px;
-  left: 0;
-  width: 867.03px;
   z-index: 9999;
+  top: 630px; /* Đẩy phần tử xuống 50px từ trên cùng */
+  left: 50%;
+  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+  display: flex;
+  align-items: center;
+
+  border-radius: var(--br-3xs);
+  background-color: var(--neutral-5);
+  box-shadow: 0 2px 80px 2px rgba(0, 0, 0, 0.06);
+  width: 950px;
+  height: 136.83px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--neutral-2);
 }
 
 .content {
@@ -91,24 +110,6 @@
 .guest-icon {
   width: 30px;
   height: auto;
-}
-
-.search-bar {
-  position: absolute;
-  top: calc(50% - 115px); /* Đẩy phần tử xuống 50px từ trên cùng */
-  left: 50%;
-  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
-  display: flex;
-  align-items: center;
-
-  border-radius: var(--br-3xs);
-  background-color: var(--neutral-5);
-  box-shadow: 0 2px 80px 2px rgba(0, 0, 0, 0.06);
-  width: 950px;
-  height: 136.83px;
-  text-align: left;
-  font-size: var(--font-size-lg);
-  color: var(--neutral-2);
 }
 
 .explore-now {

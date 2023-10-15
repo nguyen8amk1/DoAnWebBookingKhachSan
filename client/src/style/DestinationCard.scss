@@ -25,7 +25,7 @@
   color: var(--color-black);
   font-family: var(--font-roboto);
   position: absolute;
-  top: calc(50% + 130px); /* Đẩy phần tử xuống 50px từ trên cùng */
+  top: 880px; /* Đẩy phần tử xuống 50px từ trên cùng */
   left: 50%;
   transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
   display: flex;

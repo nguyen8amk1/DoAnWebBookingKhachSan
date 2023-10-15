@@ -9,6 +9,7 @@ import Homepage from "./views/Homepage";
 import Test from "./components/Homepage/TestAPICalls";
 import MapComponentTest from "./components/Homepage/TestMapComponent";
 // import Destination__slider from "./components/Homepage/Specialty";
+import Searchpage from "./views/Searchpage";
 
 function App() {
   const action = useNavigationType();
@@ -50,12 +51,13 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/Searchpage" element={<Searchpage />} />
       </Routes>
-      <p>
-        {/* <Destination__slider /> */}
-        {/* <Test />
+      {/* <p> */}
+      {/* <Destination__slider /> */}
+      {/* <Test />
         <MapComponentTest /> */}
-      </p>
+      {/* </p> */}
     </>
   );
 }

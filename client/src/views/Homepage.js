@@ -3,7 +3,7 @@ import Searchbar from "../components/Homepage/Searchbar";
 import DestinationCard from "../components/Homepage/DestinationCard";
 import "../style/Homepage.scss";
 import Header__button from "../components/Homepage/Header__button";
-// import Footer from "../components/Footer/footer";
+import FooterPage from "../components/Footer/FooterPage";
 
 const Homepage = () => {
   return (
@@ -63,7 +63,7 @@ const Homepage = () => {
         </div>
         <Searchbar />
         <DestinationCard />
-        {/* <Footer /> */}
+        <FooterPage />
       </div>
     </>
   );
