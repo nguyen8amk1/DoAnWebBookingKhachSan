@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/Header__button.scss";
+import "../../style/Global/Header__button.scss";
 
 const Header__button = ({
   buttonText,

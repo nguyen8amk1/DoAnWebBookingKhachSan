@@ -1,4 +1,4 @@
-import "../../style/Searchbar.scss";
+import "../../style/Homepage/Searchbar.scss";
 import { DateRange } from "react-date-range";
 import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
@@ -180,7 +180,7 @@ const Searchbar = () => {
           </div>
         </div>
 
-        <Link to = "/Searchpage">
+        <Link to="/Searchpage">
           <div className="explore-btn">
             <div className="explore-now">Explore Now</div>
           </div>

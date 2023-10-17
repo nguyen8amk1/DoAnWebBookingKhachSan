@@ -2,14 +2,14 @@ import FooterPage from "../components/Footer/FooterPage";
 import SubNavMain from "../components/Homepage/SubNavMain";
 import Header__button from "../components/Homepage/Header__button";
 import { Link } from "react-router-dom";
-import "../style/Searchpage.scss"
+import "../style/Searchpage/Searchpage.scss";
 
 const Searchpage = () => {
   return (
     <div className="Searchpage">
       <div className="homepage">
         <div className="main">
-          <Link to ="/" className="main-child" >
+          <Link to="/" className="main-child">
             <img className="main-child" alt="" src="/logo__web.png" />
           </Link>
           <div className="sub-nav">

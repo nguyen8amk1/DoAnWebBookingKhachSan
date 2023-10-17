@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/SubNavMain.scss";
+import "../../style/Global/SubNavMain.scss";
 
 const SubNavMain = ({
   home,

@@ -1,7 +1,7 @@
 import SubNavMain from "../components/Homepage/SubNavMain";
 import Searchbar from "../components/Homepage/Searchbar";
 import DestinationCard from "../components/Homepage/DestinationCard";
-import "../style/Homepage.scss";
+import "../style/Homepage/Homepage.scss";
 import Header__button from "../components/Homepage/Header__button";
 import FooterPage from "../components/Footer/FooterPage";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const Homepage = () => {
     <>
       <div className="homepage">
         <div className="main">
-          <Link to ="/" className="main-child" >
+          <Link to="/" className="main-child">
             <img className="main-child" alt="" src="/logo__web.png" />
           </Link>
           <div className="sub-nav">
