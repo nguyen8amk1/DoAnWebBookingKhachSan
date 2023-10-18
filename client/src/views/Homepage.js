@@ -4,6 +4,7 @@ import DestinationCard from "../components/Homepage/DestinationCard";
 import "../style/Homepage/Homepage.scss";
 import Header__button from "../components/Homepage/Header__button";
 import FooterPage from "../components/Footer/FooterPage";
+import Discount from "../components/Homepage/Discount";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
@@ -66,6 +67,7 @@ const Homepage = () => {
         </div>
         <Searchbar />
         <DestinationCard />
+        <Discount />
         <FooterPage />
       </div>
     </>
