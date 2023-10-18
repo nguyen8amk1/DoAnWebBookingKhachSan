@@ -2,5 +2,65 @@
 	position: absolute;
 	width: 100%;
 	top: 1984px;
-	text-align: center;
+	text-align: start;
+}
+
+.feature-property-text{
+    h1 {
+        margin: 0 0 28px 0;
+		font-weight: 600;
+		font-size: 2.2rem;
+        text-align: center;
+	}
+}
+
+.feature__property{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.feature__property-item{
+	width: 273px;
+	justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fp-img{
+    border-radius: 10px;
+	width: 273px;
+	height: 210px;
+	object-fit: cover;
+}
+
+.fp-name,
+.fp-city,
+.fp-price{
+    margin: 8px 0 0 0;
+    font-size: 1.2rem;
+    color: var(--neutral-2);
+    font-weight: 600;
+}
+
+.fp-city{
+    font-weight: 300;
+}
+  
+.fp-price{
+font-weight: 500;
+}
+
+.fp-rating{
+    >span{
+        font-size: 14px;
+    }
+    .btn {
+		background-color: var(--blue-main);
+		font-weight: 700;
+		font-size: 1rem;
+        padding: 0px 7px;
+        margin-right: 10px;
+	}
 }
