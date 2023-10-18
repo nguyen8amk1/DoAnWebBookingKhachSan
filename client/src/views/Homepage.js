@@ -5,6 +5,8 @@ import "../style/Homepage/Homepage.scss";
 import Header__button from "../components/Homepage/Header__button";
 import FooterPage from "../components/Footer/FooterPage";
 import Discount from "../components/Homepage/Discount";
+import Property__list from "../components/Homepage/Property__list";
+import Featured__properties from "../components/Homepage/Featured__properties";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
@@ -68,6 +70,8 @@ const Homepage = () => {
         <Searchbar />
         <DestinationCard />
         <Discount />
+        <Property__list />
+        <Featured__properties />
         <FooterPage />
       </div>
     </>
