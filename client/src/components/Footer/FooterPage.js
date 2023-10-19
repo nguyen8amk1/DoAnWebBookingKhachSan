@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import "../../style/FooterPage.scss";
+import "../../style/Global/FooterPage.scss";
 
 export default function FooterPage() {
   return (

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../style/Destination__list.scss";
+import "../../style/Homepage/Destination__list.scss";
 
 class Destination__list extends Component {
   render() {

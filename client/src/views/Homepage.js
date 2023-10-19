@@ -1,9 +1,13 @@
 import SubNavMain from "../components/Homepage/SubNavMain";
 import Searchbar from "../components/Homepage/Searchbar";
 import DestinationCard from "../components/Homepage/DestinationCard";
-import "../style/Homepage.scss";
+import "../style/Homepage/Homepage.scss";
 import Header__button from "../components/Homepage/Header__button";
 import FooterPage from "../components/Footer/FooterPage";
+import Discount from "../components/Homepage/Discount";
+import Property__list from "../components/Homepage/Property__list";
+import Featured__properties from "../components/Homepage/Featured__properties";
+import Mail__list from "../components/Footer/Mail__list";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
@@ -11,7 +15,7 @@ const Homepage = () => {
     <>
       <div className="homepage">
         <div className="main">
-          <Link to ="/" className="main-child" >
+          <Link to="/" className="main-child">
             <img className="main-child" alt="" src="/logo__web.png" />
           </Link>
           <div className="sub-nav">
@@ -66,6 +70,10 @@ const Homepage = () => {
         </div>
         <Searchbar />
         <DestinationCard />
+        <Discount />
+        <Property__list />
+        <Featured__properties />
+        <Mail__list />
         <FooterPage />
       </div>
     </>
