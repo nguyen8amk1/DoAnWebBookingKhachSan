@@ -1,0 +1,35 @@
+.searchpage-sb-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 140px;
+    left: 160px;
+    z-index: 10;
+}
+
+.searchpage-sb-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    max-width: 1024px;
+    
+}
+
+.searchpage-sb-listsearch {
+    position: sticky;
+    background-color: var(--primary-o);
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    top: 10px;
+    height: 700px;
+    z-index: 9;
+}
+
+.searchpage-sb-listtitle {
+    color: var(--neutral-5);
+}
+
+.searchpage-sb-listresult {
+}

@@ -1,6 +1,7 @@
 import FooterPage from "../components/Footer/FooterPage";
 import SubNavMain from "../components/Homepage/SubNavMain";
 import Header__button from "../components/Homepage/Header__button";
+import Searchpage__sidebar from "../components/Searchpage/Searchpage__sidebar";
 import { Link } from "react-router-dom";
 import "../style/Searchpage/Searchpage.scss";
 
@@ -62,6 +63,7 @@ const Searchpage = () => {
           </div>
         </div>
       </div>
+      <Searchpage__sidebar />
       <FooterPage />
     </div>
   );
