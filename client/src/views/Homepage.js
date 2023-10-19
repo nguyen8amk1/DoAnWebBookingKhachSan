@@ -7,6 +7,7 @@ import FooterPage from "../components/Footer/FooterPage";
 import Discount from "../components/Homepage/Discount";
 import Property__list from "../components/Homepage/Property__list";
 import Featured__properties from "../components/Homepage/Featured__properties";
+import Mail__list from "../components/Footer/Mail__list";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
@@ -72,6 +73,7 @@ const Homepage = () => {
         <Discount />
         <Property__list />
         <Featured__properties />
+        <Mail__list />
         <FooterPage />
       </div>
     </>
