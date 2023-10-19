@@ -67,6 +67,13 @@
     color: var(--neutral-2);
 }
 
+.searchpage-sb-listitem,
+.form-control{
+    min-width: 224.332px;
+    max-width: 332px;
+    width: 100%;
+}
+
 .ls-options{
     padding: 10px;
 }
@@ -78,7 +85,7 @@
     color: #555;
     font-size: 13px;
     font-weight: 400;
-    gap: 50px;
+    margin-left: 10px;
 }
 
 .ls-optionText {
