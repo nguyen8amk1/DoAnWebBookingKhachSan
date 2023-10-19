@@ -8,13 +8,16 @@ import { DateRange } from "react-date-range";
 const Searchpage__sidebar = () => {
   const location = useLocation();
   const initialDestination = location.state ? location.state.destination : "";
-  const initialDate = location.state
-    ? location.state.date
-    : [{ startDate: new Date(), endDate: new Date() }];
   const initialOptions = location.state ? location.state.options : {};
 
   const [destination, setDestination] = useState(initialDestination);
-  const [date, setDate] = useState(initialDate);
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(initialOptions);
 
