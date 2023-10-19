@@ -4,9 +4,10 @@ import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const Searchbar = () => {
+const Searchbar = ({ type }) => {
+  const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -23,6 +24,8 @@ const Searchbar = () => {
     room: 1,
   });
 
+  const navigate = useNavigate();
+
   const handleOption = (name, operation) => {
     SetOptions((prev) => {
       return {
@@ -30,6 +33,10 @@ const Searchbar = () => {
         [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
       };
     });
+  };
+
+  const handleSearch = () => {
+    navigate("/Searchpage", { state: { destination, date, options } });
   };
 
   return (
@@ -49,6 +56,7 @@ const Searchbar = () => {
                   type="search"
                   placeholder="Bạn muốn đi đâu?"
                   aria-label="Bạn muốn đi đâu?"
+                  onChange={(e) => setDestination(e.target.value)}
                 ></input>
               </nav>
             </div>
@@ -84,6 +92,7 @@ const Searchbar = () => {
                 onChange={(item) => setDate([item.selection])}
                 moveRangeOnFirstSelection={false}
                 ranges={date}
+                minDate={new Date()}
                 className="date"
               />
             )}
@@ -182,7 +191,9 @@ const Searchbar = () => {
 
         <Link to="/Searchpage">
           <div className="explore-btn">
-            <div className="explore-now">Explore Now</div>
+            <div className="explore-now" onClick={handleSearch}>
+              Explore Now
+            </div>
           </div>
         </Link>
       </div>
