@@ -1,7 +1,7 @@
-import React from "react";
-import "../../style/Searchpage/searchpage__searchitem.scss";
+// import React from "react";
+import "../../style/Searchpage/Searchpage__searchitem.scss";
 
-const searchpage__searchitem = () => {
+const Searchpage__searchitem = () => {
   return (
     <div className="sp__searchitem-container">
       <img
@@ -28,12 +28,20 @@ const searchpage__searchitem = () => {
       <div className="searchpage-si-details">
         <div className="searchpage-si-rating">
           <span>Excellent</span>
-          <button>8.9</button>
+          <button
+            type="button"
+            class="searchpage-si-rating btn btn-primary btn-sidebar"
+          >
+            8.9
+          </button>
         </div>
         <div className="searchpage-si-detailtexts">
           <span className="searchpage-si-price">$112</span>
           <span className="searchpage-si-taxop">Includes taxes and fees</span>
-          <button className="searchpage-si-checkbutton">
+          <button
+            type="button"
+            class="searchpage-si-checkbutton btn btn-primary btn-sidebar"
+          >
             See availability
           </button>
         </div>
@@ -42,4 +50,4 @@ const searchpage__searchitem = () => {
   );
 };
 
-export default searchpage__searchitem;
+export default Searchpage__searchitem;

@@ -1,4 +1,4 @@
-.searchpage-sb-container {
+.sp__searchitem-container {
     border: 1px solid lightgray;
     padding: 10px;
     border-radius: 5px;
@@ -6,104 +6,105 @@
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 20px;
-  }
-  
-  .sp-searchitem-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .searchpage-si-desc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 2;
-  }
-  
-  .searchpage-si-title {
-    font-size: 20px;
-    color: #0071c2;
-  }
-  
-  .searchpage-si-distance {
-    font-size: 12px;
-  }
-  
-  .searchpage-si-taxiop {
-    font-size: 12px;
-    background-color: #008009;
-    color: white;
-    width: max-content;
-    padding: 3px;
-    border-radius: 5px;
-  }
-  
-  .searchpage-si-subtitle{
-    font-size: 12px;
-    font-weight: bold;
-  }
-  
-  .searchpage-si-features{
-    font-size: 12px;
-  }
-  
-  .searchpage-si-cancelop{
-    font-size: 12px;
-    color: #008009;
-    font-weight: bold;
-  }
-  
-  .searchpage-si-cancelopsubtitle{
-    font-size: 12px;
-    color: #008009;
-  }
-  
-  .searchpage-si-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-  }
-  
-  .searchpage-si-rating{
-    display: flex;
-    justify-content: space-between
-  }
-  
-  .searchpage-si-rating>span{
-    font-weight: 500;
-  }
-  .searchpage-si-rating>button{
-   background-color: #003580;
-   color: white;
-   padding: 5px;
-   font-weight: bold;
-   border: none;
-  }
-  
-  .searchpage-si-detailtexts{
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .searchpage-si-price{
-    font-size: 24px;
-  }
-  
-  .searchpage-si-taxop{
-    font-size: 12px;
-    color: gray;
-  }
-  
-  .searchpage-si-checkbutton{
-    background-color: #0071c2;
-    color: white;
-    font-weight: bold;
-    padding: 10px 5px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+}
+
+.sp-searchitem-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.searchpage-si-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 2;
+}
+
+.searchpage-si-title {
+  font-size: 20px;
+  color: var(--blue-main);
+}
+
+.searchpage-si-distance {
+  font-size: 12px;
+}
+
+.searchpage-si-taxiop {
+  font-size: 12px;
+  background-color: var(--primary-o);
+  color: white;
+  width: max-content;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.searchpage-si-subtitle{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.searchpage-si-features{
+  font-size: 12px;
+}
+
+.searchpage-si-cancelop{
+  font-size: 12px;
+  color: var(--primary-o);
+  font-weight: bold;
+}
+
+.searchpage-si-cancelopsubtitle{
+  font-size: 12px;
+  color: var(--primary-o);
+}
+
+.searchpage-si-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.searchpage-si-rating{
+  display: flex;
+  justify-content: space-between
+}
+
+.searchpage-si-rating>span{
+  font-weight: 500;
+}
+
+.searchpage-si-rating .btn.btn-primary.btn-sidebar {
+  background-color: var(--primary-o);
+  font-size: 16px;
+  padding: 4px 12px 0px 12px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.searchpage-si-checkbutton.btn.btn-primary.btn-sidebar {
+  background-color: var(--blue-main);
+  font-size: 24px;
+  padding: 7px 11px 7px 11px;
+  display: flex;
+  margin: 0 auto;
+  color: white;
+  font-weight: bold;
+}
+
+.searchpage-si-detailtexts{
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.searchpage-si-price{
+  font-size: 24px;
+}
+
+.searchpage-si-taxop{
+  font-size: 12px;
+  color: gray;
+}

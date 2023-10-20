@@ -4,16 +4,16 @@
     margin-top: 20px;
     position: absolute;
     top: 140px;
-    left: 160px;
+    left: 210px;
     z-index: 10;
 }
 
 .searchpage-sb-wrapper {
+    min-width: 1107px;
+    max-width: 1107px;
     width: 100%;
     display: flex;
     gap: 20px;
-    max-width: 1024px;
-    
 }
 
 .searchpage-sb-listsearch {

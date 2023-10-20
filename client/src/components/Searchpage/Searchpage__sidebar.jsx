@@ -1,10 +1,10 @@
 import "../../style/Searchpage/Searchpage__sidebar.scss";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
-import searchpage__searchitem from "./searchpage__searchitem";
+import Searchpage__searchitem from "./Searchpage__searchitem";
 
 const Searchpage__sidebar = () => {
   const location = useLocation();
@@ -107,11 +107,13 @@ const Searchpage__sidebar = () => {
           </button>
         </div>
         <div className="searchpage-sb-listresult">
-          <searchpage__searchitem />
-          <searchpage__searchitem />
-          <searchpage__searchitem />
-          <searchpage__searchitem />
-          <searchpage__searchitem />
+          <Searchpage__searchitem />
+          <Searchpage__searchitem />
+          <Searchpage__searchitem />
+          <Searchpage__searchitem />
+          <Searchpage__searchitem />
+          <Searchpage__searchitem />
+          <Searchpage__searchitem />
         </div>
       </div>
     </div>
