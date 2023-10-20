@@ -67,7 +67,7 @@
     color: var(--neutral-2);
 }
 
-.searchpage-sb-listitem,
+.searchpage-sb-listsearch
 .form-control{
     min-width: 224.332px;
     max-width: 332px;
@@ -96,16 +96,14 @@
     width: 50px;
 }
   
-.btn,
-.btn-primary,
-.btn-sidebar {
+.searchpage-sb-listsearch.btn.btn-primary.btn-sidebar {
     background-color: var(--blue-main);
     font-size: 16px;
     padding: 8px 16px 6px 16px;
     display: flex;
     margin: 0 auto;
-}
+  }
   
-.listResult {
+.searchpage-sb-listresult {
     flex: 3;
 }  
