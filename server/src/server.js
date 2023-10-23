@@ -1,4 +1,4 @@
-import { initRouters } from './route/route.js';
+import route from './route/route.js';
 import express from 'express';
 import bodyParser from 'body-parser';
 import connectDB from './config/connectDB.js';
@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-initRouters(app);
+route.initRouters(app);
 connectDB();
 
 let port = process.env.PORT || 8000; 
