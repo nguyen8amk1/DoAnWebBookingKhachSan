@@ -3,11 +3,8 @@ import controller from "../controller/controller.js";
 
 const router = express.Router();
 
-const initRouters = (app) => {
+export const initRouters = (app) => {
     router.get('/', controller.getHomePage);
-    router.get('/ditme', (req, res) => {
-        return res.send('DITMESAIGON');
-    });
     router.get('/searchforplaces', controller.searchForPlaces);
     router.get('/hoteldetails', controller.getHotelDetails);
     router.post('/post-crud', controller.postCrud);
@@ -15,4 +12,14 @@ const initRouters = (app) => {
     app.use('/', router);
 }
 
-export default initRouters;
+export const initAuthRouters = (app) => {
+    // router.post('/login');
+    // router.post('/logout');
+
+    app.use('/', router);
+}
+
+// export {
+//     initRouters: initRouters,
+//     initAuthRouters: initAuthRouters
+// };

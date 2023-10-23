@@ -76,6 +76,22 @@ Prerequisites Information:
         server/models/index.js: 
             -> Don't touch it for now :v
 
+    How authentication works: 
+        1. Identity Provider (Authentication Server) generates a JWT 
+            -> verify the credentials (username, password, ...) -> return JWT 
+            -> Xac minh xong thong tin roi moi gui lai token 
+        2. Resource Server: Verifies JWT 
+            -> verify the JWT -> return resources  
+
+        with sequential diagram 
+        JWT payload can contains many user info that can be used for Authorization (such as role,...)
+
+        Access Token: 
+        Refresh Token: 
+
+    How authorization works: 
+        .... 
+        with sequential diagram 
 
 Development Rules: 
     naming structure: 

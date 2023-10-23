@@ -1,4 +1,4 @@
-import { initRouters } from './route/route.js';
+import {initAuthRouters} from './route/route.js'
 import express from 'express';
 import bodyParser from 'body-parser';
 import connectDB from './config/connectDB.js';
@@ -7,16 +7,16 @@ import url from 'url';
 import 'dotenv/config';
 
 const app = express();
-const cors = require('cors')
+const cors = require('cors'); 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-initRouters(app);
+initAuthRouters(app); 
 connectDB();
 
-let port = process.env.PORT || 8000; 
+let port = process.env.AUTH_PORT || 9999; 
 
 app.listen(port, () => {
-    console.log("LISTENING ON PORT: ", port);
+    console.log("LISTENING FOR AUTHENTICATION ON PORT: ", port);
 });
