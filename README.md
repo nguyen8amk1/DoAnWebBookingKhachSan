@@ -9,6 +9,7 @@ Prerequisites Information:
             Mapbox: https://docs.mapbox.com/help/getting-started/ 
 
         Database: Sqlite3 (development), Mysql (production)
+        Image Hosting Service: cloudinary
         Css: Sass
         Server: Express 
         Client: ReactJS  

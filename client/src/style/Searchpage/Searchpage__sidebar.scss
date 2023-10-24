@@ -1,0 +1,109 @@
+.searchpage-sb-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 140px;
+    left: 210px;
+    z-index: 10;
+}
+
+.searchpage-sb-wrapper {
+    min-width: 1107px;
+    max-width: 1107px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.searchpage-sb-listsearch {
+    position: sticky;
+    background-color: var(--primary-o);
+    padding: 10px;
+    border-radius: 10px;
+    top: 10px;
+    z-index: 9;
+    color: white;
+    height: max-content;
+    flex: 1;
+}
+
+.searchpage-sb-listtitle {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.searchpage-sb-listitem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+  
+.searchpage-sb-listitem>label{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 2px 0 0 0;
+}
+  
+.searchpage-sb-listitem>input{
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+.searchpage-sb-listitem>span{
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 0.25rem;
+    border-color: var(--blue-main);
+    color: var(--neutral-2);
+}
+
+.searchpage-sb-listsearch
+.form-control{
+    min-width: 224.332px;
+    max-width: 332px;
+    width: 100%;
+}
+
+.ls-options{
+    padding: 10px;
+}
+  
+.ls-optionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.ls-optionText {
+    color: white;
+}
+  
+.ls-optionInput{
+    width: 50px;
+}
+  
+.searchpage-sb-listsearch.btn.btn-primary.btn-sidebar {
+    background-color: var(--blue-main);
+    font-size: 16px;
+    padding: 8px 16px 6px 16px;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+.searchpage-sb-listresult {
+    flex: 3;
+}  

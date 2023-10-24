@@ -2,6 +2,7 @@ import initRoutes from './route/route.js'
 import express from 'express';
 import bodyParser from 'body-parser';
 import connectDB from './config/connectDB.js';
+import url from 'url';
 
 import 'dotenv/config';
 

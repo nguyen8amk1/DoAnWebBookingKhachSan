@@ -8,7 +8,8 @@ const initRouters = (app) => {
     router.get('/ditme', (req, res) => {
         return res.send('DITMESAIGON');
     });
-    router.get('/crud', controller.getCrud);
+    router.get('/searchforplaces', controller.searchForPlaces);
+    router.get('/hoteldetails', controller.getHotelDetails);
     router.post('/post-crud', controller.postCrud);
 
     app.use('/', router);
