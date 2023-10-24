@@ -1,6 +1,6 @@
 FROM node:18-alpine
-WORKDIR /server 
+WORKDIR /client 
 COPY . . 
-RUN yarn install 
+RUN npm install 
 CMD ["npm", "start"]
-EXPOSE 8080
+EXPOSE 3000

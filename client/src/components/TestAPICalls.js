@@ -28,7 +28,7 @@ class Test extends React.Component {
 
     render() {
         return <>
-            <h2>Hi, I am a {this.state.ditme}!</h2>;
+            <h2>THAT KHONG THE TIN DUOC, I am a {this.state.ditme}!</h2>;
         </>
     }
 }
