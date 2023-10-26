@@ -11,7 +11,7 @@
     "mapbox-gl": "^2.14.1",
     "mdb-react-ui-kit": "^6.3.0",
     "mdbreact": "^5.2.0",
-    "node-sass": "^7.0.3",
+    "sass": "^1.69.4",
     "react": "^18.2.0",
     "react-date-range": "^1.4.0",
     "react-dom": "^18.2.0",
