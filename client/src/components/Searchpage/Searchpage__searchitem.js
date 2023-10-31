@@ -1,7 +1,7 @@
 // import React from "react";
 import "../../style/Searchpage/Searchpage_searchitem.scss";
 
-const Searchpage__searchitem = () => {
+const Searchpage__searchitem = (props) => {
   return (
     <div className="sp__searchitem-container">
       <img

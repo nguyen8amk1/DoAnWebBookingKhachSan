@@ -1,12 +1,11 @@
 import "../../style/Searchpage/Searchpage__sidebar.scss";
-
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import Searchpage__searchitem from "./Searchpage__searchitem";
 
-const Searchpage__sidebar = () => {
+const Searchpage__sidebar = (props) => {
   const location = useLocation();
   const initialDestination = location.state ? location.state.destination : "";
   const initialOptions = location.state ? location.state.options : {};
