@@ -50,7 +50,7 @@ const Homepage = () => {
               homeFontFamily="Roboto"
             />
           </div>
-          <div className="button1">
+          {/* <div className="button1">
             <Header__button
               buttonText="Log In"
               Header__buttonBackgroundColor="rgba(0,0,0,0.02)"
@@ -65,6 +65,22 @@ const Homepage = () => {
               buttonFontFamily="Roboto"
               buttonColor="#fff"
             />
+          </div> */}
+          <div className="btn-login_register">
+            <button
+              type="button"
+              class="btn-login btn btn-primary"
+              onClick={() => alert("button click catched")}
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn-register btn btn-primary"
+              onClick={() => alert("button click catched")}
+            >
+              Sign Up
+            </button>
           </div>
           <img className="main-item" alt="" src="/Homepage__img.png" />
         </div>

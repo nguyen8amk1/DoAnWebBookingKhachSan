@@ -14,10 +14,43 @@
   cursor: pointer;
   pointer-events: auto; /* Thêm dòng này để đảm bảo vùng di chuột hoạt động */
   z-index: 4;
-
 }
 
-.button1,
+.btn-login_register{
+  position: absolute;
+  top: 14px;
+  right: 10%;
+  display: flex;
+  gap: 5px;
+}
+
+// .btn-login.btn.btn-primary{
+//   gap: 20px;
+// }
+
+.btn-login.btn.btn-primary{
+  background-color: white;
+  color: var(--primary-o);
+  &:hover{
+    background-color: none;
+  }
+
+  &:active{
+    background-color: var(--primary-o);
+  }
+}
+
+.btn-register.btn.btn-primary{
+  background-color: var(--primary-o);
+  &:hover{
+    background-color: none;
+  }
+
+  &:active{
+    background-color: white;
+  }
+}
+
 .sub-nav {
   position: absolute;
   display: flex;
@@ -33,14 +66,14 @@
   line-height: 30px;
 }
 
-.button1 {
-  top: 8px;
-  right: 10%;
-  overflow: hidden;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 20px;
-}
+// .btn-login {
+//   top: 8px;
+//   right: 10%;
+//   overflow: hidden;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   gap: 20px;
+// }
 
 .main-item {
   position: absolute;
