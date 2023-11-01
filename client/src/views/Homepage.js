@@ -8,12 +8,11 @@ import Discount from "../components/Homepage/Discount";
 import Property__list from "../components/Homepage/Property__list";
 import Featured__properties from "../components/Homepage/Featured__properties";
 import Mail__list from "../components/Footer/Mail__list";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import UserLogin from "./UserLogin";
 import { useState } from "react";
-
-
-
+import { render } from "react-dom";
+import { emitter } from "../utils/emitter";
 
 
 const Homepage = () => {
@@ -25,13 +24,22 @@ const Homepage = () => {
   const toggleUserModal = () => {
     setOpenModal(!isOpenModal)
   }
+  const handleLoginData = (data) => {
+    console.log("data from child", data)
+    emitter.emit('EVENT_CLEAR_MODAL_DATA')
+  }
 
+  const navigate = useNavigate();
+  const handleRegister = () => {
+    navigate("/register");
+  }
   return (
     <>
       <div className="homepage">
         <UserLogin
           isOpenModal={isOpenModal}
           toggle={toggleUserModal}
+          handleLoginData={handleLoginData}
         />
         <div className="main">
           <Link to="/" className="main-child">
@@ -93,6 +101,13 @@ const Homepage = () => {
             >
               Login
             </button>
+            {/* <Link to="/register">
+              <div className="btn-register btn btn-primary">
+                <div className="explore-now" onClick={handleRegister}>
+                  Sign Up
+                </div>
+              </div>
+            </Link> */}
             <button
               type="button"
               className="btn-register btn btn-primary"

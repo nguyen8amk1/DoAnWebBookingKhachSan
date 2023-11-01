@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-
+import { emitter } from '../utils/emitter';
 
 class UserLogin extends Component {
 
@@ -10,8 +10,17 @@ class UserLogin extends Component {
             email: '',
             password: '',
         }
+        this.listenToEmitter();
     }
 
+    listenToEmitter() {
+        emitter.on('EVENT_CLEAR_MODAL_DATA', () => {
+            this.setState({
+                email: '',
+                password: '',
+            })
+        })
+    }
     componentDidMount() {
     }
 
@@ -20,6 +29,13 @@ class UserLogin extends Component {
     }
 
     handleOnChangeInput = (event, id) => {
+
+        /**
+         * 
+         * this.state.email = this.state['email']
+         * ..this.state <=> copy current state
+         *
+         */
         let copyState = { ...this.state };
         copyState[id] = event.target.value;
 
@@ -29,8 +45,13 @@ class UserLogin extends Component {
 
     }
 
-    render() {
+    handleUserLogin = () => {
         console.log(this.state)
+        this.props.handleLoginData(this.state);
+        this.props.toggle();
+    }
+
+    render() {
         return (
             <Modal
                 isOpen={this.props.isOpenModal}
@@ -58,14 +79,14 @@ class UserLogin extends Component {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="success" onClick={() => { this.toggle() }}>
+                    <Button color="success" onClick={() => { this.handleUserLogin() }}>
                         Login
                     </Button>{' '}
                     <Button color="secondary" onClick={() => { this.toggle() }}>
                         Cancel
                     </Button>
                 </ModalFooter>
-            </Modal>
+            </Modal >
         )
     }
 

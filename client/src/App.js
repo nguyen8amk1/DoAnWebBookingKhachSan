@@ -10,7 +10,7 @@ import Test from "./components/Homepage/TestAPICalls";
 import MapComponentTest from "./components/Homepage/TestMapComponent";
 // import Destination__slider from "./components/Homepage/Specialty";
 import Searchpage from "./views/Searchpage";
-
+import RegisterPage from "./views/RegisterPage";
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -49,17 +49,18 @@ function App() {
 
   return (
     <>
-    <switch>
-      <Routes>
-        <Route exact path="/" Component={Homepage} />
-        <Route path="/Searchpage" Component={Searchpage} />
-      </Routes>
-      {/* <p> */}
-      {/* <Destination__slider /> */}
-      {/* <Test />
+      <switch>
+        <Routes>
+          <Route exact path="/" Component={Homepage} />
+          <Route path="/Searchpage" Component={Searchpage} />
+          <Route path="/register" Component={RegisterPage} />
+        </Routes>
+        {/* <p> */}
+        {/* <Destination__slider /> */}
+        {/* <Test />
         <MapComponentTest /> */}
-      {/* </p> */}
-    </switch>
+        {/* </p> */}
+      </switch>
     </>
   );
 }
