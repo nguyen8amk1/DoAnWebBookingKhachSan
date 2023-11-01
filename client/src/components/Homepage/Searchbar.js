@@ -5,7 +5,7 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import { Link, useNavigate } from "react-router-dom";
-
+import { getSearch } from "../../api/PageApi";
 const Searchbar = ({ type }) => {
   const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
@@ -25,6 +25,7 @@ const Searchbar = ({ type }) => {
   });
 
   const navigate = useNavigate();
+  let searchPageData = undefined;
 
   const handleOption = (name, operation) => {
     SetOptions((prev) => {
@@ -35,8 +36,14 @@ const Searchbar = ({ type }) => {
     });
   };
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     navigate("/Searchpage", { state: { destination, date, options } });
+    let response = await getSearch(destination);
+    searchPageData = response
+    // console.log(searchPageData)
+    for (let i = 0; i < searchPageData.length; i++) {
+      console.log(searchPageData[i].score)
+    }
   };
 
   return (
@@ -50,9 +57,9 @@ const Searchbar = ({ type }) => {
               <img className="inner-icon" alt="" src="/vector-4855.svg" />
             </div>
             <div className="content__item-where">
-              <nav class="justify-content-between">
+              <nav className="justify-content-between">
                 <input
-                  class="form-control mr-sm-2"
+                  className="form-control mr-sm-2"
                   type="search"
                   placeholder="Bạn muốn đi đâu?"
                   aria-label="Bạn muốn đi đâu?"

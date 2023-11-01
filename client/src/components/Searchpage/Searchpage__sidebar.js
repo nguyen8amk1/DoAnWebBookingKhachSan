@@ -31,7 +31,7 @@ const Searchpage__sidebar = () => {
             <label>Destination</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               aria-label="Amount (to the nearest dollar)"
               placeholder={destination}
             />
@@ -101,7 +101,7 @@ const Searchpage__sidebar = () => {
 
           <button
             type="button"
-            class="searchpage-sb-listsearch btn btn-primary btn-sidebar"
+            className="searchpage-sb-listsearch btn btn-primary btn-sidebar"
           >
             Search
           </button>

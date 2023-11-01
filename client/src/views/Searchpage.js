@@ -65,14 +65,14 @@ const Searchpage = () => {
           <div className="btn-login_register">
             <button
               type="button"
-              class="btn-login btn btn-primary"
+              className="btn-login btn btn-primary"
               onClick={() => alert("button click catched")}
             >
               Login
             </button>
             <button
               type="button"
-              class="btn-register btn btn-primary"
+              className="btn-register btn btn-primary"
               onClick={() => alert("button click catched")}
             >
               Sign Up

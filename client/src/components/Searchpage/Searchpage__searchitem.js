@@ -30,7 +30,7 @@ const Searchpage__searchitem = () => {
           <span>Excellent</span>
           <button
             type="button"
-            class="searchpage-si-rating btn btn-primary btn-sidebar"
+            className="searchpage-si-rating btn btn-primary btn-sidebar"
           >
             8.9
           </button>
@@ -40,7 +40,7 @@ const Searchpage__searchitem = () => {
           <span className="searchpage-si-taxop">Includes taxes and fees</span>
           <button
             type="button"
-            class="searchpage-si-checkbutton btn btn-primary btn-sidebar"
+            className="searchpage-si-checkbutton btn btn-primary btn-sidebar"
           >
             See availability
           </button>

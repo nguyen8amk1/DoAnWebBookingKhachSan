@@ -9,11 +9,30 @@ import Property__list from "../components/Homepage/Property__list";
 import Featured__properties from "../components/Homepage/Featured__properties";
 import Mail__list from "../components/Footer/Mail__list";
 import { Link } from "react-router-dom";
+import UserLogin from "./UserLogin";
+import { useState } from "react";
+
+
+
+
 
 const Homepage = () => {
+  const [isOpenModal, setOpenModal] = useState(false);
+
+  const handleLogin = () => {
+    setOpenModal(true)
+  }
+  const toggleUserModal = () => {
+    setOpenModal(!isOpenModal)
+  }
+
   return (
     <>
       <div className="homepage">
+        <UserLogin
+          isOpenModal={isOpenModal}
+          toggle={toggleUserModal}
+        />
         <div className="main">
           <Link to="/" className="main-child">
             <img className="main-child" alt="" src="/logo__web.png" />
@@ -69,14 +88,14 @@ const Homepage = () => {
           <div className="btn-login_register">
             <button
               type="button"
-              class="btn-login btn btn-primary"
-              onClick={() => alert("button click catched")}
+              className="btn-login btn btn-primary"
+              onClick={handleLogin}
             >
               Login
             </button>
             <button
               type="button"
-              class="btn-register btn btn-primary"
+              className="btn-register btn btn-primary"
               onClick={() => alert("button click catched")}
             >
               Sign Up
