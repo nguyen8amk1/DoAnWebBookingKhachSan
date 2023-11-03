@@ -1,7 +1,4 @@
 TODAY: 
-    API stub:     
-        Search for hotels (1h) [] @Current 
-        Return hotel details (1h) [] 
     
 TODO: 
     Report final: 
@@ -33,6 +30,9 @@ TODO:
 
 
 DONE:  
+    API stub:     
+        Search for hotels (1h) [X] 
+        Return hotel details (1h) [X] 
     Understand Sequelize (2h) [X] 
     Scraping data (4h) [X] 
     Connect front-end and back-end with a simple message: (2h) [X] 
