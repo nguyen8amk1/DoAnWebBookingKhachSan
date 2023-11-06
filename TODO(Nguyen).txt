@@ -1,5 +1,21 @@
 TODAY: 
-    
+    Add Database operations to the authentication server code (1h) @Current 
+        -> Create User Model  
+        -> With 3 opertions:
+            + check if user exist 
+            + add user 
+            + 
+        -> Create Refresh Token model: ?? 
+            storing refresh token along with user id
+
+    Add authorization middleware (2h)
+        role based 
+        -> maybe trying to find the old code that i wrote before 
+        
+    Create upload hotel feature (4h)
+        -> with basic ui 
+    -> Het dong nay vao ngay mai   
+
 TODO: 
     Report final: 
         + Overview System 
