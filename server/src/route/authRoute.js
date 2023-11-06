@@ -5,7 +5,8 @@ const router = express.Router();
 
 const initAuthRouters = (app) => {
     router.post('/login', authController.login);
-    router.post('/logout', authController.logout);
+    router.post('/register', authController.register);
+    router.delete('/logout', authController.logout);
 
     app.use('/', router);
 }
