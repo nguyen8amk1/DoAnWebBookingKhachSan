@@ -1,6 +1,43 @@
 import { QueryTypes } from 'sequelize';
 import db, { sequelize } from '../models/index.js';
 
+/**
+ * 
+    How the authentication and authorization will work: 
+    If the user is logged in 
+        then having some more information that matches this user 
+    Else: 
+        can still do things but having less information
+        -> Authenticate Token either works or not -> still go to next
+ */
+
+const middlewareAuthenticateToken = async (req, res, next) => {
+    const authHeader = req.headers['authorization']
+    const token = authHeader && authHeader.split(' ')[1]
+    // if (token == null) return res.sendStatus(401).json("Access token doesn't exist");
+    if (token != null)  {
+        jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+            console.log(err)
+            if (err) return res.sendStatus(403);
+            req.user = user;
+            next()
+        });
+    } else {
+        const user = {
+            role: "GUESS"
+        }
+        req.user = user;
+        next();
+    }
+}
+
+const middlewareUserAuthorization = async(req, res, next) => {
+    // TODO: authorization here 
+    console.log(req.user);
+    const role = req.user.role; 
+    const roleMapping = [];
+}
+
 const getHomePage = async (req, res) => {
     // const data = await db.User.findAll();
     // console.log("ditmesaigon", data);
