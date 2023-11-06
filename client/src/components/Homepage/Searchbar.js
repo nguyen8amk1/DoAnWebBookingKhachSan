@@ -4,9 +4,10 @@ import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
-import { Link } from "react-router-dom";
-
-const Searchbar = () => {
+import { Link, useNavigate } from "react-router-dom";
+import { getSearch } from "../../api/PageApi";
+const Searchbar = ({ type }) => {
+  const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -23,6 +24,9 @@ const Searchbar = () => {
     room: 1,
   });
 
+  const navigate = useNavigate();
+  let searchPageData = undefined;
+
   const handleOption = (name, operation) => {
     SetOptions((prev) => {
       return {
@@ -30,6 +34,16 @@ const Searchbar = () => {
         [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
       };
     });
+  };
+
+  const handleSearch = async () => {
+    navigate("/Searchpage", { state: { destination, date, options } });
+    let response = await getSearch(destination);
+    searchPageData = response
+    // console.log(searchPageData)
+    for (let i = 0; i < searchPageData.length; i++) {
+      console.log(searchPageData[i].score)
+    }
   };
 
   return (
@@ -43,12 +57,13 @@ const Searchbar = () => {
               <img className="inner-icon" alt="" src="/vector-4855.svg" />
             </div>
             <div className="content__item-where">
-              <nav class="justify-content-between">
+              <nav className="justify-content-between">
                 <input
-                  class="form-control mr-sm-2"
+                  className="form-control mr-sm-2"
                   type="search"
                   placeholder="Bạn muốn đi đâu?"
                   aria-label="Bạn muốn đi đâu?"
+                  onChange={(e) => setDestination(e.target.value)}
                 ></input>
               </nav>
             </div>
@@ -84,6 +99,7 @@ const Searchbar = () => {
                 onChange={(item) => setDate([item.selection])}
                 moveRangeOnFirstSelection={false}
                 ranges={date}
+                minDate={new Date()}
                 className="date"
               />
             )}
@@ -182,7 +198,9 @@ const Searchbar = () => {
 
         <Link to="/Searchpage">
           <div className="explore-btn">
-            <div className="explore-now">Explore Now</div>
+            <div className="explore-now" onClick={handleSearch}>
+              Explore Now
+            </div>
           </div>
         </Link>
       </div>

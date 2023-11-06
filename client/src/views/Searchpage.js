@@ -1,8 +1,10 @@
 import FooterPage from "../components/Footer/FooterPage";
 import SubNavMain from "../components/Homepage/SubNavMain";
 import Header__button from "../components/Homepage/Header__button";
+import Searchpage__sidebar from "../components/Searchpage/Searchpage__sidebar";
 import { Link } from "react-router-dom";
 import "../style/Searchpage/Searchpage.scss";
+import React from "react";
 
 const Searchpage = () => {
   return (
@@ -44,7 +46,7 @@ const Searchpage = () => {
               homeFontFamily="Roboto"
             />
           </div>
-          <div className="button1">
+          {/* <div className="button1">
             <Header__button
               buttonText="Log In"
               Header__buttonBackgroundColor="rgba(0,0,0,0.02)"
@@ -59,9 +61,26 @@ const Searchpage = () => {
               buttonFontFamily="Roboto"
               buttonColor="#fff"
             />
+          </div> */}
+          <div className="btn-login_register">
+            <button
+              type="button"
+              className="btn-login btn btn-primary"
+              onClick={() => alert("button click catched")}
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              className="btn-register btn btn-primary"
+              onClick={() => alert("button click catched")}
+            >
+              Sign Up
+            </button>
           </div>
         </div>
       </div>
+      <Searchpage__sidebar />
       <FooterPage />
     </div>
   );

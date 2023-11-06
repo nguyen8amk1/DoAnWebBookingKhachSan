@@ -4,7 +4,7 @@ import "../../style/Homepage/Discount.scss"
 
 const Discount = () => {
     return (
-        <div class="discount-container">
+        <div className="discount-container">
             <div className="discount-text--main">
                 <span>
                     Ưu đãi
@@ -25,7 +25,7 @@ const Discount = () => {
                         <h5>Tìm kiếm các chỗ nghỉ cho phép lưu trú dài ngày với giá theo tháng ưu đãi</h5>
                         <p>phiếu giảm giá có giá trị trong một tháng</p>
                     </div>
-                    <button type="button" class="btn btn-primary">Tìm chỗ nghỉ</button>
+                    <button type="button" className="btn btn-primary">Tìm chỗ nghỉ</button>
                 </div>
                 <div className="discount-list">
                     <img src="/hotel-discount-sub.jpg" alt="" className="discount-list-img" />
@@ -34,7 +34,7 @@ const Discount = () => {
                         <h5>Khám phá hàng nghìn điểm đến khắp thế giới và tiết kiệm từ 15%</h5>
                         <p>phiếu giảm giá có giá trị trong một tháng</p>
                     </div>
-                    <button type="button" class="btn btn-primary">Tìm ưu đãi cuối năm</button>
+                    <button type="button" className="btn btn-primary">Tìm ưu đãi cuối năm</button>
                 </div>
             </div>
         </div>

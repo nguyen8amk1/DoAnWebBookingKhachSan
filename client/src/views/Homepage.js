@@ -9,11 +9,30 @@ import Property__list from "../components/Homepage/Property__list";
 import Featured__properties from "../components/Homepage/Featured__properties";
 import Mail__list from "../components/Footer/Mail__list";
 import { Link } from "react-router-dom";
+import UserLogin from "./UserLogin";
+import { useState } from "react";
+
+
+
+
 
 const Homepage = () => {
+  const [isOpenModal, setOpenModal] = useState(false);
+
+  const handleLogin = () => {
+    setOpenModal(true)
+  }
+  const toggleUserModal = () => {
+    setOpenModal(!isOpenModal)
+  }
+
   return (
     <>
       <div className="homepage">
+        <UserLogin
+          isOpenModal={isOpenModal}
+          toggle={toggleUserModal}
+        />
         <div className="main">
           <Link to="/" className="main-child">
             <img className="main-child" alt="" src="/logo__web.png" />
@@ -50,7 +69,7 @@ const Homepage = () => {
               homeFontFamily="Roboto"
             />
           </div>
-          <div className="button1">
+          {/* <div className="button1">
             <Header__button
               buttonText="Log In"
               Header__buttonBackgroundColor="rgba(0,0,0,0.02)"
@@ -65,6 +84,22 @@ const Homepage = () => {
               buttonFontFamily="Roboto"
               buttonColor="#fff"
             />
+          </div> */}
+          <div className="btn-login_register">
+            <button
+              type="button"
+              className="btn-login btn btn-primary"
+              onClick={handleLogin}
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              className="btn-register btn btn-primary"
+              onClick={() => alert("button click catched")}
+            >
+              Sign Up
+            </button>
           </div>
           <img className="main-item" alt="" src="/Homepage__img.png" />
         </div>

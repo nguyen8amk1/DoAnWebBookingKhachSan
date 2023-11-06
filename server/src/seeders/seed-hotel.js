@@ -1,4 +1,22 @@
 'use strict';
+const fs = require("fs");
+const util = require("util");
+
+const readFileAsync = util.promisify(fs.readFile);
+
+async function readJson(fileName) {
+    try {
+        // Read the specified JSON file using promisified fs.readFile.
+        const data = await readFileAsync(fileName);
+
+        // Parse the JSON data.
+        const student = JSON.parse(data);
+        // console.log(student); // Print the student data.
+        return student; // Return the student data.
+    } catch (err) {
+        throw err; // Throw any errors encountered during the process.
+    }
+}
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -22,21 +40,33 @@ module.exports = {
         // cityID: 1,
         // createdAt: new Date(),
         // updatedAt: new Date()
-        const hotelData = [];
-        for (let i = 0; i < 25; i++) {
-            hotelData.push({
-                name: faker.person.fullName(),
-                address: faker.location.streetAddress(),
-                description: faker.lorem.sentence({ min: 5, max: 10 }),
-                images: faker.lorem.word(),
-                score: faker.number.int({ min: 1, max: 10 }).toLocaleString(),
-                review: faker.person.bio(),
-                cityID: faker.number.int({ min: 1, max: 25 }),
-                createdAt: new Date(),
-                updatedAt: new Date(),
-            });
+
+        try {
+            const data = await readJson("../scrapingTool/scrapedData/data.json");
+            const hotelData = [];
+            for (let i = 0; i < data.length; i++) {
+                const hotels = data[i].hotels;
+                for(let j = 0; j < hotels.length; j++) {
+                    const hotel = hotels[j];
+                    hotelData.push({
+                        name: hotel.name,
+                        address: hotel.address,
+                        description: hotel.description,
+                        images: hotel.images,
+                        score: hotel.score,
+                        review: hotel.review,
+                        cityID: i + 1,
+                        createdAt: new Date(),
+                        updatedAt: new Date(),
+                    });
+                }
+            }
+
+            return queryInterface.bulkInsert('Hotels', hotelData);
+
+        } catch (err) {
+            console.error("An error occurred:", err);
         }
-        return queryInterface.bulkInsert('Hotels', hotelData);
     },
 
     async down(queryInterface, Sequelize) {
