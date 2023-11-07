@@ -6,10 +6,20 @@ import { Link } from "react-router-dom";
 import "../style/Searchpage/Searchpage.scss";
 import React from "react";
 import UserInfoComponent from "../components/UserInfoComponent";
+import { searchForPlaces } from "../api/PageApi";
 
 class Searchpage extends React.Component {
-  componentDidMount() {
-
+  async componentDidMount() {
+    // NOTE: these are just mock data  
+    // TODO: get the actual input from the search bar /homepage 
+    const date = {came: '10/10/2022', leave: '10/10/2022'};
+    const city = "Vung Tau";
+    const memberCount = {
+      adult: 1,
+      children: 2
+    };
+    const result = await searchForPlaces(city, date, memberCount);
+    console.log(result);
   }
 
   render() {

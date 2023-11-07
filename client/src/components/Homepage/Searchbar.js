@@ -5,7 +5,7 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import { Link, useNavigate } from "react-router-dom";
-import { getSearch } from "../../api/PageApi";
+// import { getSearch } from "../../api/PageApi";
 const Searchbar = ({ type }) => {
   const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
@@ -38,12 +38,12 @@ const Searchbar = ({ type }) => {
 
   const handleSearch = async () => {
     navigate("/Searchpage", { state: { destination, date, options } });
-    let response = await getSearch(destination);
-    searchPageData = response
-    // console.log(searchPageData)
-    for (let i = 0; i < searchPageData.length; i++) {
-      console.log(searchPageData[i].score)
-    }
+    // let response = await getSearch(destination);
+    // searchPageData = response
+    // // console.log(searchPageData)
+    // for (let i = 0; i < searchPageData.length; i++) {
+    //   console.log(searchPageData[i].score)
+    // }
   };
 
   return (
