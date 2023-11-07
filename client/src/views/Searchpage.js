@@ -9,6 +9,13 @@ import UserInfoComponent from "../components/UserInfoComponent";
 import { searchForPlaces } from "../api/PageApi";
 
 class Searchpage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchResults: []
+    };
+  }
+
   async componentDidMount() {
     // NOTE: these are just mock data  
     // TODO: get the actual input from the search bar /homepage 
@@ -20,6 +27,7 @@ class Searchpage extends React.Component {
     };
     const result = await searchForPlaces(city, date, memberCount);
     console.log(result);
+    this.setState({searchResults: result});
   }
 
   render() {
@@ -81,7 +89,7 @@ class Searchpage extends React.Component {
             <UserInfoComponent />
           </div>
         </div>
-        <Searchpage__sidebar />
+        <Searchpage__sidebar searchResults={this.state.searchResults}/>
         <FooterPage />
       </div>
     );

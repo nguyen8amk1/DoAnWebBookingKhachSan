@@ -1,6 +1,8 @@
 TODAY: 
-    Show the search result on to the page (2h) @Current 
-
+    Create upload hotel feature (4h) @Current 
+        -> with basic ui 
+    -> Het dong nay vao ngay mai   
+    
     Add Database operations to the authentication server code (1h) 
         -> Create User Model 
         -> With 3 opertions:
@@ -10,19 +12,20 @@ TODAY:
         -> Create Refresh Token model: ?? 
             storing refresh token along with user id
 
-    Handle login on the clientside (2h) 
+    Show the search result on to the page (2h) @Halfway 
+        -> still need:
+            price
+            thumbnail 
+
+    Handle login on the clientside (2h) @Halfway 
         -> half way there 
         -> need:
             + some login information
             + logout feature (calling api)
 
-    Add authorization middleware (2h)
+    Add authorization middleware (2h) 
         role based 
         -> maybe trying to find the old code that i wrote before 
-        
-    Create upload hotel feature (4h)
-        -> with basic ui 
-    -> Het dong nay vao ngay mai   
 
 TODO: 
     Report final: 

@@ -1,7 +1,7 @@
 // import React from "react";
 import "../../style/Searchpage/Searchpage_searchitem.scss";
 
-const Searchpage__searchitem = () => {
+const Searchpage__searchitem = (props) => {
   return (
     <div className="sp__searchitem-container">
       <img
@@ -11,15 +11,15 @@ const Searchpage__searchitem = () => {
       />
 
       <div className="searchpage-si-desc">
-        <h1 className="searchpage-si-title">Tower Street Apartments</h1>
-        <span className="searchpage-si-distance">500m from center</span>
+        <h1 className="searchpage-si-title">{props.info.name}</h1>
+        <span className="searchpage-si-distance">{props.info.address}</span>
         <span className="searchpage-si-taxiop">Free airport taxi</span>
-        <span className="searchpage-si-subtitle">
+        {/* <span className="searchpage-si-subtitle">
           Studio Apartment with Air conditioning
-        </span>
-        <span className="searchpage-si-features">
+        </span> */}
+        {/* <span className="searchpage-si-features">
           Entire studio • 1 bathroom • 21m² 1 full bed
-        </span>
+        </span> */}
         <span className="searchpage-si-cancelop">Free cancellation </span>
         <span className="searchpage-si-cancelopsubtitle">
           You can cancel later, so lock in this great price today!
@@ -32,7 +32,7 @@ const Searchpage__searchitem = () => {
             type="button"
             className="searchpage-si-rating btn btn-primary btn-sidebar"
           >
-            8.9
+          {props.info.score}
           </button>
         </div>
         <div className="searchpage-si-detailtexts">

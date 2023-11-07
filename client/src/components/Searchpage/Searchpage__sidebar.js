@@ -6,7 +6,7 @@ import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import Searchpage__searchitem from "./Searchpage__searchitem";
 
-const Searchpage__sidebar = () => {
+const Searchpage__sidebar = (props) => {
   const location = useLocation();
   const initialDestination = location.state ? location.state.destination : "";
   const initialOptions = location.state ? location.state.options : {};
@@ -107,13 +107,8 @@ const Searchpage__sidebar = () => {
           </button>
         </div>
         <div className="searchpage-sb-listresult">
-          <Searchpage__searchitem />
-          <Searchpage__searchitem />
-          <Searchpage__searchitem />
-          <Searchpage__searchitem />
-          <Searchpage__searchitem />
-          <Searchpage__searchitem />
-          <Searchpage__searchitem />
+          { props.searchResults.map((info, index) => (
+            <Searchpage__searchitem key={index} info={info} />))}
         </div>
       </div>
     </div>
