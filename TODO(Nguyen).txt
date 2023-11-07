@@ -1,14 +1,14 @@
 TODAY: 
+    Show the search result on to the page (2h) @Current 
+
     Add Database operations to the authentication server code (1h) 
-        -> Create User Model @Current 
+        -> Create User Model 
         -> With 3 opertions:
             + check if user exist 
             + add user 
             + 
         -> Create Refresh Token model: ?? 
             storing refresh token along with user id
-
-    Show the search result on to the page (2h) @Next 
 
     Handle login on the clientside (2h) 
         -> half way there 

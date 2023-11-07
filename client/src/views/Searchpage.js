@@ -7,47 +7,52 @@ import "../style/Searchpage/Searchpage.scss";
 import React from "react";
 import UserInfoComponent from "../components/UserInfoComponent";
 
-const Searchpage = () => {
-  return (
-    <div className="Searchpage">
-      <div className="homepage">
-        <div className="main">
-          <Link to="/" className="main-child">
-            <img className="main-child" alt="" src="/logo__web.png" />
-          </Link>
-          <div className="sub-nav">
-            <SubNavMain
-              home="Lưu trú"
-              subNavMainWidth="71px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Phiếu giảm giá và ưu đãi"
-              subNavMainWidth="193px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Máy bay"
-              subNavMainWidth="86px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Khách sạn"
-              subNavMainWidth="96px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Địa điểm tham quan"
-              subNavMainWidth="158px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-          </div>
-          {/* <div className="button1">
+class Searchpage extends React.Component {
+  componentDidMount() {
+
+  }
+
+  render() {
+    return (
+      <div className="Searchpage">
+        <div className="homepage">
+          <div className="main">
+            <Link to="/" className="main-child">
+              <img className="main-child" alt="" src="/logo__web.png" />
+            </Link>
+            <div className="sub-nav">
+              <SubNavMain
+                home="Lưu trú"
+                subNavMainWidth="71px"
+                subNavMainPosition="relative"
+                homeFontFamily="Roboto"
+              />
+              <SubNavMain
+                home="Phiếu giảm giá và ưu đãi"
+                subNavMainWidth="193px"
+                subNavMainPosition="relative"
+                homeFontFamily="Roboto"
+              />
+              <SubNavMain
+                home="Máy bay"
+                subNavMainWidth="86px"
+                subNavMainPosition="relative"
+                homeFontFamily="Roboto"
+              />
+              <SubNavMain
+                home="Khách sạn"
+                subNavMainWidth="96px"
+                subNavMainPosition="relative"
+                homeFontFamily="Roboto"
+              />
+              <SubNavMain
+                home="Địa điểm tham quan"
+                subNavMainWidth="158px"
+                subNavMainPosition="relative"
+                homeFontFamily="Roboto"
+              />
+            </div>
+            {/* <div className="button1">
             <Header__button
               buttonText="Log In"
               Header__buttonBackgroundColor="rgba(0,0,0,0.02)"
@@ -63,13 +68,14 @@ const Searchpage = () => {
               buttonColor="#fff"
             />
           </div> */}
-          <UserInfoComponent/>
+            <UserInfoComponent />
+          </div>
         </div>
+        <Searchpage__sidebar />
+        <FooterPage />
       </div>
-      <Searchpage__sidebar />
-      <FooterPage />
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Searchpage;
