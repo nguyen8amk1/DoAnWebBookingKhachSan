@@ -5,6 +5,7 @@ import Searchpage__sidebar from "../components/Searchpage/Searchpage__sidebar";
 import { Link } from "react-router-dom";
 import "../style/Searchpage/Searchpage.scss";
 import React from "react";
+import UserInfoComponent from "../components/UserInfoComponent";
 
 const Searchpage = () => {
   return (
@@ -62,22 +63,7 @@ const Searchpage = () => {
               buttonColor="#fff"
             />
           </div> */}
-          <div className="btn-login_register">
-            <button
-              type="button"
-              className="btn-login btn btn-primary"
-              onClick={() => alert("button click catched")}
-            >
-              Login
-            </button>
-            <button
-              type="button"
-              className="btn-register btn btn-primary"
-              onClick={() => alert("button click catched")}
-            >
-              Sign Up
-            </button>
-          </div>
+          <UserInfoComponent/>
         </div>
       </div>
       <Searchpage__sidebar />

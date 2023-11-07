@@ -1,12 +1,20 @@
 TODAY: 
-    Add Database operations to the authentication server code (1h) @Current 
-        -> Create User Model  
+    Add Database operations to the authentication server code (1h) 
+        -> Create User Model @Current 
         -> With 3 opertions:
             + check if user exist 
             + add user 
             + 
         -> Create Refresh Token model: ?? 
             storing refresh token along with user id
+
+    Show the search result on to the page (2h) @Next 
+
+    Handle login on the clientside (2h) 
+        -> half way there 
+        -> need:
+            + some login information
+            + logout feature (calling api)
 
     Add authorization middleware (2h)
         role based 

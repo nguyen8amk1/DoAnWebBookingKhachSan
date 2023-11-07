@@ -9,6 +9,8 @@ import db, { sequelize } from '../models/index.js';
     Else: 
         can still do things but having less information
         -> Authenticate Token either works or not -> still go to next
+        
+    DO SOMETHING WITH THE AUTHENTICATION FROM THE CLIENTSIDE AS WELL 
  */
 
 const middlewareAuthenticateToken = async (req, res, next) => {
@@ -17,18 +19,17 @@ const middlewareAuthenticateToken = async (req, res, next) => {
     // if (token == null) return res.sendStatus(401).json("Access token doesn't exist");
     if (token != null)  {
         jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-            console.log(err)
+            console.log(err); 
             if (err) return res.sendStatus(403);
             req.user = user;
-            next()
         });
     } else {
         const user = {
             role: "GUESS"
         }
         req.user = user;
-        next();
     }
+    next();
 }
 
 const middlewareUserAuthorization = async(req, res, next) => {
@@ -56,7 +57,7 @@ const postCrud = async (req, res) => {
 }
 
 const nameMapping = (name) => {
-
+    // Notes: this mapping is just temporary 
     switch(name) {
         case "Vung Tau": 
             return "vungtau";

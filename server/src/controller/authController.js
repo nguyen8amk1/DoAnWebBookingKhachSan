@@ -24,7 +24,7 @@ const login = async (req, res) => {
     // TODO: check step: 
     const userExist = checkUserCredential(username, password);
     if (!userExist) {
-        res.status(400).json({ error: "User not exist" })
+        return res.status(400).json({ error: "User not exist" })
     }
     const user = {
         username: username,
@@ -37,7 +37,7 @@ const login = async (req, res) => {
     // NOTE: this refresh token push thing, should be push to database
     refreshTokens.push(refreshToken);
 
-    res.json({ accessToken: accessToken, refreshToken: refreshToken });
+    return res.json({ accessToken: accessToken, refreshToken: refreshToken, userInfo: {username: username, avatar: null}});
 }
 
 const register = async (req, res) => {

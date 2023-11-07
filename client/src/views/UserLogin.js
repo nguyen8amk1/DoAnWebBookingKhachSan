@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-
+import { login } from '../api/AuthenticationAPI';
 
 class UserLogin extends Component {
 
@@ -15,8 +15,24 @@ class UserLogin extends Component {
     componentDidMount() {
     }
 
-    toggle = () => {
+    toggle = async () => {
         this.props.toggle();
+        console.log(this.state)
+        try {
+            const result = await login(this.state.email, this.state.password);
+            console.log(result);
+            // TODO: 
+            // Store the token into localstorage
+            localStorage.setItem("accessToken", result.accessToken);
+            localStorage.setItem("refreshToken", result.refreshToken);
+            localStorage.setItem("username", result.userInfo.username);
+
+            // Refresh the Homepage with the user information 
+            window.location.reload();
+            
+        } catch {
+            // Display some error on the screen
+        }
     }
 
     handleOnChangeInput = (event, id) => {
@@ -30,7 +46,6 @@ class UserLogin extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <Modal
                 isOpen={this.props.isOpenModal}

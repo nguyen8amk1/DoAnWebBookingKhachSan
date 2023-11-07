@@ -54,6 +54,18 @@
   }
 }
 
+.user-login-info {
+  background-color: var(--primary-o);
+
+  &:hover {
+    background-color: none;
+  }
+
+  &:active {
+    background-color: white;
+  }
+}
+
 .sub-nav {
   position: absolute;
   display: flex;
