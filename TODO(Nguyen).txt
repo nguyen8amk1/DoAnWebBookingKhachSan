@@ -1,6 +1,19 @@
 TODAY: 
-    Add Register api (1h) @Current 
     Add register client code (1h)
+        -> Have the register ui in place [X]
+        -> Need: 
+            role buttons: [X]
+            + customer 
+            + hotel manager  
+
+        -> React to success/fail register result from server @Current 
+
+
+    Add Register api (1h) 
+        -> Add the given user to the database 
+            check if the user already exist as well 
+        PASSWORD HASHING @Later
+        
     Hotel detail site (1h) 
     -> Done til this line tonight 
 

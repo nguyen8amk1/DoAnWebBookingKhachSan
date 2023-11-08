@@ -15,8 +15,11 @@ class UserLogin extends Component {
     componentDidMount() {
     }
 
-    toggle = async () => {
+    toggle = () => {
         this.props.toggle();
+    }
+
+    login = async () => {
         console.log(this.state)
         try {
             const result = await login(this.state.email, this.state.password);
@@ -53,7 +56,7 @@ class UserLogin extends Component {
                 className={'modal-user-container'}
                 size="md"
             >
-                <ModalHeader toggle={() => { this.toggle() }}>Login</ModalHeader>
+                <ModalHeader toggle={() => { this.toggle(); }}>Login</ModalHeader>
                 <ModalBody>
                     <div className="modal-user-body">
                         <div className="input-container ">
@@ -73,7 +76,7 @@ class UserLogin extends Component {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="success" onClick={() => { this.toggle() }}>
+                    <Button color="success" onClick={() => { this.toggle(); this.login(); }}>
                         Login
                     </Button>{' '}
                     <Button color="secondary" onClick={() => { this.toggle() }}>

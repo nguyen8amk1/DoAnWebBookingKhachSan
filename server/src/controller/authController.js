@@ -42,7 +42,12 @@ const login = async (req, res) => {
 
 const register = async (req, res) => {
     // Nothing related to JWT, just put the data into the database as usual  
-
+    console.log(req.body);
+    const user = req.body;
+    console.log("About to add the user: " + user);
+    res.json({ditme:"ditmemay"});
+    // const userExist = sequelize.User.findOne({where: {username: username}});
+    // if(userExist) return res.status(403).json({error: "User already exist!!!"}); // return user exit status  
 }
 
 const getNewToken = async (req, res) => {

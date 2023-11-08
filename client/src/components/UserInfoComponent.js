@@ -1,16 +1,33 @@
 import React from 'react'
 import UserLogin from '../views/UserLogin';
+import UserRegister from '../views/UserRegister';
 
 class UserInfoComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            openModal: false
+            openLoginModal: false,
+            openRegisterModal: false
         }
     }
 
     handleLogin =  () => {
-        this.setState({openModal: true})
+        this.setState({openLoginModal: true})
+    }
+
+    toggleLoginModal =  () => {
+        const temp = !this.state.openLoginModal;
+        this.setState({openLoginModal: temp})
+    }
+
+
+    handleRegister =  () => {
+        this.setState({openRegisterModal: true})
+    }
+
+    toggleRegisterModal =  () => {
+        const temp = !this.state.openRegisterModal;
+        this.setState({openRegisterModal: temp})
     }
 
     handleLogout =  () => {
@@ -20,16 +37,16 @@ class UserInfoComponent extends React.Component {
         window.location.reload();
     }
 
-    toggleUserModal =  () => {
-        const temp = !this.state.openModal;
-        this.setState({openModal: temp})
-    }
 
     render() {
         return <>
             <UserLogin
-            isOpenModal={this.state.openModal}
-            toggle={this.toggleUserModal}
+            isOpenModal={this.state.openLoginModal}
+            toggle={this.toggleLoginModal}
+            />
+            <UserRegister
+            isOpenModal={this.state.openRegisterModal}
+            toggle={this.toggleRegisterModal}
             />
           {
            localStorage.getItem("accessToken") == null ? 
@@ -44,7 +61,7 @@ class UserInfoComponent extends React.Component {
             <button
               type="button"
               className="btn-register btn btn-primary"
-              onClick={() => alert("button click catched")}
+              onClick={this.handleRegister}
             >
               Sign Up
             </button>
