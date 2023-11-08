@@ -7,6 +7,14 @@ TODAY:
             + hotel manager  
 
         -> React to success/fail register result from server @Current 
+            -> List of login status code: 
+                login success 
+                login fail
+            -> List of register status code: 
+                username already exist 
+                register success 
+                register fail  
+
 
 
     Add Register api (1h) 

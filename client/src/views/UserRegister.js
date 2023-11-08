@@ -30,7 +30,13 @@ class UserRegister extends Component {
         try {
             const result = await register(this.state.firstname, this.state.lastname, this.state.username, this.state.password, this.state.role);
             console.log(result);
-            console.log("TODO: Loading then show the Login with already filled information");
+            console.log("TODO: Loading....");
+            const success = true; // TODO: Check the result status 
+            if(success) {
+                console.log("TODO: show the Login with already filled information");
+            } else {
+                console.log("TODO: show error, the information is not valid");
+            }
             
         } catch {
             // Display some error on the screen

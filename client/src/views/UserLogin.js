@@ -29,7 +29,6 @@ class UserLogin extends Component {
             localStorage.setItem("accessToken", result.accessToken);
             localStorage.setItem("refreshToken", result.refreshToken);
             localStorage.setItem("username", result.userInfo.username);
-
             // Refresh the Homepage with the user information 
             window.location.reload();
             

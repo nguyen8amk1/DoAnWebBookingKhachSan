@@ -2,6 +2,16 @@ import { QueryTypes } from 'sequelize';
 import db, { sequelize } from '../models/index.js';
 const jwt = require('jsonwebtoken');
 
+const STATUS_CODE_LIST = {
+    // login
+    LOGIN_SUCCESS: 200, // OK 
+    LOGIN_FAIL: 401, // Unauthorized
+
+    // register 
+    REGISTER_FAIL: 409, // Conflict  
+    REGISTER_SUCCESS: 201, // Created 
+};
+
 function generateAccessToken(user) {
     return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '30m' })
 }
@@ -24,7 +34,7 @@ const login = async (req, res) => {
     // TODO: check step: 
     const userExist = checkUserCredential(username, password);
     if (!userExist) {
-        return res.status(400).json({ error: "User not exist" })
+        return res.status(STATUS_CODE_LIST.LOGIN_FAIL).json({ error: "User not exist" })
     }
     const user = {
         username: username,
@@ -45,9 +55,12 @@ const register = async (req, res) => {
     console.log(req.body);
     const user = req.body;
     console.log("About to add the user: " + user);
-    res.json({ditme:"ditmemay"});
+    console.log("TODO: Checking things up before insert");
+
     // const userExist = sequelize.User.findOne({where: {username: username}});
-    // if(userExist) return res.status(403).json({error: "User already exist!!!"}); // return user exit status  
+    const userExist = false;
+    if(userExist) return res.status(STATUS_CODE_LIST.REGISTER_FAIL).json({error: "User already exist!!!"}); // return user exit status  
+    return res.status(STATUS_CODE_LIST.REGISTER_SUCCESS).json({msg:"Register successfully"});
 }
 
 const getNewToken = async (req, res) => {
