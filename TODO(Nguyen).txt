@@ -1,7 +1,7 @@
 TODAY: 
-    Redesign the low level design from the reference image (1h) @Current 
-    Add Register api (1h) 
+    Add Register api (1h) @Current 
     Add register client code (1h)
+    Hotel detail site (1h) 
     -> Done til this line tonight 
 
 TODO: 
@@ -67,6 +67,7 @@ TODO:
 
 
 DONE:  
+    Redesign the low level design from the reference image (1h) 
     API stub:     
         Search for hotels (1h) [X] 
         Return hotel details (1h) [X] 
