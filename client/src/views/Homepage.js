@@ -10,9 +10,6 @@ import Property__list from "../components/Homepage/Property__list";
 import Featured__properties from "../components/Homepage/Featured__properties";
 import Mail__list from "../components/Footer/Mail__list";
 import { Link } from "react-router-dom";
-import UserLogin from "./UserLogin";
-import { useState } from "react";
-
 
 const Homepage = () => {
   return (

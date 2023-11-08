@@ -1,8 +1,22 @@
 TODAY: 
-    Create upload hotel feature (4h) @Current 
+    Redesign the low level design from the reference image (1h) @Current 
+    Add Register api (1h) 
+    Add register client code (1h)
+    -> Done til this line tonight 
+
+TODO: 
+    Map showing detail code (2h)
+    
+    Create upload hotel feature (4h) 
         -> with basic ui 
     -> Het dong nay vao ngay mai   
-    
+
+    Report final: 
+        + Overview System 
+        + Introduction 
+        + Features (Base + Advance)
+        + Results + Demo 
+
     Add Database operations to the authentication server code (1h) 
         -> Create User Model 
         -> With 3 opertions:
@@ -23,18 +37,14 @@ TODAY:
             + some login information
             + logout feature (calling api)
 
+
     Add authorization middleware (2h) 
         role based 
         -> maybe trying to find the old code that i wrote before 
 
-TODO: 
-    Report final: 
-        + Overview System 
-        + Introduction 
-        + Features (Base + Advance)
-        + Results + Demo 
+    Payment API (4h) 
 
-    Learn how Sequence Diagram works (1h) [] @Next
+    Learn how Sequence Diagram works (1h) [] 
     Wrap the development environment in Docker (4h) [] @Maybe
 
     <insert a Sequence Diagram for clearer> (2h)
