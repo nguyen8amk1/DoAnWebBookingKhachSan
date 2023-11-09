@@ -110,7 +110,8 @@ const getHotelDetails = async (req, res) => {
 
     // input: hotelsId 
     // test url: http://127.0.0.1:8080/hoteldetails?hotel_id=5
-    const hotelId = req.query.hotel_id; 
+    // const hotelId = req.query.hotel_id; 
+    const hotelId = 1;
     console.log(hotelId);
     const queryStr = "SELECT * FROM `Hotels` WHERE Hotels.id=" + hotelId;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.SELECT});

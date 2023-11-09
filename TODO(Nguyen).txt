@@ -1,5 +1,18 @@
 TODAY: 
-    Hotel detail site (2h) 
+    Create upload hotel api (2h) [] @Current 
+        Dang cho nghi cua quy vi 
+
+    Create upload hotel front-end (2h) [] 
+
+    The hotel detail api and the front end code is NOT 100% COMPATIBLE [] 
+        -> The id passing to the api is undefined   
+        -> Need to change and migrate the hotel table 
+            + there should be more reviews 
+                -> create a new table 
+            + the images not working -> should be more images as well 
+                -> create a new table 
+
+    Hotel detail site (2h) @Halfway 
         components: [X]
             Ten khach san 
             Button: dat can ho 
@@ -15,8 +28,6 @@ TODAY:
             Box tim phong ben trai: @Later 
             Hien thi tren ban do @Later
 
-        -> Actually get the real info [] @Current
-
     Add Register api (2h) 
         -> Add the given user to the database 
             check if the user already exist as well 
@@ -29,11 +40,6 @@ TODAY:
             + customer 
             + hotel manager  
         -> React to success/fail register result from server []
-    
-    Create upload hotel api (2h) [] 
-        Dang cho nghi cua quy vi 
-
-    Create upload hotel front-end (2h) [] 
 
 TODO: 
     https://docs.zalopay.vn/v2/general/overview.html
@@ -99,6 +105,8 @@ TODO:
 
 
 DONE:  
+    Call the hotel details api on the front end [X]
+
     Redesign the low level design from the reference image (1h) 
     API stub:     
         Search for hotels (1h) [X] 

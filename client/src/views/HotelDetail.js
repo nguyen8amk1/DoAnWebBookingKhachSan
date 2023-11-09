@@ -18,23 +18,27 @@ class HotelDetail extends React.Component {
     }
 
     async componentDidMount() {
-        const detail = await getHotelDetail(10);
+        // const id = props.id;
+        const detail = await getHotelDetail(1);
+        console.log(detail);
         this.setState(
             {
-                ten: detail.ten, 
-                diachi: detail.diachi, 
-                diem: detail.diem, 
-                danhgia: detail.danhgia, 
-                anh: detail.anh, 
+                ten: detail.name, 
+                diachi: detail.address, 
+                diem: detail.score, 
+                danhgia: [detail.review], 
+                anh: detail.images, 
             }
         );
-        this.setState(
-            {
-                bigImg: this.state.anh.shift(),
-                smallImg1: this.state.anh.shift(),
-                smallImg2: this.state.anh.shift(),
-            }
-        );
+        if(this.state.anh != null)  {
+            this.setState(
+                {
+                    bigImg: this.state.anh.shift(),
+                    smallImg1: this.state.anh.shift(),
+                    smallImg2: this.state.anh.shift(),
+                }
+            );
+        }
     }
 
     render() {
@@ -60,7 +64,7 @@ class HotelDetail extends React.Component {
 
                 <div className='listanhconlai'> 
                 {/* TODO: Should hide when too much, vd: exceed the 10 images */}
-                    { this.state.anh.map((anh, index) => (
+                    { this.state.anh && this.state.anh.map((anh, index) => (
                         <img key={index} src={anh} alt="Anh bi hu r :v"/>))}
                 </div>
             </div>

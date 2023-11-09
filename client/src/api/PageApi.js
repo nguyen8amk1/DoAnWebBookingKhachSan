@@ -6,29 +6,31 @@ export const searchForPlaces = async (destination, date, memberCount) => {
 }
 
 export const getHotelDetail = async (id) => {
-    // const response = await axios.get(`http://127.0.0.1:8080/hotelDetails?id=${id}`);
-    const response = {
-        data: {
-            ten: "ditmesaigon", 
-            diachi: "khong biet", 
-            diem: "8.3",  
-            danhgia: [
-                "tot vailkon luon a tr", 
-                "tot vailkon luon a tr", 
-                "tot vailkon luon a tr", 
-                "tot vailkon luon a tr", 
-            ], 
-            anh: [
-                "https://tik180.com/wp-content/uploads/2022/10/tiktoker-ninh-anh-6-1.jpg", 
-                "https://tik180.com/wp-content/uploads/2022/10/tiktoker-ninh-anh-6-1.jpg", 
-                "https://tik180.com/wp-content/uploads/2022/10/tiktoker-ninh-anh-6-1.jpg", 
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
-            ],  
-        }
-    };
+    console.log(id);
+    const response = await axios.get(`http://127.0.0.1:8080/hoteldetails?id=1`);
+    // TODO: actually call the api 
+    // const response = {
+    //     data: {
+    //         ten: "ditmesaigon", 
+    //         diachi: "khong biet", 
+    //         diem: "8.3",  
+    //         danhgia: [
+    //             "tot vailkon luon a tr", 
+    //             "tot vailkon luon a tr", 
+    //             "tot vailkon luon a tr", 
+    //             "tot vailkon luon a tr", 
+    //         ], 
+    //         anh: [
+    //             "https://tik180.com/wp-content/uploads/2022/10/tiktoker-ninh-anh-6-1.jpg", 
+    //             "https://tik180.com/wp-content/uploads/2022/10/tiktoker-ninh-anh-6-1.jpg", 
+    //             "https://tik180.com/wp-content/uploads/2022/10/tiktoker-ninh-anh-6-1.jpg", 
+    //             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
+    //             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
+    //             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
+    //             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
+    //             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgzINmB6RhRK9q6O73Myl5YiHM1KjwCvlVMOGT4UJqw&s", 
+    //         ],  
+    //     }
+    // };
     return response.data;
 }
