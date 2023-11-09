@@ -1,7 +1,25 @@
 TODAY: 
-    Add Register api (2h) @Current 
+    Hotel detail site (2h) @Current
+        components: 
+            Ten khach san 
+            Button: dat can ho 
+            Dia chi 
+            Danh gia: 
+                diem 
+                text: danh gia 
+                so luong danh gia 
+            Anh: 
+                1 Anh lon ben phai 
+                2 Anh nho ben trai  
+                list anh khac ben duoi 
+
+            Box tim phong ben trai: @Later 
+            Hien thi tren ban do @Later
+
+    Add Register api (2h) 
         -> Add the given user to the database 
             check if the user already exist as well 
+        PASSWORD HASHING @Later
 
     Add register client code (1h) @Halfway
         -> Have the register ui in place [X]
@@ -10,20 +28,19 @@ TODAY:
             + customer 
             + hotel manager  
         -> React to success/fail register result from server []
+    
+    Create upload hotel api (2h) [] 
+        Dang cho nghi cua quy vi 
 
-    Hotel detail site (1h) 
-    -> Done til this line tonight 
+    Create upload hotel front-end (2h) [] 
 
 TODO: 
-    Map showing detail code (2h)
-    
+    https://docs.zalopay.vn/v2/general/overview.html
     Payment Service (4h) []
-    
+        ZaloPay 
     Refund Service (4h) []
-    
-    Create upload hotel feature (4h) 
-        -> with basic ui 
-    -> Het dong nay vao ngay mai   
+
+    Show places on uses google map api (4h) []
 
     Report final: 
         + Overview System 
