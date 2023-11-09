@@ -1,32 +1,25 @@
 TODAY: 
-    Add register client code (1h)
+    Add Register api (2h) @Current 
+        -> Add the given user to the database 
+            check if the user already exist as well 
+
+    Add register client code (1h) @Halfway
         -> Have the register ui in place [X]
         -> Need: 
             role buttons: [X]
             + customer 
             + hotel manager  
+        -> React to success/fail register result from server []
 
-        -> React to success/fail register result from server @Current 
-            -> List of login status code: 
-                login success 
-                login fail
-            -> List of register status code: 
-                username already exist 
-                register success 
-                register fail  
-
-
-
-    Add Register api (1h) 
-        -> Add the given user to the database 
-            check if the user already exist as well 
-        PASSWORD HASHING @Later
-        
     Hotel detail site (1h) 
     -> Done til this line tonight 
 
 TODO: 
     Map showing detail code (2h)
+    
+    Payment Service (4h) []
+    
+    Refund Service (4h) []
     
     Create upload hotel feature (4h) 
         -> with basic ui 

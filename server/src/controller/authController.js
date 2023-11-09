@@ -20,7 +20,7 @@ const refreshTokens = [];
 
 const checkUserCredential = (username, password) => {
     // TODO: Connect to database to check, but currently just have some fixed values 
-    if (!(username === "ditme" && password === 'saigon')) {
+    if (!(username === "hello" && password === 'world')) {
         return false;
     }
     return true;
