@@ -119,6 +119,15 @@ const getHotelDetails = async (req, res) => {
     return res.send(testData);
 }
 
+const uploadHotel = async (req, res) => {
+    // TODO: List some information needed to register a hotel 
+}
+
+const viewBooking = async (req, res) => {
+    // TODO: Return the result depends on the role 
+
+}
+
 export default {
     getHomePage: getHomePage,    
     getCrud: getCrud,

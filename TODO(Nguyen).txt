@@ -1,11 +1,19 @@
 TODAY: 
-    Create upload hotel api (2h) [] @Current 
-        Dang cho nghi cua quy vi 
+    Create upload hotel front-end (2h) [] @Current 
 
-    Create upload hotel front-end (2h) [] 
+    Create upload hotel api (2h) [] 
+        Dang cho nghi cua quy vi 
+        -> 
+
+    https://docs.zalopay.vn/v2/general/overview.html
+    Payment Service (4h) [] @Tomorrow 
+        ZaloPay 
+    Refund Service (4h) []
+
+    Show places on uses google map api (4h) []
 
     The hotel detail api and the front end code is NOT 100% COMPATIBLE [] 
-        -> Need to change and migrate the hotel table 
+        -> Need to change and migrate the hotel table @Next 
             + there should be more reviews 
                 -> create a new table 
             + the images not working -> should be more images as well 
@@ -41,12 +49,6 @@ TODAY:
         -> React to success/fail register result from server []
 
 TODO: 
-    https://docs.zalopay.vn/v2/general/overview.html
-    Payment Service (4h) []
-        ZaloPay 
-    Refund Service (4h) []
-
-    Show places on uses google map api (4h) []
 
     Report final: 
         + Overview System 
