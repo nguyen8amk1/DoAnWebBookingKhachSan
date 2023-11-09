@@ -7,7 +7,7 @@ export const searchForPlaces = async (destination, date, memberCount) => {
 
 export const getHotelDetail = async (id) => {
     console.log(id);
-    const response = await axios.get(`http://127.0.0.1:8080/hoteldetails?id=1`);
+    const response = await axios.get("http://127.0.0.1:8080/hoteldetails?id="+id);
     // TODO: actually call the api 
     // const response = {
     //     data: {

@@ -19,7 +19,7 @@ class HotelDetail extends React.Component {
 
     async componentDidMount() {
         // const id = props.id;
-        const detail = await getHotelDetail(1);
+        const detail = await getHotelDetail(2);
         console.log(detail);
         this.setState(
             {

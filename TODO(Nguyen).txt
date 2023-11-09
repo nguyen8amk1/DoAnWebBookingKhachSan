@@ -5,7 +5,6 @@ TODAY:
     Create upload hotel front-end (2h) [] 
 
     The hotel detail api and the front end code is NOT 100% COMPATIBLE [] 
-        -> The id passing to the api is undefined   
         -> Need to change and migrate the hotel table 
             + there should be more reviews 
                 -> create a new table 
