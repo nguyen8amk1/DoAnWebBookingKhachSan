@@ -1,44 +1,73 @@
 import React from 'react'
+import { getHotelDetail } from '../api/PageApi';
 import UserInfoComponent from '../components/UserInfoComponent';
 
 class HotelDetail extends React.Component {
     constructor(props) { 
         super(props);
+        this.state = {
+            ten: "", 
+            diachi: "", 
+            diem: "",  
+            danhgia: [], 
+            anh: [],  
+            bigImg: '',
+            smallImg1: '',
+            smallImg2: '',
+        };
+    }
+
+    async componentDidMount() {
+        const detail = await getHotelDetail(10);
+        this.setState(
+            {
+                ten: detail.ten, 
+                diachi: detail.diachi, 
+                diem: detail.diem, 
+                danhgia: detail.danhgia, 
+                anh: detail.anh, 
+            }
+        );
+        this.setState(
+            {
+                bigImg: this.state.anh.shift(),
+                smallImg1: this.state.anh.shift(),
+                smallImg2: this.state.anh.shift(),
+            }
+        );
     }
 
     render() {
+        // TODO: 
+        // substitude the info 
         return <>
-            <h1>Ten khach san</h1>
+            <h1>{this.state.ten}</h1>
             <button>Dat Can Ho</button>
-            <p>Dia chi</p>
+            <p>{this.state.diachi}</p>
             <div className='danhgia'>
-                <p>diem</p>
-                <p>so luong danh gia</p>
-                <p>danh gia</p>
+                <p>{this.state.diem}</p>
+                <p>{this.state.danhgia.length}</p>
+          { this.state.danhgia.map((danhgia, index) => (
+            <p key={index}>{danhgia}</p>))}
+
             </div>
             <div className='anh'>
-                <img src={''} alt={'Anh lon ben trai'}/>
-                <img src={''} alt={'Anh nho 1 ben phai'}/>
-                <img src={''} alt={'Anh nho 2 ben phai'}/>
+                <img className="big-right-image" src={this.state.bigImg} alt={'Anh lon ben trai'}/>
+                <div>
+                    <img className="small-left-image" src={this.state.smallImg1} alt={'Anh nho 1 ben phai'}/>
+                    <img className="small-left-image" src={this.state.smallImg2} alt={'Anh nho 2 ben phai'}/>
+                </div>  
 
                 <div className='listanhconlai'> 
                 {/* TODO: Should hide when too much, vd: exceed the 10 images */}
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
-                    <img src={''} alt={'anh con lai'}/>
+                    { this.state.anh.map((anh, index) => (
+                        <img key={index} src={anh} alt="Anh bi hu r :v"/>))}
                 </div>
             </div>
 
             <div className='boxtimphong'>
                 boxtimphong
+                <button>Tim</button>
             </div>
 
             <div className='bando'>

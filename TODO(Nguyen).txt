@@ -1,6 +1,6 @@
 TODAY: 
-    Hotel detail site (2h) @Current
-        components: 
+    Hotel detail site (2h) 
+        components: [X]
             Ten khach san 
             Button: dat can ho 
             Dia chi 
@@ -12,9 +12,10 @@ TODAY:
                 1 Anh lon ben phai 
                 2 Anh nho ben trai  
                 list anh khac ben duoi 
-
             Box tim phong ben trai: @Later 
             Hien thi tren ban do @Later
+
+        -> Actually get the real info [] @Current
 
     Add Register api (2h) 
         -> Add the given user to the database 
