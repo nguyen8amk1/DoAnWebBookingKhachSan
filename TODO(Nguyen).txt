@@ -1,16 +1,28 @@
 TODAY: 
-    Create upload hotel api (2h) [] @Current 
+    Create upload hotel front-end (2h) [X] 
+        -> How image upload works ?? @Current 
+
+    Create upload hotel api (2h) [] 
         Dang cho nghi cua quy vi 
         -> 
+
+    Try to do Database related thing (2h) [] @ASAP, bottleneck 
+
+    Big API features: 
+        https://docs.zalopay.vn/v2/general/overview.html
+        Payment Service (4h) [] @Tomorrow 
+            ZaloPay 
+        Refund Service (4h) []
+
+        Image Hosting service - cloudinary (4h)  []
+            -> uploading images to this site 
+            -> only saves the link to our database  
+
+        Map Services: 
+            Show places on uses Google Map Api (4h) []
+
+        -> 1 week to finish ?? 
         
-    Create upload hotel front-end (2h) [X] 
-
-    https://docs.zalopay.vn/v2/general/overview.html
-    Payment Service (4h) [] @Tomorrow 
-        ZaloPay 
-    Refund Service (4h) []
-
-    Show places on uses google map api (4h) []
 
     The hotel detail api and the front end code is NOT 100% COMPATIBLE [] 
         -> Need to change and migrate the hotel table @Next 
@@ -49,7 +61,6 @@ TODAY:
         -> React to success/fail register result from server []
 
 TODO: 
-
     Report final: 
         + Overview System 
         + Introduction 

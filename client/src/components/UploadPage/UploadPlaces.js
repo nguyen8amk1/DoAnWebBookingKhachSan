@@ -1,11 +1,25 @@
 import React from 'react'
 import PlusMinusComponent from '../PlusMinusComponent';
-import RadioListComponent from '../RadioListComponent';
+import CheckboxListComponent from '../CheckboxListComponent';
 import UserInfoComponent from '../UserInfoComponent';
 
 class UploadPlaces extends React.Component {
     constructor(props) { 
         super(props);
+        this.state = {
+            type: "",
+            count: 0, 
+            name: "", 
+            address: "", 
+            bedroomCount : 0, 
+            bedCount : 0, 
+            tiennghi: [], 
+            giaitri: [], 
+            naunuong: [], 
+            khongian: [], 
+            gia: 0, 
+            images: [],  
+        };
     }
 
     async componentDidMount() {
@@ -33,7 +47,7 @@ class UploadPlaces extends React.Component {
                 <PlusMinusComponent label={"Bao nhiêu phòng ngủ ?"} positive={true}/>
                 <PlusMinusComponent label={"Bao nhiêu giường ?"} positive={true}/>
             <h3>Tiện nghi chung</h3>
-                <RadioListComponent labels={
+                <CheckboxListComponent labels={
                     [
                     "Điều hòa nhiệt độ", 
                     "Hệ thống sưởi", 
@@ -43,7 +57,7 @@ class UploadPlaces extends React.Component {
                 } name="tiennghi"/>
 
             <h3>Giải trí</h3>
-                <RadioListComponent labels={
+                <CheckboxListComponent labels={
                     [
                     "TV màn hình phẳng", 
                     "Hồ bơi", 
@@ -53,7 +67,7 @@ class UploadPlaces extends React.Component {
                 } name="giaitri"/>
 
             <h3>Nấu nướng và giặt rửa</h3>
-                <RadioListComponent labels={
+                <CheckboxListComponent labels={
                     [
                     "Bếp", 
                     "Bếp nhỏ", 
@@ -62,7 +76,7 @@ class UploadPlaces extends React.Component {
                 } name="naunuong"/>
 
             <h3>Không gian ngoài trời</h3>
-                <RadioListComponent labels={
+                <CheckboxListComponent labels={
                     [
                     "Ban công", 
                     "Nhìn ra vườn", 
