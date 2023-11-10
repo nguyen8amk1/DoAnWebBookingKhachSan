@@ -1,9 +1,9 @@
 TODAY: 
-    Create upload hotel front-end (2h) [] @Current 
-
-    Create upload hotel api (2h) [] 
+    Create upload hotel api (2h) [] @Current 
         Dang cho nghi cua quy vi 
         -> 
+        
+    Create upload hotel front-end (2h) [X] 
 
     https://docs.zalopay.vn/v2/general/overview.html
     Payment Service (4h) [] @Tomorrow 

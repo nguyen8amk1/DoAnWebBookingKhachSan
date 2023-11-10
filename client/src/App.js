@@ -11,6 +11,7 @@ import MapComponentTest from "./components/Homepage/TestMapComponent";
 // import Destination__slider from "./components/Homepage/Specialty";
 import Searchpage from "./views/Searchpage";
 import HotelDetail from "./views/HotelDetail";
+import UploadPlaces from "./components/UploadPage/UploadPlaces";
 
 function App() {
   const action = useNavigationType();
@@ -52,7 +53,8 @@ function App() {
     <>
     <switch>
       <Routes>
-        <Route exact path="/" Component={HotelDetail} />
+        <Route exact path="/" Component={UploadPlaces} />
+        {/* <Route exact path="/" Component={HotelDetail} /> */}
         {/* <Route exact path="/" Component={Homepage} />
         <Route path="/Searchpage" Component={Searchpage} /> */}
       </Routes>
