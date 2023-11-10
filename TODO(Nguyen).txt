@@ -1,4 +1,34 @@
 TODAY: 
+    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
+        -> note some migration script for easier to use [] @Current 
+
+    The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
+        -> Need to change and migrate the hotel table @Next 
+            + there should be more reviews @DatabaseRelated 
+                -> create a new table 
+            + the images not working -> should be more images as well @DatabaseRelated
+                -> create a new table 
+
+    Add Register api (2h) 
+        -> Add the given user to the database @DatabaseRelated
+            check if the user already exist as well 
+        PASSWORD HASHING @Later
+
+    Add Database operations to the authentication server code (1h) 
+        -> Create User Model 
+        -> With 3 opertions:
+            + check if user exist 
+            + add user 
+            + 
+        -> Create Refresh Token model: ?? @DatabaseRelated
+            storing refresh token along with user id
+
+
+
+
+
+
+
     Create upload hotel front-end (2h) [X] 
         -> How image upload works ?? @Next 
         -> Connect this site to the original front-end routing system (1h) []
@@ -8,7 +38,6 @@ TODAY:
         -> get the actual information 
             -> along with the images
 
-    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck 
 
     Comment component (1h): @Later 
     Comment api (2h): @Later 
@@ -19,30 +48,7 @@ TODAY:
 
     Booking api (2h): 
 
-
-    View-Booking front-end: 
-        nhieu tab giong tab shopee
-        + customer:  
-            list of bookings TAB @Current 
-                Ten khach san 
-                Thong tin phong
-                Gia phong 
-                Thanh tien 
-                Liên hệ người cho thuê
-                Thong tin ngay den ngay di, member count 
-                Hủy phòng
-
-        + hotel manager: 
-            list of bookings TAB 
-                the same upper 
-
-            booked places TAB 
-                Thong tin phong
-                Gia phong 
-                Thanh tien 
-                Liên hệ người thuê
-                Thông tin người thuê
-                Thong tin ngay den ngay di, member count 
+    View-Booking api (2h): 
 
     Big API features: 
         https://docs.zalopay.vn/v2/general/overview.html
@@ -62,12 +68,6 @@ TODAY:
 
         -> 1 week to finish ??  
 
-    The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
-        -> Need to change and migrate the hotel table @Next 
-            + there should be more reviews @DatabaseRelated 
-                -> create a new table 
-            + the images not working -> should be more images as well @DatabaseRelated
-                -> create a new table 
 
     Hotel detail site (2h) @Halfway 
         components: [X]
@@ -87,10 +87,6 @@ TODAY:
 
         -> Connect this site to the original front-end routing system (1h) []
 
-    Add Register api (2h) 
-        -> Add the given user to the database @DatabaseRelated
-            check if the user already exist as well 
-        PASSWORD HASHING @Later
 
     Add register client code (1h) @Halfway
         -> Have the register ui in place [X]
@@ -107,14 +103,6 @@ TODO:
         + Features (Base + Advance)
         + Results + Demo 
 
-    Add Database operations to the authentication server code (1h) 
-        -> Create User Model 
-        -> With 3 opertions:
-            + check if user exist 
-            + add user 
-            + 
-        -> Create Refresh Token model: ?? @DatabaseRelated
-            storing refresh token along with user id
 
     Show the search result on to the page (2h) @Halfway 
         -> still need:
@@ -157,6 +145,29 @@ TODO:
 
 
 DONE:  
+    HTML View-Booking front-end: [X]
+        nhieu tab giong tab shopee
+        + customer:  
+            list of bookings TAB 
+                Ten khach san 
+                Thong tin phong
+                Gia phong 
+                Thanh tien 
+                Liên hệ người cho thuê
+                Thong tin ngay den ngay di, member count 
+                Hủy phòng
+
+        + hotel manager: 
+            list of bookings TAB 
+                the same upper 
+            booked places TAB 
+                Thong tin phong
+                Gia phong 
+                Thanh tien 
+                Liên hệ người thuê
+                Thông tin người thuê
+                Thong tin ngay den ngay di, member count 
+
     Call the hotel details api on the front end [X]
 
     Redesign the low level design from the reference image (1h) 
