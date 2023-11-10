@@ -1,12 +1,48 @@
 TODAY: 
     Create upload hotel front-end (2h) [X] 
-        -> How image upload works ?? @Current 
+        -> How image upload works ?? @Next 
+        -> Connect this site to the original front-end routing system (1h) []
 
     Create upload hotel api (2h) [] 
         Dang cho nghi cua quy vi 
-        -> 
+        -> get the actual information 
+            -> along with the images
 
-    Try to do Database related thing (2h) [] @ASAP, bottleneck 
+    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck 
+
+    Comment component (1h): @Later 
+    Comment api (2h): @Later 
+
+    Booking front-end (2h): 
+        components: 
+            .... 
+
+    Booking api (2h): 
+
+
+    View-Booking front-end: 
+        nhieu tab giong tab shopee
+        + customer:  
+            list of bookings TAB @Current 
+                Ten khach san 
+                Thong tin phong
+                Gia phong 
+                Thanh tien 
+                Liên hệ người cho thuê
+                Thong tin ngay den ngay di, member count 
+                Hủy phòng
+
+        + hotel manager: 
+            list of bookings TAB 
+                the same upper 
+
+            booked places TAB 
+                Thong tin phong
+                Gia phong 
+                Thanh tien 
+                Liên hệ người thuê
+                Thông tin người thuê
+                Thong tin ngay den ngay di, member count 
 
     Big API features: 
         https://docs.zalopay.vn/v2/general/overview.html
@@ -21,14 +57,16 @@ TODAY:
         Map Services: 
             Show places on uses Google Map Api (4h) []
 
-        -> 1 week to finish ?? 
-        
+        -> Reading all of these documentations (2h) [] @Next  
+            -> Write a little test for each of them (4h) []
 
-    The hotel detail api and the front end code is NOT 100% COMPATIBLE [] 
+        -> 1 week to finish ??  
+
+    The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
         -> Need to change and migrate the hotel table @Next 
-            + there should be more reviews 
+            + there should be more reviews @DatabaseRelated 
                 -> create a new table 
-            + the images not working -> should be more images as well 
+            + the images not working -> should be more images as well @DatabaseRelated
                 -> create a new table 
 
     Hotel detail site (2h) @Halfway 
@@ -47,8 +85,10 @@ TODAY:
             Box tim phong ben trai: @Later 
             Hien thi tren ban do @Later
 
+        -> Connect this site to the original front-end routing system (1h) []
+
     Add Register api (2h) 
-        -> Add the given user to the database 
+        -> Add the given user to the database @DatabaseRelated
             check if the user already exist as well 
         PASSWORD HASHING @Later
 
@@ -73,7 +113,7 @@ TODO:
             + check if user exist 
             + add user 
             + 
-        -> Create Refresh Token model: ?? 
+        -> Create Refresh Token model: ?? @DatabaseRelated
             storing refresh token along with user id
 
     Show the search result on to the page (2h) @Halfway 
