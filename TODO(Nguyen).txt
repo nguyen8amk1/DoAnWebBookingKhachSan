@@ -1,4 +1,26 @@
 TODAY: 
+    Big API features: 
+        https://docs.zalopay.vn/v2/general/overview.html
+        Payment Service (4h) [] @Tomorrow 
+            ZaloPay 
+        Refund Service (4h) []
+
+        Image Hosting service - cloudinary (4h)  []
+            -> uploading images to this site 
+            -> only saves the link to our database  
+
+        Map Services: 
+            Show places on uses Google Map Api (4h) []
+
+        -> Reading all of these documentations (2h) [] @Next  
+            -> Write a little test for each of them (4h) []
+
+        -> 1 week to finish ??  
+
+
+
+
+
     Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
         -> note some migration script for easier to use [] @Current 
 
@@ -49,24 +71,6 @@ TODAY:
     Booking api (2h): 
 
     View-Booking api (2h): 
-
-    Big API features: 
-        https://docs.zalopay.vn/v2/general/overview.html
-        Payment Service (4h) [] @Tomorrow 
-            ZaloPay 
-        Refund Service (4h) []
-
-        Image Hosting service - cloudinary (4h)  []
-            -> uploading images to this site 
-            -> only saves the link to our database  
-
-        Map Services: 
-            Show places on uses Google Map Api (4h) []
-
-        -> Reading all of these documentations (2h) [] @Next  
-            -> Write a little test for each of them (4h) []
-
-        -> 1 week to finish ??  
 
 
     Hotel detail site (2h) @Halfway 
