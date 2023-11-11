@@ -1,26 +1,61 @@
 TODAY: 
     Big API features: 
-        https://docs.zalopay.vn/v2/general/overview.html
+        https://beta-docs.zalopay.vn/vi/docs/guides/payment-acceptance/checkout/intro
         Payment Service (4h) [] @Tomorrow 
             ZaloPay 
+            QR payment Service 
+
+            NOTES:
+                Hotel manager MONEY TRANSACTION: 
+                    in the database have to contain:
+                        their zalopay information  
+                -> 2 zalopay transaction :v  
+                user -> booking -> hotel manager (this should be how it works)
+
+                1. user send the money to the booking site. 
+                2. booking site get their cuts. 
+                    -> have to check if the money is enough or something like that :v 
+                3. booking site send the rest to the actual hotel manager. 
+
+                -> The call we actually need: 
+                    + User send money to Booking site: 
+                        -> ... what api calls 
+                            using QR CODE 
+                    + Booking site send money to Hotel manager 
+                        -> ... what api calls 
+                            -> using normal api calls ? 
+                    #Resources: 
+                        + Booking site: 1 zalopay account for the entire web app  
+                            1 booking accounts  (Nguyen's Account)
+                        + Hotel Manager: 1 zalopay account for the each hotel manager
+                            n accounts  - testing: 1 account (Nghia's account)
+                        + Customer: 1 zalopay account for each customer
+                            n accounts  - testing: 1 account ()
+
+
         Refund Service (4h) []
+            Refund services
+            NOTES: 
+                ... 
 
         Image Hosting service - cloudinary (4h)  []
             -> uploading images to this site 
             -> only saves the link to our database  
+            NOTES: 
+                should we just convert the image to base64 on the client 
+                then send to the server
+                then the server will again send that to the image hosting services 
 
         Map Services: 
             Show places on uses Google Map Api (4h) []
+            NOTES: 
+                Maybe just use the damn thing without the right API_KEY anyway :v 
+                ....  
 
         -> Reading all of these documentations (2h) [] @Next  
             -> Write a little test for each of them (4h) []
 
         -> 1 week to finish ??  
-
-
-
-
-
     Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
         -> note some migration script for easier to use [] @Current 
 
