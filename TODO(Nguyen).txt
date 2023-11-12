@@ -1,5 +1,19 @@
 TODAY: 
     Big API features: 
+        Image Hosting service - cloudinary (4h)  [] @Current 
+            -> uploading images to this site 
+            -> only saves the link to our database  
+            NOTES: 
+                should we just convert the image to base64 on the client 
+                then send to the server
+                then the server will again send that to the image hosting services 
+
+        Map Services: 
+            Show places on uses Google Map Api (4h) []
+            NOTES: 
+                Maybe just use the damn thing without the right API_KEY anyway :v 
+                ....  
+
         https://beta-docs.zalopay.vn/vi/docs/guides/payment-acceptance/checkout/intro
         Payment Service (4h) [] @Tomorrow 
             ZaloPay 
@@ -38,26 +52,13 @@ TODAY:
             NOTES: 
                 ... 
 
-        Image Hosting service - cloudinary (4h)  []
-            -> uploading images to this site 
-            -> only saves the link to our database  
-            NOTES: 
-                should we just convert the image to base64 on the client 
-                then send to the server
-                then the server will again send that to the image hosting services 
-
-        Map Services: 
-            Show places on uses Google Map Api (4h) []
-            NOTES: 
-                Maybe just use the damn thing without the right API_KEY anyway :v 
-                ....  
-
         -> Reading all of these documentations (2h) [] @Next  
             -> Write a little test for each of them (4h) []
 
         -> 1 week to finish ??  
+
     Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
-        -> note some migration script for easier to use [] @Current 
+        -> note some migration script for easier to use [] 
 
     The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
         -> Need to change and migrate the hotel table @Next 
