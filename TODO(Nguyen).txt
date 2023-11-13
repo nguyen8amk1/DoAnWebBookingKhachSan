@@ -1,22 +1,46 @@
 TODAY: 
+    // TODO: Backend: upload the images to the cloudinary server @Current 
+
     Big API features: 
+        Map Services: 
+            Show places on uses Google Map Api (4h) []
+                -> Pin a single marker  on the map (1h) [X] 
+                -> Pin multiple markers  on the map (1h) [] 
+                -> Return a position from an address (1h) [] 
+                -> Have a good looking marker icon (10p) [] @Later 
+
+            **Mode of map show: 
+                Search page map 
+                    little map: 
+                        -> show all the search list markers on the map  
+                    big map: 
+                        -> show all the search list markers on the map but bigger size :v 
+                        
+                Detail page map 
+                    little map: 
+                        -> show only 1 marker of the things 
+                    big map: 
+                        -> 
+
+
         Image Hosting service - cloudinary (4h) [] 
-            -> uploading images to this site 
-            -> only saves the link to our database  
             NOTES: 
                 should we just convert the image to base64 on the client 
                 then send to the server
                 then the server will again send that to the image hosting services 
 
             Features: 
-                -> Upload image (1h) []
-                -> Get the image using it's id (1h) []
+                -> Get the image using it's url (1h) [] 
 
-        Map Services: 
-            Show places on uses Google Map Api (4h) []
-                -> Pin a single point on the map (1h) [] @Current 
-                -> Pin multiple points on the map (1h) []
+                Backend: 
+                    write an image storing api   
 
+            NOTE: 
+                the server is the one who actually send the image to the cloudinary storage 
+                -> server: get the image from the client then send it to cloudinary 
+                -> client: only get the image from the url 
+
+            Our database will only store the url/id of the image 
         https://beta-docs.zalopay.vn/vi/docs/guides/payment-acceptance/checkout/intro
         Payment Service (4h) [] @Tomorrow 
             ZaloPay 

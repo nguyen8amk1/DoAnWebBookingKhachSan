@@ -128,10 +128,23 @@ const viewBooking = async (req, res) => {
 
 }
 
+const uploadImages = async (req, res) => {
+    console.log("This suppose to print the uploaded images ");
+    for (const file of req.files) {
+        console.log(`Received File: ${file.originalname}`);
+        console.log(`File Type: ${file.mimetype}`);
+        console.log(`File Size: ${file.size} bytes`);
+        console.log('------------------------');
+    }
+
+    // TODO: upload the images to the cloudinary server @Current 
+}
+
 export default {
     getHomePage: getHomePage,    
     getCrud: getCrud,
     postCrud: postCrud, 
     searchForPlaces: searchForPlaces,
-    getHotelDetails: getHotelDetails
+    getHotelDetails: getHotelDetails,
+    uploadImages: uploadImages,
 };
