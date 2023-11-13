@@ -1,5 +1,6 @@
 TODAY: 
     // TODO: Backend: upload the images to the cloudinary server @Current 
+    Test the zalopay api as well 
 
     Big API features: 
         Map Services: 

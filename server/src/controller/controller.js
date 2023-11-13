@@ -1,5 +1,6 @@
 import { QueryTypes } from 'sequelize';
 import db, { sequelize } from '../models/index.js';
+import { storeImages } from '../services/imageServices.js';
 
 /**
  * 
@@ -137,7 +138,8 @@ const uploadImages = async (req, res) => {
         console.log('------------------------');
     }
 
-    // TODO: upload the images to the cloudinary server @Current 
+    const result =  await storeImages(req.files);
+    return result;
 }
 
 export default {
