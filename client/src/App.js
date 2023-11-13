@@ -13,6 +13,8 @@ import Searchpage from "./views/Searchpage";
 import HotelDetail from "./views/HotelDetail";
 import UploadPlaces from "./components/UploadPage/UploadPlaces";
 import BookingInformation from "./components/BookingInformation";
+import TestMap from "./components/TestMap";
+import TestImageHosting from "./components/TestImageHosting";
 
 function App() {
   const action = useNavigationType();
@@ -54,7 +56,9 @@ function App() {
     <>
     <switch>
       <Routes>
-        <Route exact path="/" Component={BookingInformation} />
+        <Route exact path="/" Component={TestImageHosting} />
+        {/* <Route exact path="/" Component={TestMap} /> */}
+        {/* <Route exact path="/" Component={BookingInformation} /> */}
         {/* <Route exact path="/" Component={HotelDetail} /> */}
         {/* <Route exact path="/" Component={Homepage} />
         <Route path="/Searchpage" Component={Searchpage} /> */}

@@ -1,6 +1,6 @@
 TODAY: 
     Big API features: 
-        Image Hosting service - cloudinary (4h)  [] @Current 
+        Image Hosting service - cloudinary (4h) [] 
             -> uploading images to this site 
             -> only saves the link to our database  
             NOTES: 
@@ -8,11 +8,14 @@ TODAY:
                 then send to the server
                 then the server will again send that to the image hosting services 
 
+            Features: 
+                -> Upload image (1h) []
+                -> Get the image using it's id (1h) []
+
         Map Services: 
             Show places on uses Google Map Api (4h) []
-            NOTES: 
-                Maybe just use the damn thing without the right API_KEY anyway :v 
-                ....  
+                -> Pin a single point on the map (1h) [] @Current 
+                -> Pin multiple points on the map (1h) []
 
         https://beta-docs.zalopay.vn/vi/docs/guides/payment-acceptance/checkout/intro
         Payment Service (4h) [] @Tomorrow 
