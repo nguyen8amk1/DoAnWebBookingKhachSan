@@ -5,6 +5,7 @@
   "dependencies": {
     "@cloudinary/react": "^1.11.2",
     "@cloudinary/url-gen": "^1.13.0",
+    "@goongmaps/goong-map-react": "^1.1.2",
     "@react-google-maps/api": "^2.19.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

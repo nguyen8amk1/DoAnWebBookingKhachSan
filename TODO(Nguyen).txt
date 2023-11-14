@@ -1,27 +1,67 @@
 TODAY: 
-    // TODO: Backend: upload the images to the cloudinary server @Current 
-    Test the zalopay api as well 
-
-    Big API features: 
-        Map Services: 
-            Show places on uses Google Map Api (4h) []
-                -> Pin a single marker  on the map (1h) [X] 
-                -> Pin multiple markers  on the map (1h) [] 
-                -> Return a position from an address (1h) [] 
-                -> Have a good looking marker icon (10p) [] @Later 
+    BIG CHANGE: 
+        we currently using 
+            money transaction api:
+                vnpay 
+                -> HOSTING ON ACORN as well (for TESTING at least) 
+            map api:
+                goong 
 
             **Mode of map show: 
                 Search page map 
                     little map: 
-                        -> show all the search list markers on the map  
+                        ** It's just a button (hien thi tren ban do) on top of  
+                        a IMAGE of a map of that area 
+
                     big map: 
                         -> show all the search list markers on the map but bigger size :v 
+                        It's a MODAL on top
+                        with infos: 
+                            + the hotel list on the left 
+                                + HOVER on one of the hotel the marker on the map DO SOME ANIMATION
+                            + The map on the right 
                         
                 Detail page map 
                     little map: 
-                        -> show only 1 marker of the things 
+                        -> show a closer view with actual marker of the place HIGHLIGHTED 
                     big map: 
-                        -> 
+                        It's a MODAL on top
+                        with infos: 
+                            + the hotel information on the left is a modal 
+                            on top of the map as a background 
+                            + each marker have their price on the right 
+
+                Operation/Methods needed: 
+                    + Show a map with different size [X] -> change width, height
+                    + Draw a maker at a a position [X] -> Change Pin
+                    + Marker Animation [] @Later 
+                    + Change Color [X]
+
+    TONIGHT: 
+        learn how to use acorn for hosting random things (2h) [] @Current 
+            -> sharing docker images (30p) 
+            -> reading and try some acorn thingy (1h30)
+
+
+    -> We have a 5 days left 
+        -> Done all of these features in manner of days 
+        -> We're gonna spend 1 day for deployment stuff ?? 
+
+    Test the vnpay api as well @Current 
+        Frontend: 
+            -> Gui thong tin den acc zalopay cua KhachSan
+        Backend: 
+            -> 
+
+    Big API features: 
+        Map Services: 
+            Show places on uses Goong Map Api (4h) [] 
+                -> Pin a single marker  on the map (1h) [] 
+                -> Pin multiple markers  on the map (1h) [] 
+                -> Return a position from an address (1h) [] 
+                -> Have a good looking marker icon (10p) [] @Later 
+
+
 
 
         Image Hosting service - cloudinary (4h) [] 
@@ -213,6 +253,7 @@ TODO:
 
 
 DONE:  
+    // TODO: Backend: upload the images to the cloudinary server [X]
     HTML View-Booking front-end: [X]
         nhieu tab giong tab shopee
         + customer:  
