@@ -132,7 +132,7 @@ const viewBooking = async (req, res) => {
 const uploadImages = async (req, res) => {
     console.log("This suppose to print the uploaded images ");
     const result =  await storeImages(req.files);
-    return result;
+    res.send(result);
 }
 
 export default {

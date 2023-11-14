@@ -6,10 +6,11 @@ class UploadImages extends React.Component {
         super(props);
         this.fileInputRef = React.createRef();
         this.state = {
+            images: []
         };
     }
 
-    uploadImages = () => {
+    uploadImages = async () => {
         const formData = new FormData();
         const fileInput = this.fileInputRef.current;
     
@@ -24,7 +25,9 @@ class UploadImages extends React.Component {
             console.log('------------------------');
         }
 
-        uploadImages(formData);
+        const result = await uploadImages(formData);
+        console.log(result);
+        this.setState({images: result.data});
     }
 
     render() {
@@ -33,6 +36,9 @@ class UploadImages extends React.Component {
             <input type="file" ref={this.fileInputRef} multiple />
             <button type="button" onClick={this.uploadImages}>Upload Images</button>
         </form>
+        { this.state.images.length > 0 && this.state.images.map((val, index) => (
+            <img key={index} src={val} alt="this is an image" />
+        ))}
         </>;
     }
 }

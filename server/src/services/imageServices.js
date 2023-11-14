@@ -15,28 +15,34 @@ cloudinary.config({
 // Push all the result.url to urls array 
 // Return the urls array  
 
-const storeImage = async (imageBuffer, options = {}) => {
-    // return new Promise((resolve, reject) => {
-
-    // });
-
-    let cld_upload_stream = cloudinary.uploader.upload_stream(
-        options,
-        (error, result) => {
-            // if(error) {
-            //     reject(`Failed to upload image to Cloudinary: ${error.message}`);
-            // }
-            console.log(error, result); 
-        });
-    streamifier.createReadStream(imageBuffer).pipe(cld_upload_stream);
-}; 
-
 export const storeImages = async (images) => {
     // TODO: upload the images to the cloudinary server @Current 
-    // const urls = [];
-    for (const image of images) {
-        storeImage(image.buffer);
+    const urls = [];
+
+    const storeImage = async (imageBuffer, options = {}) => {
+        return new Promise((resolve, reject) => {
+            let cld_upload_stream = cloudinary.uploader.upload_stream(
+                options,
+                (error, result) => {
+                    if(error) {
+                        reject(`Failed to upload image to Cloudinary: ${error.message}`);
+                    }
+                    else {
+                        urls.push(result.url);
+                        resolve(result.url);
+                    }
+                });
+            streamifier.createReadStream(imageBuffer).pipe(cld_upload_stream);
+        });
+    };
+
+    const promises = await images.map(image => storeImage(image.buffer)); 
+    try {
+        await Promise.all(promises); 
+        console.log(urls);
+        return urls;
+    } catch (e) {
+        console.error(e);
+        return [];
     }
-    // console.log(urls);
-    // return urls;
-}
+};
