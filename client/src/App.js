@@ -15,6 +15,7 @@ import UploadPlaces from "./components/UploadPage/UploadPlaces";
 import BookingInformation from "./components/BookingInformation";
 import TestMap from "./components/TestMap";
 import TestImageHosting from "./components/TestImageHosting";
+import CreateOrder from "./views/CreateOrder";
 
 function App() {
   const action = useNavigationType();
@@ -56,8 +57,9 @@ function App() {
     <>
     <switch>
       <Routes>
+        <Route exact path="/" Component={CreateOrder} />
         {/* <Route exact path="/" Component={TestImageHosting} /> */}
-        <Route exact path="/" Component={TestMap} />
+        {/* <Route exact path="/" Component={TestMap} /> */}
         {/* <Route exact path="/" Component={BookingInformation} /> */}
         {/* <Route exact path="/" Component={HotelDetail} /> */}
         {/* <Route exact path="/" Component={Homepage} />

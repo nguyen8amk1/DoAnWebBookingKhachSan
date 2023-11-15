@@ -1,4 +1,20 @@
 TODAY: 
+    Writing the Correct web LAYOUT using bootstrap (4h) []
+        List of sites to fix: 
+            + ...
+
+    TESTING SOME ACORN DEPLOYMENT (2h) [X]
+        -> I think we can do it :)) 
+
+    Tich hop money transaction code to our websites, for starter (2h) [] @Halfway  
+        After we done this
+
+    learn how to use acorn for hosting random things (2h) [] 
+        -> sharing docker images (30p) 
+        -> reading and try some acorn thingy (1h30)
+        docker build -t <reponame> 
+        docker push reponame
+    
     BIG CHANGE: 
         we currently using 
             money transaction api:
@@ -37,21 +53,9 @@ TODAY:
                     + Marker Animation [] @Later 
                     + Change Color [X]
 
-    TONIGHT: 
-        learn how to use acorn for hosting random things (2h) [] @Current 
-            -> sharing docker images (30p) 
-            -> reading and try some acorn thingy (1h30)
-
-
     -> We have a 5 days left 
         -> Done all of these features in manner of days 
         -> We're gonna spend 1 day for deployment stuff ?? 
-
-    Test the vnpay api as well @Current 
-        Frontend: 
-            -> Gui thong tin den acc zalopay cua KhachSan
-        Backend: 
-            -> 
 
     Big API features: 
         Map Services: 
@@ -60,9 +64,6 @@ TODAY:
                 -> Pin multiple markers  on the map (1h) [] 
                 -> Return a position from an address (1h) [] 
                 -> Have a good looking marker icon (10p) [] @Later 
-
-
-
 
         Image Hosting service - cloudinary (4h) [] 
             NOTES: 
@@ -82,48 +83,6 @@ TODAY:
                 -> client: only get the image from the url 
 
             Our database will only store the url/id of the image 
-        https://beta-docs.zalopay.vn/vi/docs/guides/payment-acceptance/checkout/intro
-        Payment Service (4h) [] @Tomorrow 
-            ZaloPay 
-            QR payment Service 
-
-            NOTES:
-                Hotel manager MONEY TRANSACTION: 
-                    in the database have to contain:
-                        their zalopay information  
-                -> 2 zalopay transaction :v  
-                user -> booking -> hotel manager (this should be how it works)
-
-                1. user send the money to the booking site. 
-                2. booking site get their cuts. 
-                    -> have to check if the money is enough or something like that :v 
-                3. booking site send the rest to the actual hotel manager. 
-
-                -> The call we actually need: 
-                    + User send money to Booking site: 
-                        -> ... what api calls 
-                            using QR CODE 
-                    + Booking site send money to Hotel manager 
-                        -> ... what api calls 
-                            -> using normal api calls ? 
-                    #Resources: 
-                        + Booking site: 1 zalopay account for the entire web app  
-                            1 booking accounts  (Nguyen's Account)
-                        + Hotel Manager: 1 zalopay account for the each hotel manager
-                            n accounts  - testing: 1 account (Nghia's account)
-                        + Customer: 1 zalopay account for each customer
-                            n accounts  - testing: 1 account ()
-
-
-        Refund Service (4h) []
-            Refund services
-            NOTES: 
-                ... 
-
-        -> Reading all of these documentations (2h) [] @Next  
-            -> Write a little test for each of them (4h) []
-
-        -> 1 week to finish ??  
 
     Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
         -> note some migration script for easier to use [] 
