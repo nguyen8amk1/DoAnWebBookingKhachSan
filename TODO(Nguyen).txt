@@ -1,13 +1,39 @@
 TODAY: 
-    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
+    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck 
         -> note some migration script for easier to use [] 
 
     The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
         -> Need to change and migrate the hotel table @Next 
-            + there should be more reviews @DatabaseRelated 
-                -> create a new table 
-            + the images not working -> should be more images as well @DatabaseRelated
-                -> create a new table 
+            + there should be more reviews @DatabaseRelated [X] 
+                fields: 
+                    + ref place_id:  
+                    + ref reviewer_id // basically it's user id 
+                    + content 
+
+            + the images not working -> should be more images as well @DatabaseRelated [X]
+                -> create a new table for place images 
+                    + ref place_id 
+                    + link
+
+        Hotel: 
+            ref cityID: DataTypes.INTEGER,
+            name: DataTypes.STRING,
+            address: DataTypes.STRING,
+            description: DataTypes.STRING,
+            score: DataTypes.STRING,
+
+        Image: 
+            ref hotel_id: Integer
+            link: string 
+
+        Review: 
+            ref hotel_id:  integer 
+            ref reviewer_id: integer // basically it's user id 
+            content: string   
+            
+        1 Hotel co nhieu review 
+        1 User co nhieu review 
+        1 Hotel co nhieu image  
 
     Add Register api (2h) 
         -> Add the given user to the database @DatabaseRelated
@@ -20,13 +46,8 @@ TODAY:
             + check if user exist 
             + add user 
             + 
-        -> Create Refresh Token model: ?? @DatabaseRelated
+        -> Create Refresh Token model: ?? @DatabaseRelated @Later 
             storing refresh token along with user id
-
-
-
-
-
 
 
     Writing the Correct web LAYOUT using bootstrap (4h) []

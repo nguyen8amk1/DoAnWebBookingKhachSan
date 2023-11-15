@@ -24,10 +24,8 @@ module.exports = (sequelize, DataTypes) => {
         name: DataTypes.STRING,
         address: DataTypes.STRING,
         description: DataTypes.STRING,
-        images: DataTypes.STRING,
         score: DataTypes.STRING,
-        review: DataTypes.STRING,
-        // cityID: DataTypes.INTEGER,
+        cityID: DataTypes.INTEGER,
     }, {
         sequelize,
         modelName: 'Hotel',
