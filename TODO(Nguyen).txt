@@ -1,4 +1,34 @@
 TODAY: 
+    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
+        -> note some migration script for easier to use [] 
+
+    The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
+        -> Need to change and migrate the hotel table @Next 
+            + there should be more reviews @DatabaseRelated 
+                -> create a new table 
+            + the images not working -> should be more images as well @DatabaseRelated
+                -> create a new table 
+
+    Add Register api (2h) 
+        -> Add the given user to the database @DatabaseRelated
+            check if the user already exist as well 
+        PASSWORD HASHING @Later
+
+    Add Database operations to the authentication server code (1h) 
+        -> Create User Model 
+        -> With 3 opertions:
+            + check if user exist 
+            + add user 
+            + 
+        -> Create Refresh Token model: ?? @DatabaseRelated
+            storing refresh token along with user id
+
+
+
+
+
+
+
     Writing the Correct web LAYOUT using bootstrap (4h) []
         List of sites to fix: 
             + ...
@@ -83,35 +113,6 @@ TODAY:
                 -> client: only get the image from the url 
 
             Our database will only store the url/id of the image 
-
-    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck
-        -> note some migration script for easier to use [] 
-
-    The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
-        -> Need to change and migrate the hotel table @Next 
-            + there should be more reviews @DatabaseRelated 
-                -> create a new table 
-            + the images not working -> should be more images as well @DatabaseRelated
-                -> create a new table 
-
-    Add Register api (2h) 
-        -> Add the given user to the database @DatabaseRelated
-            check if the user already exist as well 
-        PASSWORD HASHING @Later
-
-    Add Database operations to the authentication server code (1h) 
-        -> Create User Model 
-        -> With 3 opertions:
-            + check if user exist 
-            + add user 
-            + 
-        -> Create Refresh Token model: ?? @DatabaseRelated
-            storing refresh token along with user id
-
-
-
-
-
 
 
     Create upload hotel front-end (2h) [X] 
