@@ -12,7 +12,19 @@ export const getHotelDetail = async (id) => {
 }
 
 export const uploadPlace = async (placeInfo) => {
-    // const response = await axios.get(`http://127.0.0.1:8080/searchforplaces?city=${destination}&date_came=${date.came}&date_leave=${date.leave}&members_count_adults=${memberCount.adult}&members_count_children=${memberCount.children}`);
-    // return response.data;
-    return null;
+    try {
+        const result = await axios.post("http://127.0.0.1:8080/uploadHotel", placeInfo);
+        return result;
+    } catch(e) {
+        console.error('Error uploading place:', e);
+        return null;
+    }
+}
+
+export const getBookInfo = async () => {
+    const USER_TOKEN = localStorage.getItem("accessToken");
+    const AuthStr = 'Bearer '.concat(USER_TOKEN); 
+    const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo`, { headers: { Authorization: AuthStr } });
+    const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo`,  { headers: { Authorization: AuthStr } });
+    return {booked: booked.data, booking: booking.data};
 }

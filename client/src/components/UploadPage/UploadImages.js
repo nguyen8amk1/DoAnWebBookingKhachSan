@@ -1,5 +1,5 @@
 import React from 'react'
-import { uploadImages } from '../api/ImageUploadAPI';
+import { uploadImages } from '../../api/ImageUploadAPI';
 
 class UploadImages extends React.Component {
     constructor(props) {

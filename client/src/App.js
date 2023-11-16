@@ -57,13 +57,14 @@ function App() {
     <>
     <switch>
       <Routes>
-        <Route exact path="/" Component={CreateOrder} />
+        {/* <Route exact path="/" Component={CreateOrder} /> */}
         {/* <Route exact path="/" Component={TestImageHosting} /> */}
         {/* <Route exact path="/" Component={TestMap} /> */}
         {/* <Route exact path="/" Component={BookingInformation} /> */}
-        {/* <Route exact path="/" Component={HotelDetail} /> */}
-        {/* <Route exact path="/" Component={Homepage} />
-        <Route path="/Searchpage" Component={Searchpage} /> */}
+        <Route exact path="/" Component={Homepage} />
+        <Route path="/Searchpage" Component={Searchpage} /> 
+        <Route path="/uploadHotel" Component={UploadPlaces} />
+        <Route path="/bookinginfo" Component={BookingInformation} />
       </Routes>
       {/* <p> */}
       {/* <Destination__slider /> */}

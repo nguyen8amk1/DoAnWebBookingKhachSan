@@ -1,4 +1,5 @@
 import React from 'react'
+import { getBookInfo } from '../api/PageApi';
 import BookedInformation from './BookedInformation';
 import BookingPlaceInfo from './BookingPlaceInfo';
 
@@ -12,29 +13,15 @@ class BookingInformation extends React.Component {
         }
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         // TODO: call hotel api 
         // input: id 
+        const result = await getBookInfo();
+        console.log(result);
+
         this.setState({
-            bookingplaces: [ {
-                // NOTE: This is just test data, real data is gonna be given my 
-                tenkhachsan: "Ten khach san", 
-                roomname: "room name", 
-                thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-                bedroomCount: 1,
-                bedCount: 1, 
-                giaphong: 100, 
-                thanhtien: 1000,
-            }
-            ],
-            bookedplaces: [ {
-                tenphong: "Ten phong", 
-                tennguoithue: "Ditmesaigon", 
-                thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-                giaphong: 100, 
-                thanhtien: 100, 
-            }
-            ], 
+            bookingplaces: result.booked, 
+            bookedplaces: result.booking, 
         });
     }
 

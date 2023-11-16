@@ -1,4 +1,4 @@
-import UploadImages from "./UploadImages";
+import UploadImages from "./UploadPage/UploadImages";
 
 const TestImageHosting = () => {
     return (<>

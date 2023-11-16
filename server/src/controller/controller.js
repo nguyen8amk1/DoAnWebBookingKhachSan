@@ -123,20 +123,14 @@ const getHotelDetails = async (req, res) => {
 
 const uploadHotel = async (req, res) => {
     // TODO: List some information needed to register a hotel 
-}
-
-const viewBooking = async (req, res) => {
-    // TODO: Return the result depends on the role 
-
+    console.log(req.body);
 }
 
 const uploadImages = async (req, res) => {
     console.log("This suppose to print the uploaded images ");
     const result =  await storeImages(req.files);
-    res.send(result);
+    res.json(result);
 }
-
-
 
 
 const vnPayCreateOrder = async (req, res) => {
@@ -227,6 +221,52 @@ const checkVNPaySuccess = (req, res) => {
         }); 
     }
 }
+
+const getCustomerBookingInfo = async (req, res) => {
+    const result = [
+        {
+            tenkhachsan: "Ten khach san", 
+            roomname: "room name", 
+            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
+            bedroomCount: 1,
+            bedCount: 1, 
+            giaphong: 100, 
+            thanhtien: 1000,
+        }, 
+        {
+            tenkhachsan: "Ten khach san", 
+            roomname: "room name", 
+            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
+            bedroomCount: 1,
+            bedCount: 1, 
+            giaphong: 100, 
+            thanhtien: 1000,
+        }
+    ];
+
+    res.send(result);
+}
+
+const getManagerBookedInfo = async (req, res) => {
+    const result = [
+        {
+            tenphong: "Ten phong", 
+            tennguoithue: "Ditmesaigon", 
+            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
+            giaphong: 100, 
+            thanhtien: 100, 
+        }, 
+        {
+            tenphong: "Ten phong", 
+            tennguoithue: "Ditmesaigon", 
+            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
+            giaphong: 100, 
+            thanhtien: 100, 
+        }, 
+    ];
+    res.send(result);
+}
+
 function sortObject(obj) {
 	let sorted = {};
 	let str = [];
@@ -243,6 +283,7 @@ function sortObject(obj) {
     return sorted;
 }
 
+
 export default {
     getHomePage: getHomePage,    
     getCrud: getCrud,
@@ -250,6 +291,9 @@ export default {
     searchForPlaces: searchForPlaces,
     getHotelDetails: getHotelDetails,
     uploadImages: uploadImages,
+    uploadHotel: uploadHotel, 
     vnPayCreateOrder: vnPayCreateOrder,
-    checkVNPaySuccess: checkVNPaySuccess
+    checkVNPaySuccess: checkVNPaySuccess, 
+    getManagerBookedInfo: getManagerBookedInfo, 
+    getCustomerBookingInfo: getCustomerBookingInfo, 
 };
