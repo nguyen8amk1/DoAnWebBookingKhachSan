@@ -16,12 +16,18 @@ module.exports = (sequelize, DataTypes) => {
             // City.hasMany(models.Hotel, {
             //     foreignKey: 'cityID'
             // })
+            Review.belongsTo(models.User, {
+                foreignKey: 'userID'
+            });
+            Review.belongsTo(models.Hotel, {
+                foreignKey: 'hotelID'
+            });
         }
     }
 
     Review.init({
-        place_id: DataTypes.STRING,
-        reviewer_id: DataTypes.STRING,
+        hotelID: DataTypes.STRING,
+        userID: DataTypes.STRING,
         content: DataTypes.STRING,
     }, {
         sequelize,

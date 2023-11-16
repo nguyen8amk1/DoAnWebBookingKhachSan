@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
     async up(queryInterface, Sequelize) {
-        await queryInterface.createTable('Hotels', {
+        await queryInterface.createTable('BookingPlaces', {
             // name: DataTypes.STRING,
             // address: DataTypes.STRING,
             // description: DataTypes.STRING,
@@ -15,23 +15,31 @@ module.exports = {
                 primaryKey: true,
                 type: Sequelize.INTEGER
             },
-            cityID: {
+            hotelID: {
                 type: Sequelize.INTEGER,
                 references: {
-                    model: 'Cities',
+                    model: 'Hotels',
                     key: 'id'
                 }
             },
-            name: {
+            userID: {
+                type: Sequelize.INTEGER,
+                references: {
+                    model: 'Users',
+                    key: 'id'
+                }
+            },
+            roomID: {
+                type: Sequelize.INTEGER,
+                references: {
+                    model: 'Rooms',
+                    key: 'id'
+                }
+            },
+            price: {
                 type: Sequelize.STRING
             },
-            address: {
-                type: Sequelize.STRING
-            },
-            description: {
-                type: Sequelize.STRING
-            },
-            score: {
+            dateRange: {
                 type: Sequelize.STRING
             },
             createdAt: {
@@ -45,6 +53,6 @@ module.exports = {
         });
     },
     async down(queryInterface, Sequelize) {
-        await queryInterface.dropTable('Hotels');
+        await queryInterface.dropTable('BookingPlaces');
     }
 };

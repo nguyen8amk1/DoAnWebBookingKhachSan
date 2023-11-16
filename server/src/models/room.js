@@ -14,6 +14,9 @@ module.exports = (sequelize, DataTypes) => {
             Room.belongsTo(models.Hotel, {
                 foreignKey: 'hotelID'
             })
+            Room.belongsTo(models.BookingPlace, {
+                foreignKey: 'roomID'
+            });
         }
     }
     Room.init({
