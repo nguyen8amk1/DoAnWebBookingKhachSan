@@ -17,7 +17,16 @@ module.exports = (sequelize, DataTypes) => {
             });
             Hotel.belongsTo(models.City, {
                 foreignKey: 'cityID'
-            })
+            });
+            Hotel.hasMany(models.Image, {
+                foreignKey: 'hotelID'
+            });
+            Hotel.hasMany(models.Review, {
+                foreignKey: 'hotelID'
+            });
+            Hotel.belongsTo(models.BookingPlace, {
+                foreignKey: 'hotelID'
+            });
         }
     }
     Hotel.init({
