@@ -94,7 +94,7 @@ const searchForPlaces = async (req, res) => {
 
     console.log(req.query);
     let cityName = nameMapping(req.query.city);
-    const queryStr = "SELECT Hotels.name, Hotels.id, Hotels.address, Hotels.description, Hotels.images, Hotels.score, Hotels.review FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id" + ` WHERE Cities.name='${cityName}'`;
+    const queryStr = "SELECT Hotels.name, Hotels.id, Hotels.address, Hotels.score FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id WHERE Cities.name=" + `'${cityName}'`;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.RAW});
 
     console.log(results);

@@ -1,11 +1,16 @@
 TODAY: 
+    Update the code to work with new database 
+        + controller code (1h) 
+        + seeder code (2h) @Current  
+        -> Make the search works again
+
     List of features Progress: 
         Search 
             -> Frontend: @Halfway (2h) 
             -> Backend: @Halfway (2h) 
             View hotel detail: 
                 -> Frontend: @Halfway (2h) 
-                    Apply map thingy @Current 
+                    Apply map thingy 
                     **Mode of map show: 
                         Search page map 
                             little map: 
@@ -355,3 +360,19 @@ DONE:
     Init the database to make it works (1h) [X] 
     Setup folder structure (2h) [X]
     -> Init Development Rules (1h) [X] 
+
+NOTE THUC HANH: 
+    so luong bai lab minimum: 3 bai 
+    bao cao: 
+        chon 1 trong 2:
+        buoi 1: front end: 
+            1. html css 
+            2. javascript jquery
+
+        buoi 2: back end: 
+            1. crud
+            2. session, cookie, web storage
+        
+        buoi 3: advance:
+            1. tang hieu suat -> ajax, single page application 
+            2. deploy -> stack 
