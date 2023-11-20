@@ -26,8 +26,8 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     Review.init({
-        hotelID: DataTypes.STRING,
-        userID: DataTypes.STRING,
+        hotelID: DataTypes.INTEGER,
+        userID: DataTypes.INTEGER,
         content: DataTypes.STRING,
     }, {
         sequelize,

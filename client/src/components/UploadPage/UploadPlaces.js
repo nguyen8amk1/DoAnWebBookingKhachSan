@@ -67,8 +67,9 @@ class UploadPlaces extends React.Component {
     }
 
     render() {
+        const userLogged = localStorage.getItem("accessToken") != null; 
         return <>
-            <form>
+            {userLogged && <form>
                 <h2>Loại chỗ nghỉ</h2>
                 <select>
                     <option value="canho">Căn hộ</option>
@@ -148,7 +149,7 @@ class UploadPlaces extends React.Component {
                 <input type="file" ref={this.fileInputRef} multiple />
                 <br />
                 <button type="submit" onClick={this.upload}>Hoàn thành</button>
-            </form>
+            </form>}
             <UserInfoComponent />
         </>;
     }

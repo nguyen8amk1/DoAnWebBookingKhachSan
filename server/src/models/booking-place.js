@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     BookingPlace.init({
-        price: DataTypes.STRING,
+        price: DataTypes.FLOAT,
         dateRange: DataTypes.STRING,
         userID: DataTypes.INTEGER,
         roomID: DataTypes.INTEGER,

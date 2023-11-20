@@ -1,8 +1,11 @@
 TODAY: 
     Update the code to work with new database 
         + controller code (1h) 
-        + seeder code (2h) @Current  
-        -> Make the search works again
+        + seeder code (2h) [X]
+            -> Some needed code is kinda done 
+
+        Make all the api work good @Current  
+            -> Which are all the backend work :v 
 
     List of features Progress: 
         Search 
@@ -306,6 +309,7 @@ TODO:
 
 
 DONE:  
+    Make the search works again @Next 
     To do some operations (view booking info) the person have to be logged in ? 
         How could we do that ?? 
             -> Add the token into the request then validate the request ?? 

@@ -23,18 +23,15 @@ module.exports = {
                 }
             },
             prices: {
-                type: Sequelize.STRING
-            },
-            status: {
-                type: Sequelize.STRING
+                type: Sequelize.FLOAT
             },
             adultCount: {
-                type: Sequelize.STRING
+                type: Sequelize.INTEGER
             },
             childrenCount: {
-                type: Sequelize.STRING
+                type: Sequelize.INTEGER
             },
-            occupationStar: {
+            occupationStart: {
                 type: Sequelize.STRING
             },
             occupationEnd: {

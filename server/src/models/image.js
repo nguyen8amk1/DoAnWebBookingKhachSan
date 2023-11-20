@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     Image.init({
-        hotelID: DataTypes.STRING,
+        hotelID: DataTypes.INTEGER,
         link: DataTypes.STRING,
     }, {
         sequelize,

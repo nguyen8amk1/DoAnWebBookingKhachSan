@@ -29,6 +29,7 @@ module.exports = (sequelize, DataTypes) => {
             });
         }
     }
+
     Hotel.init({
         name: DataTypes.STRING,
         address: DataTypes.STRING,

@@ -2,6 +2,7 @@ import React from 'react'
 import { getBookInfo } from '../api/PageApi';
 import BookedInformation from './BookedInformation';
 import BookingPlaceInfo from './BookingPlaceInfo';
+import UserInfoComponent from './UserInfoComponent';
 
 class BookingInformation extends React.Component {
     constructor(props) {
@@ -45,6 +46,7 @@ class BookingInformation extends React.Component {
         {this.state.shownTabId == 2 && this.state.bookedplaces.map((place, index) => (
             <BookedInformation key={index} info={place}/> 
         ))}
+        <UserInfoComponent/>
         </>;
     }
 }

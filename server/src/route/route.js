@@ -13,13 +13,15 @@ const initRouters = (app) => {
     router.get('/searchforplaces', controller.searchForPlaces);
     router.get('/hoteldetails', controller.getHotelDetails);
 
-    // router.post('/uploadImages', authenticateToken, upload.array('images', 100), controller.uploadImages);
-    // router.post('/uploadHotel', authenticateToken, controller.uploadHotel);
-    router.post('/uploadImages', upload.array('images', 100), controller.uploadImages);
-    router.post('/uploadHotel', controller.uploadHotel);
+    router.post('/uploadImages', authenticateToken, upload.array('images', 100), controller.uploadImages);
+    router.post('/uploadHotel', authenticateToken, controller.uploadHotel);
+    // router.post('/uploadImages', upload.array('images', 100), controller.uploadImages);
+    // router.post('/uploadHotel', controller.uploadHotel);
 
     router.get('/getbookinginfo', authenticateToken, controller.getCustomerBookingInfo);
     router.get('/getbookedinfo', authenticateToken, controller.getManagerBookedInfo);
+    // router.get('/getbookinginfo', controller.getCustomerBookingInfo);
+    // router.get('/getbookedinfo',  controller.getManagerBookedInfo);
 
     router.post('/create_payment_url', controller.vnPayCreateOrder);
     router.get('/vnpay_return', controller.checkVNPaySuccess);
@@ -30,6 +32,7 @@ const initRouters = (app) => {
 
 function authenticateToken(req, res, next) {
     const authHeader = req.headers['authorization']
+    console.log(authHeader);
     if (!authHeader) {
         console.log("Authorization header is missing");
         return res.sendStatus(401);

@@ -19,14 +19,14 @@ module.exports = (sequelize, DataTypes) => {
             });
         }
     }
+
     Room.init({
-        prices: DataTypes.STRING,
-        status: DataTypes.STRING,
-        adultCount: DataTypes.STRING,
-        childrenCount: DataTypes.STRING,
-        occupationStar: DataTypes.STRING,
+        prices: DataTypes.FLOAT,
+        adultCount: DataTypes.INTEGER,
+        childrenCount: DataTypes.INTEGER,
+        occupationStart: DataTypes.STRING,
         occupationEnd: DataTypes.STRING,
-        // hotelID: DataTypes.INTEGER,
+        hotelID: DataTypes.INTEGER,
     }, {
         sequelize,
         modelName: 'Room',
