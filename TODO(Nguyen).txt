@@ -4,7 +4,7 @@ TODAY:
         + seeder code (2h) [X]
             -> Some needed code is kinda done 
 
-        Make all the api work good @Current  
+        Make all the api work good 
             -> Which are all the backend work :v 
 
     List of features Progress: 
@@ -81,8 +81,13 @@ TODAY:
                 -> Have all the information form 
             Backend: @1/4
                 -> Receive all the information [X]
-                -> Push them into a table 
+                -> Push them into a table @Next  
 
+        Register: 
+            Frontend: @2/3 
+            Backend: @1/4
+                -> Receive all the information [X]
+                -> Push them into a table @Current  
 
     How the api search for places with available time range () 
 
