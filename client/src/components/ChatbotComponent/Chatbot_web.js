@@ -1,6 +1,6 @@
 import React from "react";
 import ChatBot from "react-simple-chatbot";
-import "../../style/ChatbotComponent/Chatbot_web.scss";
+// import "../../style/ChatbotComponent/Chatbot_web.scss";
 import { ThemeProvider } from "styled-components";
 
 const CHATBOT_THEME = {
