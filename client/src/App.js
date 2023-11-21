@@ -16,6 +16,7 @@ import BookingInformation from "./components/BookingInformation";
 import TestMap from "./components/TestMap";
 import TestImageHosting from "./components/TestImageHosting";
 import CreateOrder from "./views/CreateOrder";
+import Detailpage from "./views/Detailpage";
 
 function App() {
   const action = useNavigationType();
@@ -70,8 +71,8 @@ function App() {
       {/* <Destination__slider /> */}
       {/* <Test />
         <MapComponentTest /> */}
-      {/* </p> */}
-    </switch>
+        {/* </p> */}
+      </switch>
     </>
   );
 }

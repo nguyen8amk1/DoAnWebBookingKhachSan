@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 export const searchForPlaces = async (destination, date, memberCount) => {
     const response = await axios.get(`http://127.0.0.1:8080/searchforplaces?city=${destination}&date_came=${date.came}&date_leave=${date.leave}&members_count_adults=${memberCount.adult}&members_count_children=${memberCount.children}`);
@@ -28,3 +28,9 @@ export const getBookInfo = async () => {
     const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo`,  { headers: { Authorization: AuthStr } });
     return {booked: booked.data, booking: booking.data};
 }
+export const getSearch = async (destination, date, options) => {
+  const response = await axios.get(
+    `http://127.0.0.1:8000/searchforplaces?city=${destination}`
+  );
+  return response.data;
+};

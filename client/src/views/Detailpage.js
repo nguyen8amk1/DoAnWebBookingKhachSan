@@ -1,20 +1,12 @@
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "../style/Detailpage/Detailpage.scss";
 import SubNavMain from "../components/Homepage/SubNavMain";
-import Searchbar from "../components/Homepage/Searchbar";
-import UserInfoComponent from "../components/UserInfoComponent";
-import DestinationCard from "../components/Homepage/DestinationCard";
-import "../style/Homepage/Homepage.scss";
-import Header__button from "../components/Homepage/Header__button";
 import FooterPage from "../components/Footer/FooterPage";
-import Discount from "../components/Homepage/Discount";
-import Property__list from "../components/Homepage/Property__list";
-import Featured__properties from "../components/Homepage/Featured__properties";
-import Mail__list from "../components/Footer/Mail__list";
-import Chatbot_web from "../components/ChatbotComponent/Chatbot_web";
-import { Link } from "react-router-dom";
 
-const Homepage = () => {
+const Detailpage = () => {
   return (
-    <>
+    <div className="Detailpage">
       <div className="homepage">
         <div className="main">
           <Link to="/" className="main-child">
@@ -68,21 +60,28 @@ const Homepage = () => {
               buttonColor="#fff"
             />
           </div> */}
-
-          <UserInfoComponent/>
-          <img className="main-item" alt="" src="/Homepage__img.png" />
+          <div className="btn-login_register">
+            <button
+              type="button"
+              className="btn-login btn btn-primary"
+              onClick={() => alert("button click catched")}
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              className="btn-register btn btn-primary"
+              onClick={() => alert("button click catched")}
+            >
+              Sign Up
+            </button>
+          </div>
         </div>
-        <Searchbar />
-        <DestinationCard />
-        <Discount />
-        <Property__list />
-        <Featured__properties />
-        <Mail__list />
-        <FooterPage />
-        <Chatbot_web />
       </div>
-    </>
+
+      <FooterPage />
+    </div>
   );
 };
 
-export default Homepage;
+export default Detailpage;

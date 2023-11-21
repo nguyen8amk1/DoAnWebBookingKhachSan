@@ -1,5 +1,6 @@
 // import React from "react";
 import "../../style/Searchpage/Searchpage_searchitem.scss";
+import { Link, useNavigate } from "react-router-dom";
 
 const Searchpage__searchitem = (props) => {
   return (
@@ -38,12 +39,14 @@ const Searchpage__searchitem = (props) => {
         <div className="searchpage-si-detailtexts">
           <span className="searchpage-si-price">$112</span>
           <span className="searchpage-si-taxop">Includes taxes and fees</span>
-          <button
-            type="button"
-            className="searchpage-si-checkbutton btn btn-primary btn-sidebar"
-          >
-            See availability
-          </button>
+          <Link to="/Detailpage">
+            <button
+              type="button"
+              className="searchpage-si-checkbutton btn btn-primary btn-sidebar"
+            >
+              See availability
+            </button>
+          </Link>
         </div>
       </div>
     </div>
