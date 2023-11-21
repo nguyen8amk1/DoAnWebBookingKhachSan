@@ -39,10 +39,10 @@ const Searchbar = ({ type }) => {
   const handleSearch = async () => {
     navigate("/Searchpage", { state: { destination, date, options } });
     let response = await getSearch(destination);
-    searchPageData = response
-    // console.log(searchPageData)
+    searchPageData = response;
+    console.log(searchPageData);
     for (let i = 0; i < searchPageData.length; i++) {
-      console.log(searchPageData[i].score)
+      console.log(searchPageData[i].score);
     }
   };
 
