@@ -44,10 +44,8 @@ TODAY:
                             + Marker Animation [] @Later 
                             + Change Color [X]
 
+                -> Backend: @Halfway (2h) @Next  
 
-
-
-                -> Backend: @Halfway (2h) 
 
         Booking (thanh toan) @Alert 
             -> Payment 
@@ -57,12 +55,13 @@ TODAY:
                 Frontend: @Nothing  (2h) 
                 Backend: @Nothing  (2h) 
             
-        View booking 
+        View booking:  
             customer place booking
             manager booked places 
             -> Frontend: @1/3 (2h) 
-            -> Backend: @1/3 (2h) 
-            Database: @Nothing  
+            -> Backend: @1/3 (2h) @Current   
+
+            Database: @Done   
                 2 more tables: 
                     + Booking table 
                         ref user_id 
@@ -79,15 +78,24 @@ TODAY:
         Upload hotel: 
             Frontend: @1/2 
                 -> Have all the information form 
-            Backend: @1/4
+            Backend: @2/3
                 -> Receive all the information [X]
-                -> Push them into a table @Next  
+                -> Push them into a table [X]
+
+        Login: 
+            Backend: @4/5
+                Actually checking the user information, instead of fixed values [X] 
+                Hash the password 
 
         Register: 
             Frontend: @2/3 
-            Backend: @1/4
-                -> Receive all the information [X]
-                -> Push them into a table @Current  
+            Backend: @2/3
+                -> Receive all the information [X] 
+                -> Push them into a table [X] 
+
+    HANDLE FAILED REQUEST [] @Next             
+        failed login 
+        failed checking booking ??  
 
     How the api search for places with available time range () 
 
@@ -225,7 +233,6 @@ TODAY:
         -> get the actual information 
             -> along with the images
 
-
     Comment component (1h): @Later 
     Comment api (2h): @Later 
 
@@ -236,7 +243,6 @@ TODAY:
     Booking api (2h): 
 
     View-Booking api (2h): 
-
 
     Hotel detail site (2h) @Halfway 
         components: [X]
@@ -255,7 +261,6 @@ TODAY:
             Hien thi tren ban do @Later
 
         -> Connect this site to the original front-end routing system (1h) []
-
 
     Add register client code (1h) @Halfway
         -> Have the register ui in place [X]

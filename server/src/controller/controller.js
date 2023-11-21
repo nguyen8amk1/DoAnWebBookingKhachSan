@@ -3,6 +3,10 @@ import db, { sequelize } from '../models/index.js';
 import { storeImages } from '../services/imageServices.js';
 const moment = require('moment');
 
+const Sequelize = require('sequelize');
+const Hotel = require('../models/hotel')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+
 /**
  * 
     How the authentication and authorization will work: 
@@ -123,7 +127,23 @@ const getHotelDetails = async (req, res) => {
 
 const uploadHotel = async (req, res) => {
     // TODO: List some information needed to register a hotel 
+
     console.log(req.body);
+    const description = "THE AUTO GENERATED DESCRIPTION";
+    const cityID = 1;
+
+    const newHotel = await Hotel.create(
+        { 
+            name: req.body.name,
+            address: req.body.address,
+            description: description,
+            score: 10,
+            cityID: cityID,
+        }
+    );
+
+    console.log("New hotel id: ", newHotel.id);
+
 }
 
 const uploadImages = async (req, res) => {

@@ -12,11 +12,14 @@ class PlusMinusComponent extends React.Component {
 
     }
     
-    incrementCount = () => {
+    incrementCount = (e) => {
+        e.preventDefault(); 
         this.setState({ count: this.state.count + 1});
     }
 
-    decrementCount = () => {
+    decrementCount = (e) => {
+        e.preventDefault();
+        this.setState({ count: this.state.count + 1});
         // TODO: having bugs right here :v, can't go negative :v  
         const canGoNegative = this.props.positive == undefined;
         if(this.state.count > 0)

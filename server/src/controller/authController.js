@@ -2,6 +2,10 @@ import { QueryTypes } from 'sequelize';
 import db, { sequelize } from '../models/index.js';
 const jwt = require('jsonwebtoken');
 
+const Sequelize = require('sequelize');
+const User = require('../models/user')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+
 const STATUS_CODE_LIST = {
     // login
     LOGIN_SUCCESS: 200, // OK 
@@ -18,12 +22,13 @@ function generateAccessToken(user) {
 
 const refreshTokens = [];
 
-const checkUserCredential = (username, password) => {
+const checkUserCredential = async (username, password) => {
     // TODO: Connect to database to check, but currently just have some fixed values 
-    if (!(username === "hello" && password === 'world')) {
-        return false;
-    }
-    return true;
+    const instance = await User.findOne({where: { 
+        username: username, 
+        password: password
+    }});
+    return !!instance;
 }
 
 const login = async (req, res) => {
@@ -32,7 +37,7 @@ const login = async (req, res) => {
     const password = req.body.password;
     const role = "user";
     // TODO: check step: 
-    const userExist = checkUserCredential(username, password);
+    const userExist = await checkUserCredential(username, password);
     if (!userExist) {
         return res.status(STATUS_CODE_LIST.LOGIN_FAIL).json({ error: "User not exist" })
     }
@@ -47,17 +52,30 @@ const login = async (req, res) => {
     // NOTE: this refresh token push thing, should be push to database
     refreshTokens.push(refreshToken);
 
+
     return res.json({ accessToken: accessToken, refreshToken: refreshToken, userInfo: {username: username, avatar: null}});
 }
 
 const register = async (req, res) => {
     // Nothing related to JWT, just put the data into the database as usual  
     console.log(req.body);
+    console.log("TODO: Checking things up before insert");
+    console.log("TODO: Hash the password");
     const user = req.body;
     console.log("About to add the user: " + user);
-    console.log("TODO: Checking things up before insert");
+
+    const newUser = await User.create(
+        { 
+            firstName: req.body.firstname, lastName: req.body.lastname,  
+            username: req.body.username, password: req.body.password, 
+            role: "customer" 
+        }
+        );
+    // by this point, the user has been saved to the database!
+    console.log("Jane's auto-generated ID:", newUser.id);
 
     // const userExist = sequelize.User.findOne({where: {username: username}});
+    // console.log(userExist);
     const userExist = false;
     if(userExist) return res.status(STATUS_CODE_LIST.REGISTER_FAIL).json({error: "User already exist!!!"}); // return user exit status  
     return res.status(STATUS_CODE_LIST.REGISTER_SUCCESS).json({msg:"Register successfully"});

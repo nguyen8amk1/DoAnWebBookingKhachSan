@@ -26,7 +26,6 @@ class UserRegister extends Component {
 
     register = async () => {
         console.log(this.state)
-        // TODO: call register api 
         try {
             const result = await register(this.state.firstname, this.state.lastname, this.state.username, this.state.password, this.state.role);
             console.log(result);
@@ -115,13 +114,13 @@ class UserRegister extends Component {
                                 value={this.state.passwordConfirm}
                             ></input>
                         </div>
-                        <p>Please select your role: </p>
+                        {/* <p>Please select your role: </p>
                         <div>
                             <input type="radio" id="customer" name="role" value="customer" onChange={this.onRoleChange}></input>
                             <label for="customer">Customer</label><br/>
                             <input type="radio" id="manager" name="role" value="manager" onChange={this.onRoleChange}></input> 
                             <label for="manager">Hotel Manager</label><br/>  
-                        </div>
+                        </div> */}
                     </div>
                 </ModalBody>
                 <ModalFooter>
