@@ -9,12 +9,14 @@ TODAY:
                 + chổ nghỉ đang thuê
                 + chổ nghỉ đang cho thuê  
             M vô giỏ hàng shopee coi thử bố cục nó như nào, làm giống giống 
+            Sửa file: BookingInformation.js 
 
         View hotel detail (Nghia)
             -> Giong website, suong suong  
             https://www.booking.com/hotel/vn/bimexco-resort.vi.html?aid=304142&label=gen173nr-1FCAEoggI46AdIKlgEaPQBiAEBmAEquAEXyAEM2AEB6AEB-AECiAIBqAIDuAKboPWqBsACAdICJDIzN2Q2ZTUzLTQyN2MtNDk2YS1iMGY3LTg2ZTQ3YjIxMTgzY9gCBeACAQ&sid=81041cbcd763e0b359b2773dfa36fb4c&dest_id=-3733750;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1700614186;srpvid=e05b05d3068000a8;type=total;ucfs=1&#hotelTmpl
             Phần nào thiếu thì cứ div làm thành hình chữ nhật có màu cho nó đủ bố cục r t thêm vô sau nha 
             Bỏ mấy cái nhỏ nhỏ râu ria đi nha, cái nào to to dễ thấy thì làm th :v
+            Sửa file: HotelDetail.js 
             
         -> Prepare des mau (1h)  
 
