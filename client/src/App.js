@@ -64,8 +64,8 @@ function App() {
         {/* <Route exact path="/" Component={BookingInformation} /> */}
         <Route exact path="/" Component={Homepage} />
         <Route exact path="/hoteldetail" Component={HotelDetail} />
+        <Route exact path="/uploadHotel" Component={UploadPlaces} />
         {/* <Route path="/Searchpage" Component={Searchpage} /> 
-        <Route path="/uploadHotel" Component={UploadPlaces} />
         <Route path="/bookinginfo" Component={BookingInformation} /> */}
       </Routes>
       {/* <p> */}
