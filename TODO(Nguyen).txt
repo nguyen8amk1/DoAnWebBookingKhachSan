@@ -2,6 +2,7 @@ TODAY:
     LIST OUT ALL THE UI THAT NEED TO WORK (1h): @Current
         Upload hotel (Lap)
             -> Lap tu des 
+            Des sao cho đẹp đẹp th chứ t cũng đ có ý tưởng :v 
             
         View booking (Nghia)
             -> Giống cái giỏ hàng của shopee, có nhiều tab vd: Chờ thanh toán, vận chuyển, chờ giao hàng 
