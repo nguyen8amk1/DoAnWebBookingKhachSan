@@ -10,10 +10,27 @@ class HotelDetail extends React.Component {
             diachi: "", 
             diem: "",  
             danhgia: [], 
-            anh: [],  
-            bigImg: '',
-            smallImg1: '',
-            smallImg2: '',
+            images: [
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
+            ],  
         };
     }
 
@@ -30,12 +47,12 @@ class HotelDetail extends React.Component {
                 anh: detail.images, 
             }
         );
-        if(this.state.anh != null)  {
+        if(this.state.images != null)  {
             this.setState(
                 {
-                    bigImg: this.state.anh.shift(),
-                    smallImg1: this.state.anh.shift(),
-                    smallImg2: this.state.anh.shift(),
+                    bigImg: this.state.images.shift(),
+                    smallImg1: this.state.images.shift(),
+                    smallImg2: this.state.images.shift(),
                 }
             );
         }
@@ -64,7 +81,7 @@ class HotelDetail extends React.Component {
 
                 <div className='listanhconlai'> 
                 {/* TODO: Should hide when too much, vd: exceed the 10 images */}
-                    { this.state.anh && this.state.anh.map((anh, index) => (
+                    { this.state.images.length > 0 && this.state.images.map((anh, index) => (
                         <img key={index} src={anh} alt="Anh bi hu r :v"/>))}
                 </div>
             </div>
