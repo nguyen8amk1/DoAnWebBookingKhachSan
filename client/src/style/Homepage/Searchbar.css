@@ -1,0 +1,199 @@
+@charset "UTF-8";
+.search-bar {
+  position: absolute;
+  z-index: 9999;
+  top: 630px; /* Đẩy phần tử xuống 50px từ trên cùng */
+  left: 50%;
+  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+  display: flex;
+  align-items: center;
+  border-radius: var(--br-3xs);
+  background-color: var(--neutral-5);
+  box-shadow: 0 2px 80px 2px rgba(0, 0, 0, 0.06);
+  width: 950px;
+  height: 136.83px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--neutral-2);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.content__item {
+  display: flex;
+  align-items: center;
+}
+
+.content__item-date,
+.content__item-location,
+.content__item-guest {
+  margin-right: 40px; /* Đẩy cách nhau 30px */
+}
+
+.content__item-location--top {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  margin-bottom: 4px;
+}
+.content__item-location--top > * {
+  padding: 0 3px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
+}
+
+.content__item-date--top {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  margin-bottom: 4px;
+}
+.content__item-date--top > * {
+  padding: 0 23px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
+}
+
+.content__item-guest--top {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  margin-bottom: 4px;
+}
+.content__item-guest--top > * {
+  padding: 0 3px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
+}
+
+.content__item-date--check {
+  font-size: 0.95rem;
+  color: var(--sub-text);
+  padding-top: 4.2px;
+}
+
+.content__item-quantity {
+  font-size: 0.95rem;
+  color: var(--sub-text);
+  padding-top: 4.2px;
+}
+
+.location {
+  font-size: 1.1rem;
+  color: var(--br-8xs);
+  font-weight: 600;
+}
+
+.date {
+  font-size: 1.1rem;
+  color: var(--br-8xs);
+  font-weight: 600;
+}
+
+.guest {
+  font-size: 1.1rem;
+  color: var(--br-8xs);
+  font-weight: 600;
+}
+
+.guest-icon {
+  width: 30px;
+  height: auto;
+}
+
+.explore-now {
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.explore-btn {
+  position: relative;
+  right: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--primary-o);
+  box-shadow: 0 8px 16px rgba(250, 116, 54, 0.16);
+  width: 182.07px;
+  height: 66.21px;
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  z-index: 3;
+}
+
+.guest__options {
+  position: absolute;
+  background-color: white;
+  color: var(--neutral-2);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 32px;
+  z-index: 1;
+}
+
+.guest__options-item {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.guest__options-counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: black;
+  border: 1px solid var(--sub-color-border);
+  border-radius: var(--sub-color-border);
+}
+
+.guest__options-counter-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.guest__options-counter-button:disabled {
+  cursor: not-allowed;
+}
+.guest__options-counter-button:hover {
+  color: var(--blue-main);
+  background-color: var(--hover-color);
+}
+
+.form-control {
+  display: block;
+  width: 80%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--sub-color-border);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.navbar,
+.navbar-light,
+.justify-content-between {
+  padding: 4px 0 0 0;
+}
+
+.form-control.mr-sm-2 {
+  padding: 0 0 0 0;
+  margin: 0 auto;
+}/*# sourceMappingURL=Searchbar.css.map */
