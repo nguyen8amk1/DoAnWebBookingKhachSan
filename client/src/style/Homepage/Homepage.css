@@ -1,0 +1,111 @@
+@charset "UTF-8";
+.main {
+  background-color: var(--neutral-5);
+  width: 100%;
+  height: 100%;
+}
+
+.main-child {
+  position: absolute;
+  top: 3px;
+  left: 10%;
+  width: 100px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  pointer-events: auto;
+  /* Thêm dòng này để đảm bảo vùng di chuột hoạt động */
+  z-index: 4;
+}
+
+.btn-login_register {
+  position: absolute;
+  top: 14px;
+  right: 10%;
+  display: flex;
+  gap: 5px;
+}
+
+.btn-login.btn.btn-primary {
+  background-color: white;
+  color: var(--primary-o);
+}
+.btn-login.btn.btn-primary:hover {
+  background-color: none;
+}
+.btn-login.btn.btn-primary:active {
+  background-color: var(--primary-o);
+}
+
+.btn-register.btn.btn-primary {
+  background-color: var(--primary-o);
+}
+.btn-register.btn.btn-primary:hover {
+  background-color: none;
+}
+.btn-register.btn.btn-primary:active {
+  background-color: white;
+}
+
+.user-login-info {
+  background-color: var(--primary-o);
+}
+.user-login-info:hover {
+  background-color: none;
+}
+.user-login-info:active {
+  background-color: white;
+}
+
+.sub-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-nav {
+  top: 15px;
+  width: calc(100% - 125px);
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  line-height: 30px;
+}
+
+.main-item {
+  position: absolute;
+  top: 97px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homepage {
+  position: relative;
+  background-color: var(--neutral-5);
+  width: 100%;
+  height: 3497px;
+  text-align: left;
+  font-size: 30px;
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+
+.modal-user-container {
+  width: 400px;
+}
+.modal-user-container .input-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-user-container .input-container input {
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 0 10px;
+}/*# sourceMappingURL=Homepage.css.map */
