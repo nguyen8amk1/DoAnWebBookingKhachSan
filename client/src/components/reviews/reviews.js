@@ -7,7 +7,7 @@ import {
   MDBTypography,
 } from "mdb-react-ui-kit";
 
-export default function App() {
+export default function Reviews() {
   return (
     <MDBContainer className="py-5">
       <MDBRow className="d-flex justify-content-center">

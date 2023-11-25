@@ -9,7 +9,7 @@ import LocationOnMapSetting from "../Map/LocationOnMapSetting";
 import { placeRecommendation } from "../../api/MapAPI";
 import "../../style/UploadPlacesStyle.scss";
 import Increase_decrease from "../button/Increase_decrease";
-import App from "../reviews/reviews";
+import Reviews from "../reviews/reviews";
 
 class UploadPlaces extends React.Component {
   constructor(props) {
@@ -196,7 +196,7 @@ class UploadPlaces extends React.Component {
                 <Increase_decrease />
               </div>
               <div class="form-group">
-                <App />
+                <Reviews />
               </div>
             </form>
           </div>
