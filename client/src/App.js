@@ -56,21 +56,21 @@ function App() {
 
   return (
     <>
-    <switch>
-      <Routes>
-        {/* <Route exact path="/" Component={CreateOrder} /> */}
-        {/* <Route exact path="/" Component={TestImageHosting} /> */}
-        {/* <Route exact path="/" Component={TestMap} /> */}
-        {/* <Route exact path="/" Component={BookingInformation} /> */}
-        <Route exact path="/" Component={Homepage} />
-        <Route exact path="/hoteldetail" Component={HotelDetail} />
-        {/* <Route path="/Searchpage" Component={Searchpage} /> 
-        <Route path="/uploadHotel" Component={UploadPlaces} />
-        <Route path="/bookinginfo" Component={BookingInformation} /> */}
-      </Routes>
-      {/* <p> */}
-      {/* <Destination__slider /> */}
-      {/* <Test />
+      <switch>
+        <Routes>
+          {/* <Route exact path="/" Component={CreateOrder} /> */}
+          {/* <Route exact path="/" Component={TestImageHosting} /> */}
+          {/* <Route exact path="/" Component={TestMap} /> */}
+          {/* <Route exact path="/" Component={BookingInformation} /> */}
+          <Route exact path="/" Component={Homepage} />
+          <Route exact path="/hoteldetail" Component={HotelDetail} />
+          <Route path="/Searchpage" Component={Searchpage} />
+          <Route path="/uploadHotel" Component={UploadPlaces} />
+          {/* <Route path="/bookinginfo" Component={BookingInformation} /> */}
+        </Routes>
+        {/* <p> */}
+        {/* <Destination__slider /> */}
+        {/* <Test />
         <MapComponentTest /> */}
         {/* </p> */}
       </switch>
