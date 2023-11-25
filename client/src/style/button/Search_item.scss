@@ -1,0 +1,26 @@
+.Search_item-container {
+    display: flex;
+    justify-content: center;
+    .Search_item-container-input {
+        width: 100%;
+    }
+
+    .Search_item_li {
+        list-style: none;
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.12) 0px 2px 8px 0px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .search_btn-size {
+        width: 60px;
+        height: 36px;
+    }
+    
+    .input-group {
+        width: 30%;
+    }
+}

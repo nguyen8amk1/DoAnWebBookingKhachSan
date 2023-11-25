@@ -10,6 +10,7 @@ import { placeRecommendation } from "../../api/MapAPI";
 import "../../style/UploadPlacesStyle.scss";
 import Increase_decrease from "../button/Increase_decrease";
 import Reviews from "../reviews/reviews";
+import Search_item from "../button/Search_item";
 
 class UploadPlaces extends React.Component {
   constructor(props) {
@@ -55,17 +56,6 @@ class UploadPlaces extends React.Component {
   };
 
   async componentDidMount() {}
-
-  addressRecommend = async (e) => {
-    this.setState({ address: e.target.value });
-    if (this.state.address.length > 0) {
-      const result = await placeRecommendation(this.state.address);
-      this.setState({ recommendations: result });
-    } else if (this.state.address.length == 0) {
-      this.setState({ recommendations: [] });
-    }
-    console.log(this.state.address.length);
-  };
 
   render() {
     const userLogged = localStorage.getItem("accessToken") != null;
@@ -182,6 +172,7 @@ class UploadPlaces extends React.Component {
                   </option>
                 </select>
               </div>
+
               <div class="form-group">
                 <label for="exampleFormControlInput1">Tên chỗ nghỉ</label>
                 <input
@@ -195,9 +186,90 @@ class UploadPlaces extends React.Component {
                 <label for="exampleFormControlInput1">Số lượng chỗ nghĩ</label>
                 <Increase_decrease />
               </div>
+              <Search_item />
+              {/* TODO: chon dia chi xong -> hien ra chon dia chi tren ban do */}
+              <h2>Vị trí trên bản đồ</h2>
+              <LocationOnMapSetting />
+              <h2>Cài đặt chổ nghỉ</h2>
+              <h3>Chi tiết chổ nghỉ</h3>
+
               <div class="form-group">
-                <Reviews />
+                <label for="exampleFormControlInput1">
+                  Bao nhiêu phòng ngủ ?
+                </label>
+                <Increase_decrease />
               </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Bao nhiêu giường ?</label>
+                <Increase_decrease />
+              </div>
+
+              <h3>Tiện nghi chung</h3>
+              <CheckboxListComponent
+                labels={[
+                  "Điều hòa nhiệt độ",
+                  "Hệ thống sưởi",
+                  "WIFI miễn phí",
+                  "Trạm sạc xe điện",
+                ]}
+                name="tiennghi"
+              />
+
+              <h3>Giải trí</h3>
+              <CheckboxListComponent
+                labels={["TV màn hình phẳng", "Hồ bơi", "Bể sục", "Minibar"]}
+                name="giaitri"
+              />
+
+              <h3>Nấu nướng và giặt rửa</h3>
+              <CheckboxListComponent
+                labels={["Bếp", "Bếp nhỏ", "Máy giặt"]}
+                name="naunuong"
+              />
+
+              <h3>Không gian ngoài trời</h3>
+              <CheckboxListComponent
+                labels={[
+                  "Ban công",
+                  "Nhìn ra vườn",
+                  "Sân thượng/hiên",
+                  "Tầm nhìn ra khung cảnh",
+                ]}
+                name="khonggian"
+              />
+
+              <h3>Giá mỗi đêm</h3>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="vd: 500.000"
+                />
+              </div>
+              <h3>Ảnh</h3>
+              <p>Đăng tải ít nhất 5 ảnh của chỗ nghỉ</p>
+              <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">
+                  Multiple files input example
+                </label>
+                <input
+                  class="form-control"
+                  type="file"
+                  ref={this.fileInputRef}
+                  id="formFileMultiple"
+                  multiple
+                />
+              </div>
+
+              <br />
+              <button
+                type="submit"
+                className="btn btn-primary"
+                onClick={this.upload}
+              >
+                Hoàn thành
+              </button>
             </form>
           </div>
         )}
