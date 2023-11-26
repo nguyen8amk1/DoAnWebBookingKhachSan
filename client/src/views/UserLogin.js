@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { login } from '../api/AuthenticationAPI';
+import  { Navigate } from 'react-router-dom';
 
 class UserLogin extends Component {
 
@@ -24,6 +25,9 @@ class UserLogin extends Component {
         try {
             const result = await login(this.state.email, this.state.password);
             console.log(result);
+            if(result === -1) {
+                return <Navigate to="/" replace={true} />
+            }
             // TODO: 
             // Store the token into localstorage
             localStorage.setItem("accessToken", result.accessToken);

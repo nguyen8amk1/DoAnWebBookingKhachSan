@@ -22,11 +22,16 @@ export const uploadPlace = async (placeInfo) => {
 }
 
 export const getBookInfo = async () => {
-    const USER_TOKEN = localStorage.getItem("accessToken");
-    const AuthStr = 'Bearer '.concat(USER_TOKEN); 
-    const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo`, { headers: { Authorization: AuthStr } });
-    const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo`,  { headers: { Authorization: AuthStr } });
-    return {booked: booked.data, booking: booking.data};
+    try {
+        const USER_TOKEN = localStorage.getItem("accessToken");
+        const AuthStr = 'Bearer '.concat(USER_TOKEN); 
+        const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo`, { headers: { Authorization: AuthStr } });
+        const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo`,  { headers: { Authorization: AuthStr } });
+        return {booked: booked.data, booking: booking.data};
+    }
+    catch(error) {
+        return -1;
+    }
 }
 export const getSearch = async (destination, date, options) => {
   const response = await axios.get(

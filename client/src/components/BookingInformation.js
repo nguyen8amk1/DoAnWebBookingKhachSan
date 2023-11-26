@@ -4,6 +4,7 @@ import BookedInformation from "./BookedInformation";
 import BookingPlaceInfo from "./BookingPlaceInfo";
 import UserInfoComponent from "./UserInfoComponent";
 import "../style/BookingInformation.scss";
+import  { Navigate } from 'react-router-dom';
 
 class BookingInformation extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class BookingInformation extends React.Component {
       bookingplaces: [],
       bookedplaces: [],
       shownTabId: 1,
+      error: false
     };
   }
 
@@ -19,6 +21,9 @@ class BookingInformation extends React.Component {
     // TODO: call hotel api
     // input: id
     const result = await getBookInfo();
+    if(result === -1) {
+      this.setState({error: true});
+    }
     console.log(result);
 
     this.setState({
@@ -150,7 +155,7 @@ class BookingInformation extends React.Component {
     // }
 
   render() {
-    return (
+    const content = 
       <div className="heade_info-component">
         <div className="property">
           <button onClick={() => this.showTab(1)}>Chổ nghỉ đang thuê</button>
@@ -171,7 +176,18 @@ class BookingInformation extends React.Component {
             <BookedInformation key={index} info={place} />
           ))}
         <UserInfoComponent />
-      </div>
+      </div>;
+
+    const redirect = <Navigate to="/" />
+    let c; 
+    if(this.state.error) {
+      c = redirect; 
+    } else {
+      c = content;
+    }
+
+    return (
+      c
     );
   }
 }

@@ -23,22 +23,13 @@ TODAY:
 
     -> NOTE: Sống chết cũng phải làm cho xong :v 
 
-    Change to MySQL for better docker installation ??: [2h] @Current
-
-    Update the code to work with new database 
-        + controller code (1h) 
-        + seeder code (2h) [X]
-            -> Some needed code is kinda done 
-
-        Make all the api work good 
-            -> Which are all the backend work :v 
-
     List of features Progress: 
         Search 
-            -> Frontend: @Halfway (2h) @Current
+            -> Frontend: @Halfway (2h) 
             -> Backend: @Halfway (2h) 
             View hotel detail: 
-                -> Frontend: @Halfway (2h) 
+                -> Frontend: @Halfway (2h) @Current 
+                    Make the images work 
                     Apply map thingy 
                     **Mode of map show: 
                         Search page map 
@@ -107,71 +98,8 @@ TODAY:
                 -> Receive all the information [X] 
                 -> Push them into a table [X] 
 
-    HANDLE FAILED REQUEST [] @Next             
-        failed login 
-        failed checking booking ??  
-
-    How the api search for places with available time range () 
-
-    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck 
-        -> note some migration script for easier to use [] 
-
-    The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
-        -> Need to change and migrate the hotel table @Next 
-            + there should be more reviews @DatabaseRelated [X] 
-                fields: 
-                    + ref place_id:  
-                    + ref reviewer_id // basically it's user id 
-                    + content 
-
-            + the images not working -> should be more images as well @DatabaseRelated [X]
-                -> create a new table for place images 
-                    + ref place_id 
-                    + link
-
-        Hotel: 
-            ref cityID: DataTypes.INTEGER,
-            name: DataTypes.STRING,
-            address: DataTypes.STRING,
-            description: DataTypes.STRING,
-            score: DataTypes.STRING,
-
-        Image: 
-            ref hotel_id: Integer
-            link: string 
-
-        Review: 
-            ref hotel_id:  integer 
-            ref reviewer_id: integer // basically it's user id 
-            content: string   
-
-        + Booking Place table 
-            ref hotel_owner_id // user_id 
-            ref hotel_id 
-            ref room_id 
-            price 
-            date range 
-
-        + Booked Place table 
-            ref customer_id 
-            ref hotel_id 
-            ref room_id 
-            price 
-            date range 
-            
-
-        1 Hotel co n review 
-        1 Hotel co n image  
-        1 review co 1 user 
-        1 User co n review 
-        1 booking place co 1 user_id, 1 hotel_id, 1 room_id 
-        1 booked place co 1 user_id, 1 hotel_id, 1 room_id 
-
-    Add Register api (2h) 
-        -> Add the given user to the database @DatabaseRelated
-            check if the user already exist as well 
-        PASSWORD HASHING @Later
-
+    How the api search for places with available time range () ???  
+    PASSWORD HASHING @Later
     Add Database operations to the authentication server code (1h) 
         -> Create User Model 
         -> With 3 opertions:
@@ -181,30 +109,12 @@ TODAY:
         -> Create Refresh Token model: ?? @DatabaseRelated @Later 
             storing refresh token along with user id
 
-
-    Writing the Correct web LAYOUT using bootstrap (4h) []
-        List of sites to fix: 
-            + ...
-
-    TESTING SOME ACORN DEPLOYMENT (2h) [X]
-        -> I think we can do it :)) 
-
-    Tich hop money transaction code to our websites, for starter (2h) [] @Halfway  
-        After we done this
-
-    learn how to use acorn for hosting random things (2h) [] 
-        -> sharing docker images (30p) 
-        -> reading and try some acorn thingy (1h30)
-        docker build -t <reponame> 
-        docker push reponame
-    
     BIG CHANGE: 
-        we currently using 
-            money transaction api:
-                vnpay 
-                -> HOSTING ON ACORN as well (for TESTING at least) 
-            map api:
-                goong 
+        money transaction api:
+            vnpay 
+            -> HOSTING ON ACORN as well (for TESTING at least) 
+        map api:
+            goong 
 
     -> We have a 5 days left 
         -> Done all of these features in manner of days 
@@ -333,6 +243,20 @@ TODO:
 
 
 DONE:  
+    HANDLE FAILED REQUEST [X] 
+        failed login 
+        failed checking booking ??  
+        if reached to authentication-required page 
+            if not logged in -> redirect to homepage 
+
+    Update the code to work with new database 
+        + controller code (1h) 
+        + seeder code (2h) [X]
+            -> Some needed code is kinda done 
+
+        Make all the api work good 
+            -> Which are all the backend work :v 
+
     Make the search works again @Next 
     To do some operations (view booking info) the person have to be logged in ? 
         How could we do that ?? 
