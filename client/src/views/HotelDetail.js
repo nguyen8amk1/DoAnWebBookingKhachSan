@@ -56,7 +56,7 @@ class HotelDetail extends React.Component {
                 }
             );
         }
-        // console.log(this.state);
+        console.log(this.state);
     }
 
     render() {
@@ -149,7 +149,6 @@ class HotelDetail extends React.Component {
                 </div>
             </div>
             <div className='description'>
-
                 {this.state.mota.split(".").map((value, index) => (
                     <p key={index}>{value}</p>))}
             </div>
@@ -171,7 +170,10 @@ class HotelDetail extends React.Component {
                             </p>
                         </MDBCol>
                     </MDBRow>
+
                     <MDBRow className="text-center">
+                        {/* {this.state.mota.split(".").map((value, index) => (
+                            <p key={index}>{value}</p>))} */}
                         <MDBCol md="4" className="mb-5 mb-md-0">
                             <div className="d-flex justify-content-center mb-4">
                                 <img
@@ -181,13 +183,12 @@ class HotelDetail extends React.Component {
                                     height="150"
                                 />
                             </div>
-                            <h5 className="mb-3">Maria Smantha</h5>
-                            <h6 className="text-primary mb-3">Web Developer</h6>
+                            {/* {console.log("user", this.state.danhgia[0])} */}
+                            {/* <h5 className="mb-3">{this.state.danhgia[0].user.username}</h5> */}
+                            {/* <h6 className="text-primary mb-3">{this.state.danhgia[0].user.firstName + " " + this.state.danhgia[0].user.lastName}</h6>
                             <p className="px-xl-3">
-                                <MDBIcon fas icon="quote-left" className="pe-2" />
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
-                                id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-                            </p>
+                                jt mejc dishdiufasufdsa dijt mj cuocj d{this.state.danhgia[0].review.content}
+                            </p> */}
                             <MDBTypography
                                 listUnStyled
                                 className="d-flex justify-content-center mb-0"
@@ -214,6 +215,7 @@ class HotelDetail extends React.Component {
                                 </li>
                             </MDBTypography>
                         </MDBCol>
+
                         <MDBCol md="4" className="mb-5 mb-md-0">
                             <div className="d-flex justify-content-center mb-4">
                                 <img
@@ -290,6 +292,7 @@ class HotelDetail extends React.Component {
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
+
                 <div className='rating-secion'>
                     <button type="button" className="btn btn-primary">8.9</button>
                     <p className='dot-adjust'> Xuất sắc &#183; 4 đánh giá &#183; Đọc tất cả đánh giá </p>

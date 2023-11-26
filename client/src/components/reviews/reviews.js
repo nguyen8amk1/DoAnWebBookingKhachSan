@@ -12,7 +12,7 @@ export default function Reviews() {
     <MDBContainer className="py-5">
       <MDBRow className="d-flex justify-content-center">
         <MDBCol md="10" xl="8" className="text-center">
-          <h3 className="mb-4">Testimonials</h3>
+          <h3 className="mb-4">Reviews</h3>
           <p className="mb-4 pb-2 mb-md-5 pb-md-0">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
             error amet numquam iure provident voluptate esse quasi, veritatis
@@ -31,7 +31,7 @@ export default function Reviews() {
               height="150"
             />
           </div>
-          <h5 className="mb-3">Maria Smantha</h5>
+          <h5 className="mb-3">User Name</h5>
           <h6 className="text-primary mb-3">Web Developer</h6>
           <p className="px-xl-3">
             <MDBIcon fas icon="quote-left" className="pe-2" />

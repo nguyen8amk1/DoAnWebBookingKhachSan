@@ -46,27 +46,24 @@ TODAY:
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        Small nav that shows information need to be buttons as well [X] 
-                        description [X] 
-                        images  [X] 
-                        comments [] @Current 
+                        Bo nut "thong tin, gia" -> Dat phong [] @Current 
+                        Bam "quy tac chung"  nhay xuong duoi []
+                        Bam "danh gia khach hang"  nhay xuong duoi []
 
-                        Add nut "dat phong" 
-
-                        Bam tong quan: hien ra bang tong quan 
-
-                        Bo nut "thong tin, gia" -> Dat phong 
-                        
-                        Bam "quy tac chung"  nhay xuong duoi 
-                        Bam "danh gia khach hang"  nhay xuong duoi 
-
-                        hotel id params for calling API 
+                        hotel id params for calling API []
                             the api should return the images link as well 
                             *** this ID need to be send from the search page 
 
-                        not have: 
-                            map block as well (2h) []
-                            dat phong button 
+                        not have: map block as well (2h) []
+                            
+                        Bam tong quan: hien ra bang tong quan 
+                        
+
+                        Small nav that shows information need to be buttons as well [X] 
+                        description [X] 
+                        images  [X] 
+                        comments [] @Later
+
 
                         file: view/hoteldetail.js
 
@@ -87,7 +84,7 @@ TODAY:
                         file: controller.js 
 
                 visual: 
-                    như cứt- 1/10
+                    ngon - 7/10
 
             Login: 
                 visual: 
