@@ -6,9 +6,7 @@ TODAY:
         Chieu: hardcode resolve:
             HomePage [X] "kinda"
             Hotel Detail []
-
             Searching []
-
             View Booking []
 
         PROBLEM: ***the amount of data between the relation are not match*** 
@@ -33,11 +31,16 @@ TODAY:
                 hardcoded: 
                     front-end: 
                         not have:
-                            ** Map on the bottom (2h) @Later 
+                            ** Map on the bottom (2h) @TomorrowMorning
+                            Map Modal when click on it 
+                            Map shows all the searches points on there 
 
                         hotel preview image 
 
                         file: view/searchpage.js
+
+                    back-end: 
+                        store all long,lat of the hotel in the db []
 
                 visual: 
                     hơi trống trải
@@ -46,7 +49,7 @@ TODAY:
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        not have: map block as well (2h) [] 
+                        not have: map block as well (2h) [] @TomorrowMorning
 
                         rau ria: 
                             Bam "quy tac chung"  nhay xuong duoi [] 
@@ -59,6 +62,7 @@ TODAY:
                         file: view/hoteldetail.js
 
                 back-end:
+                    should have more images []
 
                 visual: 
                     Ngon-10/10
@@ -69,7 +73,7 @@ TODAY:
                     back-end: 
                         file: route.js controller.js 
                     front-end: 
-                        Show upload success/fail [] @Later 
+                        Show upload success/fail [] @TomorrowMorning 
 
                         not have: 
                             place recommendation @RauRia
@@ -82,7 +86,7 @@ TODAY:
                 hardcoded: 
                     front-end: 
                         not have: 
-                            make the booking button work as well @Current 
+                            make the booking button work as well 
                                 open the cong thanh toan i guess :))
 
                         file: view/hoteldetail.js
@@ -97,7 +101,7 @@ TODAY:
             Register 
                 hardcoded: 
                     back-end: 
-                        haven't check if the user pre-exist or not []
+                        haven't check if the user pre-exist or not [] @TomorrowMorning
                         file: authController.js
 
                 visual: 
