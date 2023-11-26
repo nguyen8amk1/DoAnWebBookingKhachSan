@@ -2,8 +2,12 @@ TODAY:
     MAKE SURE THE FRONT-END AND BACK-END CAN COMMUNICATE: 
         Since now there are a lot of information are still fixed 
         -> List all the spot that have hard-coded information 
+        
+        Chieu: hardcode resolve HomePage, Searching, Hotel Detail @Current 
+        Toi:  
+
         All features: 
-            Homepage: 
+            Homepage: (2h)
                 hardcoded: 
                     front-end: 
                         not have button for upload places 
@@ -18,7 +22,7 @@ TODAY:
                 visual: 
                     10/10
 
-            Searching:
+            Searching: (2h) 
                 hardcoded: 
                     front-end: 
                         not have:
@@ -34,7 +38,7 @@ TODAY:
                     7/10 
 
 
-            Hotel Detail 
+            Hotel Detail: (2h)
                 hardcoded: 
                     front-end: 
                         images 
@@ -45,7 +49,9 @@ TODAY:
                         file: view/hoteldetail.js
 
                 visual: 
-                    như cứt- 1/10
+                    Ngon-10/10
+
+
 
             Upload Hotel: 
                 hardcoded: 
@@ -90,6 +96,8 @@ TODAY:
                             
                 visual: 
                     như cứt - 1/10
+
+
 
 
             Booking: I don't know the state of this thing (*** Investigate it tonight :))   
