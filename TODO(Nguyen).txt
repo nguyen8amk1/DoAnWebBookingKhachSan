@@ -3,19 +3,22 @@ TODAY:
         Since now there are a lot of information are still fixed 
         -> List all the spot that have hard-coded information 
         
-        Chieu: hardcode resolve HomePage, Searching, Hotel Detail, View Booking @Current 
+        Chieu: hardcode resolve:
+            HomePage 
+            Searching
+            Hotel Detail 
+            View Booking 
+
         Toi: Deployment test 
 
         All features: 
-            Homepage: (2h)
+            Homepage: (1h) 
                 hardcoded: 
                     front-end: 
-                        not have button for upload places 
-                            *** the button should only be showned when logged in 
+                        *** the upload button should only be showned when logged in [] @Later 
 
-                        navbar buttons 
-                        no place recommendation  
-                        CAN'T send the search info the SEARCH COMPONENT 
+                        no place recommendation @Later  
+                        CAN'T send the search info the SEARCH COMPONENT @Current 
 
                         file: view/homepage.js
 

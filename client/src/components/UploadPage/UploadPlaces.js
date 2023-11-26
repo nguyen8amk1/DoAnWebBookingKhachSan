@@ -12,6 +12,7 @@ import Increase_decrease from "../button/Increase_decrease";
 import Reviews from "../reviews/reviews";
 import Search_item from "../button/Search_item";
 import FooterPage from "../Footer/FooterPage";
+import NavBar from "../NavBar";
 
 class UploadPlaces extends React.Component {
   constructor(props) {
@@ -62,6 +63,7 @@ class UploadPlaces extends React.Component {
     const userLogged = localStorage.getItem("accessToken") != null;
     return (
       <>
+      <NavBar/>
         {userLogged && (
           // <form>
           //   <h2>Loại chỗ nghỉ</h2>

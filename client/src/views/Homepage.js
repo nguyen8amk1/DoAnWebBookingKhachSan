@@ -11,6 +11,7 @@ import Featured__properties from "../components/Homepage/Featured__properties";
 import Mail__list from "../components/Footer/Mail__list";
 import Chatbot_web from "../components/ChatbotComponent/Chatbot_web";
 import { Link } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 const Homepage = () => {
   return (
@@ -20,38 +21,8 @@ const Homepage = () => {
           <Link to="/" className="main-child">
             <img className="main-child" alt="" src="/logo__web.png" />
           </Link>
-          <div className="sub-nav">
-            <SubNavMain
-              home="Lưu trú"
-              subNavMainWidth="71px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Phiếu giảm giá và ưu đãi"
-              subNavMainWidth="193px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Máy bay"
-              subNavMainWidth="86px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Khách sạn"
-              subNavMainWidth="96px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-            <SubNavMain
-              home="Địa điểm tham quan"
-              subNavMainWidth="158px"
-              subNavMainPosition="relative"
-              homeFontFamily="Roboto"
-            />
-          </div>
+          <NavBar/>
+
           {/* <div className="button1">
             <Header__button
               buttonText="Log In"

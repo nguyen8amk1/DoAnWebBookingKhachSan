@@ -12,6 +12,7 @@ import {
     MDBRow,
     MDBTypography,
 } from "mdb-react-ui-kit";
+import NavBar from '../components/NavBar';
 
 class HotelDetail extends React.Component {
     constructor(props) {
@@ -111,38 +112,7 @@ class HotelDetail extends React.Component {
                     <Link to="/" className="main-child">
                         <img className="main-child" alt="" src="/logo__web.png" />
                     </Link>
-                    <div className="sub-nav">
-                        <SubNavMain
-                            home="Lưu trú"
-                            subNavMainWidth="71px"
-                            subNavMainPosition="relative"
-                            homeFontFamily="Roboto"
-                        />
-                        <SubNavMain
-                            home="Phiếu giảm giá và ưu đãi"
-                            subNavMainWidth="193px"
-                            subNavMainPosition="relative"
-                            homeFontFamily="Roboto"
-                        />
-                        <SubNavMain
-                            home="Máy bay"
-                            subNavMainWidth="86px"
-                            subNavMainPosition="relative"
-                            homeFontFamily="Roboto"
-                        />
-                        <SubNavMain
-                            home="Khách sạn"
-                            subNavMainWidth="96px"
-                            subNavMainPosition="relative"
-                            homeFontFamily="Roboto"
-                        />
-                        <SubNavMain
-                            home="Địa điểm tham quan"
-                            subNavMainWidth="158px"
-                            subNavMainPosition="relative"
-                            homeFontFamily="Roboto"
-                        />
-                    </div>
+                    <NavBar/>
                     <UserInfoComponent />
                 </div>
             </div>
