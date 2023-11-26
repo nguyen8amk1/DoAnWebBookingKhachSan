@@ -39,7 +39,7 @@ const Searchpage__searchitem = (props) => {
         <div className="searchpage-si-detailtexts">
           <span className="searchpage-si-price">$112</span>
           <span className="searchpage-si-taxop">Includes taxes and fees</span>
-          <Link to="/Detailpage">
+          <Link to="/hoteldetail">
             <button
               type="button"
               className="searchpage-si-checkbutton btn btn-primary btn-sidebar"

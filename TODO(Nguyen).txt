@@ -1,4 +1,110 @@
 TODAY: 
+    MAKE SURE THE FRONT-END AND BACK-END CAN COMMUNICATE: 
+        Since now there are a lot of information are still fixed 
+        -> List all the spot that have hard-coded information 
+        All features: 
+            Homepage: 
+                hardcoded: 
+                    front-end: 
+                        not have button for upload places 
+                            *** the button should only be showned when logged in 
+
+                        navbar buttons 
+                        no place recommendation  
+                        CAN'T send the search info the SEARCH COMPONENT 
+
+                        file: view/homepage.js
+
+                visual: 
+                    10/10
+
+            Searching:
+                hardcoded: 
+                    front-end: 
+                        not have:
+                            ** Map on the bottom (2h) 
+
+                        search string  - "Vung Tau" 
+                            *** this string need to be sented from HomePage
+
+                        file: view/searchpage.js
+
+                visual: 
+                    hơi trống trải
+                    7/10 
+
+
+            Hotel Detail 
+                hardcoded: 
+                    front-end: 
+                        images 
+                        hotel id params for calling API 
+                            the api should return the images link as well 
+                            *** this ID need to be send from the search page 
+
+                        file: view/hoteldetail.js
+
+                visual: 
+                    như cứt- 1/10
+
+            Upload Hotel: 
+                hardcoded: 
+                    back-end: 
+                        still not handle authentication middleware 
+
+                        file: controller.js 
+
+                visual: 
+                    như cứt- 1/10
+
+            Login: 
+                visual: 
+                    oke - 5/5
+
+            Register 
+                hardcoded: 
+                    back-end: 
+                        haven't check if the user pre-exist or not 
+                        file: authController.js
+
+                visual: 
+                    oke - 5/5
+
+            View Booking 
+                hardcoded: 
+                    user tab: 
+                        front-end: 
+                            huy phong didn't work 
+                            lien he nguoi cho thue didn't work 
+
+                        back-end: 
+                            still not handle authentication middleware 
+                    
+                    manager tab: 
+                        front-end: 
+                            huy phong didn't work 
+                            lien he nguoi cho thue didn't work 
+
+                        back-end: 
+                            still not handle authentication middleware 
+                            
+                visual: 
+                    như cứt - 1/10
+
+
+            Booking: I don't know the state of this thing (*** Investigate it tonight :))   
+                hardcoded: 
+                    front-end: 
+                        not have: 
+                            The button for the booking/paying should be in the hoteldetail page 
+
+                            
+                        file: view/hoteldetail.js
+
+                    back-end: 
+                        i don't know about it :)) 
+
+
     LIST OUT ALL THE UI THAT NEED TO WORK (1h): 
         Upload hotel (Lap)
             -> Lap tu des 
@@ -28,8 +134,11 @@ TODAY:
             -> Frontend: @Halfway (2h) 
             -> Backend: @Halfway (2h) 
             View hotel detail: 
-                -> Frontend: @Halfway (2h) @Current 
-                    Make the images work 
+                -> Frontend: @Halfway (2h) 
+                    Make the images displaying work (1h) [] @Current 
+                    Make the detail id works (1h) [] @Next
+                        since now it still fixed the ids 
+
                     Apply map thingy 
                     **Mode of map show: 
                         Search page map 
@@ -193,6 +302,11 @@ TODAY:
             + customer 
             + hotel manager  
         -> React to success/fail register result from server []
+
+
+
+
+
 
 TODO: 
     Report final: 
