@@ -376,11 +376,11 @@ class HotelDetail extends React.Component {
                     <div className='member-item-fourth'>
                         <div className='left-item'><i class="fa fa-users" aria-hidden="true"></i>Trẻ em và giường</div>
                         <div className='right-item'>
-                            Chính sách trẻ em<br />
+                            <div className='weight-text'>Chính sách trẻ em<br /></div>
                             <br /> Phù hợp cho tất cả trẻ em
                             <br /> Để xem thông tin giá và tình trạng phòng trống chính xác,
                             vui lòng thêm số lượng và độ tuổi của trẻ em trong nhóm của bạn khi tìm kiếm<br />
-                            <br /> Chính sách nôi (cũi) và giường phụ<br />
+                            <div className='weight-text'><br /> Chính sách nôi (cũi) và giường phụ<br /></div>
                             <br /> Chỗ nghỉ này không có nôi/cũi và giường phụ
                         </div>
                     </div>
@@ -402,7 +402,14 @@ class HotelDetail extends React.Component {
                     <div className='member-item-seventh'>
                         <div className='left-item'><i class="fa fa-credit-card" aria-hidden="true"></i>Các phương thức thanh toán được chấp nhận</div>
                         <div className='right-item'>
-                            <img src="https://cf.bstatic.com/static/img/transparent/8e09e5757781bf4c0f42228d45f422e5e800ae64.gif" class="payment_methods_readability ppd_payment_methods_readability creditcard maestro" alt="Maestro" title="Maestro" />
+                            <div className='payment-logo'>
+                                <img src='https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/0e2affe1f8fed4a29e7583df266f09272b44323d/flat-rounded/maestro.svg' alt='Maestro' title='Maestro' />
+                                <img src='https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/0e2affe1f8fed4a29e7583df266f09272b44323d/flat-rounded/jcb.svg' alt='Jcb' title='Jcb' />
+                                <img className='white-img' src='https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/0e2affe1f8fed4a29e7583df266f09272b44323d/flat-rounded/paypal.svg' alt='Jcb' title='Jcb' />
+                                <img src='https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/0e2affe1f8fed4a29e7583df266f09272b44323d/flat-rounded/mastercard.svg' alt='Jcb' title='Jcb' />
+                                <img src='https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/0e2affe1f8fed4a29e7583df266f09272b44323d/flat-rounded/visa.svg' alt='Jcb' title='Jcb' />
+                            </div>
+                            <div className='text'>Hải Dương Intourco Resort, Vung Tau Chấp nhận các loại thẻ này và giữ quyền khóa một khoản tiền tạm thời trước khi bạn đến nhận phòng</div>
                         </div>
                     </div>
                 </div>

@@ -197,7 +197,6 @@
     top: 1900px;
 
 
-
     b {
         font-weight: 600;
         display: inline-block;
@@ -386,7 +385,11 @@
 
             .right-item {
                 margin-left: 75px;
+
                 /* Adjust margin as needed */
+                .weight-text {
+                    font-weight: 600;
+                }
             }
         }
 
@@ -449,11 +452,39 @@
                 font-weight: 500;
                 width: 300px;
                 word-wrap: break-word;
+                // border: 1px solid red;
             }
 
             .right-item {
-                margin-left: 225px;
+                margin-left: 15px;
                 /* Adjust margin as needed */
+                display: flex;
+                gap: 5px;
+                flex-direction: column;
+                position: absolute;
+                left: calc(100% + 10px);
+                top: 2px;
+
+                .payment-logo {
+                    display: flex;
+                    gap: 5px;
+
+                    img {
+                        width: 60px;
+                        height: 40px;
+                        cursor: pointer;
+                    }
+
+                    .white-img {
+                        background-color: #cccccc;
+                    }
+                }
+
+                .text {
+                    // border: 1px solid green;
+                    width: 890px;
+                    word-wrap: break-word;
+                }
 
             }
         }
