@@ -80,21 +80,35 @@ TODAY:
 
             Upload Hotel: 
                 hardcoded: 
+                    back-end: 
+                        still not handle authentication middleware [X] 
+
+                        file: route.js controller.js 
+
                     front-end: 
                         fill the request data with real information [X] 
+                        redirect to homepage when not logged in [X]
 
                         not have: 
                             place recommendation @RauRia
                             also send some information for storing the map location as well @RauRia
 
-                    back-end: 
-                        still not handle authentication middleware [] @Current
-
-                        file: controller.js 
 
                 visual: 
                     ngon - 7/10
 
+            Booking: I don't know the state of this thing (*** Investigate it tonight :))   
+                hardcoded: 
+                    front-end: 
+                        not have: 
+                            The button for the booking/paying should be in the hoteldetail page [] @Current 
+
+                        file: view/hoteldetail.js
+
+                    back-end: 
+                        i don't know about it :)) 
+
+                        
             Login: 
                 visual: 
                     oke - 5/5
@@ -102,7 +116,7 @@ TODAY:
             Register 
                 hardcoded: 
                     back-end: 
-                        haven't check if the user pre-exist or not 
+                        haven't check if the user pre-exist or not []
                         file: authController.js
 
                 visual: 
@@ -133,18 +147,6 @@ TODAY:
                 visual: 
                     Hơi ngon ngon: 7/10 
 
-
-            Booking: I don't know the state of this thing (*** Investigate it tonight :))   
-                hardcoded: 
-                    front-end: 
-                        not have: 
-                            The button for the booking/paying should be in the hoteldetail page 
-
-                            
-                        file: view/hoteldetail.js
-
-                    back-end: 
-                        i don't know about it :)) 
 
 
     LIST OUT ALL THE UI THAT NEED TO WORK (1h): 

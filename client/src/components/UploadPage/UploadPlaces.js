@@ -13,6 +13,7 @@ import Reviews from "../reviews/reviews";
 import Search_item from "../button/Search_item";
 import FooterPage from "../Footer/FooterPage";
 import NavBar from "../NavBar";
+import { Navigate } from "react-router";
 
 class UploadPlaces extends React.Component {
 	constructor(props) {
@@ -97,7 +98,7 @@ class UploadPlaces extends React.Component {
 
 	render() {
 		const userLogged = localStorage.getItem("accessToken") != null;
-		return (
+		const content = 
 			<>
 				<NavBar />
 				{userLogged && (
@@ -300,7 +301,18 @@ class UploadPlaces extends React.Component {
 					</div>
 				)}
 				<UserInfoComponent />
-			</>
+			</>;
+
+		const redirect = <Navigate to="/" />
+
+		let c; 
+		if(userLogged) {
+			c = content;
+		} else {
+			c = redirect; 
+		}
+		return (
+			c
 		);
 	}
 }

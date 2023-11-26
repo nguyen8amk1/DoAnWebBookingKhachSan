@@ -13,12 +13,26 @@ export const getHotelDetail = async (id) => {
 
 export const uploadPlace = async (placeInfo) => {
     try {
-        const result = await axios.post("http://127.0.0.1:8080/uploadHotel", placeInfo);
+        const USER_TOKEN = localStorage.getItem("accessToken");
+        const AuthStr = 'Bearer '.concat(USER_TOKEN); 
+
+        const result = await axios.post("http://127.0.0.1:8080/uploadHotel", 
+            placeInfo, 
+            { headers: { Authorization: AuthStr } }
+        );
         return result;
-    } catch(e) {
-        console.error('Error uploading place:', e);
-        return null;
     }
+    catch(error) {
+        return -1;
+    }
+
+    // try {
+    //     const result = await axios.post("http://127.0.0.1:8080/uploadHotel", placeInfo);
+    //     return result;
+    // } catch(e) {
+    //     console.error('Error uploading place:', e);
+    //     return null;
+    // }
 }
 
 export const getBookInfo = async () => {
