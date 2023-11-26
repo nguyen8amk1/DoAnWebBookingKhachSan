@@ -5,7 +5,7 @@ import BookingPlaceInfo from './BookingPlaceInfo';
 import UserInfoComponent from './UserInfoComponent';
 import '../style/BookingInfo.scss'
 import SubNavMain from './Homepage/SubNavMain';
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 class BookingInformation extends React.Component {
   constructor(props) {

@@ -3,8 +3,8 @@ TODAY:
         Since now there are a lot of information are still fixed 
         -> List all the spot that have hard-coded information 
         
-        Chieu: hardcode resolve HomePage, Searching, Hotel Detail @Current 
-        Toi:  
+        Chieu: hardcode resolve HomePage, Searching, Hotel Detail, View Booking @Current 
+        Toi: Deployment test 
 
         All features: 
             Homepage: (2h)
@@ -78,6 +78,7 @@ TODAY:
 
             View Booking 
                 hardcoded: 
+                    MAKE SURE THE TO COMBINE OUR CODE TO LAP CODE @ASAP 
                     user tab: 
                         front-end: 
                             huy phong didn't work 
@@ -95,7 +96,7 @@ TODAY:
                             still not handle authentication middleware 
                             
                 visual: 
-                    như cứt - 1/10
+                    Hơi ngon ngon: 7/10 
 
 
 
