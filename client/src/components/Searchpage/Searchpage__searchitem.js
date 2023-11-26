@@ -3,6 +3,10 @@ import "../../style/Searchpage/Searchpage_searchitem.scss";
 import { Link, useNavigate } from "react-router-dom";
 
 const Searchpage__searchitem = (props) => {
+  const gotoDetail = (props) => {
+    localStorage.setItem("hoteldetailID", props.info.id);
+  };
+
   return (
     <div className="sp__searchitem-container">
       <img
@@ -39,10 +43,12 @@ const Searchpage__searchitem = (props) => {
         <div className="searchpage-si-detailtexts">
           <span className="searchpage-si-price">$112</span>
           <span className="searchpage-si-taxop">Includes taxes and fees</span>
+
           <Link to="/hoteldetail">
             <button
               type="button"
               className="searchpage-si-checkbutton btn btn-primary btn-sidebar"
+              onClick={() => gotoDetail(props)}
             >
               See availability
             </button>

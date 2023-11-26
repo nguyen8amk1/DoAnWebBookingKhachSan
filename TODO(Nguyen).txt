@@ -11,6 +11,8 @@ TODAY:
 
             View Booking []
 
+        PROBLEM: ***the amount of data between the relation are not match*** 
+
         Toi: Deployment test 
 
         All features: 
@@ -36,6 +38,8 @@ TODAY:
                         not have:
                             ** Map on the bottom (2h) @Later 
 
+                        hotel preview image 
+
                         file: view/searchpage.js
 
                 visual: 
@@ -46,19 +50,16 @@ TODAY:
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        Bo nut "thong tin, gia" -> Dat phong [] @Current 
-                        Bam "quy tac chung"  nhay xuong duoi []
-                        Bam "danh gia khach hang"  nhay xuong duoi []
+                        not have: map block as well (2h) [] @Current 
 
-                        hotel id params for calling API []
-                            the api should return the images link as well 
-                            *** this ID need to be send from the search page 
-
-                        not have: map block as well (2h) []
-                            
-                        Bam tong quan: hien ra bang tong quan 
+                        rau ria: 
+                            Bam "quy tac chung"  nhay xuong duoi [] 
+                            Bam "danh gia khach hang"  nhay xuong duoi []
+                            Bam tong quan: hien ra bang tong quan []
                         
-
+                        hotel id params for calling API [X] 
+                            *** this ID need to be send from the search page 
+                        Bo nut "thong tin, gia" -> Dat phong [X]
                         Small nav that shows information need to be buttons as well [X] 
                         description [X] 
                         images  [X] 
@@ -75,9 +76,12 @@ TODAY:
                     Ngon-10/10
 
 
-
             Upload Hotel: 
                 hardcoded: 
+                    front-end: 
+                        not have: 
+                            place recommendation 
+                            
                     back-end: 
                         still not handle authentication middleware 
 
@@ -85,6 +89,9 @@ TODAY:
 
                 visual: 
                     ngon - 7/10
+
+            Comment system: 
+                Haven't implement anything though
 
             Login: 
                 visual: 
@@ -167,7 +174,7 @@ TODAY:
             -> Backend: @Halfway (2h) 
             View hotel detail: 
                 -> Frontend: @Halfway (2h) 
-                    Make the images displaying work (1h) [] @Current 
+                    Make the images displaying work (1h) [] 
                     Make the detail id works (1h) [] @Next
                         since now it still fixed the ids 
 

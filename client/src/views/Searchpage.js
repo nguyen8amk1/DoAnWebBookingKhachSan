@@ -11,47 +11,44 @@ import NavBar from "../components/NavBar";
 
 
 class Searchpage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      searchResults: []
-    };
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			searchResults: []
+		};
+	}
 
-  async componentDidMount() {
-    // NOTE: these are just mock data  
-    // TODO: get the actual input from the search bar /homepage 
-
-    const destination = JSON.parse(localStorage.getItem("destination"));
-    const d= JSON.parse(localStorage.getItem("date"));
-    const options = JSON.parse(localStorage.getItem("options"));
-    console.log(destination, d, options);
+	async componentDidMount() {
+		const destination = JSON.parse(localStorage.getItem("destination"));
+		const d = JSON.parse(localStorage.getItem("date"));
+		const options = JSON.parse(localStorage.getItem("options"));
+		console.log(destination, d, options);
 
 
-    console.log();
+		console.log();
 
-    const date = {came: d.startDate, leave: d.endDate};
-    const city = destination;
-    const memberCount = {
-      adult: options.adult,
-      children: options.children
-    };
+		const date = { came: d.startDate, leave: d.endDate };
+		const city = destination;
+		const memberCount = {
+			adult: options.adult,
+			children: options.children
+		};
 
-    const result = await searchForPlaces(city, date, memberCount, options.room);
-    console.log(result);
-    this.setState({searchResults: result});
-  }
+		const result = await searchForPlaces(city, date, memberCount, options.room);
+		console.log(result);
+		this.setState({ searchResults: result });
+	}
 
-  render() {
-    return (
-      <div className="Searchpage">
-        <div className="homepage">
-          <div className="main">
-            <Link to="/" className="main-child">
-              <img className="main-child" alt="" src="/logo__web.png" />
-            </Link>
-            <NavBar/>
-            {/* <div className="button1">
+	render() {
+		return (
+			<div className="Searchpage">
+				<div className="homepage">
+					<div className="main">
+						<Link to="/" className="main-child">
+							<img className="main-child" alt="" src="/logo__web.png" />
+						</Link>
+						<NavBar />
+						{/* <div className="button1">
             <Header__button
               buttonText="Log In"
               Header__buttonBackgroundColor="rgba(0,0,0,0.02)"
@@ -67,14 +64,14 @@ class Searchpage extends React.Component {
               buttonColor="#fff"
             />
           </div> */}
-            <UserInfoComponent />
-          </div>
-        </div>
-        <Searchpage__sidebar searchResults={this.state.searchResults}/>
-        <FooterPage />
-      </div>
-    );
-  }
+						<UserInfoComponent />
+					</div>
+				</div>
+				<Searchpage__sidebar searchResults={this.state.searchResults} />
+				<FooterPage />
+			</div>
+		);
+	}
 }
 
 export default Searchpage;

@@ -30,8 +30,8 @@ class HotelDetail extends React.Component {
     }
 
     async componentDidMount() {
-        // const id = props.id;
-        const detail = await getHotelDetail(2);
+        const id = localStorage.getItem("hoteldetailID");
+        const detail = await getHotelDetail(id);
         console.log(detail);
 
         this.setState(
@@ -57,6 +57,10 @@ class HotelDetail extends React.Component {
             );
         }
         console.log(this.state);
+    }
+
+    scrollToQuyTac(event) {
+
     }
 
     render() {
@@ -115,14 +119,14 @@ class HotelDetail extends React.Component {
                         <div className='first-text'>
                             <button>Tổng quan</button>
                         </div>
-                        <div className='second-text'>
-                            <button>Thông tin & giá</button>
-                        </div>
                         <div className='third-text'>
-                            <button>Quy tắc chung</button>
+                            <button onClick={this.scrollToQuyTac}>Quy tắc chung</button>
                         </div>
                         <div className='fourth-text'>
                             <button>Đánh giá của khách hàng</button>
+                        </div>
+                        <div style={{backgroundColor: 'orange'}} className='btn btn-primary btn-login'>
+                            <button style={{color: 'white'}}><b>ĐẶT PHÒNG</b></button>
                         </div>
                     </div>
                     <hr />
