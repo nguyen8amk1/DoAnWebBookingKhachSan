@@ -4,7 +4,13 @@ import { storeImages } from '../services/imageServices.js';
 const moment = require('moment');
 
 const Sequelize = require('sequelize');
+const User = require('../models/user')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
 const Hotel = require('../models/hotel')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+const BookingPlaces = require('../models/booking-place.js')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+const BookedPlaces = require('../models/booked-place.js')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
 
 /**
@@ -126,8 +132,6 @@ const getHotelDetails = async (req, res) => {
 }
 
 const uploadHotel = async (req, res) => {
-    // TODO: List some information needed to register a hotel 
-
     console.log(req.body);
     const description = "THE AUTO GENERATED DESCRIPTION";
     const cityID = 1;
@@ -243,47 +247,45 @@ const checkVNPaySuccess = (req, res) => {
 }
 
 const getCustomerBookingInfo = async (req, res) => {
-    const result = [
-        {
-            tenkhachsan: "Ten khach san", 
-            roomname: "room name", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
+    const result = [];
+
+    const data = await BookingPlaces.findAll({where: {hotelID: 1, userID: 1}});
+    for(let i = 0; i < data.length; i++) {
+        const value = data[i];
+        console.log(value.dataValues);
+        const user = await User.findOne({where: {id: value.dataValues.userID}});
+        result.push({
+            tenphong: "Phòng VIP cho 2 người", 
+            tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
+            thongtinngaydenngaydi: value.dataValues.dataRange, 
             bedroomCount: 1,
             bedCount: 1, 
-            giaphong: 100, 
-            thanhtien: 1000,
-        }, 
-        {
-            tenkhachsan: "Ten khach san", 
-            roomname: "room name", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-            bedroomCount: 1,
-            bedCount: 1, 
-            giaphong: 100, 
-            thanhtien: 1000,
-        }
-    ];
+            giaphong: value.dataValues.price, 
+            thanhtien: value.dataValues.price*2,    
+        });
+    }
 
     res.send(result);
 }
 
 const getManagerBookedInfo = async (req, res) => {
-    const result = [
-        {
-            tenphong: "Ten phong", 
-            tennguoithue: "Ditmesaigon", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-            giaphong: 100, 
-            thanhtien: 100, 
-        }, 
-        {
-            tenphong: "Ten phong", 
-            tennguoithue: "Ditmesaigon", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-            giaphong: 100, 
-            thanhtien: 100, 
-        }, 
-    ];
+    const data = await BookedPlaces.findAll({where: {hotelID: 2, userID: 1}});
+    const result = [];
+
+    for(let i = 0; i < data.length; i++) {
+        const value = data[i];
+        console.log(value.dataValues);
+        const user = await User.findOne({where: {id: value.dataValues.userID}});
+
+        result.push({
+            tenphong: "Phòng VIP cho 2 người", 
+            tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
+            thongtinngaydenngaydi: value.dataValues.dataRange, 
+            giaphong: value.dataValues.price, 
+            thanhtien: value.dataValues.price*2,    
+        });
+    }
+
     res.send(result);
 }
 

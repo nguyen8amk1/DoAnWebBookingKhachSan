@@ -64,9 +64,9 @@ function App() {
           {/* <Route exact path="/" Component={BookingInformation} /> */}
           <Route exact path="/" Component={Homepage} />
           <Route exact path="/hoteldetail" Component={HotelDetail} />
-          <Route path="/Searchpage" Component={Searchpage} />
-          <Route path="/uploadHotel" Component={UploadPlaces} />
-          {/* <Route path="/bookinginfo" Component={BookingInformation} /> */}
+          <Route path="/bookinginfo" Component={BookingInformation} />
+          <Route path="/searchpage" Component={Searchpage} />
+          <Route path="/uploadhotel" Component={UploadPlaces} />
         </Routes>
         {/* <p> */}
         {/* <Destination__slider /> */}
