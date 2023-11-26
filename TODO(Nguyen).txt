@@ -22,13 +22,7 @@ TODAY:
                     front-end: 
                         no place recommendation @Later  
                         *** the upload button should only be showned when logged in [] @Later 
-
                         check if the token have expired if it is -> automatically logout []
-
-                        CAN'T send the search info the SEARCH COMPONENT [X]
-                        not have button for upload places [X] 
-                            click then go to the upload places [X] 
-
 
                         file: view/homepage.js
 
@@ -59,20 +53,12 @@ TODAY:
                             Bam "danh gia khach hang"  nhay xuong duoi []
                             Bam tong quan: hien ra bang tong quan []
                         
-                        hotel id params for calling API [X] 
-                            *** this ID need to be send from the search page 
-                        Bo nut "thong tin, gia" -> Dat phong [X]
-                        Small nav that shows information need to be buttons as well [X] 
-                        description [X] 
-                        images  [X] 
                         comments [] @Later
 
 
                         file: view/hoteldetail.js
 
                 back-end:
-                    doesn't send image to the front-end [X] 
-                    doesn't send comment to the front-end [X] 
 
                 visual: 
                     Ngon-10/10
@@ -81,18 +67,13 @@ TODAY:
             Upload Hotel: 
                 hardcoded: 
                     back-end: 
-                        still not handle authentication middleware [X] 
-
                         file: route.js controller.js 
-
                     front-end: 
-                        fill the request data with real information [X] 
-                        redirect to homepage when not logged in [X]
+                        Show upload success/fail [] @Later 
 
                         not have: 
                             place recommendation @RauRia
                             also send some information for storing the map location as well @RauRia
-
 
                 visual: 
                     ngon - 7/10
@@ -101,13 +82,13 @@ TODAY:
                 hardcoded: 
                     front-end: 
                         not have: 
-                            The button for the booking/paying should be in the hoteldetail page [] @Current 
+                            make the booking button work as well @Current 
+                                open the cong thanh toan i guess :))
 
                         file: view/hoteldetail.js
 
                     back-end: 
                         i don't know about it :)) 
-
                         
             Login: 
                 visual: 
