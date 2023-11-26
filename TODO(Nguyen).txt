@@ -12,6 +12,7 @@ TODAY:
             View Booking []
 
         PROBLEM: ***the amount of data between the relation are not match*** 
+            HAVE MORE AND BETTER SYNCHRONIZED DATA FOR DEMONSTRATION 
 
         Toi: Deployment test 
 
@@ -21,6 +22,8 @@ TODAY:
                     front-end: 
                         no place recommendation @Later  
                         *** the upload button should only be showned when logged in [] @Later 
+
+                        check if the token have expired if it is -> automatically logout []
 
                         CAN'T send the search info the SEARCH COMPONENT [X]
                         not have button for upload places [X] 
@@ -46,11 +49,10 @@ TODAY:
                     hơi trống trải
                     7/10 
 
-
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        not have: map block as well (2h) [] @Current 
+                        not have: map block as well (2h) [] 
 
                         rau ria: 
                             Bam "quy tac chung"  nhay xuong duoi [] 
@@ -79,19 +81,19 @@ TODAY:
             Upload Hotel: 
                 hardcoded: 
                     front-end: 
+                        fill the request data with real information [X] 
+
                         not have: 
-                            place recommendation 
-                            
+                            place recommendation @RauRia
+                            also send some information for storing the map location as well @RauRia
+
                     back-end: 
-                        still not handle authentication middleware 
+                        still not handle authentication middleware [] @Current
 
                         file: controller.js 
 
                 visual: 
                     ngon - 7/10
-
-            Comment system: 
-                Haven't implement anything though
 
             Login: 
                 visual: 
@@ -106,9 +108,12 @@ TODAY:
                 visual: 
                     oke - 5/5
 
+            Comment system: 
+                Haven't implement anything though
+
             View Booking 
                 hardcoded: 
-                    MAKE SURE THE TO COMBINE OUR CODE TO LAP CODE @ASAP 
+                    MAKE SURE THE TO COMBINE OUR CODE TO CLAP CODE @ASAP 
                     user tab: 
                         front-end: 
                             huy phong didn't work 
@@ -127,8 +132,6 @@ TODAY:
                             
                 visual: 
                     Hơi ngon ngon: 7/10 
-
-
 
 
             Booking: I don't know the state of this thing (*** Investigate it tonight :))   
@@ -465,6 +468,10 @@ DONE:
     Init the database to make it works (1h) [X] 
     Setup folder structure (2h) [X]
     -> Init Development Rules (1h) [X] 
+
+
+
+
 
 NOTE THUC HANH: 
     so luong bai lab minimum: 3 bai 

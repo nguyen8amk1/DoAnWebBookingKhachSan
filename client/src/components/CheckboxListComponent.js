@@ -28,6 +28,8 @@ class CheckboxListComponent extends React.Component {
                 value=""
                 id="flexCheckDefault"
                 name={this.props.name}
+                // BUG: if the user remove the tick, it still count as "change" and still add to the array 
+                onChange={() => this.props.addNewAbility(this.props.array, val)}
               />
               <label class="form-check-label" for="flexCheckDefault">
                 {val}

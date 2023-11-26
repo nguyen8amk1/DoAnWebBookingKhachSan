@@ -9,18 +9,7 @@ class Search_item extends Component {
     super(props);
     this.fileInputRef = React.createRef();
     this.state = {
-      type: "",
-      count: 0,
-      name: "",
       address: "",
-      bedroomCount: 0,
-      bedCount: 0,
-      tiennghi: [],
-      giaitri: [],
-      naunuong: [],
-      khongian: [],
-      gia: 0,
-      images: [],
       recommendations: [],
       showLocationContainer: false, // New state property
     };
@@ -34,7 +23,8 @@ class Search_item extends Component {
     } else if (this.state.address.length === 0) {
       this.setState({ recommendations: [] });
     }
-    console.log(this.state.address.length);
+    // console.log(this.state.address.length);
+    this.props.changeValue(this.state.address);
   };
 
   handleSearchButtonClick = () => {
@@ -50,7 +40,7 @@ class Search_item extends Component {
         <MDBInputGroup>
           <div className="Search_item-container-input">
             <MDBInput
-              label="Search"
+              label="Địa chỉ của chỗ ở"
               onChange={this.addressRecommend}
               value={this.state.address}
             />
