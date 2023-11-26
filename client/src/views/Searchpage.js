@@ -9,6 +9,7 @@ import UserInfoComponent from "../components/UserInfoComponent";
 import { searchForPlaces } from "../api/PageApi";
 import NavBar from "../components/NavBar";
 
+
 class Searchpage extends React.Component {
   constructor(props) {
     super(props);
@@ -20,13 +21,23 @@ class Searchpage extends React.Component {
   async componentDidMount() {
     // NOTE: these are just mock data  
     // TODO: get the actual input from the search bar /homepage 
-    const date = {came: '10/10/2022', leave: '10/10/2022'};
-    const city = "Vung Tau";
+
+    const destination = JSON.parse(localStorage.getItem("destination"));
+    const d= JSON.parse(localStorage.getItem("date"));
+    const options = JSON.parse(localStorage.getItem("options"));
+    console.log(destination, d, options);
+
+
+    console.log();
+
+    const date = {came: d.startDate, leave: d.endDate};
+    const city = destination;
     const memberCount = {
-      adult: 1,
-      children: 2
+      adult: options.adult,
+      children: options.children
     };
-    const result = await searchForPlaces(city, date, memberCount);
+
+    const result = await searchForPlaces(city, date, memberCount, options.room);
     console.log(result);
     this.setState({searchResults: result});
   }

@@ -4,7 +4,9 @@ import UserInfoComponent from '../components/UserInfoComponent';
 import SubNavMain from '../components/Homepage/SubNavMain';
 // import MultiitemCarousel from '../components/MultiitemCarousel';
 import { Link } from "react-router-dom";
+import '../style/navbar.scss'
 import '../style/HotelDetail.scss'
+
 import {
     MDBCol,
     MDBContainer,
@@ -22,27 +24,8 @@ class HotelDetail extends React.Component {
             diachi: "",
             diem: "",
             danhgia: [],
-            images: [
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-                'https://leplateau.edu.vn/wp-content/uploads/2023/10/hinh-anh-con-gai-1.jpg',
-            ],
+            images: [],
+            mota: ""
         };
     }
 
@@ -50,6 +33,7 @@ class HotelDetail extends React.Component {
         // const id = props.id;
         const detail = await getHotelDetail(2);
         console.log(detail);
+
         this.setState(
             {
                 ten: detail.name,
@@ -57,17 +41,22 @@ class HotelDetail extends React.Component {
                 diem: detail.score,
                 danhgia: [detail.review],
                 anh: detail.images,
+                mota: detail.description,
+                images: detail.imgs
             }
         );
         if (this.state.images != null) {
             this.setState(
                 {
-                    bigImg: this.state.images.shift(),
+                    bigImg1: this.state.images.shift(),
+                    bigImg2: this.state.images.shift(),
                     smallImg1: this.state.images.shift(),
                     smallImg2: this.state.images.shift(),
+                    // smallImg3: this.state.images.shift(),
                 }
             );
         }
+        // console.log(this.state);
     }
 
     render() {
@@ -124,42 +113,45 @@ class HotelDetail extends React.Component {
                 <div className='right-content-container'>
                     <div className='top-text'>
                         <div className='first-text'>
-                            <p>Tổng quan</p>
+                            <button>Tổng quan</button>
                         </div>
                         <div className='second-text'>
-                            <p>Thông tin & giá</p>
+                            <button>Thông tin & giá</button>
                         </div>
                         <div className='third-text'>
-                            <p>Quy tắc chung</p>
+                            <button>Quy tắc chung</button>
                         </div>
                         <div className='fourth-text'>
-                            <p>Đánh giá của khách hàng</p>
+                            <button>Đánh giá của khách hàng</button>
                         </div>
                     </div>
                     <hr />
                     <div className='image-content'>
                         <div className='top-image'>
-                            <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img>
-                            <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img>
+                            {/* <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img>
+                            <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img> */}
+                            {/* <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img> */}
+
+                            <img src={this.state.bigImg1} alt="" className="top-item-img"></img>
+                            <img src={this.state.bigImg2} alt="" className="top-item-img"></img>
                         </div>
                         <div className='bottom-image'>
+                            <img src={this.state.smallImg1} alt="" className="top-item-img"></img>
+                            <img src={this.state.smallImg2} alt="" className="top-item-img"></img>
+                            <img src={this.state.smallImg2} alt="" className="top-item-img"></img>
+
+                            {/* <img src={this.state.images[4]} alt="" className="top-item-img"></img> */}
+                            {/* <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img>
                             <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img>
-                            <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img>
-                            <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img>
+                            <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img> */}
                         </div>
                     </div>
                 </div>
             </div>
             <div className='description'>
-                <p>Tọa lạc tại thành phố Vũng Tàu, Hai Duong Intourco Resort, Vung Tau có khu vực bãi biển riêng và các tiện nghi thể thao dưới nước. Khách sạn cũng có nhà hàng phục vụ khách. Chỗ nghỉ còn có Wi-Fi miễn phí trong toàn bộ tòa nhà và bãi đỗ xe riêng miễn phí ngay tại khuôn viên.<br /></p>
 
-                <p>Một số phòng nhìn ra quang cảnh biển hoặc khu vườn. Các phòng có phòng tắm riêng. Dép, đồ vệ sinh cá nhân miễn phí và máy sấy tóc cũng nằm trong số các tiện nghi trong phòng nghỉ. Trong phòng còn được trang bị TV màn hình phẳng.<br /></p>
-
-                <p>Resort có lễ tân 24 giờ, dịch vụ trợ giúp đặc biệt và cửa hàng quà tặng.<br /></p>
-
-                <p>Resort cho thuê xe đạp và khu vực này nổi tiếng với các hoạt động chơi gôn cũng như bơi xuồng. Resort còn cung cấp dịch vụ cho thuê xe hơi. Hai Duong Intourco Resort, Vung Tau cách Bãi Sau 900 m và cách Bãi Trước 3,3 km. Sân bay Quốc tế Tân Sơn Nhất cách đó 72 km.<br /></p>
-
-                <p>Các cặp đôi đặc biệt thích địa điểm này — họ cho điểm 8,6 cho kỳ nghỉ dành cho 2 người.</p>
+                {this.state.mota.split(".").map((value, index) => (
+                    <p key={index}>{value}</p>))}
             </div>
             <div className="Destination-icon-decor-new">
                 <img

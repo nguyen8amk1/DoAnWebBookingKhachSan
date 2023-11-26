@@ -37,7 +37,12 @@ const Searchbar = ({ type }) => {
   };
 
   const handleSearch = async () => {
-    navigate("/Searchpage", { state: { destination, date, options } });
+    // navigate("/Searchpage", { state: { destination, date, options } });
+    navigate("/Searchpage");
+    localStorage.setItem("destination", JSON.stringify(destination));
+    localStorage.setItem("date", JSON.stringify(date));
+    localStorage.setItem("options", JSON.stringify(options));
+
     // let response = await getSearch(destination);
     // searchPageData = response
     // // console.log(searchPageData)

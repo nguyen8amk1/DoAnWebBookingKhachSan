@@ -6,6 +6,8 @@ const moment = require('moment');
 const Sequelize = require('sequelize');
 const User = require('../models/user')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
+const Image = require('../models/image')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
 const Hotel = require('../models/hotel')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
 const BookingPlaces = require('../models/booking-place.js')(sequelize, Sequelize.DataTypes,
@@ -123,10 +125,18 @@ const getHotelDetails = async (req, res) => {
     // input: hotelsId 
     // test url: http://127.0.0.1:8080/hoteldetails?hotel_id=5
     const hotelId = req.query.id; 
+    // const queryStr = "SELECT * FROM `Hotels` WHERE Hotels.id=" + hotelId;
+    // TODO: add images and comment to the thing as well 
     const queryStr = "SELECT * FROM `Hotels` WHERE Hotels.id=" + hotelId;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.SELECT});
 
-    const testData = results;
+    const images = await Image.findAll({where: {hotelID: hotelId}});
+    const imgs = images.map((value, index) => value.dataValues.link);
+    console.log(imgs);
+
+
+    const testData = {...results, imgs};
+    console.log(testData);
 
     return res.send(testData);
 }

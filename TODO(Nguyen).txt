@@ -4,10 +4,12 @@ TODAY:
         -> List all the spot that have hard-coded information 
         
         Chieu: hardcode resolve:
-            HomePage 
-            Searching
-            Hotel Detail 
-            View Booking 
+            HomePage [X] "kinda"
+            Hotel Detail []
+
+            Searching []
+
+            View Booking []
 
         Toi: Deployment test 
 
@@ -15,10 +17,13 @@ TODAY:
             Homepage: (1h) 
                 hardcoded: 
                     front-end: 
+                        no place recommendation @Later  
                         *** the upload button should only be showned when logged in [] @Later 
 
-                        no place recommendation @Later  
-                        CAN'T send the search info the SEARCH COMPONENT @Current 
+                        CAN'T send the search info the SEARCH COMPONENT [X]
+                        not have button for upload places [X] 
+                            click then go to the upload places [X] 
+
 
                         file: view/homepage.js
 
@@ -29,10 +34,7 @@ TODAY:
                 hardcoded: 
                     front-end: 
                         not have:
-                            ** Map on the bottom (2h) 
-
-                        search string  - "Vung Tau" 
-                            *** this string need to be sented from HomePage
+                            ** Map on the bottom (2h) @Later 
 
                         file: view/searchpage.js
 
@@ -41,15 +43,36 @@ TODAY:
                     7/10 
 
 
-            Hotel Detail: (2h)
+            Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        images 
+                        Small nav that shows information need to be buttons as well [X] 
+                        description [X] 
+                        images  [X] 
+                        comments []
+
+                        Add nut "dat phong" 
+
+                        Bam tong quan: hien ra bang tong quan 
+
+                        Bo nut "thong tin, gia" -> Dat phong 
+                        
+                        Bam "quy tac chung"  nhay xuong duoi 
+                        Bam "danh gia khach hang"  nhay xuong duoi 
+
                         hotel id params for calling API 
                             the api should return the images link as well 
                             *** this ID need to be send from the search page 
 
+                        not have: 
+                            map block as well (2h) []
+                            dat phong button 
+
                         file: view/hoteldetail.js
+
+                back-end:
+                    doesn't send image to the front-end [X] 
+                    doesn't send comment to the front-end [] @Current 
 
                 visual: 
                     Ngon-10/10
