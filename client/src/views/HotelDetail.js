@@ -39,7 +39,7 @@ class HotelDetail extends React.Component {
                 ten: detail.name,
                 diachi: detail.address,
                 diem: detail.score,
-                danhgia: [detail.review],
+                danhgia: detail.uandr,
                 anh: detail.images,
                 mota: detail.description,
                 images: detail.imgs

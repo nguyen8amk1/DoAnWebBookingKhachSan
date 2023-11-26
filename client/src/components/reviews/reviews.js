@@ -20,6 +20,7 @@ export default function Reviews() {
           </p>
         </MDBCol>
       </MDBRow>
+
       <MDBRow className="text-center">
         <MDBCol md="4" className="mb-5 mb-md-0">
           <div className="d-flex justify-content-center mb-4">
@@ -63,6 +64,7 @@ export default function Reviews() {
             </li>
           </MDBTypography>
         </MDBCol>
+
         <MDBCol md="4" className="mb-5 mb-md-0">
           <div className="d-flex justify-content-center mb-4">
             <img

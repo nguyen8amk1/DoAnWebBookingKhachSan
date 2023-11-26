@@ -6,6 +6,8 @@ const moment = require('moment');
 const Sequelize = require('sequelize');
 const User = require('../models/user')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
+const Review = require('../models/review')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
 const Image = require('../models/image')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
 const Hotel = require('../models/hotel')(sequelize, Sequelize.DataTypes,
@@ -125,17 +127,27 @@ const getHotelDetails = async (req, res) => {
     // input: hotelsId 
     // test url: http://127.0.0.1:8080/hoteldetails?hotel_id=5
     const hotelId = req.query.id; 
-    // const queryStr = "SELECT * FROM `Hotels` WHERE Hotels.id=" + hotelId;
-    // TODO: add images and comment to the thing as well 
     const queryStr = "SELECT * FROM `Hotels` WHERE Hotels.id=" + hotelId;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.SELECT});
 
     const images = await Image.findAll({where: {hotelID: hotelId}});
     const imgs = images.map((value, index) => value.dataValues.link);
-    console.log(imgs);
+    // console.log(imgs);
 
+    const r = await Review.findAll({where: {hotelID: hotelId}});
+    const reviews = r.map(value => value.dataValues);
+    //      get the user whose do that reviews as well  
 
-    const testData = {...results, imgs};
+    const uandr = [];
+    for(let i = 0; i < reviews.length; i++) {
+        const review = reviews[i];
+        const r = await User.findOne({where: {id: review.userID}, attributes: ['id', 'firstName', 'lastName', 'username']});
+        uandr.push({user: r.dataValues, review: review});
+    }
+
+    console.log(uandr);
+
+    const testData = {...results, imgs, uandr};
     console.log(testData);
 
     return res.send(testData);

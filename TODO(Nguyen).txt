@@ -49,7 +49,7 @@ TODAY:
                         Small nav that shows information need to be buttons as well [X] 
                         description [X] 
                         images  [X] 
-                        comments []
+                        comments [] @Current 
 
                         Add nut "dat phong" 
 
@@ -72,7 +72,7 @@ TODAY:
 
                 back-end:
                     doesn't send image to the front-end [X] 
-                    doesn't send comment to the front-end [] @Current 
+                    doesn't send comment to the front-end [X] 
 
                 visual: 
                     Ngon-10/10
