@@ -11,6 +11,7 @@ import "../../style/UploadPlacesStyle.scss";
 import Increase_decrease from "../button/Increase_decrease";
 import Reviews from "../reviews/reviews";
 import Search_item from "../button/Search_item";
+import FooterPage from "../Footer/FooterPage";
 
 class UploadPlaces extends React.Component {
   constructor(props) {
@@ -77,7 +78,7 @@ class UploadPlaces extends React.Component {
           //     label={"Đăng bao nhiêu chổ nghỉ"}
           //     positive={true}
           //   />
-          //   <label>Tên chổ nghỉ</label>
+          //   <label className="upload_fontsize-container">Tên chổ nghỉ</label>
           //   <input type="text" />
           //   <br />
           //   <br />
@@ -159,118 +160,205 @@ class UploadPlaces extends React.Component {
           //     Hoàn thành
           //   </button>
           // </form>
-          <div>
-            <form>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">Loại chỗ nghỉ</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option value="canho">Căn hộ</option>
-                  <option value="nha">Nhà</option>
-                  <option value="khachsan">Khách sạn</option>
-                  <option value="cac loai nha nghi khac">
-                    Các loại nhà nghỉ khác
-                  </option>
-                </select>
+          <div className="upload-container">
+            <form className="form_upload-container">
+              <div className="upload_head-container">
+                <div class="form-group">
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlSelect1"
+                  >
+                    Loại chỗ nghỉ
+                  </label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="canho">Căn hộ</option>
+                    <option value="nha">Nhà</option>
+                    <option value="khachsan">Khách sạn</option>
+                    <option value="cac loai nha nghi khac">
+                      Các loại nhà nghỉ khác
+                    </option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Tên chỗ nghỉ
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="vd: Hà Nội"
+                  />
+                </div>
+                <div class="form-group">
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Số lượng chỗ nghỉ
+                  </label>
+                  <Increase_decrease />
+                </div>
+                <Search_item />
+                {/* TODO: chon dia chi xong -> hien ra chon dia chi tren ban do */}
+                {/* <div className="location-container">
+                  <label
+                    className="upload_fontsize-container upload_fontsize-container-location"
+                    htmlFor=""
+                  >
+                    Vị trí trên bản đồ
+                  </label>
+                  <LocationOnMapSetting />
+                </div> */}
+              </div>
+              {/* <h2>Cài đặt chổ nghỉ</h2>
+              <h3>Chi tiết chổ nghỉ</h3> */}
+
+              <div className="upload_quantity-container">
+                <div class="form-group">
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Bao nhiêu phòng ngủ ?
+                  </label>
+                  <Increase_decrease />
+                </div>
+                <div class="form-group">
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Bao nhiêu giường ?
+                  </label>
+                  <Increase_decrease />
+                </div>
               </div>
 
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Tên chỗ nghỉ</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="vd: Hà Nội"
-                />
+              <div className="checkbox-container">
+                <div className="upload_checkbox-container">
+                  {/* <h3>Tiện nghi chung</h3> */}
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Tiện nghi chung
+                  </label>
+                  <CheckboxListComponent
+                    labels={[
+                      "Điều hòa nhiệt độ",
+                      "Hệ thống sưởi",
+                      "WIFI miễn phí",
+                      "Trạm sạc xe điện",
+                    ]}
+                    name="tiennghi"
+                  />
+
+                  {/* <h3>Giải trí</h3> */}
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Giải trí
+                  </label>
+                  <CheckboxListComponent
+                    labels={[
+                      "TV màn hình phẳng",
+                      "Hồ bơi",
+                      "Bể sục",
+                      "Minibar",
+                    ]}
+                    name="giaitri"
+                  />
+
+                  {/* <h3>Nấu nướng và giặt rửa</h3> */}
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Nấu nướng và giặt rửa
+                  </label>
+                  <CheckboxListComponent
+                    labels={["Bếp", "Bếp nhỏ", "Máy giặt"]}
+                    name="naunuong"
+                  />
+
+                  {/* <h3>Không gian ngoài trời</h3> */}
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Không gian ngoài trời
+                  </label>
+                  <CheckboxListComponent
+                    labels={[
+                      "Ban công",
+                      "Nhìn ra vườn",
+                      "Sân thượng/hiên",
+                      "Tầm nhìn ra khung cảnh",
+                    ]}
+                    name="khonggian"
+                  />
+                </div>
+
+                <div className="upload_foot-container">
+                  {/* <h3>Giá mỗi đêm</h3> */}
+                  <label
+                    className="upload_fontsize-container"
+                    for="exampleFormControlInput1"
+                  >
+                    Giá mỗi đêm
+                  </label>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="vd: 500.000"
+                    />
+                  </div>
+                  {/* <h3>Ảnh</h3> */}
+                  <div className="choose_files-container">
+                    {/* <label
+                      className="upload_fontsize-container choose_files-container-img"
+                      for="exampleFormControlInput1"
+                    >
+                      Ảnh
+                    </label> */}
+                    {/* <p>Đăng tải ít nhất 5 ảnh của chỗ nghỉ</p> */}
+                    <label
+                      className="upload_fontsize-container"
+                      for="exampleFormControlInput1"
+                    >
+                      Đăng tải ít nhất 5 ảnh của chỗ nghỉ
+                    </label>
+                    <div class="mb-3">
+                      <input
+                        class="form-control"
+                        type="file"
+                        ref={this.fileInputRef}
+                        id="formFileMultiple"
+                        multiple
+                      />
+                    </div>
+                  </div>
+
+                  <br />
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-form-success"
+                    onClick={this.upload}
+                  >
+                    Hoàn thành
+                  </button>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Số lượng chỗ nghĩ</label>
-                <Increase_decrease />
-              </div>
-              <Search_item />
-              {/* TODO: chon dia chi xong -> hien ra chon dia chi tren ban do */}
-              <h2>Vị trí trên bản đồ</h2>
-              <LocationOnMapSetting />
-              <h2>Cài đặt chổ nghỉ</h2>
-              <h3>Chi tiết chổ nghỉ</h3>
-
-              <div class="form-group">
-                <label for="exampleFormControlInput1">
-                  Bao nhiêu phòng ngủ ?
-                </label>
-                <Increase_decrease />
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlInput1">Bao nhiêu giường ?</label>
-                <Increase_decrease />
-              </div>
-
-              <h3>Tiện nghi chung</h3>
-              <CheckboxListComponent
-                labels={[
-                  "Điều hòa nhiệt độ",
-                  "Hệ thống sưởi",
-                  "WIFI miễn phí",
-                  "Trạm sạc xe điện",
-                ]}
-                name="tiennghi"
-              />
-
-              <h3>Giải trí</h3>
-              <CheckboxListComponent
-                labels={["TV màn hình phẳng", "Hồ bơi", "Bể sục", "Minibar"]}
-                name="giaitri"
-              />
-
-              <h3>Nấu nướng và giặt rửa</h3>
-              <CheckboxListComponent
-                labels={["Bếp", "Bếp nhỏ", "Máy giặt"]}
-                name="naunuong"
-              />
-
-              <h3>Không gian ngoài trời</h3>
-              <CheckboxListComponent
-                labels={[
-                  "Ban công",
-                  "Nhìn ra vườn",
-                  "Sân thượng/hiên",
-                  "Tầm nhìn ra khung cảnh",
-                ]}
-                name="khonggian"
-              />
-
-              <h3>Giá mỗi đêm</h3>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="vd: 500.000"
-                />
-              </div>
-              <h3>Ảnh</h3>
-              <p>Đăng tải ít nhất 5 ảnh của chỗ nghỉ</p>
-              <div class="mb-3">
-                <label for="formFileMultiple" class="form-label">
-                  Multiple files input example
-                </label>
-                <input
-                  class="form-control"
-                  type="file"
-                  ref={this.fileInputRef}
-                  id="formFileMultiple"
-                  multiple
-                />
-              </div>
-
-              <br />
-              <button
-                type="submit"
-                className="btn btn-primary"
-                onClick={this.upload}
-              >
-                Hoàn thành
-              </button>
             </form>
+            <FooterPage />
           </div>
         )}
         <UserInfoComponent />

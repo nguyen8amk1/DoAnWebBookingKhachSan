@@ -1,6 +1,9 @@
 .Search_item-container {
     display: flex;
     justify-content: center;
+    width: 400px;
+    align-items: center;
+    flex-direction: column;
     .Search_item-container-input {
         width: 100%;
     }
@@ -17,10 +20,17 @@
     
     .search_btn-size {
         width: 60px;
-        height: 36px;
+        height: 32px;
+        position: relative;
+        left: -3px;
+    }
+    .search_btn-container{
+        background-color: #3ABDFE;
     }
     
     .input-group {
-        width: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
