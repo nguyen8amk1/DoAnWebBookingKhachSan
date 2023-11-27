@@ -87,7 +87,14 @@ class UploadPlaces extends React.Component {
 		const imagesLink = await uploadImages(formData);
 		console.log(imagesLink);
 		this.setState({ images: imagesLink.data });
-		uploadPlace(this.state);
+		const result = await uploadPlace(this.state);
+		// if(result.status == 200) {
+		// 	// console.log("TODO: show some ");
+		// } else {
+
+		// }
+
+		// alert(result.data.msg);
 	};
 
 	changeLoaiNhaNghi = (event) => {
@@ -311,6 +318,7 @@ class UploadPlaces extends React.Component {
 		} else {
 			c = redirect; 
 		}
+
 		return (
 			c
 		);

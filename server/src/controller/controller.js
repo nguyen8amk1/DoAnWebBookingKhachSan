@@ -158,17 +158,23 @@ const uploadHotel = async (req, res) => {
     const description = "THE AUTO GENERATED DESCRIPTION";
     const cityID = 1;
 
-    const newHotel = await Hotel.create(
-        { 
-            name: req.body.name,
-            address: req.body.address,
-            description: description,
-            score: 10,
-            cityID: cityID,
-        }
-    );
+    try {
+        const newHotel = await Hotel.create(
+            { 
+                name: req.body.name,
+                address: req.body.address,
+                description: description,
+                score: 10,
+                cityID: cityID,
+            }
+        );
 
-    console.log("New hotel id: ", newHotel.id);
+        console.log("New hotel id: ", newHotel.id);
+        return res.status(200).json({msg: "Upload Hotel SUCCESS"});
+    } catch (e) {
+        console.log(e.message);
+        return res.status(401).json({msg: "Upload Hotel FAILED"});
+    }
 
 }
 

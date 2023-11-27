@@ -8,11 +8,12 @@ TODAY:
 
         This morning: 
             Searching:  map on the bottom [X]
-            HotelDetail: map block 
-            Upload Hotel: show upload success/fail 
-            Register: check user exist or not 
+            HotelDetail: map block [X]
+            Upload Hotel: show upload success/fail []
+            Register: check user exist or not []
 
-        Try to make the web works on VPS :)) @Tonight
+
+        Try to make the React front end works on NGINX :)) @Tonight
 
 
         All features: 
@@ -86,6 +87,8 @@ TODAY:
 
                     front-end: 
                         Show upload success/fail [] @Current 
+                            What behaviour needed ?? 
+                                ... 
 
                         not have: 
                             place recommendation @RauRia
