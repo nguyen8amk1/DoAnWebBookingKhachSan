@@ -6,25 +6,25 @@ TODAY:
         PROBLEM: ***the amount of data between the relation are not match*** 
             HAVE MORE AND BETTER SYNCHRONIZED DATA FOR DEMONSTRATION 
 
-        This morning: 
-            Searching:  map on the bottom [X]
-            HotelDetail: map block [X]
-            Upload Hotel: show upload success/fail [X]
-            Register: check user exist or not []
+        List of things need to be done tomorrow: 
+            + Homepage: Place recommendation
+            + SearchPage: Store all long lat on db 
+            + Booking: Make sure the booking button is working
+            + ViewBooking: Finish View booking part 
 
+            Backend deployment also need to use TMUX :)) @Tomorrow
+                since we gonna have a lot of process running (2 particularly 2 :)) 
+                if we lucky we gonna get the original server to run first :)) 
 
-        Try to make the React front end works on NGINX :)) @Current 
+            Make sure the Registration actually works @Tomorrow 
 
-        Backend deployment also need to use TMUX :)) 
-            since we gonna have a lot of process running (2 particularly 2 :)) 
-            if we lucky we gonna get the original server to run first :)) 
-
+            Comment Feature @Tomorrow 
 
         All features: 
             Homepage: (1h) 
                 hardcoded: 
                     front-end: 
-                        no place recommendation @Later  
+                        no place recommendation [] @Tomorrow  
                         *** the upload button should only be showned when logged in [] @Later 
                         check if the token have expired if it is -> automatically logout []
 
@@ -51,7 +51,7 @@ TODAY:
                         file: view/searchpage.js
 
                     back-end: 
-                        store all long,lat of the hotel in the db [] @Later 
+                        store all long,lat of the hotel in the db [] @Tomorrow   
                             -> We already have a code snippet for generating all the locations of the place 
                             in the file MapModal.js
 
@@ -90,6 +90,10 @@ TODAY:
                         file: route.js controller.js 
 
                     front-end: 
+                        not have: 
+                            place recommendation @RauRia
+                            also send some information for storing the map location as well @RauRia
+
                         Show upload success/fail [X] 
                             What behaviour needed ?? 
 
@@ -98,14 +102,11 @@ TODAY:
                                 
                                 Toastify ??  
 
-                        not have: 
-                            place recommendation @RauRia
-                            also send some information for storing the map location as well @RauRia
 
                 visual: 
                     ngon - 7/10
 
-            Booking: I don't know the state of this thing (*** Investigate it tonight :))   
+            Booking: I don't know the state of this thing (*** Investigate it tonight :)) (2h) @Tomorrow  
                 hardcoded: 
                     front-end: 
                         not have: 
@@ -124,7 +125,7 @@ TODAY:
             Register 
                 hardcoded: 
                     back-end: 
-                        haven't check if the user pre-exist or not [] @TomorrowMorning
+                        haven't check if the user pre-exist or not [] @Later 
                         file: authController.js
 
                 visual: 
@@ -135,7 +136,7 @@ TODAY:
 
             View Booking 
                 hardcoded: 
-                    MAKE SURE THE TO COMBINE OUR CODE TO CLAP CODE @ASAP 
+                    MAKE SURE THE TO COMBINE OUR CODE TO CLAP CODE @ASAP @Tomorrow 
                     user tab: 
                         front-end: 
                             huy phong didn't work 
