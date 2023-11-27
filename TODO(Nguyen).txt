@@ -7,13 +7,13 @@ TODAY:
             HAVE MORE AND BETTER SYNCHRONIZED DATA FOR DEMONSTRATION 
 
         This morning: 
-            Searching:  map on the bottom 
+            Searching:  map on the bottom [X]
             HotelDetail: map block 
             Upload Hotel: show upload success/fail 
             Register: check user exist or not 
 
+        Try to make the web works on VPS :)) @Tonight
 
-        Toi: Deployment test 
 
         All features: 
             Homepage: (1h) 
@@ -57,7 +57,8 @@ TODAY:
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        not have: map block as well (2h) [] @Current  
+                        not have: map block as well (2h) [] 
+                            ** use the exact same code with the search 
 
                         rau ria: 
                             Bam "quy tac chung"  nhay xuong duoi [] 
@@ -82,8 +83,9 @@ TODAY:
                 hardcoded: 
                     back-end: 
                         file: route.js controller.js 
+
                     front-end: 
-                        Show upload success/fail [] @TomorrowMorning 
+                        Show upload success/fail [] @Current 
 
                         not have: 
                             place recommendation @RauRia

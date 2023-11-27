@@ -7,6 +7,7 @@ import { DateRange } from "react-date-range";
 import Searchpage__searchitem from "./Searchpage__searchitem";
 import LocationOnMapSetting from "../Map/LocationOnMapSetting";
 import MapModal from "../../views/MapModal";
+import MapBox from "../MapBox";
 
 const Searchpage__sidebar = (props) => {
 	const location = useLocation();
@@ -50,11 +51,6 @@ const Searchpage__sidebar = (props) => {
 
 	return (
 		<div className="searchpage-sb-container">
-			<MapModal
-				isOpenModal={openMapModal}
-				toggle={toggleMapModal}
-			/>
-
 			<div className="searchpage-sb-wrapper">
 				<div className="searchpage-sb-listsearch">
 					<h1 className="searchpage-sb-listtitle">Search</h1>
@@ -138,9 +134,16 @@ const Searchpage__sidebar = (props) => {
 					</button>
 					<br />
 
+					{/* <MapModal
+						isOpenModal={openMapModal}
+						toggle={toggleMapModal}
+					/>
+
 					<div onClick={showMapModal}>
 						<LocationOnMapSetting markers={markers} width="250px" height="200px" style={{}} />
-					</div>
+					</div> */}
+
+					<MapBox/>
 
 				</div>
 

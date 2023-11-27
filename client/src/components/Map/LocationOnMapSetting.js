@@ -23,10 +23,10 @@ function LocationOnMapSetting(props) {
     pitch: 0,
   });
 
-  const [marker, setMarker] = useState({
-    latitude: 10.787811400315592,
-    longitude: 106.70537121898475,
-  });
+  // const [marker, setMarker] = useState({
+  //   latitude: 10.787811400315592,
+  //   longitude: 106.70537121898475,
+  // });
 
   return (
     <>
