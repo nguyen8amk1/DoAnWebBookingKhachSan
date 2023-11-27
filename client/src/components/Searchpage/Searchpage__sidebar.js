@@ -24,6 +24,19 @@ const Searchpage__sidebar = (props) => {
 	const [openDate, setOpenDate] = useState(false);
 	const [options, setOptions] = useState(initialOptions);
 	const [openMapModal, setOpenMapModal] = useState(false);
+	const [markers, setMarkers] = useState(
+		[
+			{
+				latitude: 10.787811400315592,
+				longitude: 106.70537121898475,
+			},
+			{
+
+				latitude: 10.788481, 
+				longitude: 106.705087
+			}
+		]
+	);
 
 	const showMapModal = () => {
 		console.log("Show map");
@@ -38,8 +51,8 @@ const Searchpage__sidebar = (props) => {
 	return (
 		<div className="searchpage-sb-container">
 			<MapModal
-			isOpenModal={openMapModal}
-			toggle={toggleMapModal}
+				isOpenModal={openMapModal}
+				toggle={toggleMapModal}
 			/>
 
 			<div className="searchpage-sb-wrapper">
@@ -126,7 +139,7 @@ const Searchpage__sidebar = (props) => {
 					<br />
 
 					<div onClick={showMapModal}>
-						<LocationOnMapSetting  width="250px" height="200px" style={{}} />
+						<LocationOnMapSetting markers={markers} width="250px" height="200px" style={{}} />
 					</div>
 
 				</div>

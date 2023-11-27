@@ -35,8 +35,10 @@ TODAY:
                         not have:
                             ** Map on the bottom (2h) [X] 
                                 ** Map Modal when click on it [X] 
-                                ** Pin the long, lat of all the locations on the map [] @Current 
-                                ** Map shows all the searches points on there [] 
+                                ** Pin the long, lat of all the locations on the map [X] 
+                                ** Map shows all the searches points on there [] @Later 
+
+                                ** Set the viewport to center the first hotel [] @Later 
 
 
                         hotel preview image 
@@ -44,7 +46,9 @@ TODAY:
                         file: view/searchpage.js
 
                     back-end: 
-                        store all long,lat of the hotel in the db []
+                        store all long,lat of the hotel in the db [] @Later 
+                            -> We already have a code snippet for generating all the locations of the place 
+                            in the file MapModal.js
 
                 visual: 
                     hơi trống trải
@@ -53,7 +57,7 @@ TODAY:
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        not have: map block as well (2h) [X] 
+                        not have: map block as well (2h) [] @Current  
 
                         rau ria: 
                             Bam "quy tac chung"  nhay xuong duoi [] 
@@ -70,7 +74,7 @@ TODAY:
 
                 visual: 
                     Ngon-10/10
-                    
+
             Tra phong: 
                 haven't implemented 
 

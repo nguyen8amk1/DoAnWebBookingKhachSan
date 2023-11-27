@@ -38,14 +38,18 @@ function LocationOnMapSetting(props) {
         onViewportChange={setViewport}
         goongApiAccessToken={GOONG_MAPTILES_KEY}
       >
-        <Marker
-          longitude={marker.longitude}
-          latitude={marker.latitude}
-          offsetTop={-20}
-          offsetLeft={-10}
-        >
-          <Pin size={20} color="#dd0" />
-        </Marker>
+        { props.markers.map((value, index)=>
+        ( 
+          <Marker key={index}
+            longitude={value.longitude}
+            latitude={value.latitude}
+            offsetTop={-20}
+            offsetLeft={-10}
+          >
+            <Pin size={20} color="#dd0" />
+          </Marker>
+        ))}
+       {console.log(props.markers)} 
       </MapGL>
     </>
   );
