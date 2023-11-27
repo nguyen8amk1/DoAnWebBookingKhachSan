@@ -15,6 +15,9 @@ import {
     MDBTypography,
 } from "mdb-react-ui-kit";
 import NavBar from '../components/NavBar';
+import MyMapBox from '../components/MyMapBox';
+
+// import MyMapBox from '../components/MapBox';
 
 class HotelDetail extends React.Component {
     constructor(props) {
@@ -113,6 +116,7 @@ class HotelDetail extends React.Component {
             <div className='main-content-container-new'>
                 <div className='left-content-container'>
                     <b>Sidebar trong /searchpage</b>
+                    <MyMapBox className="left-content-container__bottom-thingy"/>
                 </div>
                 <div className='right-content-container'>
                     <div className='top-text'>

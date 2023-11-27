@@ -2,7 +2,7 @@ import React from "react";
 import MapModal from "../views/MapModal";
 import LocationOnMapSetting from "./Map/LocationOnMapSetting";
 
-class MapBox extends React.Component {
+class MyMapBox extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -40,4 +40,4 @@ class MapBox extends React.Component {
     }
 }
 
-export default MapBox;
+export default MyMapBox;

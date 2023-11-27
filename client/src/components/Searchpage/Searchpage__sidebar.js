@@ -7,7 +7,7 @@ import { DateRange } from "react-date-range";
 import Searchpage__searchitem from "./Searchpage__searchitem";
 import LocationOnMapSetting from "../Map/LocationOnMapSetting";
 import MapModal from "../../views/MapModal";
-import MapBox from "../MapBox";
+import MyMapBox from "../MyMapBox";
 
 const Searchpage__sidebar = (props) => {
 	const location = useLocation();
@@ -25,29 +25,6 @@ const Searchpage__sidebar = (props) => {
 	const [openDate, setOpenDate] = useState(false);
 	const [options, setOptions] = useState(initialOptions);
 	const [openMapModal, setOpenMapModal] = useState(false);
-	const [markers, setMarkers] = useState(
-		[
-			{
-				latitude: 10.787811400315592,
-				longitude: 106.70537121898475,
-			},
-			{
-
-				latitude: 10.788481, 
-				longitude: 106.705087
-			}
-		]
-	);
-
-	const showMapModal = () => {
-		console.log("Show map");
-		setOpenMapModal(true);
-	};
-
-	const toggleMapModal = () => {
-		const temp = !openMapModal;
-		setOpenMapModal(temp);
-	};
 
 	return (
 		<div className="searchpage-sb-container">
@@ -134,16 +111,7 @@ const Searchpage__sidebar = (props) => {
 					</button>
 					<br />
 
-					{/* <MapModal
-						isOpenModal={openMapModal}
-						toggle={toggleMapModal}
-					/>
-
-					<div onClick={showMapModal}>
-						<LocationOnMapSetting markers={markers} width="250px" height="200px" style={{}} />
-					</div> */}
-
-					<MapBox/>
+					<MyMapBox/>
 
 				</div>
 

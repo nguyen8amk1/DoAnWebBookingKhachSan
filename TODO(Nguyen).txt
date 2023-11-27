@@ -57,8 +57,8 @@ TODAY:
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        not have: map block as well (2h) [] 
-                            ** use the exact same code with the search 
+                        not have: map block as well (2h) [X] 
+                            css to make it looks nicer [] @Later 
 
                         rau ria: 
                             Bam "quy tac chung"  nhay xuong duoi [] 
