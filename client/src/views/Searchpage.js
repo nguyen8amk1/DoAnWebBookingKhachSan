@@ -41,6 +41,7 @@ class Searchpage extends React.Component {
 
 	render() {
 		return (
+			<>
 			<div className="Searchpage">
 				<div className="homepage">
 					<div className="main">
@@ -70,6 +71,7 @@ class Searchpage extends React.Component {
 				<Searchpage__sidebar searchResults={this.state.searchResults} />
 				<FooterPage />
 			</div>
+			</>
 		);
 	}
 }

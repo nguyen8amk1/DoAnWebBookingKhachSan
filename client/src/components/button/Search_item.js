@@ -72,7 +72,7 @@ class Search_item extends Component {
               Vị trí trên bản đồ
             </label>
             {/* Assuming LocationOnMapSetting is a component */}
-            <LocationOnMapSetting />
+            <LocationOnMapSetting width="400px" height="300px" />
           </div>
         )}
       </div>

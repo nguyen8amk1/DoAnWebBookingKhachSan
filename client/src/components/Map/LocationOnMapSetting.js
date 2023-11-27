@@ -32,8 +32,8 @@ function LocationOnMapSetting(props) {
     <>
       <MapGL
         {...viewport}
-        width="400px"
-        height="200px"
+        width= {props.width}
+        height= {props.height}
         mapStyle="https://tiles.goong.io/assets/goong_map_web.json"
         onViewportChange={setViewport}
         goongApiAccessToken={GOONG_MAPTILES_KEY}

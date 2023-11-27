@@ -3,14 +3,15 @@ TODAY:
         Since now there are a lot of information are still fixed 
         -> List all the spot that have hard-coded information 
         
-        Chieu: hardcode resolve:
-            HomePage [X] "kinda"
-            Hotel Detail []
-            Searching []
-            View Booking []
-
         PROBLEM: ***the amount of data between the relation are not match*** 
             HAVE MORE AND BETTER SYNCHRONIZED DATA FOR DEMONSTRATION 
+
+        This morning: 
+            Searching:  map on the bottom 
+            HotelDetail: map block 
+            Upload Hotel: show upload success/fail 
+            Register: check user exist or not 
+
 
         Toi: Deployment test 
 
@@ -30,10 +31,13 @@ TODAY:
             Searching: (2h) 
                 hardcoded: 
                     front-end: 
+                        add chat bot 
                         not have:
-                            ** Map on the bottom (2h) @TomorrowMorning
-                            Map Modal when click on it 
-                            Map shows all the searches points on there 
+                            ** Map on the bottom (2h) [X] 
+                                ** Map Modal when click on it [X] 
+                                ** Pin the long, lat of all the locations on the map [] @Current 
+                                ** Map shows all the searches points on there [] 
+
 
                         hotel preview image 
 
@@ -49,7 +53,7 @@ TODAY:
             Hotel Detail: (3h)
                 hardcoded: 
                     front-end: 
-                        not have: map block as well (2h) [] @TomorrowMorning
+                        not have: map block as well (2h) [X] 
 
                         rau ria: 
                             Bam "quy tac chung"  nhay xuong duoi [] 
@@ -66,7 +70,9 @@ TODAY:
 
                 visual: 
                     Ngon-10/10
-
+                    
+            Tra phong: 
+                haven't implemented 
 
             Upload Hotel: 
                 hardcoded: 
