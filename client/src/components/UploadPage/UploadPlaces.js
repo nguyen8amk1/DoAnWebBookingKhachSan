@@ -88,13 +88,14 @@ class UploadPlaces extends React.Component {
 		console.log(imagesLink);
 		this.setState({ images: imagesLink.data });
 		const result = await uploadPlace(this.state);
-		// if(result.status == 200) {
-		// 	// console.log("TODO: show some ");
-		// } else {
 
-		// }
+		alert(result.data.msg);
+		if(result.status == 200) {
+			// console.log("TODO: show some ");
+			window.location.reload();
+		} else {
 
-		// alert(result.data.msg);
+		}
 	};
 
 	changeLoaiNhaNghi = (event) => {

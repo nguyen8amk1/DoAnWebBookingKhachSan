@@ -9,11 +9,15 @@ TODAY:
         This morning: 
             Searching:  map on the bottom [X]
             HotelDetail: map block [X]
-            Upload Hotel: show upload success/fail []
+            Upload Hotel: show upload success/fail [X]
             Register: check user exist or not []
 
 
-        Try to make the React front end works on NGINX :)) @Tonight
+        Try to make the React front end works on NGINX :)) @Current 
+
+        Backend deployment also need to use TMUX :)) 
+            since we gonna have a lot of process running (2 particularly 2 :)) 
+            if we lucky we gonna get the original server to run first :)) 
 
 
         All features: 
@@ -86,9 +90,13 @@ TODAY:
                         file: route.js controller.js 
 
                     front-end: 
-                        Show upload success/fail [] @Current 
+                        Show upload success/fail [X] 
                             What behaviour needed ?? 
-                                ... 
+
+                                if upload success -> goto homepage [] 
+                                else -> alert upload fail []
+                                
+                                Toastify ??  
 
                         not have: 
                             place recommendation @RauRia
