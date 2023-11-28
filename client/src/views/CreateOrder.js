@@ -33,6 +33,21 @@ class CreateOrder extends React.Component {
         info['amount'] = this.state.amount;
         info['bankCode'] = this.state.bankCode;
         info['language'] = this.state.language;
+
+        //NOTE: the code bellow really shouldn't be here 
+        info['userid'] = localStorage.getItem("userid");
+        info['hotelid'] = localStorage.getItem("hoteldetailID");
+        info['roomid'] = 1;
+        info['price'] = 115000;
+        info['daterange'] = localStorage.getItem('date').startDate + " " + localStorage.getItem('date').endDate;
+        
+        // hotelid: info.hotelid , 
+        // userid: info.userid, 
+        // roomid: info.roomid, 
+        // price: info.price, 
+        // daterange: info.daterange, 
+
+
         const result = await createOrder(info);
         console.log(result)
         window.location.href = result.data.redirectUrl;

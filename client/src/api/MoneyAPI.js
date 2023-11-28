@@ -5,6 +5,14 @@ export const createOrder = async (info) => {
         amount: info.amount, 
         bankCode: info.bankCode,
         language: info.language,
+
+
+
+        hotelid: info.hotelid , 
+        userid: info.userid, 
+        roomid: info.roomid, 
+        price: info.price, 
+        daterange: info.daterange, 
     }); 
     return redirectUrl;
 }

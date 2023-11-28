@@ -190,8 +190,16 @@ const uploadImages = async (req, res) => {
 
 
 const vnPayCreateOrder = async (req, res) => {
-    // TODO: write the order into booking places and booked places 
-    // 
+    const hotelid = req.body.hotelid;
+    const bookingpersonid = req.body.userid;
+    const roomid = req.body.roomid;
+    const price = req.body.price;
+    const daterange = req.body.daterange;
+
+    console.log(hotelid, bookingpersonid, roomid, price, daterange);
+
+    // TODO: write it into the Booking Table, Booked table 
+    // ... 
 
 
     process.env.TZ = 'Asia/Ho_Chi_Minh';
