@@ -15,6 +15,9 @@ module.exports = (sequelize, DataTypes) => {
             Hotel.hasMany(models.Room, {
                 foreignKey: 'hotelID'
             });
+            Hotel.belongsTo(models.User, {
+                foreignKey: 'userID'
+            });
             Hotel.belongsTo(models.City, {
                 foreignKey: 'cityID'
             });

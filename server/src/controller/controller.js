@@ -161,6 +161,7 @@ const uploadHotel = async (req, res) => {
     try {
         const newHotel = await Hotel.create(
             { 
+                userID: 1,  
                 name: req.body.name,
                 address: req.body.address,
                 description: description,

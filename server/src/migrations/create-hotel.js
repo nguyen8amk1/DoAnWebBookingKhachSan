@@ -22,6 +22,13 @@ module.exports = {
                     key: 'id'
                 }
             },
+            userID: {
+                type: Sequelize.INTEGER,
+                references: {
+                    model: 'Users',
+                    key: 'id'
+                }
+            },
             name: {
                 type: Sequelize.STRING
             },

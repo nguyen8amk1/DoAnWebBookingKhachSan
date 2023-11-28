@@ -115,7 +115,7 @@ const Searchpage__sidebar = (props) => {
 					<br />
 
 					{/* {console.log(searchResults)} */}
-					<MyMapBox locations={props.searchResults}/>
+					{/* <MyMapBox locations={props.searchResults}/> */}
 
 				</div>
 

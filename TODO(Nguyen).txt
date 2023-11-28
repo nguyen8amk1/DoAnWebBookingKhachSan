@@ -26,15 +26,36 @@ TODAY:
 
                 6. Upload Hotel:     
                     -> Upload a hotel with some informations @Oke 
+                        add userId to hotel model, migration, seed [X] 
+                    Show the hotel that have been uploaded of user 
+                        In view booking :)) 
+                        -> Store the userid in localStorage after login @Current 
+
+                        To get the room that the user san sang cho thue 
+                            -> find in hotel that have USERID -> return it 
+
+                        To get the information of that room getting booked or not 
+                            -> find the HOTELID in the BOOKEDPLACES table -> return it 
 
                 -> Search for the just uploaded hotel in the search 
-                    -> To show that it actually get uploaded  @NotOke
+                    -> To show that it actually get uploaded  @Oke 
 
                 7. Book a hotel: @Oke 
 
                 8. View Booking: 
                     -> After booking something 
                     -> Show the booking that it the hotel actually have been booked @NotOke :)) 
+                        **When book a hotel 
+                            Search the bookingplaces with the userid 
+                            and all the hotel information using the hotelid 
+                            -> return all the informations
+
+                        To show the what hotel that the user is booking -> 
+                            find the userid in the booking places table 
+
+                Create user A that upload a hotel -> show the hotel exist in view booking haven't booked yet 
+                Create user B that book that hotel -> show the hotel get booked in view booking 
+                    These 2 features still not work 
 
                 Done :))
 
@@ -63,7 +84,7 @@ TODAY:
             Homepage: (1h) 
                 hardcoded: 
                     front-end: 
-                        no place recommendation [] @Current   
+                        no place recommendation [] @Later    
                         *** the upload button should only be showned when logged in [] @Later 
                         check if the token have expired if it is -> automatically logout []
 
