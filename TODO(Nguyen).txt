@@ -161,11 +161,11 @@ TODAY:
                                 ** make it look like shopee 
 
                             Have the left side bar to show some user information [] @Later 
-
                             lien he nguoi cho thue didn't work 
                             
-                        back-end: 
+                            Send the user id to the backend to get the real booking information [] @Later 
 
+                        back-end: 
                             still not handle authentication middleware 
                     
                     manager tab: 
