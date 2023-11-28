@@ -1,4 +1,11 @@
 TODAY: 
+    GIAO TASK: 
+        make better ui: 
+            VNPAYReturn @Nghia 
+                file: VNPayReturn.js
+            VNPayNhapTien @Nghia 
+                file: CreateOrder.js
+
     MAKE SURE THE FRONT-END AND BACK-END CAN COMMUNICATE: 
         Since now there are a lot of information are still fixed 
         -> List all the spot that have hard-coded information 
@@ -9,20 +16,18 @@ TODAY:
         Today, do all the tasks in 30 minutes session @NewFeature
 
         List of things need to be done tomorrow: 
-            + SearchPage: Store all long lat on db 
             + Homepage: Place recommendation 
-            + Booking: Make sure the booking button is working
             + ViewBooking: Finish View booking part 
                 ViewBooking: Paging ?? 
+            Comment Feature @Tomorrow 
+            -> Make sure everything is working correctly 
+
+
+
 
             Backend deployment also need to use TMUX :)) @Tomorrow
                 since we gonna have a lot of process running (2 particularly 2 :)) 
                 if we lucky we gonna get the original server to run first :)) 
-
-            Make sure the Registration actually works @Tomorrow 
-            Comment Feature @Tomorrow 
-
-            -> Make sure everything is working correctly 
 
         Wednesday we will work on all the images and deployment and STYLING of the things @Wednesday
 
