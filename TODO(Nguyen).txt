@@ -6,6 +6,41 @@ TODAY:
         PROBLEM: ***the amount of data between the relation are not match*** 
             HAVE MORE AND BETTER SYNCHRONIZED DATA FOR DEMONSTRATION 
 
+        PREPARE THE DEMO SCRIPT, MAKE SURE EVERYTHING WORKS GOOD FOR DEMO @Tonight 
+            @Oke: okay feature-wise
+
+            DEMO ALL THE FEATURES: 
+                1. Register @Oke 
+                    -> register an account 
+                2. Login @Oke 
+                    -> login using that account 
+
+                3. Searching for a place @Oke 
+                    -> Show a list of places 
+
+                4. Have all the places show on the map modal @Oke 
+
+                5. Hotel detail: 
+                    Click on a hotel result to view the hotel detail @Oke 
+                    Click on certain tab to sliding up and down to look at some informations @NotOke
+
+                6. Upload Hotel:     
+                    -> Upload a hotel with some informations @Oke 
+
+                -> Search for the just uploaded hotel in the search 
+                    -> To show that it actually get uploaded  @NotOke
+
+                7. Book a hotel: @Oke 
+
+                8. View Booking: 
+                    -> After booking something 
+                    -> Show the booking that it the hotel actually have been booked @NotOke :)) 
+
+                Done :))
+
+        -> TOMORROW: 100% WORK ON THE VISUALS 
+                
+
         Today, do all the tasks in 30 minutes session @NewFeature
 
         List of things need to be done tomorrow: 
@@ -19,6 +54,7 @@ TODAY:
                 if we lucky we gonna get the original server to run first :)) 
 
         Connect phong information to the actual pay @Next 
+
 
         Wednesday we will work on all the images and deployment and STYLING of the things @Wednesday
 
