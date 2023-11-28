@@ -24,9 +24,6 @@ class Searchpage extends React.Component {
 		const options = JSON.parse(localStorage.getItem("options"));
 		console.log(destination, d, options);
 
-
-		console.log();
-
 		const date = { came: d.startDate, leave: d.endDate };
 		const city = destination;
 		const memberCount = {
@@ -40,6 +37,7 @@ class Searchpage extends React.Component {
 	}
 
 	render() {
+		const { searchResults } = this.state;
 		return (
 			<>
 			<div className="Searchpage">
@@ -68,7 +66,7 @@ class Searchpage extends React.Component {
 						<UserInfoComponent />
 					</div>
 				</div>
-				<Searchpage__sidebar searchResults={this.state.searchResults} />
+				<Searchpage__sidebar searchResults={searchResults} />
 				<FooterPage />
 			</div>
 			</>

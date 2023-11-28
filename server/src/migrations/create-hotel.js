@@ -34,6 +34,12 @@ module.exports = {
             score: {
                 type: Sequelize.STRING
             },
+            long: {
+                type: Sequelize.FLOAT
+            },
+            lat: {
+                type: Sequelize.FLOAT
+            },
             createdAt: {
                 allowNull: false,
                 type: Sequelize.DATE

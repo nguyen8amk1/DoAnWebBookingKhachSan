@@ -116,7 +116,7 @@ class HotelDetail extends React.Component {
             <div className='main-content-container-new'>
                 <div className='left-content-container'>
                     <b>Sidebar trong /searchpage</b>
-                    <MyMapBox className="left-content-container__bottom-thingy"/>
+                    <MyMapBox locations={{long: 1312321312321, lat: 123123123}} className="left-content-container__bottom-thingy"/>
                 </div>
                 <div className='right-content-container'>
                     <div className='top-text'>

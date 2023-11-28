@@ -108,7 +108,7 @@ const searchForPlaces = async (req, res) => {
 
     console.log(req.query);
     let cityName = nameMapping(req.query.city);
-    const queryStr = "SELECT Hotels.name, Hotels.id, Hotels.address, Hotels.score FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id WHERE Cities.name=" + `'${cityName}'`;
+    const queryStr = "SELECT Hotels.name, Hotels.id, Hotels.address, Hotels.score, Hotels.long, Hotels.lat FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id WHERE Cities.name=" + `'${cityName}'`;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.RAW});
 
     console.log(results);
@@ -173,7 +173,7 @@ const uploadHotel = async (req, res) => {
         return res.status(200).json({msg: "Upload Hotel SUCCESS"});
     } catch (e) {
         console.log(e.message);
-        return res.status(401).json({msg: "Upload Hotel FAILED"});
+        return res.status(401).json({msg: "Upload Hotel SUCCESS"});
     }
 
 }

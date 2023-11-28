@@ -1,6 +1,6 @@
 import "../../style/Searchpage/Searchpage__sidebar.scss";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
@@ -22,6 +22,9 @@ const Searchpage__sidebar = (props) => {
 			key: "selection",
 		},
 	]);
+
+	const [locations, setLocations] = useState(props.searchResults);
+
 	const [openDate, setOpenDate] = useState(false);
 	const [options, setOptions] = useState(initialOptions);
 	const [openMapModal, setOpenMapModal] = useState(false);
@@ -111,7 +114,8 @@ const Searchpage__sidebar = (props) => {
 					</button>
 					<br />
 
-					<MyMapBox/>
+					{/* {console.log(searchResults)} */}
+					<MyMapBox locations={props.searchResults}/>
 
 				</div>
 

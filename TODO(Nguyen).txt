@@ -6,19 +6,26 @@ TODAY:
         PROBLEM: ***the amount of data between the relation are not match*** 
             HAVE MORE AND BETTER SYNCHRONIZED DATA FOR DEMONSTRATION 
 
+        Today, do all the tasks in 30 minutes session @NewFeature
+
         List of things need to be done tomorrow: 
-            + Homepage: Place recommendation
             + SearchPage: Store all long lat on db 
+            + Homepage: Place recommendation 
             + Booking: Make sure the booking button is working
             + ViewBooking: Finish View booking part 
+                ViewBooking: Paging ?? 
 
             Backend deployment also need to use TMUX :)) @Tomorrow
                 since we gonna have a lot of process running (2 particularly 2 :)) 
                 if we lucky we gonna get the original server to run first :)) 
 
             Make sure the Registration actually works @Tomorrow 
-
             Comment Feature @Tomorrow 
+
+            -> Make sure everything is working correctly 
+
+        Wednesday we will work on all the images and deployment and STYLING of the things @Wednesday
+
 
         All features: 
             Homepage: (1h) 
@@ -41,7 +48,9 @@ TODAY:
                             ** Map on the bottom (2h) [X] 
                                 ** Map Modal when click on it [X] 
                                 ** Pin the long, lat of all the locations on the map [X] 
-                                ** Map shows all the searches points on there [] @Later 
+                                ** Map shows all the searches points on there [X] 
+                                    ** loads all the searches points from database [X] 
+                                        in the searchpage -> then pass it to the LocationOnMap, MapModal 
 
                                 ** Set the viewport to center the first hotel [] @Later 
 
@@ -51,9 +60,12 @@ TODAY:
                         file: view/searchpage.js
 
                     back-end: 
-                        store all long,lat of the hotel in the db [] @Tomorrow   
+                        store all long,lat of the hotel in the db [X] 
                             -> We already have a code snippet for generating all the locations of the place 
                             in the file MapModal.js
+                            Do it in the seed [X] 
+
+                        return the long, lat info to front end [X] 
 
                 visual: 
                     hơi trống trải
@@ -106,7 +118,7 @@ TODAY:
                 visual: 
                     ngon - 7/10
 
-            Booking: I don't know the state of this thing (*** Investigate it tonight :)) (2h) @Tomorrow  
+            Booking: I don't know the state of this thing (*** Investigate it tonight :)) (2h) @Current 
                 hardcoded: 
                     front-end: 
                         not have: 
