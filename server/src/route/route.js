@@ -26,7 +26,7 @@ const initRouters = (app) => {
     router.post('/create_payment_url', controller.vnPayCreateOrder);
     router.get('/vnpay_return', controller.checkVNPaySuccess);
 
-    router.post('/post-crud', controller.postCrud);
+    // router.post('/post-crud', controller.postCrud);
     app.use('/', router);
 }
 

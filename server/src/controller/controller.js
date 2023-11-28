@@ -200,7 +200,8 @@ const vnPayCreateOrder = async (req, res) => {
     let tmnCode = process.env.VNPAY_CODE;
     let secretKey = process.env.VNPAY_SECRET;
     let vnpUrl =  "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-    let returnUrl =  "http://localhost:8080/vnpay_return";
+    let returnUrl =  "http://localhost:3000/vnpay_return";
+    // let returnUrl =  "http://localhost:3000/uploadhotel";
 
     let orderId = moment(date).format('DDHHmmss');
     let amount = req.body.amount;

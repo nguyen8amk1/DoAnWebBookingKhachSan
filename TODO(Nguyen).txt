@@ -118,12 +118,14 @@ TODAY:
                 visual: 
                     ngon - 7/10
 
-            Booking: I don't know the state of this thing (*** Investigate it tonight :)) (2h) @Current 
+            Booking: I don't know the state of this thing (*** Investigate it tonight :)) (2h) 
                 hardcoded: 
                     front-end: 
-                        not have: 
-                            make the booking button work as well 
-                                open the cong thanh toan i guess :))
+                        Result page: extract the giao dich information from the url [X] 
+                        Dien tien page: add HTML code [X] 
+                            make better ui: 
+                                VNPAYReturn @Nghia 
+                                VNPayNhapTien @Nghia 
 
                         file: view/hoteldetail.js
 
@@ -148,7 +150,7 @@ TODAY:
 
             View Booking 
                 hardcoded: 
-                    MAKE SURE THE TO COMBINE OUR CODE TO CLAP CODE @ASAP @Tomorrow 
+                    MAKE SURE THE TO COMBINE OUR CODE TO CLAP CODE @ASAP @Current  
                     user tab: 
                         front-end: 
                             huy phong didn't work 

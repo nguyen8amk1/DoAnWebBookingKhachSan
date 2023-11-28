@@ -23,23 +23,6 @@ const Homepage = () => {
           </Link>
           <NavBar/>
 
-          {/* <div className="button1">
-            <Header__button
-              buttonText="Log In"
-              Header__buttonBackgroundColor="rgba(0,0,0,0.02)"
-              Header__button="1.5px solid var(--background-2)"
-              buttonFontFamily="Roboto"
-              buttonColor="#fa7436"
-            />
-            <Header__button
-              buttonText="Sign Up"
-              Header__buttonBackgroundColor="#fa7436"
-              Header__button="unset"
-              buttonFontFamily="Roboto"
-              buttonColor="#fff"
-            />
-          </div> */}
-
           <UserInfoComponent/>
           <img className="main-item" alt="" src="/Homepage__img.png" />
         </div>

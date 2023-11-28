@@ -67,42 +67,7 @@ class HotelDetail extends React.Component {
     }
 
     render() {
-        // TODO: 
-        // substitude the info 
         return <>
-            {/* <h1>{this.state.ten}</h1>
-            <button>Dat Can Ho</button>
-            <p>{this.state.diachi}</p> */}
-            {/* <div className='danhgia'>
-                <p>{this.state.diem}</p>
-                <p>{this.state.danhgia.length}</p>
-                {this.state.danhgia.map((danhgia, index) => (
-                    <p key={index}>{danhgia}</p>))}
-
-            </div> */}
-            {/* <div className='anh'> */}
-            {/* <img className="big-right-image" src={this.state.bigImg} alt={'Anh lon ben trai'} /> */}
-            {/* <div>
-                    <img className="small-left-image" src={this.state.smallImg1} alt={'Anh nho 1 ben phai'} />
-                    <img className="small-left-image" src={this.state.smallImg2} alt={'Anh nho 2 ben phai'} />
-                </div> */}
-
-            {/* <div className='listanhconlai'> */}
-            {/* TODO: Should hide when too much, vd: exceed the 10 images */}
-            {/* {this.state.images.length > 0 && this.state.images.map((anh, index) => (
-                        <img key={index} src={anh} alt="Anh bi hu r :v" />))} */}
-            {/* </div> */}
-            {/* </div> */}
-
-            {/* <div className='boxtimphong'>
-                boxtimphong
-                <button>Tim</button>
-            </div>
-
-            <div className='bando'>
-                <button>Hien thi tren ban do</button>
-            </div> */}
-
             <div className="homepage">
                 <div className="main">
                     <Link to="/" className="main-child">
@@ -129,9 +94,13 @@ class HotelDetail extends React.Component {
                         <div className='fourth-text'>
                             <button>Đánh giá của khách hàng</button>
                         </div>
-                        <div style={{backgroundColor: 'orange'}} className='btn btn-primary btn-login'>
-                            <button style={{color: 'white'}}><b>ĐẶT PHÒNG</b></button>
-                        </div>
+
+                        <Link to="/createorder">
+                            <div style={{backgroundColor: 'orange'}} className='btn btn-primary btn-login'>
+                                <button style={{color: 'white'}}><b>ĐẶT PHÒNG</b></button>
+                            </div>
+                        </Link>
+
                     </div>
                     <hr />
                     <div className='image-content'>
