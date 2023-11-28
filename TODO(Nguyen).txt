@@ -1,5 +1,187 @@
 TODAY: 
-    LIST OUT ALL THE UI THAT NEED TO WORK (1h): @Current
+    MAKE SURE THE FRONT-END AND BACK-END CAN COMMUNICATE: 
+        Since now there are a lot of information are still fixed 
+        -> List all the spot that have hard-coded information 
+        
+        PROBLEM: ***the amount of data between the relation are not match*** 
+            HAVE MORE AND BETTER SYNCHRONIZED DATA FOR DEMONSTRATION 
+
+        Today, do all the tasks in 30 minutes session @NewFeature
+
+        List of things need to be done tomorrow: 
+            + Homepage: Place recommendation 
+            + ViewBooking: Finish View booking part 
+                ViewBooking: Paging ?? 
+
+            Comment Feature @Tomorrow 
+            -> Make sure everything is working correctly 
+
+
+            Backend deployment also need to use TMUX :)) @Tomorrow
+                since we gonna have a lot of process running (2 particularly 2 :)) 
+                if we lucky we gonna get the original server to run first :)) 
+
+        Connect phong information to the actual pay @Next 
+
+        Wednesday we will work on all the images and deployment and STYLING of the things @Wednesday
+
+
+        All features: 
+            Homepage: (1h) 
+                hardcoded: 
+                    front-end: 
+                        no place recommendation [] @Tomorrow  
+                        *** the upload button should only be showned when logged in [] @Later 
+                        check if the token have expired if it is -> automatically logout []
+
+                        file: view/homepage.js
+
+                visual: 
+                    10/10
+
+            Searching: (2h) 
+                hardcoded: 
+                    front-end: 
+                        add chat bot 
+                        not have:
+                            ** Map on the bottom (2h) [X] 
+                                ** Map Modal when click on it [X] 
+                                ** Pin the long, lat of all the locations on the map [X] 
+                                ** Map shows all the searches points on there [X] 
+                                    ** loads all the searches points from database [X] 
+                                        in the searchpage -> then pass it to the LocationOnMap, MapModal 
+
+                                ** Set the viewport to center the first hotel [] @Later 
+
+
+                        hotel preview image 
+
+                        file: view/searchpage.js
+
+                    back-end: 
+                        store all long,lat of the hotel in the db [X] 
+                            -> We already have a code snippet for generating all the locations of the place 
+                            in the file MapModal.js
+                            Do it in the seed [X] 
+
+                        return the long, lat info to front end [X] 
+
+                visual: 
+                    hơi trống trải
+                    7/10 
+
+            Hotel Detail: (3h)
+                hardcoded: 
+                    front-end: 
+                        not have: map block as well (2h) [X] 
+                            css to make it looks nicer [] @Later 
+
+                        rau ria: 
+                            Bam "quy tac chung"  nhay xuong duoi [] 
+                            Bam "danh gia khach hang"  nhay xuong duoi []
+                            Bam tong quan: hien ra bang tong quan []
+                        
+                        comments [] @Later
+
+
+                        file: view/hoteldetail.js
+
+                back-end:
+                    should have more images []
+
+                visual: 
+                    Ngon-10/10
+
+            Tra phong: 
+                haven't implemented 
+
+            Upload Hotel: 
+                hardcoded: 
+                    back-end: 
+                        file: route.js controller.js 
+
+                    front-end: 
+                        not have: 
+                            place recommendation @RauRia
+                            also send some information for storing the map location as well @RauRia
+
+                        Show upload success/fail [X] 
+                            What behaviour needed ?? 
+
+                                if upload success -> goto homepage [] 
+                                else -> alert upload fail []
+                                
+                                Toastify ??  
+
+
+                visual: 
+                    ngon - 7/10
+
+            Booking: I don't know the state of this thing (*** Investigate it tonight :)) (2h) 
+                hardcoded: 
+                    front-end: 
+                        Result page: extract the giao dich information from the url [X] 
+                        Dien tien page: add HTML code [X] 
+                            make better ui: 
+                                VNPAYReturn @Nghia 
+                                VNPayNhapTien @Nghia 
+
+                        file: view/hoteldetail.js
+
+                    back-end: 
+                        i don't know about it :)) 
+                        
+            Login: 
+                visual: 
+                    oke - 5/5
+
+            Register 
+                hardcoded: 
+                    back-end: 
+                        haven't check if the user pre-exist or not [] @Later 
+                        file: authController.js
+
+                visual: 
+                    oke - 5/5
+
+            Comment system: 
+                Haven't implement anything though
+
+            View Booking 
+                hardcoded: 
+                    MAKE SURE THE TO COMBINE OUR CODE TO CLAP CODE @ASAP 
+                    user tab: 
+                        front-end: 
+                            need a button for view booking as well 
+                                -> click on the username [X] 
+
+                            huy phong didn't work 
+
+                            Get the booking place info to look better [] @Later 
+                                ** make it look like shopee 
+
+                            Have the left side bar to show some user information [] @Later 
+                            lien he nguoi cho thue didn't work 
+                            
+                            Send the user id to the backend to get the real booking information [] @Later 
+
+                        back-end: 
+                            still not handle authentication middleware 
+                    
+                    manager tab: 
+                        front-end: 
+                            huy phong didn't work 
+                            lien he nguoi cho thue didn't work 
+
+                        back-end: 
+                            still not handle authentication middleware 
+                            
+                visual: 
+                    Hơi ngon ngon: 7/10 
+
+
+
+    LIST OUT ALL THE UI THAT NEED TO WORK (1h): 
         Upload hotel (Lap)
             -> Lap tu des 
             Des sao cho đẹp đẹp th chứ t cũng đ có ý tưởng :v 
@@ -23,20 +205,16 @@ TODAY:
 
     -> NOTE: Sống chết cũng phải làm cho xong :v 
 
-    Update the code to work with new database 
-        + controller code (1h) 
-        + seeder code (2h) [X]
-            -> Some needed code is kinda done 
-
-        Make all the api work good 
-            -> Which are all the backend work :v 
-
     List of features Progress: 
         Search 
             -> Frontend: @Halfway (2h) 
             -> Backend: @Halfway (2h) 
             View hotel detail: 
                 -> Frontend: @Halfway (2h) 
+                    Make the images displaying work (1h) [] 
+                    Make the detail id works (1h) [] @Next
+                        since now it still fixed the ids 
+
                     Apply map thingy 
                     **Mode of map show: 
                         Search page map 
@@ -75,7 +253,7 @@ TODAY:
             -> Payment 
                 Frontend: @1/4  (2h) 
                 Backend: @1/4   (2h) 
-            -> Refund  
+            -> Refund:  @Later 
                 Frontend: @Nothing  (2h) 
                 Backend: @Nothing  (2h) 
             
@@ -83,7 +261,9 @@ TODAY:
             customer place booking
             manager booked places 
             -> Frontend: @1/3 (2h) 
-            -> Backend: @1/3 (2h) @Current   
+                -> Send needed request data to the server [] (1h) 
+            -> Backend: @2/3 (2h) 
+                -> Connect to database and get that info [X] 
 
         Upload hotel: 
             Frontend: @1/2 
@@ -103,71 +283,8 @@ TODAY:
                 -> Receive all the information [X] 
                 -> Push them into a table [X] 
 
-    HANDLE FAILED REQUEST [] @Next             
-        failed login 
-        failed checking booking ??  
-
-    How the api search for places with available time range () 
-
-    Try to do DATABASE RELATED THINGS (2h) [] @ASAP, bottleneck 
-        -> note some migration script for easier to use [] 
-
-    The hotel detail api and the front end code is NOT 100% COMPATIBLE []  
-        -> Need to change and migrate the hotel table @Next 
-            + there should be more reviews @DatabaseRelated [X] 
-                fields: 
-                    + ref place_id:  
-                    + ref reviewer_id // basically it's user id 
-                    + content 
-
-            + the images not working -> should be more images as well @DatabaseRelated [X]
-                -> create a new table for place images 
-                    + ref place_id 
-                    + link
-
-        Hotel: 
-            ref cityID: DataTypes.INTEGER,
-            name: DataTypes.STRING,
-            address: DataTypes.STRING,
-            description: DataTypes.STRING,
-            score: DataTypes.STRING,
-
-        Image: 
-            ref hotel_id: Integer
-            link: string 
-
-        Review: 
-            ref hotel_id:  integer 
-            ref reviewer_id: integer // basically it's user id 
-            content: string   
-
-        + Booking Place table 
-            ref hotel_owner_id // user_id 
-            ref hotel_id 
-            ref room_id 
-            price 
-            date range 
-
-        + Booked Place table 
-            ref customer_id 
-            ref hotel_id 
-            ref room_id 
-            price 
-            date range 
-            
-
-        1 Hotel co n review 
-        1 Hotel co n image  
-        1 review co 1 user 
-        1 User co n review 
-        1 booking place co 1 user_id, 1 hotel_id, 1 room_id 
-        1 booked place co 1 user_id, 1 hotel_id, 1 room_id 
-
-    Add Register api (2h) 
-        -> Add the given user to the database @DatabaseRelated
-            check if the user already exist as well 
-        PASSWORD HASHING @Later
-
+    How the api search for places with available time range () ???  
+    PASSWORD HASHING @Later
     Add Database operations to the authentication server code (1h) 
         -> Create User Model 
         -> With 3 opertions:
@@ -177,30 +294,12 @@ TODAY:
         -> Create Refresh Token model: ?? @DatabaseRelated @Later 
             storing refresh token along with user id
 
-
-    Writing the Correct web LAYOUT using bootstrap (4h) []
-        List of sites to fix: 
-            + ...
-
-    TESTING SOME ACORN DEPLOYMENT (2h) [X]
-        -> I think we can do it :)) 
-
-    Tich hop money transaction code to our websites, for starter (2h) [] @Halfway  
-        After we done this
-
-    learn how to use acorn for hosting random things (2h) [] 
-        -> sharing docker images (30p) 
-        -> reading and try some acorn thingy (1h30)
-        docker build -t <reponame> 
-        docker push reponame
-    
     BIG CHANGE: 
-        we currently using 
-            money transaction api:
-                vnpay 
-                -> HOSTING ON ACORN as well (for TESTING at least) 
-            map api:
-                goong 
+        money transaction api:
+            vnpay 
+            -> HOSTING ON ACORN as well (for TESTING at least) 
+        map api:
+            goong 
 
     -> We have a 5 days left 
         -> Done all of these features in manner of days 
@@ -280,6 +379,11 @@ TODAY:
             + hotel manager  
         -> React to success/fail register result from server []
 
+
+
+
+
+
 TODO: 
     Report final: 
         + Overview System 
@@ -329,6 +433,20 @@ TODO:
 
 
 DONE:  
+    HANDLE FAILED REQUEST [X] 
+        failed login 
+        failed checking booking ??  
+        if reached to authentication-required page 
+            if not logged in -> redirect to homepage 
+
+    Update the code to work with new database 
+        + controller code (1h) 
+        + seeder code (2h) [X]
+            -> Some needed code is kinda done 
+
+        Make all the api work good 
+            -> Which are all the backend work :v 
+
     Make the search works again @Next 
     To do some operations (view booking info) the person have to be logged in ? 
         How could we do that ?? 
@@ -384,6 +502,10 @@ DONE:
     Init the database to make it works (1h) [X] 
     Setup folder structure (2h) [X]
     -> Init Development Rules (1h) [X] 
+
+
+
+
 
 NOTE THUC HANH: 
     so luong bai lab minimum: 3 bai 

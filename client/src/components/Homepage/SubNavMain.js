@@ -18,11 +18,11 @@ const SubNavMain = ({
 
   return (
     <div className="sub-nav-main" style={subNavMainStyle}>
-      <div className="sub-navxdefault">
+      <button className="sub-navxdefault">
         <b className="home1" style={home1Style}>
           {home}
         </b>
-      </div>
+      </button>
     </div>
   );
 };

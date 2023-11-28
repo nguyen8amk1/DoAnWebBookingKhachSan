@@ -1,0 +1,42 @@
+.property-container {
+  position: absolute;
+  width: 100%;
+  top: 1600px;
+  text-align: center;
+}
+
+.property-text h1 {
+  margin: 0 0 28px 0;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.pList {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.pList-item {
+  cursor: pointer;
+}
+
+.pList-item-img {
+  border-radius: 10px;
+  width: 273px;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pList-tittles > h1 {
+  margin: 8px 0 0 0;
+  font-size: 1.1rem;
+  color: var(--neutral-2);
+}
+.pList-tittles > h2 {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}/*# sourceMappingURL=Property__list.css.map */

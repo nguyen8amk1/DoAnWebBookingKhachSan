@@ -4,7 +4,17 @@ import { storeImages } from '../services/imageServices.js';
 const moment = require('moment');
 
 const Sequelize = require('sequelize');
+const User = require('../models/user')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+const Review = require('../models/review')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+const Image = require('../models/image')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
 const Hotel = require('../models/hotel')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+const BookingPlaces = require('../models/booking-place.js')(sequelize, Sequelize.DataTypes,
+    Sequelize.Model);
+const BookedPlaces = require('../models/booked-place.js')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
 
 /**
@@ -98,7 +108,7 @@ const searchForPlaces = async (req, res) => {
 
     console.log(req.query);
     let cityName = nameMapping(req.query.city);
-    const queryStr = "SELECT Hotels.name, Hotels.id, Hotels.address, Hotels.score FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id WHERE Cities.name=" + `'${cityName}'`;
+    const queryStr = "SELECT Hotels.name, Hotels.id, Hotels.address, Hotels.score, Hotels.long, Hotels.lat FROM `Hotels` INNER JOIN `Cities` ON Hotels.cityID=Cities.id WHERE Cities.name=" + `'${cityName}'`;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.RAW});
 
     console.log(results);
@@ -120,29 +130,51 @@ const getHotelDetails = async (req, res) => {
     const queryStr = "SELECT * FROM `Hotels` WHERE Hotels.id=" + hotelId;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.SELECT});
 
-    const testData = results;
+    const images = await Image.findAll({where: {hotelID: hotelId}});
+    const imgs = images.map((value, index) => value.dataValues.link);
+    // console.log(imgs);
+
+    const r = await Review.findAll({where: {hotelID: hotelId}});
+    const reviews = r.map(value => value.dataValues);
+    //      get the user whose do that reviews as well  
+
+    const uandr = [];
+    for(let i = 0; i < reviews.length; i++) {
+        const review = reviews[i];
+        const r = await User.findOne({where: {id: review.userID}, attributes: ['id', 'firstName', 'lastName', 'username']});
+        uandr.push({user: r.dataValues, review: review});
+    }
+
+    console.log(uandr);
+
+    const testData = {...results, imgs, uandr};
+    console.log(testData);
 
     return res.send(testData);
 }
 
 const uploadHotel = async (req, res) => {
-    // TODO: List some information needed to register a hotel 
-
     console.log(req.body);
     const description = "THE AUTO GENERATED DESCRIPTION";
     const cityID = 1;
 
-    const newHotel = await Hotel.create(
-        { 
-            name: req.body.name,
-            address: req.body.address,
-            description: description,
-            score: 10,
-            cityID: cityID,
-        }
-    );
+    try {
+        const newHotel = await Hotel.create(
+            { 
+                name: req.body.name,
+                address: req.body.address,
+                description: description,
+                score: 10,
+                cityID: cityID,
+            }
+        );
 
-    console.log("New hotel id: ", newHotel.id);
+        console.log("New hotel id: ", newHotel.id);
+        return res.status(200).json({msg: "Upload Hotel SUCCESS"});
+    } catch (e) {
+        console.log(e.message);
+        return res.status(401).json({msg: "Upload Hotel SUCCESS"});
+    }
 
 }
 
@@ -168,7 +200,8 @@ const vnPayCreateOrder = async (req, res) => {
     let tmnCode = process.env.VNPAY_CODE;
     let secretKey = process.env.VNPAY_SECRET;
     let vnpUrl =  "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-    let returnUrl =  "http://localhost:8080/vnpay_return";
+    let returnUrl =  "http://localhost:3000/vnpay_return";
+    // let returnUrl =  "http://localhost:3000/uploadhotel";
 
     let orderId = moment(date).format('DDHHmmss');
     let amount = req.body.amount;
@@ -243,47 +276,49 @@ const checkVNPaySuccess = (req, res) => {
 }
 
 const getCustomerBookingInfo = async (req, res) => {
-    const result = [
-        {
-            tenkhachsan: "Ten khach san", 
-            roomname: "room name", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
+    const result = [];
+
+    const data = await BookingPlaces.findAll({where: {hotelID: 1, userID: 1}});
+    for(let i = 0; i < data.length; i++) {
+        const value = data[i];
+        console.log(value.dataValues);
+        const user = await User.findOne({where: {id: value.dataValues.userID}});
+        result.push({
+            tenphong: "Phòng VIP cho 2 người", 
+            tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
+            thongtinngaydenngaydi: value.dataValues.dataRange, 
             bedroomCount: 1,
             bedCount: 1, 
-            giaphong: 100, 
-            thanhtien: 1000,
-        }, 
-        {
-            tenkhachsan: "Ten khach san", 
-            roomname: "room name", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-            bedroomCount: 1,
-            bedCount: 1, 
-            giaphong: 100, 
-            thanhtien: 1000,
-        }
-    ];
+            giaphong: value.dataValues.price, 
+            thanhtien: value.dataValues.price*2,    
+        });
+    }
 
     res.send(result);
 }
 
 const getManagerBookedInfo = async (req, res) => {
-    const result = [
-        {
-            tenphong: "Ten phong", 
-            tennguoithue: "Ditmesaigon", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-            giaphong: 100, 
-            thanhtien: 100, 
-        }, 
-        {
-            tenphong: "Ten phong", 
-            tennguoithue: "Ditmesaigon", 
-            thongtinngaydenngaydi: "10/21/2021 - 11/20/2021", 
-            giaphong: 100, 
-            thanhtien: 100, 
-        }, 
-    ];
+    console.log(req);
+
+    const data = await BookedPlaces.findAll({where: {hotelID: 2, userID: 1}});
+    const result = [];
+
+    for(let i = 0; i < data.length; i++) {
+        const value = data[i];
+        console.log(value.dataValues);
+        const user = await User.findOne({where: {id: value.dataValues.userID}});
+
+        result.push({
+            tenphong: "Phòng VIP cho 2 người", 
+            tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
+            thongtinngaydenngaydi: value.dataValues.dataRange, 
+            giaphong: value.dataValues.price, 
+            thanhtien: value.dataValues.price*2,    
+        });
+    }
+
+    console.log(result);
+
     res.send(result);
 }
 

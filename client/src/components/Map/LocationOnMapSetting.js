@@ -23,29 +23,33 @@ function LocationOnMapSetting(props) {
     pitch: 0,
   });
 
-  const [marker, setMarker] = useState({
-    latitude: 10.787811400315592,
-    longitude: 106.70537121898475,
-  });
+  // const [marker, setMarker] = useState({
+  //   latitude: 10.787811400315592,
+  //   longitude: 106.70537121898475,
+  // });
 
   return (
     <>
       <MapGL
         {...viewport}
-        width="400px"
-        height="200px"
+        width= {props.width}
+        height= {props.height}
         mapStyle="https://tiles.goong.io/assets/goong_map_web.json"
         onViewportChange={setViewport}
         goongApiAccessToken={GOONG_MAPTILES_KEY}
       >
-        <Marker
-          longitude={marker.longitude}
-          latitude={marker.latitude}
-          offsetTop={-20}
-          offsetLeft={-10}
-        >
-          <Pin size={20} color="#dd0" />
-        </Marker>
+        { props.markers.map((value, index)=>
+        ( 
+          <Marker key={index}
+            longitude={value.longitude}
+            latitude={value.latitude}
+            offsetTop={-20}
+            offsetLeft={-10}
+          >
+            <Pin size={20} color="#dd0" />
+          </Marker>
+        ))}
+       {console.log(props.markers)} 
       </MapGL>
     </>
   );

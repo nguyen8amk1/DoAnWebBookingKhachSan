@@ -17,6 +17,7 @@ import TestMap from "./components/TestMap";
 import TestImageHosting from "./components/TestImageHosting";
 import CreateOrder from "./views/CreateOrder";
 import Detailpage from "./views/Detailpage";
+import VNPayReturn from "./views/VNPayReturn";
 
 function App() {
   const action = useNavigationType();
@@ -58,15 +59,17 @@ function App() {
     <>
       <switch>
         <Routes>
-          {/* <Route exact path="/" Component={CreateOrder} /> */}
           {/* <Route exact path="/" Component={TestImageHosting} /> */}
           {/* <Route exact path="/" Component={TestMap} /> */}
           {/* <Route exact path="/" Component={BookingInformation} /> */}
+
           <Route exact path="/" Component={Homepage} />
           <Route exact path="/hoteldetail" Component={HotelDetail} />
-          <Route path="/Searchpage" Component={Searchpage} />
-          <Route path="/uploadHotel" Component={UploadPlaces} />
-          {/* <Route path="/bookinginfo" Component={BookingInformation} /> */}
+          <Route path="/bookinginfo" Component={BookingInformation} />
+          <Route path="/searchpage" Component={Searchpage} />
+          <Route path="/uploadhotel" Component={UploadPlaces} />
+          <Route path="/createorder" Component={CreateOrder} />
+          <Route path="/vnpay_return" Component={VNPayReturn} />
         </Routes>
         {/* <p> */}
         {/* <Destination__slider /> */}

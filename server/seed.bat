@@ -1,1 +1,9 @@
-call npx sequelize-cli db:seed:all --debug
+@REM call npx sequelize-cli db:seed:all --debug
+call npx sequelize-cli db:seed --seed seed-user.js
+call npx sequelize-cli db:seed --seed seed-city.js
+call npx sequelize-cli db:seed --seed seed-hotel.js
+call npx sequelize-cli db:seed --seed seed-room.js
+call npx sequelize-cli db:seed --seed seed-image.js
+call npx sequelize-cli db:seed --seed seed-review.js
+call npx sequelize-cli db:seed --seed seed-booking-place.js
+call npx sequelize-cli db:seed --seed seed-booked-place.js

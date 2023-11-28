@@ -2,19 +2,22 @@ import React from "react";
 import "../../style/button/Increase_decrease.scss";
 
 class Increase_decrease extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { value: 0 };
   }
 
-  increaseValue() {
+  // BUG: the increase/decrease not in sync with the parent state 
+  increaseValue = () => {
     this.setState((prevState) => ({ value: prevState.value + 1 }));
+    this.props.changeValue(this.state.value);
   }
 
-  decreaseValue() {
+  decreaseValue = () => {
     this.setState((prevState) => ({
       value: prevState.value > 0 ? prevState.value - 1 : 0,
     }));
+    this.props.changeValue(this.state.value);
   }
 
   render() {

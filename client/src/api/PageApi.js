@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export const searchForPlaces = async (destination, date, memberCount) => {
-    const response = await axios.get(`http://127.0.0.1:8080/searchforplaces?city=${destination}&date_came=${date.came}&date_leave=${date.leave}&members_count_adults=${memberCount.adult}&members_count_children=${memberCount.children}`);
+export const searchForPlaces = async (destination, date, memberCount, room) => {
+    const response = await axios.get(`http://127.0.0.1:8080/searchforplaces?city=${destination}&date_came=${date.came}&date_leave=${date.leave}&members_count_adults=${memberCount.adult}&members_count_children=${memberCount.children}&room_count=${room}`);
     return response.data;
 }
 
@@ -13,20 +13,39 @@ export const getHotelDetail = async (id) => {
 
 export const uploadPlace = async (placeInfo) => {
     try {
-        const result = await axios.post("http://127.0.0.1:8080/uploadHotel", placeInfo);
+        const USER_TOKEN = localStorage.getItem("accessToken");
+        const AuthStr = 'Bearer '.concat(USER_TOKEN); 
+
+        const result = await axios.post("http://127.0.0.1:8080/uploadHotel", 
+            placeInfo, 
+            { headers: { Authorization: AuthStr } }
+        );
         return result;
-    } catch(e) {
-        console.error('Error uploading place:', e);
-        return null;
     }
+    catch(error) {
+        return -1;
+    }
+
+    // try {
+    //     const result = await axios.post("http://127.0.0.1:8080/uploadHotel", placeInfo);
+    //     return result;
+    // } catch(e) {
+    //     console.error('Error uploading place:', e);
+    //     return null;
+    // }
 }
 
 export const getBookInfo = async () => {
-    const USER_TOKEN = localStorage.getItem("accessToken");
-    const AuthStr = 'Bearer '.concat(USER_TOKEN); 
-    const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo`, { headers: { Authorization: AuthStr } });
-    const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo`,  { headers: { Authorization: AuthStr } });
-    return {booked: booked.data, booking: booking.data};
+    try {
+        const USER_TOKEN = localStorage.getItem("accessToken");
+        const AuthStr = 'Bearer '.concat(USER_TOKEN); 
+        const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo`, { headers: { Authorization: AuthStr } });
+        const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo`,  { headers: { Authorization: AuthStr } });
+        return {booked: booked.data, booking: booking.data};
+    }
+    catch(error) {
+        return -1;
+    }
 }
 export const getSearch = async (destination, date, options) => {
   const response = await axios.get(

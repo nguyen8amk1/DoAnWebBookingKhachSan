@@ -13,9 +13,9 @@ const initRouters = (app) => {
     router.get('/searchforplaces', controller.searchForPlaces);
     router.get('/hoteldetails', controller.getHotelDetails);
 
-    // router.post('/uploadImages', authenticateToken, upload.array('images', 100), controller.uploadImages);
-    // router.post('/uploadHotel', authenticateToken, controller.uploadHotel);
     router.post('/uploadImages', upload.array('images', 100), controller.uploadImages);
+    // router.post('/uploadHotel', authenticateToken, controller.uploadHotel);
+    // router.post('/uploadImages', upload.array('images', 100), controller.uploadImages);
     router.post('/uploadHotel', controller.uploadHotel);
 
     router.get('/getbookinginfo', authenticateToken, controller.getCustomerBookingInfo);
@@ -26,12 +26,12 @@ const initRouters = (app) => {
     router.post('/create_payment_url', controller.vnPayCreateOrder);
     router.get('/vnpay_return', controller.checkVNPaySuccess);
 
-    router.post('/post-crud', controller.postCrud);
+    // router.post('/post-crud', controller.postCrud);
     app.use('/', router);
 }
 
 function authenticateToken(req, res, next) {
-    // console.log(req.headers);
+    // console.log(req.files);
     const authHeader = req.headers['authorization']
     console.log(authHeader);
     if (!authHeader) {
