@@ -10,12 +10,9 @@ TODAY:
 
         List of things need to be done tomorrow: 
             + Homepage: Place recommendation 
-            + ViewBooking: Finish View booking part 
-                ViewBooking: Paging ?? 
 
             Comment Feature @Tomorrow 
             -> Make sure everything is working correctly 
-
 
             Backend deployment also need to use TMUX :)) @Tomorrow
                 since we gonna have a lot of process running (2 particularly 2 :)) 
@@ -30,7 +27,7 @@ TODAY:
             Homepage: (1h) 
                 hardcoded: 
                     front-end: 
-                        no place recommendation [] @Tomorrow  
+                        no place recommendation [] @Current   
                         *** the upload button should only be showned when logged in [] @Later 
                         check if the token have expired if it is -> automatically logout []
 
@@ -147,6 +144,7 @@ TODAY:
             Comment system: 
                 Haven't implement anything though
 
+
             View Booking 
                 hardcoded: 
                     MAKE SURE THE TO COMBINE OUR CODE TO CLAP CODE @ASAP 
@@ -157,24 +155,18 @@ TODAY:
 
                             huy phong didn't work 
 
-                            Get the booking place info to look better [] @Later 
-                                ** make it look like shopee 
+                            Send the user id to the backend to get the real booking information [] @NoThanks
 
                             Have the left side bar to show some user information [] @Later 
                             lien he nguoi cho thue didn't work 
-                            
-                            Send the user id to the backend to get the real booking information [] @Later 
 
-                        back-end: 
-                            still not handle authentication middleware 
+                            Get the booking place info to look better [] @CLap 
+                                ** make it look like shopee 
                     
                     manager tab: 
                         front-end: 
                             huy phong didn't work 
                             lien he nguoi cho thue didn't work 
-
-                        back-end: 
-                            still not handle authentication middleware 
                             
                 visual: 
                     Hơi ngon ngon: 7/10 

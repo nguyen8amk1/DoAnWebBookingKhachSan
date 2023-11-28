@@ -39,8 +39,10 @@ export const getBookInfo = async () => {
     try {
         const USER_TOKEN = localStorage.getItem("accessToken");
         const AuthStr = 'Bearer '.concat(USER_TOKEN); 
-        const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo`, { headers: { Authorization: AuthStr } });
-        const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo`,  { headers: { Authorization: AuthStr } });
+        // const hotelid = 1;
+        const userid = 1;
+        const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo?userid=${userid}`, { headers: { Authorization: AuthStr } });
+        const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo?userid=${userid}`,  { headers: { Authorization: AuthStr } });
         return {booked: booked.data, booking: booking.data};
     }
     catch(error) {

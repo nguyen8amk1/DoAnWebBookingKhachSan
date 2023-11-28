@@ -298,9 +298,11 @@ const getCustomerBookingInfo = async (req, res) => {
 }
 
 const getManagerBookedInfo = async (req, res) => {
-    console.log(req);
+    console.log(req.query);
+    const hotelid = 2;
+    // const userid = 1;
 
-    const data = await BookedPlaces.findAll({where: {hotelID: 2, userID: 1}});
+    const data = await BookedPlaces.findAll({where: {hotelID: hotelid}});
     const result = [];
 
     for(let i = 0; i < data.length; i++) {
