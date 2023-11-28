@@ -1,10 +1,13 @@
 TODAY: 
     GIAO TASK: 
-        make better ui: 
-            VNPAYReturn @Nghia 
+        MAKE BETTER UI: 
+            VNPAYReturn
                 file: VNPayReturn.js
-            VNPayNhapTien @Nghia 
+                    test url: http://localhost:3000/vnpay_return?vnp_Amount=1000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP14205838&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+cho+ma+GD%3A28105129&vnp_PayDate=20231128105151&vnp_ResponseCode=00&vnp_TmnCode=0RU9EWEC&vnp_TransactionNo=14205838&vnp_TransactionStatus=00&vnp_TxnRef=28105129&vnp_SecureHash=bbb6e87c266830c718b06f142fb6d3dc3349b0505b415946eb15db58bf8df9335671a95328cc0fbc0646262e1c3408184e822a189aa43de5b85276fcd1111033
+
+            VNPayNhapTien
                 file: CreateOrder.js
+                    test url: http://localhost:3000/createorder
 
     MAKE SURE THE FRONT-END AND BACK-END CAN COMMUNICATE: 
         Since now there are a lot of information are still fixed 
@@ -23,11 +26,11 @@ TODAY:
             -> Make sure everything is working correctly 
 
 
-
-
             Backend deployment also need to use TMUX :)) @Tomorrow
                 since we gonna have a lot of process running (2 particularly 2 :)) 
                 if we lucky we gonna get the original server to run first :)) 
+
+        Connect phong information to the actual pay @Next 
 
         Wednesday we will work on all the images and deployment and STYLING of the things @Wednesday
 
