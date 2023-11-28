@@ -34,13 +34,14 @@ module.exports = (sequelize, DataTypes) => {
     }
 
     Hotel.init({
+        cityID: DataTypes.INTEGER,
+        userID: DataTypes.INTEGER,
         name: DataTypes.STRING,
         address: DataTypes.STRING,
         description: DataTypes.STRING,
         long: DataTypes.FLOAT, 
         lat: DataTypes.FLOAT, 
         score: DataTypes.STRING,
-        cityID: DataTypes.INTEGER,
     }, {
         sequelize,
         modelName: 'Hotel',

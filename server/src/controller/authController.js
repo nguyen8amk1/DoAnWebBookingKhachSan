@@ -28,7 +28,9 @@ const checkUserCredential = async (username, password) => {
         username: username, 
         password: password
     }});
-    return !!instance;
+    // console.log(instance);
+    // return !!instance;
+    return instance;
 }
 
 const login = async (req, res) => {
@@ -37,7 +39,8 @@ const login = async (req, res) => {
     const password = req.body.password;
     const role = "user";
     // TODO: check step: 
-    const userExist = await checkUserCredential(username, password);
+    const u= await checkUserCredential(username, password);
+    const userExist = !!u;
     if (!userExist) {
         return res.status(STATUS_CODE_LIST.LOGIN_FAIL).json({ error: "User not exist" })
     }
@@ -53,7 +56,7 @@ const login = async (req, res) => {
     refreshTokens.push(refreshToken);
 
 
-    return res.json({ accessToken: accessToken, refreshToken: refreshToken, userInfo: {username: username, avatar: null}});
+    return res.json({ accessToken: accessToken, refreshToken: refreshToken, userInfo: {username: username, userid: u.dataValues.id, avatar: null}});
 }
 
 const register = async (req, res) => {

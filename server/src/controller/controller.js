@@ -12,6 +12,7 @@ const Image = require('../models/image')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
 const Hotel = require('../models/hotel')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
+
 const BookingPlaces = require('../models/booking-place.js')(sequelize, Sequelize.DataTypes,
     Sequelize.Model);
 const BookedPlaces = require('../models/booked-place.js')(sequelize, Sequelize.DataTypes,
@@ -157,16 +158,18 @@ const uploadHotel = async (req, res) => {
     console.log(req.body);
     const description = "THE AUTO GENERATED DESCRIPTION";
     const cityID = 1;
+    const userid = parseInt(req.body.userid, 10);
+    console.log("userid", userid)
 
     try {
         const newHotel = await Hotel.create(
             { 
-                userID: 1,  
                 name: req.body.name,
                 address: req.body.address,
                 description: description,
                 score: 10,
                 cityID: cityID,
+                userID: userid 
             }
         );
 
@@ -187,6 +190,10 @@ const uploadImages = async (req, res) => {
 
 
 const vnPayCreateOrder = async (req, res) => {
+    // TODO: write the order into booking places and booked places 
+    // 
+
+
     process.env.TZ = 'Asia/Ho_Chi_Minh';
 
     let date = new Date();
@@ -285,7 +292,7 @@ const getCustomerBookingInfo = async (req, res) => {
         console.log(value.dataValues);
         const user = await User.findOne({where: {id: value.dataValues.userID}});
         result.push({
-            tenphong: "Phòng VIP cho 2 người", 
+            tenphong: "booking ten", 
             tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
             thongtinngaydenngaydi: value.dataValues.dataRange, 
             bedroomCount: 1,
@@ -301,19 +308,39 @@ const getCustomerBookingInfo = async (req, res) => {
 const getManagerBookedInfo = async (req, res) => {
     console.log(req.query);
     const hotelid = 2;
-    // const userid = 1;
+    const userid = req.query.userid;
+    // -> find in hotel that have USERID -> return it @Current 
 
-    const data = await BookedPlaces.findAll({where: {hotelID: hotelid}});
+    // const data = await BookedPlaces.findAll({where: {hotelID: hotelid}});
+    // const result = [];
+
+    // for(let i = 0; i < data.length; i++) {
+    //     const value = data[i];
+    //     console.log(value.dataValues);
+    //     const user = await User.findOne({where: {id: value.dataValues.userID}});
+
+    //     result.push({
+    //         tenphong: "Phòng VIP cho 2 người", 
+    //         tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
+    //         thongtinngaydenngaydi: value.dataValues.dataRange, 
+    //         giaphong: value.dataValues.price, 
+    //         thanhtien: value.dataValues.price*2,    
+    //     });
+    // }
+
+    const data = await Hotel.findAll({where: {userID: userid}});
+    console.log(data);
     const result = [];
 
     for(let i = 0; i < data.length; i++) {
         const value = data[i];
-        console.log(value.dataValues);
-        const user = await User.findOne({where: {id: value.dataValues.userID}});
+        // console.log(value.dataValues);
+        // const user = await User.findOne({where: {id: value.dataValues.userID}});
 
         result.push({
-            tenphong: "Phòng VIP cho 2 người", 
-            tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
+            tenphong: value.dataValues.name, 
+            // tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
+            tennguoithue: "chua ai thue",
             thongtinngaydenngaydi: value.dataValues.dataRange, 
             giaphong: value.dataValues.price, 
             thanhtien: value.dataValues.price*2,    

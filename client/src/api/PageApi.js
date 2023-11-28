@@ -35,15 +35,16 @@ export const uploadPlace = async (placeInfo) => {
     // }
 }
 
-export const getBookInfo = async () => {
+export const getBookInfo = async (uid) => {
     try {
         const USER_TOKEN = localStorage.getItem("accessToken");
         const AuthStr = 'Bearer '.concat(USER_TOKEN); 
         // const hotelid = 1;
-        const userid = 1;
+        const userid = uid;
+
         const booking = await axios.get(`http://127.0.0.1:8080/getbookinginfo?userid=${userid}`, { headers: { Authorization: AuthStr } });
         const booked = await axios.get(`http://127.0.0.1:8080/getbookedinfo?userid=${userid}`,  { headers: { Authorization: AuthStr } });
-        return {booked: booked.data, booking: booking.data};
+        return {booked: booking.data, booking: booked.data};
     }
     catch(error) {
         return -1;

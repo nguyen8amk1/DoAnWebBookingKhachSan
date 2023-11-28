@@ -113,7 +113,8 @@ module.exports = {
                         // Filter locations within a certain distance from the center (adjust as needed)
                         if (distance < 0.3) {
                             hotelData.push({
-                                userID: Math.floor(Math.random()*25), 
+                                // userID: Math.floor(Math.random()*5), 
+                                userID: 1, 
                                 name: hotel.name,
                                 address: hotel.address,
                                 description: hotel.description,

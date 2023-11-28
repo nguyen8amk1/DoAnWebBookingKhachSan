@@ -22,7 +22,7 @@ class BookingInformation extends React.Component {
   async componentDidMount() {
     // TODO: call hotel api
     // input: id
-    const result = await getBookInfo();
+    const result = await getBookInfo(localStorage.getItem("userid"));
     console.log("booking info ", result);
 
     if (result === -1) {
@@ -79,14 +79,14 @@ class BookingInformation extends React.Component {
           {this.state.shownTabId == 1 && <div>
             {this.state.bookingplaces.length > 0 && <div>
               <BookingPlaceInfo info={this.state.bookingplaces[0]} className='left-banner-detail' />
-              <BookingPlaceInfo info={this.state.bookingplaces[1]} className='right-banner-detail' />
+              {/* <BookingPlaceInfo info={this.state.bookingplaces[1]} className='right-banner-detail' /> */}
             </div>}
           </div>}
 
           {this.state.shownTabId == 2 && <div>
             {this.state.bookedplaces.length > 0 && <div>
               <BookedInformation info={this.state.bookedplaces[0]} className='left-banner-detail' />
-              <BookedInformation info={this.state.bookedplaces[1]} className='right-banner-detail' />
+              {/* <BookedInformation info={this.state.bookedplaces[1]} className='right-banner-detail' /> */}
             </div>}
           </div>}
 

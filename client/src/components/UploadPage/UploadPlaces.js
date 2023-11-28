@@ -23,6 +23,7 @@ class UploadPlaces extends React.Component {
 			type: "",
 			count: 0,
 			name: "",
+			userid: "", 
 			address: "",
 			bedroomCount: 0,
 			bedCount: 0,
@@ -69,6 +70,8 @@ class UploadPlaces extends React.Component {
 	}
 
 	upload = async (e) => {
+		this.setState({userid: localStorage.getItem("userid")});
+
 		e.preventDefault();
 		const formData = new FormData();
 		const fileInput = this.fileInputRef.current;
