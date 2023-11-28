@@ -298,6 +298,8 @@ const getCustomerBookingInfo = async (req, res) => {
 }
 
 const getManagerBookedInfo = async (req, res) => {
+    console.log(req);
+
     const data = await BookedPlaces.findAll({where: {hotelID: 2, userID: 1}});
     const result = [];
 
@@ -314,6 +316,8 @@ const getManagerBookedInfo = async (req, res) => {
             thanhtien: value.dataValues.price*2,    
         });
     }
+
+    console.log(result);
 
     res.send(result);
 }
