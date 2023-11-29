@@ -73,7 +73,7 @@ class HotelDetail extends React.Component {
                     <Link to="/" className="main-child">
                         <img className="main-child" alt="" src="/logo__web.png" />
                     </Link>
-                    <NavBar/>
+                    <NavBar />
                     <UserInfoComponent />
                 </div>
             </div>
@@ -81,7 +81,7 @@ class HotelDetail extends React.Component {
             <div className='main-content-container-new'>
                 <div className='left-content-container'>
                     <b>Sidebar trong /searchpage</b>
-                    {/* <MyMapBox locations={{long: 1312321312321, lat: 123123123}} className="left-content-container__bottom-thingy"/> */}
+                    <MyMapBox locations={{ long: 1312321312321, lat: 123123123 }} className="left-content-container__bottom-thingy" />
                 </div>
                 <div className='right-content-container'>
                     <div className='top-text'>
@@ -96,8 +96,8 @@ class HotelDetail extends React.Component {
                         </div>
 
                         <Link to="/createorder">
-                            <div style={{backgroundColor: 'orange'}} className='btn btn-primary btn-login'>
-                                <button style={{color: 'white'}}><b>ĐẶT PHÒNG</b></button>
+                            <div style={{ backgroundColor: 'orange' }} className='btn btn-primary btn-login'>
+                                <button style={{ color: 'white' }}><b>ĐẶT PHÒNG</b></button>
                             </div>
                         </Link>
 
