@@ -33,7 +33,8 @@ class Search_item extends Component {
 		this.props.changeValue(this.state.address);
 	};
 
-	handleSearchButtonClick = () => {
+	handleSearchButtonClick = (event) => {
+		event.preventDefault();
 		// Show location-container only when the search button is clicked and there is at least one character in the input
 		if (this.state.address.length > 0) {
 			this.setState({ showLocationContainer: true });
