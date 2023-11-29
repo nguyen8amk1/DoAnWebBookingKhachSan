@@ -6,7 +6,7 @@ class Test extends React.Component {
     ditme: "",
   };
 
-  // const result = await axios.get('http://127.0.0.1:8080/ditme');
+  // const result = await axios.get('http://bookinguit.click:8080/ditme');
   // console.log(result);
 
   async componentDidMount() {

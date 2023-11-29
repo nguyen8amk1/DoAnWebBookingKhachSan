@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const login = async (username, password) => {
     try {
-        const response = await axios.post('http://127.0.0.1:9000/login', {
+        const response = await axios.post('http://103.162.20.157:9000/login', {
             username: username, 
             password: password
         });
@@ -20,7 +20,7 @@ export const logout = async () => {
 
 export const register = async (firstname, lastname, username, password, role) => {
     console.log(firstname, lastname, username, password);
-    const response = await axios.post('http://127.0.0.1:9000/register', {
+    const response = await axios.post('http://103.162.20.157:9000/register', {
         firstname: firstname, 
         lastname: lastname, 
         username: username, 

@@ -6,7 +6,7 @@ export const uploadImages = async (formData) => {
         const USER_TOKEN = localStorage.getItem("accessToken");
         const AuthStr = 'Bearer '.concat(USER_TOKEN); 
 
-        const result = await axios.post("http://127.0.0.1:8080/uploadImages", 
+        const result = await axios.post("http://bookinguit.click:8080/uploadImages", 
             formData, 
             { headers: { Authorization: AuthStr } }
         );
@@ -17,7 +17,7 @@ export const uploadImages = async (formData) => {
     }
 
     // try {
-    //     const result = await axios.post("http://127.0.0.1:8080/uploadImages", 
+    //     const result = await axios.post("http://bookinguit.click:8080/uploadImages", 
     //         formData, 
     //         // {
     //         //     headers: {

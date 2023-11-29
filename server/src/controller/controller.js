@@ -105,7 +105,7 @@ const searchForPlaces = async (req, res) => {
     //     + childrens
 
     // test url: 
-    // http://127.0.0.1:8080/searchforplaces?city=Vung Tau&date_came=10/20/2023&date_leave=10/21/2023&members_count_adults=2&members_count_children=1
+    // http://bookinguit.click:8080/searchforplaces?city=Vung Tau&date_came=10/20/2023&date_leave=10/21/2023&members_count_adults=2&members_count_children=1
 
     console.log(req.query);
     let cityName = nameMapping(req.query.city);
@@ -126,7 +126,7 @@ const getHotelDetails = async (req, res) => {
         // Images 
 
     // input: hotelsId 
-    // test url: http://127.0.0.1:8080/hoteldetails?hotel_id=5
+    // test url: http://bookinguit.click:8080/hoteldetails?hotel_id=5
     const hotelId = req.query.id; 
     const queryStr = "SELECT * FROM `Hotels` WHERE Hotels.id=" + hotelId;
     const [results, metadata] = await sequelize.query(queryStr, {type: QueryTypes.SELECT});
