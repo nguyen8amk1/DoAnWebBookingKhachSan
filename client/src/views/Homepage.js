@@ -19,12 +19,11 @@ const Homepage = () => {
       <div className="homepage">
         <div className="main">
           <Link to="/" className="main-child">
-            <img className="main-child" alt="" src="/logo__web.png" />
+            <img className="main-child" alt="" src="https://res.cloudinary.com/dj5xxhqsj/image/upload/v1701229573/logo__web_jttsl0.png" />
           </Link>
           <NavBar/>
-
           <UserInfoComponent/>
-          <img className="main-item" alt="" src="/Homepage__img.png" />
+          <img className="main-item" alt="" src="https://res.cloudinary.com/dj5xxhqsj/image/upload/v1701229577/homepage__img_odma2e.png" />
         </div>
         <Searchbar />
         <DestinationCard />
