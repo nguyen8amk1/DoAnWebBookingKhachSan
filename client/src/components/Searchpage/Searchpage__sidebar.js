@@ -114,8 +114,8 @@ const Searchpage__sidebar = (props) => {
 					</button>
 					<br />
 
-					{/* {console.log(searchResults)} */}
-					{/* <MyMapBox locations={props.searchResults}/> */}
+					{console.log(props.searchResults)}
+					{props.searchResults.length > 0 && <MyMapBox locations={props.searchResults}/>}
 
 				</div>
 

@@ -41,10 +41,12 @@ class MyMapBox extends React.Component {
 		for(let i = 0; i < result.length; i++) {
 			const a = result[i];
 			// console.log(a.long, a.lat);
-			this.state.markers.push({
-				longitude: a.long, 
-				latitude: a.lat, 
-			});
+			if(a.long != null && a.lat != null) {
+				this.state.markers.push({
+					longitude: a.long, 
+					latitude: a.lat, 
+				});
+			}
 		}
 	}
 

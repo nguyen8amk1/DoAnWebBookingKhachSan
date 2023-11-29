@@ -78,14 +78,22 @@ class BookingInformation extends React.Component {
 
           {this.state.shownTabId == 1 && <div>
             {this.state.bookingplaces.length > 0 && <div>
-              <BookingPlaceInfo info={this.state.bookingplaces[0]} className='left-banner-detail' />
+                {this.state.bookingplaces.map((place, index) => (
+                  <BookingPlaceInfo key={index} info={place} />
+                ))}
+              {/* <BookingPlaceInfo info={this.state.bookingplaces[0]} className='left-banner-detail' /> */}
               {/* <BookingPlaceInfo info={this.state.bookingplaces[1]} className='right-banner-detail' /> */}
             </div>}
           </div>}
 
           {this.state.shownTabId == 2 && <div>
             {this.state.bookedplaces.length > 0 && <div>
-              <BookedInformation info={this.state.bookedplaces[0]} className='left-banner-detail' />
+
+              {this.state.bookedplaces.map((place, index) => (
+                <BookedInformation key={index} info={place} />
+              ))}
+
+              {/* <BookedInformation info={this.state.bookedplaces[0]} className='left-banner-detail' /> */}
               {/* <BookedInformation info={this.state.bookedplaces[1]} className='right-banner-detail' /> */}
             </div>}
           </div>}
@@ -98,9 +106,11 @@ class BookingInformation extends React.Component {
 
 
       {/* booking tab: anyone can view, if logged in  */}
+
       {/* {this.state.shownTabId == 1 && this.state.bookingplaces.map((place, index) => (
         <BookingPlaceInfo key={index} info={place} />
       ))} */}
+
       {/* booked tab: only manager can view */}
       {/* TODO: restrict non manager user */}
       {/* {this.state.shownTabId == 2 && this.state.bookedplaces.map((place, index) => (

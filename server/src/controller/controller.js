@@ -188,9 +188,9 @@ const uploadImages = async (req, res) => {
     res.json(result);
 }
 
-
-const vnPayCreateOrder = async (req, res) => {
+const createBookOrder = async (req) => {
     const hotelid = req.body.hotelid;
+
     const bookingpersonid = req.body.userid;
     const roomid = req.body.roomid;
     const price = req.body.price;
@@ -198,9 +198,28 @@ const vnPayCreateOrder = async (req, res) => {
 
     console.log(hotelid, bookingpersonid, roomid, price, daterange);
 
-    // TODO: write it into the Booking Table, Booked table 
-    // ... 
+    const booking = await BookingPlaces.create({
+        price: 12.50000, 
+        dateRange: daterange,
+        userID: bookingpersonid,
+        roomID: roomid,
+        hotelID: hotelid,
+    });
 
+    const hotelresult = await Hotel.findOne({where: {id: hotelid}});
+    const hotelownerid = hotelresult.dataValues.userID;
+    
+    const booked = await BookingPlaces.create({
+        price: 12.50000, 
+        dateRange: daterange,
+        userID: hotelownerid,
+        roomID: roomid,
+        hotelID: hotelid,
+    });
+}
+
+const vnPayCreateOrder = async (req, res) => {
+    await createBookOrder(req);
 
     process.env.TZ = 'Asia/Ho_Chi_Minh';
 
@@ -293,22 +312,39 @@ const checkVNPaySuccess = (req, res) => {
 
 const getCustomerBookingInfo = async (req, res) => {
     const result = [];
+    const userid = req.query.userid;
+    const data = await BookingPlaces.findAll({where: {userID: userid}});
+    // const result = data.dataValues;
+    // console.log(data.dataValues);
 
-    const data = await BookingPlaces.findAll({where: {hotelID: 1, userID: 1}});
+    // result = c
     for(let i = 0; i < data.length; i++) {
         const value = data[i];
         console.log(value.dataValues);
         const user = await User.findOne({where: {id: value.dataValues.userID}});
+        const hotel = await Hotel.findOne({where: {id: value.dataValues.hotelID}});
+
         result.push({
-            tenphong: "booking ten", 
+            // tenphong: "booking ten", 
+            // thongtinngaydenngaydi: value.dataValues.dataRange, 
+            // bedroomCount: 1,
+            // bedCount: 1, 
+            // giaphong: value.dataValues.price, 
+            // thanhtien: value.dataValues.price*2,    
+            
+            tenkhachsan: hotel.dataValues.name, 
+            tenphong: "Phòng VIP cho 2 người", 
             tennguoithue: user.dataValues.firstName + " " + user.dataValues.lastName, 
-            thongtinngaydenngaydi: value.dataValues.dataRange, 
+            thongtinngaydenngaydi: "khongbiet", 
             bedroomCount: 1,
             bedCount: 1, 
-            giaphong: value.dataValues.price, 
-            thanhtien: value.dataValues.price*2,    
+            giaphong: 1000, 
+            thanhtien: 19000,    
+            // giaphong: value.dataValues.price, 
+            // thanhtien: value.dataValues.price*2,    
         });
     }
+    console.log(result);
 
     res.send(result);
 }

@@ -41,7 +41,7 @@ class BookingPlaceInfo extends React.Component {
 
 
         <div>
-            <h3>Ten Khach San</h3> 
+            <h3>{this.props.info.tenkhachsan}</h3> 
             <div className='thongtinphong'>
                 <p>{this.props.info.tenphong}</p>
                 <p>{this.props.info.bedroomCount}</p>
