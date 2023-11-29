@@ -13,7 +13,16 @@ TODAY:
                 BookingPlaceInfo.js
 
     -> TOMORROW: 100% WORK ON THE VISUALS 
-        Place recommendation () [] @Current  
+        Search Place recommendation () [] @Chieu  
+
+        Sidebar of: 
+            + hotel detail [] @Current 
+            + search [] @Next 
+                -> chinh lai cho can  
+
+        Comment section: @Chieu 
+            Make it look good, with random animal image  
+
 
     MAKE SURE THE FRONT-END AND BACK-END CAN COMMUNICATE: 
         Since now there are a lot of information are still fixed 
