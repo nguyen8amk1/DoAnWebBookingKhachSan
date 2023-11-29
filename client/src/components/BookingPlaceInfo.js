@@ -53,7 +53,7 @@ class BookingPlaceInfo extends React.Component {
               </p>
             </div>
 
-{/* <<<<<<< HEAD
+            {/* <<<<<<< HEAD
             <hr />
             <div style={{display: 'flex', flexDirection: 'row'}} className='buttons'>
                 <div className='last-button'>
@@ -69,28 +69,28 @@ class BookingPlaceInfo extends React.Component {
           </div> */}
 
 
-        <div>
-            <h3>{this.props.info.tenkhachsan}</h3> 
-            <div className='thongtinphong'>
+            <div>
+              <h3>{this.props.info.tenkhachsan}</h3>
+              <div className='thongtinphong'>
                 <p>{this.props.info.tenphong}</p>
                 <p>{this.props.info.bedroomCount}</p>
                 <p>{this.props.info.bedCount}</p>
+              </div>
+              {/* <p>{this.props.info.thongtinngaydenngaydi}</p> */}
+              <p>{this.props.info.giaphong}</p>
+              <p>{this.props.info.thanhtien}</p>
+              <button onClick={() => this.props.removeOrder(this.props.index)}>Hủy phòng</button>
+              <button>Liên hệ người cho thuê</button>
             </div>
             {/* <p>{this.props.info.thongtinngaydenngaydi}</p> */}
-            <p>{this.props.info.giaphong}</p>
-            <p>{this.props.info.thanhtien}</p>
-            <button onClick={() => this.props.removeOrder(this.props.index)}>Hủy phòng</button>
-            <button>Liên hệ người cho thuê</button>
-
-          </div>
-          {/* <p>{this.props.info.thongtinngaydenngaydi}</p> */}
-          <div className="rent_property-btn">
-            <button type="button" class="btn btn-primary btn_rent-cancel">
-              Hủy phòng
-            </button>
-            <button type="button" class="btn btn-primary btn_rent-contact">
-              Liên hệ người cho thuê
-            </button>
+            <div className="rent_property-btn">
+              <button type="button" class="btn btn-primary btn_rent-cancel">
+                Hủy phòng
+              </button>
+              <button type="button" class="btn btn-primary btn_rent-contact">
+                Liên hệ người cho thuê
+              </button>
+            </div>
           </div>
         </div>
       </>
