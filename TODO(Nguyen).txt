@@ -13,7 +13,7 @@ TODAY:
                 BookingPlaceInfo.js
 
     -> TOMORROW: 100% WORK ON THE VISUALS 
-        Search Place recommendation () [] @Current 
+        Search Place recommendation () [] 
 
         Sidebar of: 
             + hotel detail [] @Current 
