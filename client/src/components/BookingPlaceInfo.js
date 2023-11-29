@@ -50,7 +50,7 @@ class BookingPlaceInfo extends React.Component {
             {/* <p>{this.props.info.thongtinngaydenngaydi}</p> */}
             <p>{this.props.info.giaphong}</p>
             <p>{this.props.info.thanhtien}</p>
-            <button>Hủy phòng</button>
+            <button onClick={() => this.props.removeOrder(this.props.index)}>Hủy phòng</button>
             <button>Liên hệ người cho thuê</button>
         </div>
         </>;

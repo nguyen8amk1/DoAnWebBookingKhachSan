@@ -12,6 +12,14 @@ TODAY:
                 BookedInformation.js 
                 BookingPlaceInfo.js
 
+    -> TOMORROW: 100% WORK ON THE VISUALS 
+        Make some of the homepage imgs to cloud link [] @Current  
+
+        Place recommendation () 
+
+        Need a delete feature for huy phong [] 
+            front-end [X]
+
 
     MAKE SURE THE FRONT-END AND BACK-END CAN COMMUNICATE: 
         Since now there are a lot of information are still fixed 
@@ -77,7 +85,6 @@ TODAY:
                 9. Huy phong still not working yet :v 
                     -> 
 
-        -> TOMORROW: 100% WORK ON THE VISUALS @Current 
                 
 
         Today, do all the tasks in 30 minutes session @NewFeature
