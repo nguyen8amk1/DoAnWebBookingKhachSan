@@ -58,7 +58,7 @@ const middlewareUserAuthorization = async(req, res, next) => {
 
 const getHomePage = async (req, res) => {
     // const data = await db.User.findAll();
-    // console.log("ditmesaigon", data);
+    // console.log("hellosaigon", data);
     // return res.render("home.ejs", {data: JSON.stringify(data)});
 }
 

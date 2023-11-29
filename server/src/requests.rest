@@ -25,6 +25,6 @@ POST http://localhost:9000/login
 Content-Type: application/json
 
 {
-  "username": "ditme", 
+  "username": "hello", 
   "password": "saigon"
 }

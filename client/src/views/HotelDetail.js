@@ -139,11 +139,9 @@ class HotelDetail extends React.Component {
                 <MDBContainer className="Multi-container py-5">
                     <MDBRow className="d-flex justify-content-center">
                         <MDBCol md="10" xl="8" className="text-center">
-                            <h3 className="mb-4">Testimonials</h3>
+                            <h3 className="mb-4">ĐÁNH GIÁ</h3>
                             <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-                                error amet numquam iure provident voluptate esse quasi, veritatis
-                                totam voluptas nostrum quisquam eum porro a pariatur veniam.
+                                Những đánh giá của top khách hàng đi khách sạn nhiều nhất tháng này 
                             </p>
                         </MDBCol>
                     </MDBRow>
@@ -154,12 +152,19 @@ class HotelDetail extends React.Component {
                         <MDBCol md="4" className="mb-5 mb-md-0">
                             <div className="d-flex justify-content-center mb-4">
                                 <img
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                    src="https://t4.ftcdn.net/jpg/02/66/31/75/360_F_266317554_kr7DPOoM5Uty0YCeFU9nDZTt4a2LeMJF.jpg"
                                     className="rounded-circle shadow-1-strong"
                                     width="150"
                                     height="150"
                                 />
                             </div>
+                            <h5 className="mb-3">Trung Nguyên</h5>
+                            <h6 className="text-primary mb-3">Wed Developer</h6>
+                            <p className="px-xl-3">
+                                <MDBIcon fas icon="quote-left" className="pe-2" />
+                                Phòng này chạy deadline rất tuyệt. 
+                            </p>
+
                             {/* {console.log("user", this.state.danhgia[0])} */}
                             {/* <h5 className="mb-3">{this.state.danhgia[0].user.username}</h5> */}
                             {/* <h6 className="text-primary mb-3">{this.state.danhgia[0].user.firstName + " " + this.state.danhgia[0].user.lastName}</h6>
@@ -196,18 +201,17 @@ class HotelDetail extends React.Component {
                         <MDBCol md="4" className="mb-5 mb-md-0">
                             <div className="d-flex justify-content-center mb-4">
                                 <img
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                    src="https://s28151.pcdn.co/wp-content/uploads/sites/2/2022/03/Coyote-animal-sentience-research.jpg"
                                     className="rounded-circle shadow-1-strong"
                                     width="150"
                                     height="150"
                                 />
                             </div>
-                            <h5 className="mb-3">Lisa Cudrow</h5>
-                            <h6 className="text-primary mb-3">Graphic Designer</h6>
+                            <h5 className="mb-3">Trọng Nghĩa</h5>
+                            <h6 className="text-primary mb-3">SOC engineer</h6>
                             <p className="px-xl-3">
                                 <MDBIcon fas icon="quote-left" className="pe-2" />
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                                suscipit laboriosam, nisi ut aliquid commodi.
+                                Giường thông phòng thoáng, nệm êm, ngủ sướng.
                             </p>
                             <MDBTypography
                                 listUnStyled
@@ -233,18 +237,17 @@ class HotelDetail extends React.Component {
                         <MDBCol md="4" className="mb-5 mb-md-0">
                             <div className="d-flex justify-content-center mb-4">
                                 <img
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                    src="https://i.natgeofe.com/k/c02b35d2-bfd7-4ed9-aad4-8e25627cd481/komodo-dragon-head-on_4x3.jpg"
                                     className="rounded-circle shadow-1-strong"
                                     width="150"
                                     height="150"
                                 />
                             </div>
-                            <h5 className="mb-3">John Smith</h5>
-                            <h6 className="text-primary mb-3">Marketing Specialist</h6>
+                            <h5 className="mb-3">Phạm Lập</h5>
+                            <h6 className="text-primary mb-3">SỐC engineer</h6>
                             <p className="px-xl-3">
                                 <MDBIcon fas icon="quote-left" className="pe-2" />
-                                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque corrupti.
+                                Mỗi khi mất ngủ tôi hay lui tới khách sạn này để ngủ. 
                             </p>
                             <MDBTypography
                                 listUnStyled

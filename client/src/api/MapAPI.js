@@ -4,7 +4,7 @@ export const placeRecommendation = async (query) => {
     // const result = await axios.get();
     // TODO: get the recommendation 
     const result = [
-        "Ditmesaigon", 
+        "hellosaigon", 
         "Ditmonthegioi", 
         "khongthenao", 
     ];

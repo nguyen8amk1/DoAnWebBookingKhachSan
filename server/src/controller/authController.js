@@ -48,7 +48,7 @@ const login = async (req, res) => {
         username: username,
         role: role// get from database  
     }
-    // res.json({msg: "ditme nguoi dung co ton tai em nhe :v"});
+    // res.json({msg: "hello nguoi dung co ton tai em nhe :v"});
     const accessToken = generateAccessToken(user);
     const refreshToken = jwt.sign(user, process.env.REFRESH_TOKEN_SECRET);
 
