@@ -4,57 +4,14 @@ import "../style/CreateOrder.scss";
 
 
 class CreateOrder extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          amount: '',
-          bankCode: '',
-          language: 'vn', // Default language
-        };
-      }
-    
-      handleAmountChange = (e) => {
-        this.setState({ amount: e.target.value });
-      };
-    
-      handleBankCodeChange = (e) => {
-        this.setState({ bankCode: e.target.value });
-      };
-    
-      handleLanguageChange = (e) => {
-        this.setState({ language: e.target.value });
-      };
-    
-      handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-      };
-    
-      waitForRedirect = async () => {
-        const info = {};
-        info['amount'] = this.state.amount;
-        info['bankCode'] = this.state.bankCode;
-        info['language'] = this.state.language;
-
-        //NOTE: the code bellow really shouldn't be here 
-        info['userid'] = localStorage.getItem("userid");
-        info['hotelid'] = localStorage.getItem("hoteldetailID");
-        info['roomid'] = 1;
-        info['price'] = 115000;
-        info['daterange'] = localStorage.getItem('date').startDate + " " + localStorage.getItem('date').endDate;
-        
-        // hotelid: info.hotelid , 
-        // userid: info.userid, 
-        // roomid: info.roomid, 
-        // price: info.price, 
-        // daterange: info.daterange, 
-
-
-        const result = await createOrder(info);
-        console.log(result)
-        window.location.href = result.data.redirectUrl;
-        return null;
-      }
+  constructor(props) {
+    super(props);
+    this.state = {
+      amount: '',
+      bankCode: '',
+      language: 'vn', // Default language
+    };
+  }
 
   handleAmountChange = (e) => {
     this.setState({ amount: e.target.value });
@@ -78,6 +35,21 @@ class CreateOrder extends React.Component {
     info['amount'] = this.state.amount;
     info['bankCode'] = this.state.bankCode;
     info['language'] = this.state.language;
+
+    //NOTE: the code bellow really shouldn't be here 
+    info['userid'] = localStorage.getItem("userid");
+    info['hotelid'] = localStorage.getItem("hoteldetailID");
+    info['roomid'] = 1;
+    info['price'] = 115000;
+    info['daterange'] = localStorage.getItem('date').startDate + " " + localStorage.getItem('date').endDate;
+
+    // hotelid: info.hotelid , 
+    // userid: info.userid, 
+    // roomid: info.roomid, 
+    // price: info.price, 
+    // daterange: info.daterange, 
+
+
     const result = await createOrder(info);
     console.log(result)
     window.location.href = result.data.redirectUrl;
