@@ -19,6 +19,21 @@ class BookingInformation extends React.Component {
 		}
 	}
 
+	removeOrder = (index) => {
+		// TODO: CALL THE API TO REMOVE THE DAMN THING IN DATABASE AS WELL 
+
+		const newArray = [
+			...this.state.bookingplaces.slice(0, index),
+			...this.state.bookingplaces.slice(index + 1)
+		];
+
+		this.setState({
+			bookingplaces: newArray
+		});
+
+		console.log(this.state.bookingplaces);
+	}
+
 	async componentDidMount() {
 		// TODO: call hotel api
 		// input: id
@@ -40,19 +55,6 @@ class BookingInformation extends React.Component {
 		// 	showTab = (id) => {
 		// 		this.setState({
 		// 			shownTabId: id
-		// 		});
-		// 	}
-
-		// 	removeOrder = (index) => {
-		// 		// TODO: CALL THE API TO REMOVE THE DAMN THING IN DATABASE AS WELL 
-
-		// 		const newArray = [
-		// 			...this.state.bookingplaces.slice(0, index),
-		// 			...this.state.bookingplaces.slice(index + 1)
-		// 		];
-
-		// 		this.setState({
-		// 			bookingplaces: newArray
 		// 		});
 		// 	}
 
@@ -166,14 +168,24 @@ class BookingInformation extends React.Component {
 							<div>
 								{this.state.bookingplaces.length > 0 && (
 									<div>
-										<BookingPlaceInfo
+		 							{this.state.bookingplaces.map((place, index) => (
+		 								<BookingPlaceInfo index={index} removeOrder={this.removeOrder} key={index} info={place} />
+		 							))}
+										{/* <BookingPlaceInfo
 											info={this.state.bookingplaces[0]}
+											removeOrder={this.removeOrder}
 											className="left-banner-detail"
 										/>
 										<BookingPlaceInfo
+											info={this.state.bookingplaces[0]}
+											removeOrder={this.removeOrder}
+											className="left-banner-detail"
+										/> */}
+										{/* <BookingPlaceInfo
 											info={this.state.bookingplaces[1]}
+											removeOrder={this.removeOrder}
 											className="right-banner-detail"
-										/>
+										/> */}
 									</div>
 								)}
 							</div>
@@ -196,14 +208,19 @@ class BookingInformation extends React.Component {
 							<div>
 								{this.state.bookedplaces.length > 0 && (
 									<div>
-										<BookedInformation
+
+		 							{this.state.bookedplaces.map((place, index) => (
+		 								<BookedInformation key={index} info={place} />
+		 							))}
+
+										{/* <BookedInformation
 											info={this.state.bookedplaces[0]}
 											className="left-banner-detail"
-										/>
-										<BookedInformation
+										/> */}
+										{/* <BookedInformation
 											info={this.state.bookedplaces[1]}
 											className="right-banner-detail"
-										/>
+										/> */}
 									</div>
 								)}
 							</div>

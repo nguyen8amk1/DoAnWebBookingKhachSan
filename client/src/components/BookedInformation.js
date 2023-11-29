@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/BookedInformation.scss";
-
 class BookedInformation extends React.Component {
   constructor(props) {
     super(props);
@@ -22,7 +21,7 @@ class BookedInformation extends React.Component {
               <div className="Isrent-username">
                 Người cho thuê: {this.props.info.tennguoithue}
               </div>
-              <div className="Isrent-name-hotel">Khách sạn Sun Beach</div>
+              <div className="Isrent-name-hotel">KHACH SAN CHO THUE</div>
               <div className="Isrent-info-hotel">
                 Nằm ở Vũng Tàu, cách Back Beach 13 phút đi bộ, Sun Beach Hotel
                 cung cấp chỗ nghỉ có xe đạp miễn phí, chỗ đậu xe riêng miễn phí,
@@ -47,5 +46,7 @@ class BookedInformation extends React.Component {
     );
   }
 }
+
+
 
 export default BookedInformation;

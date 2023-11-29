@@ -2,6 +2,7 @@ import React from "react";
 import "../style/BookingInfo.scss";
 import "../style/BookingPlaceInfo.scss";
 
+
 class BookingPlaceInfo extends React.Component {
   constructor(props) {
     super(props);
@@ -52,45 +53,15 @@ class BookingPlaceInfo extends React.Component {
                 Thành tiền: {this.props.info.thanhtien}
               </p>
             </div>
-
-            {/* <<<<<<< HEAD
-            <hr />
-            <div style={{display: 'flex', flexDirection: 'row'}} className='buttons'>
-                <div className='last-button'>
-                <button type="button" className="btn btn-primary">Xem chỗ nghĩ</button>
-                </div>
-                <div className='last-button'>
-                <button type="button" className="btn btn-primary">Hủy phòng</button>
-                </div>
-                <div className='last-button'>
-                <button type="button" className="btn btn-primary">Liên hệ người cho thuê</button>
-                </div>
-            </div>
-          </div> */}
-
-
-            <div>
-              <h3>{this.props.info.tenkhachsan}</h3>
-              <div className='thongtinphong'>
-                <p>{this.props.info.tenphong}</p>
-                <p>{this.props.info.bedroomCount}</p>
-                <p>{this.props.info.bedCount}</p>
-              </div>
-              {/* <p>{this.props.info.thongtinngaydenngaydi}</p> */}
-              <p>{this.props.info.giaphong}</p>
-              <p>{this.props.info.thanhtien}</p>
-              <button onClick={() => this.props.removeOrder(this.props.index)}>Hủy phòng</button>
-              <button>Liên hệ người cho thuê</button>
-            </div>
-            {/* <p>{this.props.info.thongtinngaydenngaydi}</p> */}
-            <div className="rent_property-btn">
-              <button type="button" class="btn btn-primary btn_rent-cancel">
-                Hủy phòng
-              </button>
-              <button type="button" class="btn btn-primary btn_rent-contact">
-                Liên hệ người cho thuê
-              </button>
-            </div>
+          </div>
+          {/* <p>{this.props.info.thongtinngaydenngaydi}</p> */}
+          <div className="rent_property-btn">
+            <button onClick={this.props.removeOrder} type="button" class="btn btn-primary btn_rent-cancel">
+              Hủy phòng
+            </button>
+            <button type="button" class="btn btn-primary btn_rent-contact">
+              Liên hệ người cho thuê
+            </button>
           </div>
         </div>
       </>
