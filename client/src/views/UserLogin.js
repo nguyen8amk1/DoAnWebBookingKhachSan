@@ -38,9 +38,6 @@ class UserLogin extends Component {
     }
   };
 
-  handleOnChangeInput = (event, id) => {
-    let copyState = { ...this.state };
-    copyState[id] = event.target.value;
 
     toggle = () => {
         this.props.toggle();
@@ -117,69 +114,6 @@ class UserLogin extends Component {
         )
     }
 
-  render() {
-    return (
-      <Modal
-        isOpen={this.props.isOpenModal}
-        toggle={() => {
-          this.toggle();
-        }}
-        className={"modal-user-container"}
-        size="md"
-      >
-        <ModalHeader
-          toggle={() => {
-            this.toggle();
-          }}
-        >
-          Login
-        </ModalHeader>
-        <ModalBody>
-          <div className="modal-user-body">
-            <div className="input-container ">
-              <input
-                type="text"
-                onChange={(event) => {
-                  this.handleOnChangeInput(event, "email");
-                }}
-                placeholder="Email address or username "
-                value={this.state.email}
-              ></input>
-            </div>
-            <div className="input-container ">
-              <input
-                type="password"
-                onChange={(event) => {
-                  this.handleOnChangeInput(event, "password");
-                }}
-                placeholder="Password"
-                value={this.state.password}
-              ></input>
-            </div>
-          </div>
-        </ModalBody>
-        <ModalFooter>
-          <Button
-            color="success"
-            onClick={() => {
-              this.toggle();
-              this.login();
-            }}
-          >
-            Login
-          </Button>{" "}
-          <Button
-            color="secondary"
-            onClick={() => {
-              this.toggle();
-            }}
-          >
-            Cancel
-          </Button>
-        </ModalFooter>
-      </Modal>
-    );
-  }
 }
 
 const mapStateToProps = (state) => {

@@ -16,7 +16,7 @@ class BookingPlaceInfo extends React.Component {
     return (
       <>
         <div className="rent_property-container">
-          <div className="rent_hotel-name">Khách sạn Rio Quente</div>
+          <div className="rent_hotel-name">KHACH SAN CHO THUE</div>
           <div className="rent_property-info">
             <div className="rent_price-container">
               <div className="rent_price-info">
