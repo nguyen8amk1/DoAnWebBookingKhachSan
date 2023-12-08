@@ -75,6 +75,7 @@ class HotelDetail extends React.Component {
         </div>
         {/* <div className='test-buttons'><button type="button" className="btn btn-primary">8.9</button></div> */}
         <div className="main-content-container-new">
+
           <div className="left-content-container">
             <div className="hotel-detail-overview">Tổng quan</div>
             <div className="hotel-detail-review">Đánh giá</div>
@@ -135,6 +136,7 @@ class HotelDetail extends React.Component {
               />
               Thanh toán
             </div>
+
             <b>Vị trí trến bản đồ</b>
             <div className="sidebar-map">
               <MyMapBox
@@ -142,6 +144,7 @@ class HotelDetail extends React.Component {
                 className="left-content-container__bottom-thingy"
               />
             </div>
+
           </div>
           <div className="right-content-container">
             <div className="top-container">
@@ -149,9 +152,11 @@ class HotelDetail extends React.Component {
                 <div className="first-text">
                   <button>Tổng quan</button>
                 </div>
+
                 <div className="third-text">
                   <button onClick={this.scrollToQuyTac}>Quy tắc chung</button>
                 </div>
+
                 <div className="fourth-text">
                   <button>Đánh giá của khách hàng</button>
                 </div>
@@ -176,28 +181,28 @@ class HotelDetail extends React.Component {
                             <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img> */}
                 {/* <img src='https://i.pinimg.com/564x/f8/90/1e/f8901e8af1fd97a5b8dc09ed26d71886.jpg' alt="" className="top-item-img"></img> */}
 
-                <img
-                  src="https://pix8.agoda.net/hotelImages/659/6592334/6592334_19022704090072546036.jpg?ca=7&ce=1&s=512x384"
-                  alt=""
-                  className="top-item-img"
-                ></img>
-                <img
-                  src="https://pix8.agoda.net/hotelImages/8100822/0/cc5177633f048d7e39d7000fd1daa00b.jpg?ca=9&ce=1&s=512x384"
-                  alt=""
-                  className="top-item-img"
-                ></img>
+                {/* <img */}
+                {/*   src="https://pix8.agoda.net/hotelImages/659/6592334/6592334_19022704090072546036.jpg?ca=7&ce=1&s=512x384" */}
+                {/*   alt="" */}
+                {/*   className="top-item-img" */}
+                {/* ></img> */}
+                {/* <img */}
+                {/*   src="https://pix8.agoda.net/hotelImages/8100822/0/cc5177633f048d7e39d7000fd1daa00b.jpg?ca=9&ce=1&s=512x384" */}
+                {/*   alt="" */}
+                {/*   className="top-item-img" */}
+                {/* ></img> */}
               </div>
               <div className="bottom-image">
-                <img
-                  src="https://pix8.agoda.net/hotelImages/6592334/-1/c5b0699844ec35874a83863714881a6a.jpg?ca=8&ce=1&s=512x384"
-                  alt=""
-                  className="top-item-img"
-                ></img>
-                <img
-                  src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/209890682.jpg?k=2047a19505f33a6776593a468b7274759ba3a5c2586534977b161e586f460993&o="
-                  alt=""
-                  className="top-item-img"
-                ></img>
+                {/* <img */}
+                {/*   src="https://pix8.agoda.net/hotelImages/6592334/-1/c5b0699844ec35874a83863714881a6a.jpg?ca=8&ce=1&s=512x384" */}
+                {/*   alt="" */}
+                {/*   className="top-item-img" */}
+                {/* ></img> */}
+                {/* <img */}
+                {/*   src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/209890682.jpg?k=2047a19505f33a6776593a468b7274759ba3a5c2586534977b161e586f460993&o=" */}
+                {/*   alt="" */}
+                {/*   className="top-item-img" */}
+                {/* ></img> */}
                 <img
                   src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/269165384.jpg?k=2890db152bb72cae2b41cb91952ff34c983e1ecc7f555c9e095a936928145914&o="
                   alt=""
