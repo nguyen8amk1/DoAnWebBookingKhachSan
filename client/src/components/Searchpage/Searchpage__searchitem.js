@@ -15,45 +15,48 @@ const Searchpage__searchitem = (props) => {
         className="sp-searchitem-img"
       />
 
-      <div className="searchpage-si-desc">
-        <h1 className="searchpage-si-title">{props.info.name}</h1>
-        <span className="searchpage-si-distance">{props.info.address}</span>
-        <span className="searchpage-si-taxiop">Free airport taxi</span>
-        {/* <span className="searchpage-si-subtitle">
-          Studio Apartment with Air conditioning
-        </span> */}
-        {/* <span className="searchpage-si-features">
-          Entire studio • 1 bathroom • 21m² 1 full bed
-        </span> */}
-        <span className="searchpage-si-cancelop">Free cancellation </span>
-        <span className="searchpage-si-cancelopsubtitle">
-          You can cancel later, so lock in this great price today!
-        </span>
-      </div>
-      <div className="searchpage-si-details">
-        <div className="searchpage-si-rating">
-          <span>Excellent</span>
-          <button
-            type="button"
-            className="searchpage-si-rating btn btn-primary btn-sidebar"
-          >
-          {props.info.score}
-          </button>
-        </div>
-        <div className="searchpage-si-detailtexts">
-          <span className="searchpage-si-price">$112</span>
-          <span className="searchpage-si-taxop">Includes taxes and fees</span>
+      <div className="something-wrapper">
+          <div className="searchpage-si-desc">
+            <h1 className="searchpage-si-title">{props.info.name}</h1>
+            {/* <span className="searchpage-si-distance">{props.info.address}</span> */}
+            {/* <span className="searchpage-si-taxiop">Free airport taxi</span> */}
+            {/* {/* <span className="searchpage-si-subtitle"> */}
+            {/*   Studio Apartment with Air conditioning */}
+            {/* </span> */} 
+            {/* {/* <span className="searchpage-si-features"> */}
+            {/*   Entire studio • 1 bathroom • 21m² 1 full bed */}
+            {/* </span> */}
+            {/* <span className="searchpage-si-cancelop">Free cancellation </span> */}
+            {/* <span className="searchpage-si-cancelopsubtitle"> */}
+            {/*   You can cancel later, so lock in this great price today! */}
+            {/* </span> */}
+          </div>
+          <div className="searchpage-si-details">
+            <div className="searchpage-si-rating">
+              <span style={{color: "orange"}}>Excellent</span>
+              {/* <button */}
+              {/*   type="button" */}
+              {/*   className="searchpage-si-rating btn btn-primary btn-sidebar" */}
+              {/* > */}
+              {/* {props.info.score} */}
+              {/* </button> */}
+            </div>
 
-          <Link to="/hoteldetail">
-            <button
-              type="button"
-              className="searchpage-si-checkbutton btn btn-primary btn-sidebar"
-              onClick={() => gotoDetail(props)}
-            >
-              See availability
-            </button>
-          </Link>
-        </div>
+            <div className="searchpage-si-detailtexts">
+              <span className="searchpage-si-price">$112</span>
+              <span className="searchpage-si-taxop">Includes taxes and fees</span>
+
+              <Link to="/hoteldetail">
+                <button
+                  type="button"
+                  className="searchpage-si-checkbutton btn btn-primary btn-sidebar"
+                  onClick={() => gotoDetail(props)}
+                >
+                  See availability
+                </button>
+              </Link>
+            </div>
+          </div>
       </div>
     </div>
   );

@@ -1,11 +1,15 @@
 TODAY: 
     NEW TASKS: 
-        Responsive:
+        Responsive Design:
             Homepage [x] (2h) 
             Search page [x] (2h)
             Detail page  [x] (2h)
             Comment [x] (2h) 
-            Payment [x] (2h) 
+        Responsive Code:
+            Homepage [x] (2h) 
+            Search page [x] (2h) 
+            Detail page  [] (2h) @Current 
+            Comment [] (2h) 
         **Comment 
 
         we have 3 days left: 

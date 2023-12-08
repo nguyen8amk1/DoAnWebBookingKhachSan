@@ -9,8 +9,7 @@
 }
 
 .searchpage-sb-wrapper {
-    min-width: 1107px;
-    max-width: 1107px;
+    position: absolute;
     width: 100%;
     display: flex;
     gap: 20px;
@@ -107,3 +106,22 @@
 .searchpage-sb-listresult {
     flex: 3;
 }  
+
+@media only screen and (max-width: 400px) {
+    .searchpage-sb-listsearch {
+        display: none;
+    }
+
+    .searchpage-sb-wrapper {
+        min-width: 500px;
+        max-width: 500px;
+    }  
+}
+
+@media only screen and (min-width: 600px) {
+    .searchpage-sb-wrapper {
+        min-width: 1107px;
+        max-width: 1107px;
+    }
+}
+

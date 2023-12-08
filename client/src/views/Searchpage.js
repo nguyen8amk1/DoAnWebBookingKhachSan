@@ -64,9 +64,9 @@ class Searchpage extends React.Component {
             />
           </div> */}
 						<UserInfoComponent />
+                        <Searchpage__sidebar searchResults={searchResults} />
 					</div>
 				</div>
-				<Searchpage__sidebar searchResults={searchResults} />
 				<FooterPage />
 			</div>
 			</>
