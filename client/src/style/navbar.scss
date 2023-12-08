@@ -2,3 +2,13 @@ button {
     border: 0; 
     background-color: inherit;
 }
+
+// The navbar gonna is not gonna be shown 
+// Resize the background img to fit the screen 
+// 
+
+@media only screen and (max-width: 400px) {
+    .sub-nav {
+        display: none;
+    }
+}

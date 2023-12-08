@@ -1,16 +1,12 @@
 .search-bar {
   position: absolute;
-  z-index: 9999;
-  top: 630px; /* Đẩy phần tử xuống 50px từ trên cùng */
-  left: 50%;
-  transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+  z-index: 1;
   display: flex;
   align-items: center;
 
   border-radius: var(--br-3xs);
   background-color: var(--neutral-5);
   box-shadow: 0 2px 80px 2px rgba(0, 0, 0, 0.06);
-  width: 950px;
   height: 136.83px;
   text-align: left;
   font-size: var(--font-size-lg);
@@ -36,6 +32,32 @@
   margin-right: 40px; /* Đẩy cách nhau 30px */
 }
 
+.content__item-date--top {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center;
+  margin-bottom: 4px;
+
+  > * {
+    padding: 0 23px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
+  }
+}
+
+.content__item-date--check {
+  font-size: 0.95rem;
+  color: var(--sub-text);
+  padding-top: 4.2px;
+}
+
+.date {
+  position: absolute;
+  z-index: 3;
+  font-size: 1.1rem;
+  color: var(--br-8xs);
+  font-weight: 600;
+}
+
+
 .content__item-location--top {
   display: flex;
   align-items: center; /* Căn giữa theo chiều dọc */
@@ -47,16 +69,6 @@
   }
 }
 
-.content__item-date--top {
-  display: flex;
-  align-items: center; /* Căn giữa theo chiều dọc */
-  justify-content: center;
-  margin-bottom: 4px;
-
-  > * {
-    padding: 0 23px; /* Tạo khoảng cách 3px (1.5px ở mỗi bên) giữa các block con */
-  }
-}
 
 .content__item-guest--top {
   display: flex;
@@ -69,11 +81,6 @@
   }
 }
 
-.content__item-date--check {
-  font-size: 0.95rem;
-  color: var(--sub-text);
-  padding-top: 4.2px;
-}
 
 .content__item-quantity {
   font-size: 0.95rem;
@@ -87,11 +94,6 @@
   font-weight: 600;
 }
 
-.date {
-  font-size: 1.1rem;
-  color: var(--br-8xs);
-  font-weight: 600;
-}
 
 .guest {
   font-size: 1.1rem;
@@ -125,11 +127,6 @@
   justify-content: center; /* Căn giữa theo chiều ngang */
   align-items: center; /* Căn giữa theo chiều dọc */
   cursor: pointer;
-}
-
-.date {
-  position: absolute;
-  z-index: 3;
 }
 
 .guest__options {
@@ -201,4 +198,25 @@
 .form-control.mr-sm-2 {
   padding: 0 0 0 0;
   margin: 0 auto;
+}
+
+// Responsive thingy 
+@media only screen and (max-width: 400px) {
+    .content__item-date,
+    .content__item-guest
+    {
+      display: none;
+    }
+    .search-bar {
+        top: 200px; /* Đẩy phần tử xuống 50px từ trên cùng */
+    }
+}
+
+@media only screen and (mi: 600px) {
+    .search-bar {
+        width: 950px;
+        top: 630px; /* Đẩy phần tử xuống 50px từ trên cùng */
+        left: 50%;
+        transform: translateX(-50%); /* Để giữ nguyên giữa theo chiều ngang */
+    }
 }

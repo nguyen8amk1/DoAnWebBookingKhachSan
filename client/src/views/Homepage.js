@@ -26,10 +26,10 @@ const Homepage = () => {
           <img className="main-item" alt="" src="https://res.cloudinary.com/dj5xxhqsj/image/upload/v1701229577/homepage__img_odma2e.png" />
         </div>
         <Searchbar />
-        <DestinationCard />
-        <Discount />
-        <Property__list />
-        <Featured__properties />
+        {/* <DestinationCard /> */}
+        {/* <Discount /> */}
+        {/* <Property__list /> */}
+        {/* <Featured__properties /> */}
         <Mail__list />
         <FooterPage />
         <Chatbot_web />
