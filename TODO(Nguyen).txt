@@ -8,8 +8,9 @@ TODAY:
         Responsive Code:
             Homepage [x] (2h) 
             Search page [x] (2h) 
-            Detail page  [] (2h) @Current 
-            Comment [] (2h) 
+            Detail page  [x] (2h) 
+
+            Comment [] (2h) @Current 
         **Comment 
 
         we have 3 days left: 

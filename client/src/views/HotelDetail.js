@@ -21,43 +21,55 @@ import MyMapBox from "../components/MyMapBox";
 // import MyMapBox from '../components/MapBox';
 
 class HotelDetail extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ten: "",
-      diachi: "",
-      diem: "",
-      danhgia: [],
-      images: [],
-      mota: "",
-    };
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            ten: "",
+            diachi: "",
+            diem: "",
+            danhgia: [],
+            images: [],
+            mota: "",
+           comment: "",
+        };
+    }
 
   async componentDidMount() {
     const id = localStorage.getItem("hoteldetailID");
     const detail = await getHotelDetail(id);
     console.log(detail);
 
-    this.setState({
-      ten: detail.name,
-      diachi: detail.address,
-      diem: detail.score,
-      danhgia: detail.uandr,
-      anh: detail.images,
-      mota: detail.description,
-      images: detail.imgs,
-    });
-    if (this.state.images != null) {
       this.setState({
-        bigImg1: this.state.images.shift(),
-        bigImg2: this.state.images.shift(),
-        smallImg1: this.state.images.shift(),
-        smallImg2: this.state.images.shift(),
-        // smallImg3: this.state.images.shift(),
+          ten: detail.name,
+          diachi: detail.address,
+          diem: detail.score,
+          danhgia: detail.uandr,
+          anh: detail.images,
+          mota: detail.description,
+          images: detail.imgs,
       });
-    }
-    console.log(this.state);
+      if (this.state.images != null) {
+          this.setState({
+              bigImg1: this.state.images.shift(),
+              bigImg2: this.state.images.shift(),
+              smallImg1: this.state.images.shift(),
+              smallImg2: this.state.images.shift(),
+              // smallImg3: this.state.images.shift(),
+          });
+      }
+      console.log(this.state);
   }
+
+    handleCommenting = (event) => {
+        //console.log(event.target.value);
+        this.setState({ comment: event.target.value});
+    }
+
+    commentClicked = async (event) => {
+        event.preventDefault(); 
+        // TODO: 
+
+    }
 
   scrollToQuyTac(event) {}
 
@@ -447,7 +459,24 @@ class HotelDetail extends React.Component {
             alt=""
             src="/Destination-icon--blue.svg"
           />
+
+        <div className="comment-section">
+            <h2>Đánh giá của bạn</h2>
+                <div className="comment">
+                  <nav className="justify-content-between">
+                    <input
+                      className=""
+                      type="search"
+                      placeholder="Cho tôi xin ý kiến của bạn"
+                        onChange={this.handleCommenting}
+                        value={this.state.comment}
+                    ></input>
+                    <button onClick={this.commentClicked} className="comment-button">Đánh giá</button>
+                  </nav>
+                </div>
+            </div> 
         </div>
+
         <div className="general-rules-container">
           <b>Quy tắc chung</b>
           <div className="main-content-container">
