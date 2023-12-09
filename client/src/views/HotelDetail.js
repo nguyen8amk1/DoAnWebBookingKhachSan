@@ -31,6 +31,7 @@ class HotelDetail extends React.Component {
             images: [],
             mota: "",
            comment: "",
+            showComment: false,
         };
     }
 
@@ -48,6 +49,7 @@ class HotelDetail extends React.Component {
           mota: detail.description,
           images: detail.imgs,
       });
+
       if (this.state.images != null) {
           this.setState({
               bigImg1: this.state.images.shift(),
@@ -67,8 +69,9 @@ class HotelDetail extends React.Component {
 
     commentClicked = async (event) => {
         event.preventDefault(); 
-        // TODO: 
-
+        this.setState({
+            showComment: true,
+        });
     }
 
   scrollToQuyTac(event) {}
@@ -377,6 +380,7 @@ class HotelDetail extends React.Component {
                   </li>
                 </MDBTypography>
               </MDBCol>
+
               <MDBCol md="4" className="mb-5 mb-md-0">
                 <div className="d-flex justify-content-center mb-4">
                   <img
@@ -386,6 +390,7 @@ class HotelDetail extends React.Component {
                     height="150"
                   />
                 </div>
+
                 <h5 className="mb-3">John Smith</h5>
                 <h6 className="text-primary mb-3">Marketing</h6>
                 <p className="px-xl-3">
@@ -441,6 +446,72 @@ class HotelDetail extends React.Component {
                   </li>
                 </MDBTypography>
               </MDBCol>
+
+                {this.state.showComment && 
+              <MDBCol md="4" className="mb-5 mb-md-0">
+                <div className="d-flex justify-content-center mb-4">
+                  <img
+                    src="https://i.redd.it/e7aokt8k4zy61.jpg"
+                    className="rounded-circle shadow-1-strong"
+                    width="150"
+                    height="150"
+                  />
+                </div>
+
+                <h5 className="mb-3">John Smith</h5>
+                <h6 className="text-primary mb-3">Marketing</h6>
+                <p className="px-xl-3">
+                  <MDBIcon fas icon="quote-left" className="pe-2" />
+                    {this.state.comment}
+                </p>
+                <MDBTypography
+                  listUnStyled
+                  className="d-flex justify-content-center mb-0"
+                >
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      far
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                </MDBTypography>
+              </MDBCol>
+                }
+
             </MDBRow>
           </MDBContainer>
 
@@ -460,6 +531,7 @@ class HotelDetail extends React.Component {
             src="/Destination-icon--blue.svg"
           />
 
+        { !this.state.showComment && 
         <div className="comment-section">
             <h2>Đánh giá của bạn</h2>
                 <div className="comment">
@@ -475,6 +547,7 @@ class HotelDetail extends React.Component {
                   </nav>
                 </div>
             </div> 
+        }
         </div>
 
         <div className="general-rules-container">
