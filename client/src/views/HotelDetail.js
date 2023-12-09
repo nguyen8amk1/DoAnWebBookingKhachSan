@@ -458,7 +458,7 @@ class HotelDetail extends React.Component {
                   />
                 </div>
 
-                <h5 className="mb-3">John Smith</h5>
+                <h5 className="mb-3">{localStorage.getItem('username')}</h5>
                 <h6 className="text-primary mb-3">Marketing</h6>
                 <p className="px-xl-3">
                   <MDBIcon fas icon="quote-left" className="pe-2" />
