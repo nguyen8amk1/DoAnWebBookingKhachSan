@@ -10,7 +10,7 @@ TODAY:
             Search page [x] (2h) 
             Detail page  [x] (2h) 
 
-            Comment [] (2h) @Current 
+            Comment [] (2h) 
         **Comment 
 
         we have 3 days left: 
@@ -27,7 +27,6 @@ TODAY:
             + Introduction 
             + Features (Base + Advance)
             + Results + Demo 
-
 
         List of things need to be done tomorrow: 
             + Homepage: Place recommendation 
